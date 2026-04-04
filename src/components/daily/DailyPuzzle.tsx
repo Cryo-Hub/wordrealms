@@ -254,22 +254,26 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
 
   if (dictLoading || !puzzle || !crossword) {
     return (
-      <div className="flex flex-1 flex-col items-center justify-center gap-2 text-[var(--text-secondary)]">
+      <div className="flex min-h-0 w-full max-w-[480px] flex-1 flex-col items-center justify-center gap-2 px-4 text-[var(--text-secondary)]">
         <p className="font-body text-sm">{t('game.loading_dict')}</p>
       </div>
     );
   }
 
   return (
-    <div className="flex min-h-0 w-full flex-1 flex-col items-stretch overflow-hidden">
-      <button
-        type="button"
-        onClick={showHint}
-        className="fixed right-[12px] top-[70px] z-[45] flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#6b5510] bg-[rgba(10,8,6,0.85)] shadow-md transition active:scale-95"
-        aria-label={t('game.hint_button_aria')}
-      >
-        <img src="/assets/hint.jpg" width={26} height={26} alt="" className="pointer-events-none rounded-sm" />
-      </button>
+    <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col items-center overflow-x-hidden overflow-y-auto">
+      <div className="pointer-events-none fixed inset-x-0 top-0 z-[45] flex justify-center">
+        <div className="pointer-events-auto flex w-full max-w-[480px] justify-end px-3 pt-[70px] sm:px-4">
+          <button
+            type="button"
+            onClick={showHint}
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#6b5510] bg-[rgba(10,8,6,0.85)] shadow-md transition active:scale-95"
+            aria-label={t('game.hint_button_aria')}
+          >
+            <img src="/assets/hint.jpg" width={26} height={26} alt="" className="pointer-events-none rounded-sm" />
+          </button>
+        </div>
+      </div>
 
       <BonusWordToast word={bonusWord} />
 
@@ -317,20 +321,22 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
         ) : null}
       </AnimatePresence>
 
-      <div className="flex min-h-0 w-full flex-1 flex-col overflow-hidden">
-        <div className="flex h-[45vh] min-h-0 w-full shrink-0 items-start justify-center overflow-auto pb-1 pt-0">
+      <div className="flex min-h-0 w-full max-w-[480px] flex-1 flex-col items-center justify-center px-3 sm:px-4">
+        <div className="flex w-full max-h-[45vh] min-h-0 flex-shrink-0 flex-col items-center justify-center overflow-visible py-2">
           <CrosswordGrid crossword={crossword} />
         </div>
 
-        <div className="flex h-[45vh] min-h-0 w-full shrink-0 flex-col items-center justify-start gap-0 overflow-hidden pt-0">
+        <div className="flex w-full min-h-0 flex-1 flex-col items-center justify-center gap-1 overflow-visible pt-2">
           <GameWordDots />
           <motion.div
             key={shake}
             animate={{ x: [0, -10, 10, -10, 10, 0] }}
             transition={{ duration: 0.3 }}
-            className="flex w-full min-h-0 flex-1 touch-none flex-col items-center justify-center pb-[60px]"
+            className="flex w-full min-h-[320px] flex-1 touch-none flex-col items-center justify-center px-1 pb-2"
           >
-            <LetterWheel letters={[...puzzle.letters]} foundWords={foundWords} onWordFormed={handleWord} />
+            <div className="mx-auto aspect-square w-full max-w-[min(480px,100%)] min-h-[320px] min-w-0 max-h-[min(68vh,calc(100dvh-13rem))]">
+              <LetterWheel letters={[...puzzle.letters]} foundWords={foundWords} onWordFormed={handleWord} />
+            </div>
           </motion.div>
         </div>
       </div>

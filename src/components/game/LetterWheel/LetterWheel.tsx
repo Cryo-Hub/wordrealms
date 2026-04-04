@@ -100,13 +100,7 @@ export function LetterWheel({ letters, onWordFormed, foundWords = [] }: LetterWh
     normalized.length === WHEEL_LETTER_COUNT ? normalized : padLetters(normalized);
 
   return (
-    <div
-      className="relative mx-auto bg-transparent"
-      style={{
-        width: 'min(90vw, 65vh)',
-        height: 'min(90vw, 65vh)',
-      }}
-    >
+    <div className="relative mx-auto h-full w-full min-h-0 min-w-0 max-h-full max-w-full bg-transparent">
       <div className="pointer-events-none absolute inset-x-0 top-1 z-10 flex justify-center px-1">
         <WordPreview word={previewWord} compact />
       </div>
