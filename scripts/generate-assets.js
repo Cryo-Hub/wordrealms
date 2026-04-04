@@ -39,6 +39,21 @@ function drawIcon(size) {
   return canvas.toBuffer('image/png');
 }
 
+function drawOg() {
+  const w = 1200;
+  const h = 630;
+  const canvas = createCanvas(w, h);
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#0f0a06';
+  ctx.fillRect(0, 0, w, h);
+  ctx.fillStyle = '#c9a227';
+  ctx.font = 'bold 72px system-ui,sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('WordRealms', w / 2, h / 2);
+  return canvas.toBuffer('image/png');
+}
+
 function drawSplash(w, h) {
   const canvas = createCanvas(w, h);
   const ctx = canvas.getContext('2d');
@@ -58,6 +73,7 @@ function drawSplash(w, h) {
 mkdirSync(assetsDir, { recursive: true });
 writeFileSync(join(assetsDir, 'icon-192.png'), drawPwaIcon(192));
 writeFileSync(join(assetsDir, 'icon-512.png'), drawPwaIcon(512));
+writeFileSync(join(assetsDir, 'og-image.png'), drawOg());
 
 writeFileSync(join(publicDir, 'icon-192.png'), drawIcon(192));
 writeFileSync(join(publicDir, 'icon-512.png'), drawIcon(512));

@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { memo, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { CrosswordGrid as CrosswordGridType, PlacedWord } from '../../../core/game/crosswordEngine';
 import { CrosswordCell, type CrosswordCellState } from './CrosswordCell';
 
@@ -31,7 +31,7 @@ function cellRevealState(
   return revealed ? 'revealed' : 'hidden';
 }
 
-export function CrosswordGrid({ crossword }: CrosswordGridProps) {
+function CrosswordGridInner({ crossword }: CrosswordGridProps) {
   const { cells, placedWords, width, height } = crossword;
   const hostRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(1);
@@ -111,3 +111,5 @@ export function CrosswordGrid({ crossword }: CrosswordGridProps) {
     </div>
   );
 }
+
+export const CrosswordGrid = memo(CrosswordGridInner);

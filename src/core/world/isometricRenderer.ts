@@ -17,7 +17,7 @@ export type WorldSlot = {
   screen: ScreenPos;
 };
 
-/** Zehn Slots in einem 5×2-Raster (isometrisch angeordnet). */
+/** 15 Slots in einem 5×3-Raster (isometrisch angeordnet). */
 export function getWorldSlots(): WorldSlot[] {
   const coords: { gridX: number; gridY: number }[] = [
     { gridX: 0, gridY: 0 },
@@ -30,6 +30,11 @@ export function getWorldSlots(): WorldSlot[] {
     { gridX: 2, gridY: 1 },
     { gridX: 3, gridY: 1 },
     { gridX: 4, gridY: 1 },
+    { gridX: 0, gridY: 2 },
+    { gridX: 1, gridY: 2 },
+    { gridX: 2, gridY: 2 },
+    { gridX: 3, gridY: 2 },
+    { gridX: 4, gridY: 2 },
   ];
   return coords.map((c, i) => ({
     id: i,

@@ -31,12 +31,12 @@ export function LeagueBadge({ elo, size = 'sm', className = '' }: LeagueBadgePro
   const needElo = next ? Math.max(0, getLeagueFloor(next) - elo) : 0;
 
   const scale = size === 'lg' ? 1.35 : 1;
-  const shieldW = 56 * scale;
-  const shieldH = 64 * scale;
+  const shieldW = size === 'sm' ? 48 : 56 * scale;
+  const shieldH = size === 'sm' ? 54 : 64 * scale;
 
   return (
     <div
-      className={`flex flex-col items-center ${className}`}
+      className={`flex flex-col items-center ${size === 'sm' ? 'w-[48px]' : ''} ${className}`}
       style={{ '--league-glow': color } as CSSProperties}
     >
       <div

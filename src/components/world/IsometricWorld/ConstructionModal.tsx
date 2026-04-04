@@ -7,7 +7,7 @@ import {
 } from '../../../core/world/buildingConfig';
 import { useResourceStore } from '../../../stores/resourceStore';
 import { useWorldStore } from '../../../stores/worldStore';
-import { useLeagueStore } from '../../../stores/leagueStore';
+import { usePremiumStore } from '../../../stores/premiumStore';
 import { soundService } from '../../../services/soundService';
 import { useTranslation } from '../../../i18n';
 import { buildingDescKey, buildingNameKey } from '../../../i18n/buildingKeys';
@@ -34,7 +34,7 @@ export function ConstructionModal({ slotId, onClose }: ConstructionModalProps) {
   const stone = useResourceStore((s) => s.stone);
   const spendResources = useResourceStore((s) => s.spendResources);
   const buildStructure = useWorldStore((s) => s.buildStructure);
-  const addElo = useLeagueStore((s) => s.addElo);
+  const addBattlePassXP = usePremiumStore((s) => s.addBattlePassXP);
   const [error, setError] = useState<string | null>(null);
 
   if (slotId === null) return null;
@@ -48,7 +48,7 @@ export function ConstructionModal({ slotId, onClose }: ConstructionModalProps) {
       return;
     }
     buildStructure(slotId, type);
-    addElo(5);
+    addBattlePassXP(def.buildXp);
     soundService.buildingPlaced();
     onClose();
   };

@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
-import { BUILDINGS, type BuildingType } from '../../../core/world/buildingConfig';
+import type { BuildingType } from '../../../core/world/buildingConfig';
+import { getBuildingDisplayEmoji } from '../../../core/game/buildingDisplay';
+import { usePremiumStore } from '../../../stores/premiumStore';
 import { useTranslation } from '../../../i18n';
 import { buildingDescKey, buildingNameKey } from '../../../i18n/buildingKeys';
 
@@ -11,7 +13,8 @@ type BuildingProps = {
 
 export function Building({ type, size, onSelect }: BuildingProps) {
   const { t } = useTranslation();
-  const b = BUILDINGS[type];
+  const claimed = usePremiumStore((s) => s.claimedRewards);
+  const emoji = getBuildingDisplayEmoji(type, claimed);
   return (
     <motion.div
       initial={{ scale: 0 }}
@@ -31,7 +34,7 @@ export function Building({ type, size, onSelect }: BuildingProps) {
         transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
         className="flex items-center justify-center"
       >
-        <span className="text-5xl leading-none drop-shadow-lg select-none">{b.emoji}</span>
+        <span className="text-5xl leading-none drop-shadow-lg select-none">{emoji}</span>
       </motion.div>
       <div className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden w-max max-w-[200px] -translate-x-1/2 rounded-[8px] border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-2 py-1 text-center text-xs shadow-xl group-hover:block group-focus-visible:block">
         <div className="font-cinzel font-semibold text-[var(--text-primary)]">{t(buildingNameKey(type))}</div>

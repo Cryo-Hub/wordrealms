@@ -1,50 +1,79 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LanguageGrid } from '../components/settings/LanguageGrid';
-import { useSettingsStore } from '../stores/settingsStore';
-import { useTranslation } from '../i18n';
 
-const ONBOARD_KEY = 'onboarding_complete';
+const WR_ONBOARD = 'wr-onboarded';
+const LEGACY_KEY = 'onboarding_complete';
 
 type OnboardingScreenProps = {
   onFinish: () => void;
 };
 
 export function isOnboardingComplete(): boolean {
-  return localStorage.getItem(ONBOARD_KEY) === '1';
+  try {
+    return localStorage.getItem(WR_ONBOARD) === '1' || localStorage.getItem(LEGACY_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+function markComplete(): void {
+  try {
+    localStorage.setItem(WR_ONBOARD, '1');
+    localStorage.setItem(LEGACY_KEY, '1');
+  } catch {
+    /* ignore */
+  }
 }
 
 export function OnboardingScreen({ onFinish }: OnboardingScreenProps) {
-  const { t } = useTranslation();
   const [slide, setSlide] = useState(0);
-  const language = useSettingsStore((s) => s.language);
-  const setLanguageSetting = useSettingsStore((s) => s.setLanguageSetting);
 
   const finish = () => {
-    localStorage.setItem(ONBOARD_KEY, '1');
+    markComplete();
     onFinish();
   };
 
   return (
-    <div className="mx-auto flex min-h-screen w-full max-w-[430px] flex-col px-4 pb-8 pt-12">
+    <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col bg-[#0f0a06] px-4 pb-10 pt-12">
+      {slide < 3 ? (
+        <button
+          type="button"
+          className="absolute right-4 top-4 text-sm text-[#a89880] underline"
+          onClick={finish}
+        >
+          Skip
+        </button>
+      ) : null}
+
+      <div className="mb-6 flex justify-center gap-2">
+        {[0, 1, 2, 3].map((i) => (
+          <span
+            key={i}
+            className={`h-2 w-2 rounded-full ${i === slide ? 'bg-[#c9a227]' : 'bg-[#2a2018]'}`}
+          />
+        ))}
+      </div>
+
       <AnimatePresence mode="wait">
         {slide === 0 ? (
           <motion.div
             key="s0"
-            initial={{ opacity: 0, scale: 0.94, x: 20 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            exit={{ opacity: 0, scale: 0.96, x: -20 }}
-            className="mx-auto flex max-w-[430px] flex-1 flex-col items-center text-center"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            className="flex flex-1 flex-col items-center text-center"
           >
-            <span className="text-7xl drop-shadow-[0_0_24px_rgba(212,160,23,0.35)]" aria-hidden>
+            <motion.span
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity }}
+              className="text-8xl"
+            >
               🏰
-            </span>
-            <h1 className="mt-6 font-title text-2xl font-bold text-[var(--gold-primary)]">
-              {t('onboarding.slide1.title')}
-            </h1>
-            <p className="mt-2 font-body text-[var(--text-secondary)]">{t('onboarding.slide1.subtitle')}</p>
-            <button type="button" onClick={() => setSlide(1)} className="fantasy-button mt-auto w-full max-w-sm">
-              {t('onboarding.lets_go')}
+            </motion.span>
+            <h1 className="mt-8 font-title text-2xl font-bold text-[#c9a227]">Welcome to WordRealms</h1>
+            <p className="mt-3 font-body text-[#c4b5a0]">Connect letters. Build your kingdom.</p>
+            <button type="button" className="fantasy-button mt-auto w-full max-w-sm" onClick={() => setSlide(1)}>
+              Next
             </button>
           </motion.div>
         ) : null}
@@ -52,113 +81,66 @@ export function OnboardingScreen({ onFinish }: OnboardingScreenProps) {
         {slide === 1 ? (
           <motion.div
             key="s1"
-            initial={{ opacity: 0, scale: 0.94, x: 20 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            exit={{ opacity: 0, scale: 0.96, x: -20 }}
-            className="mx-auto flex max-w-[430px] flex-1 flex-col"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            className="flex flex-1 flex-col items-center"
           >
-            <h2 className="text-center font-title text-xl text-[var(--gold-primary)]">{t('onboarding.slide2.title')}</h2>
-            <MiniWheelIllustration />
-            <p className="mt-4 text-center font-body text-sm text-[var(--text-secondary)]">{t('onboarding.slide2.text')}</p>
-            <div className="diablo-card mt-4 border border-[var(--border-subtle)] p-3 font-body text-xs text-[var(--text-secondary)]">
-              <p className="font-cinzel font-semibold text-[var(--text-primary)]">{t('onboarding.slide2.rewards_title')}</p>
-              <ul className="mt-2 space-y-1">
-                <li>{t('rewards.letters3')}</li>
-                <li>{t('rewards.letters4')}</li>
-                <li>{t('rewards.letters5')}</li>
-              </ul>
+            <p className="text-center font-title text-lg text-[#c9a227]">Letter wheel</p>
+            <div className="mt-8 flex h-40 w-40 items-center justify-center rounded-full border-2 border-[#6b5510] bg-[#080608]">
+              <span className="font-cinzel text-4xl text-[#c9a227]">ABC</span>
             </div>
-            <div className="mt-auto flex gap-2">
-              <button type="button" onClick={finish} className="btn-secondary flex-1 py-3">
-                {t('onboarding.skip')}
-              </button>
-              <button type="button" onClick={() => setSlide(2)} className="fantasy-button min-w-0 flex-1 py-3">
-                {t('onboarding.slide2.got_it')}
-              </button>
-            </div>
+            <p className="mt-8 text-center font-body text-[#c4b5a0]">Swipe letters to form words</p>
+            <p className="mt-1 text-center text-sm text-[#6b6358]">Every word earns resources</p>
+            <button type="button" className="fantasy-button mt-auto w-full max-w-sm" onClick={() => setSlide(2)}>
+              Next
+            </button>
           </motion.div>
         ) : null}
 
         {slide === 2 ? (
           <motion.div
             key="s2"
-            initial={{ opacity: 0, scale: 0.94, x: 20 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            exit={{ opacity: 0, scale: 0.96, x: -20 }}
-            className="mx-auto flex max-w-[430px] flex-1 flex-col items-center text-center"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            className="flex flex-1 flex-col items-center text-center"
           >
-            <h2 className="font-title text-xl text-[var(--gold-primary)]">{t('onboarding.slide3.title')}</h2>
-            <p className="mt-6 text-5xl" aria-hidden>
-              🏠 🪚 ⛏️
-            </p>
-            <p className="mt-6 font-body text-[var(--text-secondary)]">{t('onboarding.slide3.text')}</p>
-            <div className="mt-auto flex w-full max-w-sm gap-2">
-              <button type="button" onClick={finish} className="btn-secondary flex-1 py-3">
-                {t('onboarding.skip')}
-              </button>
-              <button type="button" onClick={() => setSlide(3)} className="fantasy-button min-w-0 flex-1 py-3">
-                {t('onboarding.slide3.amazing')}
-              </button>
+            <p className="font-title text-lg text-[#c9a227]">Your realm</p>
+            <div className="mt-8 grid grid-cols-3 gap-2 opacity-90">
+              {['🏠', '🏪', '🗼', '🪣', '⛩️', '🏰'].map((e) => (
+                <span key={e} className="text-4xl">
+                  {e}
+                </span>
+              ))}
             </div>
+            <p className="mt-8 font-body text-[#c4b5a0]">Build your fantasy kingdom</p>
+            <p className="mt-1 text-sm text-[#6b6358]">Place buildings, grow your realm</p>
+            <button type="button" className="fantasy-button mt-auto w-full max-w-sm" onClick={() => setSlide(3)}>
+              Next
+            </button>
           </motion.div>
         ) : null}
 
         {slide === 3 ? (
           <motion.div
             key="s3"
-            initial={{ opacity: 0, scale: 0.94, x: 20 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            exit={{ opacity: 0, scale: 0.96, x: -20 }}
-            className="mx-auto flex w-full max-w-[430px] flex-1 flex-col"
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            className="flex flex-1 flex-col items-center text-center"
           >
-            <h2 className="text-center font-title text-xl text-[var(--gold-primary)]">{t('onboarding.slide4.title')}</h2>
-            <p className="mt-2 text-center text-sm text-[var(--text-secondary)]">{t('onboarding.slide4.text')}</p>
-            <div className="mt-4">
-              <LanguageGrid
-                selected={language}
-                onSelect={(c) => {
-                  setLanguageSetting(c);
-                }}
-              />
-            </div>
-            <button type="button" onClick={finish} className="fantasy-button mt-6 w-full min-h-[52px]">
-              {t('onboarding.slide4.start')}
+            <motion.div animate={{ scale: [1, 1.06, 1] }} transition={{ duration: 2, repeat: Infinity }}>
+              <span className="text-6xl text-[#cd7f32]">🛡️</span>
+            </motion.div>
+            <h2 className="mt-6 font-title text-xl text-[#c9a227]">Compete in weekly leagues</h2>
+            <p className="mt-2 font-body text-sm text-[#c4b5a0]">Climb from Bronze to Diamond</p>
+            <button type="button" className="fantasy-button mt-10 w-full max-w-sm text-lg" onClick={finish}>
+              START YOUR ADVENTURE
             </button>
           </motion.div>
         ) : null}
       </AnimatePresence>
     </div>
-  );
-}
-
-function MiniWheelIllustration() {
-  const r = 28;
-  const cx = 100;
-  const cy = 100;
-  const slots = [
-    { x: cx, y: cy },
-    { x: cx, y: cy - 58 },
-    { x: cx + 50, y: cy - 28 },
-    { x: cx + 50, y: cy + 28 },
-    { x: cx, y: cy + 58 },
-    { x: cx - 50, y: cy + 28 },
-    { x: cx - 50, y: cy - 28 },
-  ];
-  return (
-    <svg viewBox="0 0 200 200" className="mx-auto mt-6 h-48 w-48" aria-hidden>
-      <circle cx={cx} cy={cy} r={78} fill="var(--bg-stone)" stroke="var(--border-subtle)" strokeWidth={2} />
-      {slots.map((p, i) => (
-        <circle
-          key={i}
-          cx={p.x}
-          cy={p.y}
-          r={r}
-          fill="var(--bg-card)"
-          stroke="var(--border-gold)"
-          strokeOpacity={0.35}
-          strokeWidth={2}
-        />
-      ))}
-    </svg>
   );
 }

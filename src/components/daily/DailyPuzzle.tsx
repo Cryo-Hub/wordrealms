@@ -10,6 +10,7 @@ import { useGameUiStore } from '../../stores/gameUiStore';
 import { useResourceStore } from '../../stores/resourceStore';
 import { useDailyStore } from '../../stores/dailyStore';
 import { usePremiumStore } from '../../stores/premiumStore';
+import { showRewardedAd } from '../../services/adService';
 import {
   ensureDictionaryLoaded,
   getCurrentLanguage,
@@ -105,6 +106,11 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   const bumpWordsToday = useDailyStore((s) => s.bumpWordsToday);
   const completeToday = useDailyStore((s) => s.completeToday);
   const isPremium = usePremiumStore((s) => s.isPremium);
+  const addBattlePassXP = usePremiumStore((s) => s.addBattlePassXP);
+  const hintTokens = usePremiumStore((s) => s.hintTokens);
+  const useHintToken = usePremiumStore((s) => s.useHint);
+  const addHints = usePremiumStore((s) => s.addHints);
+  const refillPremiumHintsIfNeeded = usePremiumStore((s) => s.refillPremiumHintsIfNeeded);
 
   const activeDate = formatPuzzleDate();
   const todayStr = formatPuzzleDate();
@@ -118,6 +124,8 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   const [bonusWord, setBonusWord] = useState<string | null>(null);
   const [showLevelSolved, setShowLevelSolved] = useState(false);
   const levelCompleteAppliedRef = useRef(false);
+  const [xpFlash, setXpFlash] = useState<string | null>(null);
+  const wordDebounceRef = useRef<number | undefined>(undefined);
 
   const gridSourceWords = useMemo(() => (puzzle ? wordsForCrosswordGrid(puzzle) : []), [puzzle]);
 
@@ -154,6 +162,10 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
     recordWordsForArchiveDate(activeDate, foundWords);
   }, [foundWords, activeDate, puzzle]);
 
+  useEffect(() => {
+    refillPremiumHintsIfNeeded();
+  }, [refillPremiumHintsIfNeeded]);
+
   const hintValidWords = useMemo(() => {
     if (!puzzle) return [];
     return [...new Set(puzzle.validWords.map((w) => w.toUpperCase()))];
@@ -181,50 +193,60 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
     completeToday();
   }, [crossword, completeToday]);
 
+  const showXpFlash = useCallback((msg: string) => {
+    setXpFlash(msg);
+    window.setTimeout(() => setXpFlash(null), 800);
+  }, []);
+
   const handleWord = useCallback(
     (word: string) => {
-      initAudioOnGesture();
-      const v = validateWord(word, foundWords);
-      if (!v.valid) {
-        setShake((k) => k + 1);
-        soundService.wordInvalid();
-        showToast(invalidToastForReason(v.reason, t));
-        return;
-      }
-      const u = word.toUpperCase();
-      let reward: WordReward = calculateWordReward(word.length);
-      if (isPremium) {
-        reward = {
-          gold: reward.gold * 2,
-          wood: reward.wood * 2,
-          stone: reward.stone * 2,
-        };
-      }
-      soundService.wordValid();
-      if (word.length >= 6) {
-        soundService.wordExcellent();
-      }
-      addResources(reward.gold, reward.wood, reward.stone);
-      addWordsCount(1);
-      bumpWordsToday(1);
-      addFoundWord(word);
-      hapticService.medium();
-      showToast(`${u} +${reward.gold}🪙`, 1500);
-
-      const placedOnGrid = crossword?.placedWords.some((pw) => pw.word === u) ?? false;
-      if (placedOnGrid && crossword) {
-        setCrossword((prev) => {
-          if (!prev) return prev;
-          return {
-            ...prev,
-            placedWords: prev.placedWords.map((pw) =>
-              pw.word === u ? { ...pw, revealed: pw.word.split('').map(() => true) } : pw,
-            ),
+      window.clearTimeout(wordDebounceRef.current);
+      wordDebounceRef.current = window.setTimeout(() => {
+        initAudioOnGesture();
+        const v = validateWord(word, foundWords);
+        if (!v.valid) {
+          setShake((k) => k + 1);
+          soundService.wordInvalid();
+          showToast(invalidToastForReason(v.reason, t));
+          return;
+        }
+        const u = word.toUpperCase();
+        let reward: WordReward = calculateWordReward(word.length);
+        if (isPremium) {
+          reward = {
+            gold: reward.gold * 2,
+            wood: reward.wood * 2,
+            stone: reward.stone * 2,
           };
-        });
-      } else {
-        setBonusWord(u);
-      }
+        }
+        soundService.wordValid();
+        if (word.length >= 6) {
+          soundService.wordExcellent();
+        }
+        addResources(reward.gold, reward.wood, reward.stone);
+        addWordsCount(1);
+        bumpWordsToday(1);
+        addFoundWord(word);
+        hapticService.medium();
+        addBattlePassXP(5);
+        showXpFlash('+5 XP ⚡');
+        showToast(`${u} +${reward.gold}🪙`, 1500);
+
+        const placedOnGrid = crossword?.placedWords.some((pw) => pw.word === u) ?? false;
+        if (placedOnGrid && crossword) {
+          setCrossword((prev) => {
+            if (!prev) return prev;
+            return {
+              ...prev,
+              placedWords: prev.placedWords.map((pw) =>
+                pw.word === u ? { ...pw, revealed: pw.word.split('').map(() => true) } : pw,
+              ),
+            };
+          });
+        } else {
+          setBonusWord(u);
+        }
+      }, 50);
     },
     [
       addFoundWord,
@@ -236,18 +258,33 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
       isPremium,
       showToast,
       t,
+      addBattlePassXP,
+      showXpFlash,
     ],
   );
 
   const showHint = () => {
     if (!puzzle) return;
     initAudioOnGesture();
-    const hint = getNextTraceableHint(puzzle.letters, hintValidWords, foundWords);
-    if (hint) {
-      showToast(t('game.hint', { word: hint }), 3000);
-    } else {
-      showToast(t('game.no_hints'), 3000);
+    if (hintTokens > 0) {
+      if (!useHintToken()) {
+        showToast('No hints left', 2000);
+        return;
+      }
+      const hint = getNextTraceableHint(puzzle.letters, hintValidWords, foundWords);
+      if (hint) {
+        showToast(t('game.hint', { word: hint }), 3000);
+      } else {
+        showToast(t('game.no_hints'), 3000);
+      }
+      return;
     }
+    void showRewardedAd({ kind: 'hints', amount: 2 }).then((ok) => {
+      if (ok) {
+        addHints(2);
+        showToast('+2 hints 📺', 2000);
+      }
+    });
   };
 
   const puzzleNum = getPuzzleNumber(new Date(`${activeDate}T12:00:00`));
@@ -267,10 +304,11 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
           <button
             type="button"
             onClick={showHint}
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#6b5510] bg-[rgba(10,8,6,0.85)] shadow-md transition active:scale-95"
+            className="flex h-11 min-w-[44px] shrink-0 items-center justify-center gap-1 rounded-full border border-[#6b5510] bg-[rgba(10,8,6,0.85)] px-2 shadow-md transition active:scale-95"
             aria-label={t('game.hint_button_aria')}
           >
-            <img src="/assets/hint.jpg" width={26} height={26} alt="" className="pointer-events-none rounded-sm" />
+            <span className="font-num text-xs text-[#c9a227]">💡{hintTokens}</span>
+            <img src="/assets/hint.jpg" width={22} height={22} alt="" className="pointer-events-none rounded-sm" />
           </button>
         </div>
       </div>
@@ -289,6 +327,12 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
           </motion.div>
         ) : null}
       </AnimatePresence>
+
+      {xpFlash ? (
+        <div className="pointer-events-none fixed right-4 top-24 z-[55] rounded-[6px] border border-[#c9a227]/40 bg-black/70 px-2 py-1 font-num text-xs text-[#c9a227]">
+          {xpFlash}
+        </div>
+      ) : null}
 
       <AnimatePresence>
         {showLevelSolved ? (

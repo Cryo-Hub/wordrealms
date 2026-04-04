@@ -7,6 +7,8 @@ export type RootScreen =
   | 'world'
   | 'league'
   | 'settings'
-  | 'shop';
+  | 'shop'
+  | 'battlepass'
+  | 'profile';
 
 export type TabId = 'home' | 'game' | 'world' | 'league';

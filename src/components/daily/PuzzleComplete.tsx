@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDailyStore } from '../../stores/dailyStore';
 import { useLeagueStore } from '../../stores/leagueStore';
 import { getEloChange } from '../../core/game/leagueSystem';
@@ -8,9 +8,13 @@ import {
   isTopHalfOfLeaderboard,
   submitScore,
 } from '../../services/supabase/leagueService';
+import { submitDailyScore } from '../../services/supabase/database';
 import { getCurrentUser } from '../../services/supabase/auth';
 import { isSupabaseConfigured } from '../../services/supabase/client';
 import { formatPuzzleDate } from '../../core/game/puzzleGenerator';
+import { usePremiumStore } from '../../stores/premiumStore';
+import { showRewardedAd } from '../../services/adService';
+import { useResourceStore } from '../../stores/resourceStore';
 import { ShareCard } from '../game/ShareCard';
 import { useTranslation } from '../../i18n';
 import { OrnamentDivider } from '../ui/OrnamentDivider';
@@ -50,6 +54,11 @@ export function PuzzleComplete({
   const { t } = useTranslation();
   const streak = useDailyStore((s) => s.currentStreak);
   const addEloForDailyPuzzle = useLeagueStore((s) => s.addEloForDailyPuzzle);
+  const addElo = useLeagueStore((s) => s.addElo);
+  const addBattlePassXP = usePremiumStore((s) => s.addBattlePassXP);
+  const addResources = useResourceStore((s) => s.addResources);
+  const [adBusy, setAdBusy] = useState(false);
+
   useEffect(() => {
     if (!isDailyToday) return;
     const puzzleDate = formatPuzzleDate();
@@ -57,8 +66,25 @@ export function PuzzleComplete({
     const upper = foundWords.map((w) => w.toUpperCase());
     const totalPoints = sessionGold + sessionWood + sessionStone;
 
+    try {
+      const bpKey = `wordrealms-bp50-${puzzleDate}`;
+      if (!sessionStorage.getItem(bpKey)) {
+        sessionStorage.setItem(bpKey, '1');
+        addBattlePassXP(50);
+      }
+    } catch {
+      addBattlePassXP(50);
+    }
+
     void (async () => {
       try {
+        await submitDailyScore({
+          words: wordsFound,
+          wordsList: upper,
+          gold: sessionGold,
+          wood: sessionWood,
+          stone: sessionStone,
+        });
         const user = await getCurrentUser();
         if (user && isSupabaseConfigured) {
           try {
@@ -78,14 +104,14 @@ export function PuzzleComplete({
         const delta = getEloChange(top);
         addEloForDailyPuzzle(puzzleDate, delta);
         if (delta > 0) {
-          onToast?.(`+${delta} ELO ⚔️`, 2200);
+          onToast?.(`⚔️ +${delta} ELO`, 2200);
         } else {
           onToast?.(`${delta} ELO`, 2200);
         }
       } catch (e) {
         console.error('league completion', e);
         addEloForDailyPuzzle(puzzleDate, getEloChange(true));
-        onToast?.('+25 ELO ⚔️', 2200);
+        onToast?.('⚔️ +25 ELO', 2200);
       }
     })();
 
@@ -98,6 +124,7 @@ export function PuzzleComplete({
     sessionWood,
     sessionStone,
     addEloForDailyPuzzle,
+    addBattlePassXP,
     onToast,
   ]);
 
@@ -105,17 +132,33 @@ export function PuzzleComplete({
     if (!isDailyToday) return;
     if (![3, 7, 30].includes(streak)) return;
     const puzzleDate = formatPuzzleDate();
-    const mKey = `wordrealms-milestone-${puzzleDate}-${streak}`;
+    const mKey = `wordrealms-streak-elo-${puzzleDate}-${streak}`;
     try {
       if (sessionStorage.getItem(mKey)) return;
       sessionStorage.setItem(mKey, '1');
     } catch {
       return;
     }
-    if (streak === 3) onToast?.('🔥 3 day streak!', 2500);
-    else if (streak === 7) onToast?.('⚡ One week warrior!', 2500);
-    else onToast?.('👑 Legendary streak!', 3000);
-  }, [isDailyToday, streak, onToast]);
+    if (streak === 3) {
+      addElo(10);
+      onToast?.('🔥 Hot streak! +10 ELO', 2500);
+    } else if (streak === 7) {
+      addElo(25);
+      try {
+        const k = `wordrealms-bp-streak7-${puzzleDate}`;
+        if (!sessionStorage.getItem(k)) {
+          sessionStorage.setItem(k, '1');
+          addBattlePassXP(100);
+        }
+      } catch {
+        addBattlePassXP(100);
+      }
+      onToast?.('⚡ Week warrior! +25 ELO', 2500);
+    } else {
+      addElo(100);
+      onToast?.('👑 Legendary! +100 ELO', 3000);
+    }
+  }, [isDailyToday, streak, onToast, addElo, addBattlePassXP]);
 
   return (
     <motion.div
@@ -178,6 +221,39 @@ export function PuzzleComplete({
           streakDays={streak}
           onToast={onToast}
         />
+
+        {isDailyToday ? (
+          <button
+            type="button"
+            disabled={adBusy}
+            className="btn-secondary mt-3 w-full py-2 text-sm"
+            onClick={() => {
+              const d = formatPuzzleDate();
+              try {
+                if (localStorage.getItem(`wordrealms-dbl-gold-${d}`)) {
+                  onToast?.('Already claimed today', 1500);
+                  return;
+                }
+              } catch {
+                /* ignore */
+              }
+              setAdBusy(true);
+              void showRewardedAd({ kind: 'double_gold_session' }).then((ok) => {
+                setAdBusy(false);
+                if (!ok) return;
+                addResources(sessionGold, 0, 0);
+                try {
+                  localStorage.setItem(`wordrealms-dbl-gold-${d}`, '1');
+                } catch {
+                  /* ignore */
+                }
+                onToast?.('Gold doubled! 📺', 2000);
+              });
+            }}
+          >
+            📺 Double your Gold bonus
+          </button>
+        ) : null}
 
         <div className="mt-6 flex flex-col gap-2">
           <button type="button" onClick={() => onBuildWorld()} className="fantasy-button w-full">

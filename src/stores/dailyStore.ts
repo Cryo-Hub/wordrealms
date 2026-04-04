@@ -22,6 +22,8 @@ function daysBetween(a: Date, b: Date): number {
 
 export type DailyState = {
   currentStreak: number;
+  bestStreakEver: number;
+  puzzlesCompleted: number;
   lastPlayedDate: string;
   todayCompleted: boolean;
   totalWordsAllTime: number;
@@ -39,6 +41,8 @@ export const useDailyStore = create<DailyState>()(
   persist(
     (set, get) => ({
       currentStreak: 0,
+      bestStreakEver: 0,
+      puzzlesCompleted: 0,
       lastPlayedDate: '',
       todayCompleted: false,
       totalWordsAllTime: 0,
@@ -80,11 +84,13 @@ export const useDailyStore = create<DailyState>()(
           if (diff === 1) nextStreak = currentStreak + 1;
           else nextStreak = 1;
         }
-        set({
+        set((s) => ({
           lastPlayedDate: today,
           todayCompleted: true,
           currentStreak: nextStreak,
-        });
+          bestStreakEver: Math.max(s.bestStreakEver, nextStreak),
+          puzzlesCompleted: s.puzzlesCompleted + 1,
+        }));
       },
       incrementStreak: () => {
         set((s) => ({ currentStreak: s.currentStreak + 1 }));
@@ -103,6 +109,18 @@ export const useDailyStore = create<DailyState>()(
         });
       },
     }),
-    { name: 'wordrealms-daily' },
+    {
+      name: 'wordrealms-daily',
+      partialize: (s) => ({
+        currentStreak: s.currentStreak,
+        bestStreakEver: s.bestStreakEver,
+        puzzlesCompleted: s.puzzlesCompleted,
+        lastPlayedDate: s.lastPlayedDate,
+        todayCompleted: s.todayCompleted,
+        totalWordsAllTime: s.totalWordsAllTime,
+        wordsFoundToday: s.wordsFoundToday,
+        wordsTodayDate: s.wordsTodayDate,
+      }),
+    },
   ),
 );

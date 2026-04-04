@@ -1,12 +1,16 @@
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { ResourceBar } from '../components/game/ResourceBar/ResourceBar';
 import { NavigationBar } from '../components/ui/NavigationBar';
 import { OrnamentDivider } from '../components/ui/OrnamentDivider';
+import { PaywallModal, shouldShowPaywallAuto, markPaywallShownToday } from '../components/game/PaywallModal';
 import { useWorldStore } from '../stores/worldStore';
 import { useDailyStore } from '../stores/dailyStore';
 import { useLeagueStore } from '../stores/leagueStore';
+import { usePremiumStore } from '../stores/premiumStore';
 import { LeagueBadge } from '../components/ui/LeagueBadge';
-import { BUILDINGS, type BuildingType } from '../core/world/buildingConfig';
+import type { BuildingType } from '../core/world/buildingConfig';
+import { getBuildingDisplayEmoji } from '../core/game/buildingDisplay';
 import type { RootScreen } from '../types/navigation';
 import { useTranslation } from '../i18n';
 
@@ -19,13 +23,25 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
   const slots = useWorldStore((s) => s.slots);
   const builtList = Object.values(slots).filter(Boolean) as BuildingType[];
   const built = builtList.length;
-  const empty = 10 - built;
+  const maxSlots = 15;
+  const empty = maxSlots - built;
+  const claimedRewards = usePremiumStore((s) => s.claimedRewards);
+  const puzzlesCompleted = useDailyStore((s) => s.puzzlesCompleted);
+  const bpLevel = usePremiumStore((s) => s.battlePassLevel);
+  const [paywallOpen, setPaywallOpen] = useState(false);
+
+  useEffect(() => {
+    if (shouldShowPaywallAuto(puzzlesCompleted, bpLevel)) {
+      markPaywallShownToday();
+      setPaywallOpen(true);
+    }
+  }, [puzzlesCompleted, bpLevel]);
   const wordsToday = useDailyStore((s) => s.wordsFoundToday);
   const streak = useDailyStore((s) => s.currentStreak);
   const elo = useLeagueStore((s) => s.elo);
   const progress = Math.min(1, wordsToday / 5);
 
-  const emojis = builtList.map((bt) => BUILDINGS[bt].emoji).join(' ');
+  const emojis = builtList.map((bt) => getBuildingDisplayEmoji(bt, claimedRewards)).join(' ');
 
   return (
     <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col overflow-hidden pb-24 pt-[72px]">
@@ -37,7 +53,7 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
           <div className="flex min-w-0 flex-1 justify-center" />
           <div className="flex shrink-0 items-start gap-2">
             <div className="flex flex-col items-center gap-0.5">
-              <LeagueBadge elo={elo} size="sm" className="scale-90" />
+              <LeagueBadge elo={elo} size="sm" />
               <span className="font-num text-xs text-[var(--gold-primary)]" title={t('settings.current_streak', { n: streak })}>
                 🔥 {streak}
               </span>
@@ -52,9 +68,9 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
             </button>
             <button
               type="button"
-              aria-label="Settings"
+              aria-label="Profile"
               className="btn-icon text-lg"
-              onClick={() => navigate('settings')}
+              onClick={() => navigate('profile')}
             >
               ⚙️
             </button>
@@ -81,6 +97,14 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
 
         <button
           type="button"
+          onClick={() => navigate('battlepass')}
+          className="fantasy-card w-full border border-[#3d3510] py-3 text-center font-cinzel text-sm font-semibold text-[#c9a227] transition active:scale-[0.99]"
+        >
+          📜 Battle Pass
+        </button>
+
+        <button
+          type="button"
           onClick={() => navigate('world')}
           className="fantasy-card flex w-full flex-col gap-2 text-left transition active:scale-[0.99]"
         >
@@ -91,6 +115,7 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
         </button>
       </div>
 
+      <PaywallModal open={paywallOpen} onClose={() => setPaywallOpen(false)} />
       <NavigationBar active="home" onNavigate={navigate} />
     </div>
   );

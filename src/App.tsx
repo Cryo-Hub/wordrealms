@@ -1,6 +1,8 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { Suspense, lazy, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from './components/ui/ErrorBoundary';
+import { ScreenErrorBoundary } from './components/ui/ScreenErrorBoundary';
 import { OfflineBanner } from './components/ui/OfflineBanner';
 import { LoadingScreen } from './screens/LoadingScreen';
 import { AuthScreen } from './screens/AuthScreen';
@@ -11,6 +13,15 @@ import { WorldScreen } from './screens/WorldScreen';
 import { LeagueScreen } from './screens/LeagueScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { ShopScreen } from './screens/ShopScreen';
+
+const BattlePassScreen = lazy(async () => {
+  const m = await import('./screens/BattlePassScreen');
+  return { default: m.BattlePassScreen };
+});
+const ProfileScreen = lazy(async () => {
+  const m = await import('./screens/ProfileScreen');
+  return { default: m.ProfileScreen };
+});
 import { useDailyStore } from './stores/dailyStore';
 import { useLeagueStore } from './stores/leagueStore';
 import { useSettingsStore } from './stores/settingsStore';
@@ -19,6 +30,7 @@ import { setLanguage, ensureDictionaryLoaded } from './core/game/dictionaryManag
 import { ensureAuth, GUEST_USER_ID_KEY, getCurrentUser } from './services/supabase/auth';
 import { isSupabaseConfigured, supabase } from './services/supabase/client';
 import { ensureProfileForUser } from './services/supabase/userProfileService';
+import { loadUserProfile } from './services/supabase/database';
 import {
   scheduleDailyReminder,
   showLeagueReset,
@@ -99,6 +111,22 @@ function AppRoutes() {
     if (typeof Notification !== 'undefined' && Notification.permission === 'granted') {
       scheduleDailyReminder();
     }
+  }, []);
+
+  useEffect(() => {
+    const onVis = () => {
+      if (document.visibilityState !== 'visible') return;
+      void (async () => {
+        try {
+          const p = await loadUserProfile();
+          if (p?.elo != null) useLeagueStore.setState({ elo: p.elo });
+        } catch {
+          /* ignore */
+        }
+      })();
+    };
+    document.addEventListener('visibilitychange', onVis);
+    return () => document.removeEventListener('visibilitychange', onVis);
   }, []);
 
   useEffect(() => {
@@ -191,21 +219,39 @@ function AppRoutes() {
       {screen !== 'game' ? <OfflineBanner /> : null}
       <InstallPromptBanner />
       <div className="min-h-screen text-[var(--text-primary)] antialiased">
-        {screen === 'home' ? (
-          <HomeScreen navigate={navigate} />
-        ) : screen === 'game' ? (
-          <GameScreen navigate={navigate} />
-        ) : screen === 'world' ? (
-          <WorldScreen navigate={navigate} />
-        ) : screen === 'league' ? (
-          <LeagueScreen navigate={navigate} />
-        ) : screen === 'settings' ? (
-          <SettingsScreen navigate={navigate} />
-        ) : screen === 'shop' ? (
-          <ShopScreen navigate={navigate} />
-        ) : (
-          <HomeScreen navigate={navigate} />
-        )}
+        <Suspense fallback={<LoadingScreen />}>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={screen}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              <ScreenErrorBoundary>
+                {screen === 'home' ? (
+                  <HomeScreen navigate={navigate} />
+                ) : screen === 'game' ? (
+                  <GameScreen navigate={navigate} />
+                ) : screen === 'world' ? (
+                  <WorldScreen navigate={navigate} />
+                ) : screen === 'league' ? (
+                  <LeagueScreen navigate={navigate} />
+                ) : screen === 'settings' ? (
+                  <SettingsScreen navigate={navigate} />
+                ) : screen === 'shop' ? (
+                  <ShopScreen navigate={navigate} />
+                ) : screen === 'battlepass' ? (
+                  <BattlePassScreen navigate={navigate} />
+                ) : screen === 'profile' ? (
+                  <ProfileScreen navigate={navigate} />
+                ) : (
+                  <HomeScreen navigate={navigate} />
+                )}
+              </ScreenErrorBoundary>
+            </motion.div>
+          </AnimatePresence>
+        </Suspense>
       </div>
     </FantasyShell>
   );
