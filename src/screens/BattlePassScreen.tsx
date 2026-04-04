@@ -7,6 +7,7 @@ import { usePremiumStore } from '../stores/premiumStore';
 import { useResourceStore } from '../stores/resourceStore';
 import type { RootScreen } from '../types/navigation';
 import { PaywallModal } from '../components/game/PaywallModal';
+import { purchaseBattlePass, restorePurchases } from '../services/revenuecat';
 
 const XP_MAX = 100;
 
@@ -30,6 +31,8 @@ export function BattlePassScreen({ navigate }: BattlePassScreenProps) {
   const addResources = useResourceStore((s) => s.addResources);
   const [toast, setToast] = useState<string | null>(null);
   const [paywall, setPaywall] = useState(false);
+  const [purchaseBusy, setPurchaseBusy] = useState(false);
+  const checkPremium = usePremiumStore((s) => s.checkPremium);
 
   const showToast = useCallback((msg: string) => {
     setToast(msg);
@@ -108,13 +111,54 @@ export function BattlePassScreen({ navigate }: BattlePassScreenProps) {
           </div>
         </div>
         {!isPremium ? (
-          <button
-            type="button"
-            className="rounded-[10px] border border-[#c9a227] bg-gradient-to-r from-[#3d3510] to-[#2a2018] px-4 py-3 text-center font-cinzel font-bold text-[#f0e6cc] shadow-[0_0_24px_rgba(201,162,39,0.45)]"
-            onClick={() => setPaywall(true)}
-          >
-            UNLOCK — 9,99€/month
-          </button>
+          <div className="flex flex-col gap-2">
+            <button
+              type="button"
+              disabled={purchaseBusy}
+              className="relative rounded-[10px] border border-[#c9a227] bg-gradient-to-r from-[#3d3510] to-[#2a2018] px-4 py-3 text-center font-cinzel font-bold text-[#f0e6cc] shadow-[0_0_24px_rgba(201,162,39,0.45)] disabled:opacity-60"
+              onClick={() => void (async () => {
+                setPurchaseBusy(true);
+                try {
+                  const r = await purchaseBattlePass();
+                  if (!r.ok) {
+                    if (r.cancelled) showToast('Purchase cancelled');
+                    else setPaywall(true);
+                  } else {
+                    showToast('Premium unlocked');
+                    await checkPremium();
+                  }
+                } finally {
+                  setPurchaseBusy(false);
+                }
+              })()}
+            >
+              {purchaseBusy ? (
+                <span className="inline-flex items-center justify-center gap-2">
+                  <span className="h-4 w-4 animate-spin rounded-full border-2 border-[#c9a227] border-t-transparent" aria-hidden />
+                  Processing…
+                </span>
+              ) : (
+                'UNLOCK — 9,99€/month'
+              )}
+            </button>
+            <button
+              type="button"
+              disabled={purchaseBusy}
+              className="text-center font-cinzel text-xs text-[#8a7060] underline underline-offset-2"
+              onClick={() => void (async () => {
+                setPurchaseBusy(true);
+                try {
+                  const ok = await restorePurchases();
+                  await checkPremium();
+                  if (ok) showToast('Purchases restored');
+                } finally {
+                  setPurchaseBusy(false);
+                }
+              })()}
+            >
+              Restore Purchases
+            </button>
+          </div>
         ) : (
           <p className="text-center text-sm text-[#6b8f6b]">✅ Premium Active</p>
         )}

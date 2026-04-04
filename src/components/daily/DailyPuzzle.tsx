@@ -308,7 +308,14 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
             aria-label={t('game.hint_button_aria')}
           >
             <span className="font-num text-xs text-[#c9a227]">💡{hintTokens}</span>
-            <img src="/assets/hint.jpg" width={22} height={22} alt="" className="pointer-events-none rounded-sm" />
+            <img
+              src="/assets/hint.jpg"
+              width={22}
+              height={22}
+              alt=""
+              loading="lazy"
+              className="pointer-events-none rounded-sm"
+            />
           </button>
         </div>
       </div>

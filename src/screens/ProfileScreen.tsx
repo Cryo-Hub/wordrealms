@@ -10,6 +10,7 @@ import { useLeagueStore } from '../stores/leagueStore';
 import { useResourceStore } from '../stores/resourceStore';
 import { useWorldStore } from '../stores/worldStore';
 import { usePremiumStore } from '../stores/premiumStore';
+import { purchaseBattlePass, restorePurchases } from '../services/revenuecat';
 import { useSettingsStore } from '../stores/settingsStore';
 import { loadUserProfile, saveUserProfile } from '../services/supabase/database';
 import { getCurrentUser } from '../services/supabase/auth';
@@ -66,7 +67,7 @@ export function ProfileScreen({ navigate }: ProfileScreenProps) {
   const bpLevel = usePremiumStore((s) => s.battlePassLevel);
   const bpXp = usePremiumStore((s) => s.battlePassXP);
   const isPremium = usePremiumStore((s) => s.isPremium);
-  const purchasePremium = usePremiumStore((s) => s.purchasePremium);
+  const checkPremium = usePremiumStore((s) => s.checkPremium);
 
   const [username, setUsername] = useState(() => {
     try {
@@ -90,6 +91,8 @@ export function ProfileScreen({ navigate }: ProfileScreenProps) {
     }
   });
   const [resetOpen, setResetOpen] = useState(false);
+  const [purchaseBusy, setPurchaseBusy] = useState(false);
+  const [miniToast, setMiniToast] = useState<string | null>(null);
 
   const seasonEnd = useMemo(() => {
     const d = new Date(firstLaunchMs());
@@ -259,12 +262,68 @@ export function ProfileScreen({ navigate }: ProfileScreenProps) {
         <section className="fantasy-card space-y-2">
           <h2 className="font-cinzel text-sm font-bold text-[#c9a227]">PREMIUM</h2>
           {!isPremium ? (
-            <button type="button" className="fantasy-button w-full" onClick={() => purchasePremium()}>
-              Unlock Battle Pass 9,99€/month
+            <button
+              type="button"
+              disabled={purchaseBusy}
+              className="fantasy-button relative w-full disabled:opacity-60"
+              onClick={() => void (async () => {
+                setPurchaseBusy(true);
+                try {
+                  const r = await purchaseBattlePass();
+                  if (!r.ok) {
+                    if (r.cancelled) {
+                      setMiniToast('Purchase cancelled');
+                      window.setTimeout(() => setMiniToast(null), 2200);
+                    }
+                  } else {
+                    await checkPremium();
+                  }
+                } finally {
+                  setPurchaseBusy(false);
+                }
+              })()}
+            >
+              {purchaseBusy ? 'Processing…' : 'Unlock Battle Pass'}
             </button>
           ) : (
-            <p className="text-sm text-[#6b8f6b]">✅ Premium Active</p>
+            <div className="space-y-2">
+              <p className="text-sm text-[#6b8f6b]">✅ Premium Active · Restore Purchases</p>
+              <button
+                type="button"
+                disabled={purchaseBusy}
+                className="btn-secondary w-full py-2 text-sm"
+                onClick={() => void (async () => {
+                  setPurchaseBusy(true);
+                  try {
+                    await restorePurchases();
+                    await checkPremium();
+                  } finally {
+                    setPurchaseBusy(false);
+                  }
+                })()}
+              >
+                Restore Purchases
+              </button>
+            </div>
           )}
+        </section>
+
+        <section className="fantasy-card space-y-2">
+          <h2 className="font-cinzel text-sm font-bold text-[#c9a227]">LEGAL</h2>
+          <button
+            type="button"
+            className="w-full text-left font-body text-sm text-[#a89880] underline underline-offset-2"
+            onClick={() => window.open('/privacy.html', '_blank', 'noopener,noreferrer')}
+          >
+            Privacy Policy
+          </button>
+          <button
+            type="button"
+            className="w-full text-left font-body text-sm text-[#a89880] underline underline-offset-2"
+            onClick={() => window.open('/terms.html', '_blank', 'noopener,noreferrer')}
+          >
+            Terms of Service
+          </button>
         </section>
 
         <section className="fantasy-card border border-[#4a2020]">
@@ -296,6 +355,12 @@ export function ProfileScreen({ navigate }: ProfileScreenProps) {
       ) : null}
 
       <NavigationBar active="home" onNavigate={tabNav} />
+
+      {miniToast ? (
+        <div className="fixed bottom-28 left-1/2 z-[100] max-w-[min(100vw-2rem,20rem)] -translate-x-1/2 rounded-[8px] border border-[#2a2018] bg-[#1a1208] px-4 py-2 text-center text-sm text-[#f0e6cc]">
+          {miniToast}
+        </div>
+      ) : null}
     </div>
   );
 }

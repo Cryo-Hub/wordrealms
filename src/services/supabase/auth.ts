@@ -116,21 +116,32 @@ export async function signOut(): Promise<void> {
   window.dispatchEvent(new CustomEvent(AUTH_EVT));
 }
 
+/**
+ * Liefert den aktuellen Nutzer ohne `getUser()` (Server-Roundtrip).
+ * `getSession()` nutzt nur den lokalen JWT-Cache und vermeidet 401 bei fehlendem/abgelaufenem Token.
+ * Ohne Session: anonym anmelden (persistiert über Supabase-Client in localStorage).
+ */
 export async function getCurrentUser(): Promise<SimpleUser | null> {
   if (!isSupabaseConfigured) {
     return getLocalGuestUser();
   }
 
   try {
-    const { data, error } = await supabase.auth.getUser();
-    if (!error && data.user) {
-      return { id: data.user.id };
+    const {
+      data: { session },
+    } = await supabase.auth.getSession();
+    if (session?.user?.id) {
+      return { id: session.user.id };
     }
   } catch {
-    /* Supabase nicht erreichbar → lokaler Gast */
+    /* Session lesen fehlgeschlagen */
   }
 
-  return getLocalGuestUser();
+  try {
+    return await signInAnonymously();
+  } catch {
+    return getLocalGuestUser();
+  }
 }
 
 export function onAuthStateChange(cb: (user: SimpleUser | null) => void): () => void {

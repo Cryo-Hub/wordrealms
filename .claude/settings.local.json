@@ -12,7 +12,11 @@
       "Bash(git config:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(gh repo:*)"
+      "Bash(gh repo:*)",
+      "Bash(node scripts/fix-puzzles.js)",
+      "Bash(mv C:/Users/Marku/Desktop/wordrealms/scripts/fix-puzzles.js C:/Users/Marku/Desktop/wordrealms/scripts/fix-puzzles.cjs)",
+      "Bash(node scripts/fix-puzzles.cjs)",
+      "Bash(npm run:*)"
     ]
   }
 }

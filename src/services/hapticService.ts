@@ -1,6 +1,7 @@
+import { Capacitor } from '@capacitor/core';
 import { useSettingsStore } from '../stores/settingsStore';
 
-function enabled(): boolean {
+function webEnabled(): boolean {
   try {
     return useSettingsStore.getState().hapticEnabled && 'vibrate' in navigator;
   } catch {
@@ -8,17 +9,44 @@ function enabled(): boolean {
   }
 }
 
+async function nativeImpact(style: 'Light' | 'Medium' | 'Heavy'): Promise<boolean> {
+  if (!Capacitor.isNativePlatform()) return false;
+  try {
+    const { Haptics, ImpactStyle } = await import('@capacitor/haptics');
+    const map = {
+      Light: ImpactStyle.Light,
+      Medium: ImpactStyle.Medium,
+      Heavy: ImpactStyle.Heavy,
+    } as const;
+    await Haptics.impact({ style: map[style] });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function webVibrate(pattern: number | number[]) {
+  if (!webEnabled()) return;
+  navigator.vibrate(pattern);
+}
+
 export const hapticService = {
   light() {
-    if (!enabled()) return;
-    navigator.vibrate(10);
+    void (async () => {
+      if (await nativeImpact('Light')) return;
+      webVibrate(10);
+    })();
   },
   medium() {
-    if (!enabled()) return;
-    navigator.vibrate(25);
+    void (async () => {
+      if (await nativeImpact('Medium')) return;
+      webVibrate(25);
+    })();
   },
   heavy() {
-    if (!enabled()) return;
-    navigator.vibrate([40, 30, 40]);
+    void (async () => {
+      if (await nativeImpact('Heavy')) return;
+      webVibrate([40, 30, 40]);
+    })();
   },
 };

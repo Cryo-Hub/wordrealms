@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from './components/ui/ErrorBoundary';
 import { ScreenErrorBoundary } from './components/ui/ScreenErrorBoundary';
-import { OfflineBanner } from './components/ui/OfflineBanner';
+import { OfflineIndicator } from './components/ui/OfflineIndicator';
 import { LoadingScreen } from './screens/LoadingScreen';
 import { AuthScreen } from './screens/AuthScreen';
 import { OnboardingScreen, isOnboardingComplete } from './screens/OnboardingScreen';
@@ -37,6 +37,7 @@ import {
   syncPermissionFromBrowser,
 } from './services/notificationService';
 import { InstallPromptBanner } from './components/ui/InstallPromptBanner';
+import { initRevenueCat } from './services/revenuecat';
 import type { RootScreen } from './types/navigation';
 
 const queryClient = new QueryClient();
@@ -134,6 +135,14 @@ function AppRoutes() {
   }, [checkPremium]);
 
   useEffect(() => {
+    if (gate !== 'main') return;
+    void (async () => {
+      const u = await getCurrentUser();
+      if (u?.id) initRevenueCat(u.id);
+    })();
+  }, [gate]);
+
+  useEffect(() => {
     let alive = true;
     (async () => {
       const t0 = Date.now();
@@ -216,7 +225,7 @@ function AppRoutes() {
 
   return (
     <FantasyShell>
-      {screen !== 'game' ? <OfflineBanner /> : null}
+      {screen !== 'game' ? <OfflineIndicator /> : null}
       <InstallPromptBanner />
       <div className="min-h-screen text-[var(--text-primary)] antialiased">
         <Suspense fallback={<LoadingScreen />}>
