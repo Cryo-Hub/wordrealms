@@ -1,6 +1,10 @@
 import type { SupportedLanguage } from './dictionaryManager';
 import { type PuzzleConfig, formatPuzzleDate, pickGridWords } from './puzzleGenerator';
 import rawLevels from '../../data/levels_1_100_corrected_full.json';
+import rawLevels101 from '../../data/puzzles-en-101-200.json';
+import rawLevels201 from '../../data/puzzles-en-201-300.json';
+import rawLevels301 from '../../data/puzzles-en-301-400.json';
+import rawLevels401 from '../../data/puzzles-en-401-500.json';
 
 const ANCHOR_DATE = '2025-01-01';
 
@@ -17,7 +21,14 @@ type LevelEntry = {
   theme: string;
 };
 
-const LEVELS = rawLevels as LevelEntry[];
+const LEVELS_1_100 = rawLevels as LevelEntry[];
+const LEVELS_101_500 = [
+  ...(rawLevels101 as LevelEntry[]),
+  ...(rawLevels201 as LevelEntry[]),
+  ...(rawLevels301 as LevelEntry[]),
+  ...(rawLevels401 as LevelEntry[]),
+];
+const ALL_500_LEVELS = [...LEVELS_1_100, ...LEVELS_101_500];
 
 /** Tage zwischen zwei YYYY-MM-DD (lokale Mittagszeit). */
 function daysBetween(anchorYmd: string, dateYmd: string): number {
@@ -28,6 +39,10 @@ function daysBetween(anchorYmd: string, dateYmd: string): number {
 
 function levelIndexForDate(dateStr: string): number {
   const d = daysBetween(ANCHOR_DATE, dateStr);
+  if (d >= 100) {
+    // Use all 500 levels cyclically
+    return ((d % 500) + 500) % 500;
+  }
   return ((d % 100) + 100) % 100;
 }
 
@@ -93,16 +108,17 @@ function writeProgress(p: ArchiveProgress): void {
 }
 
 /**
- * Tagesrätsel aus `levels_1_100_corrected_full.json` (100 Level, zyklisch).
- * Index = Tage seit 2025-01-01 mod 100.
+ * Daily puzzle from all 500 EN levels (cyclic).
+ * days < 100  → index = days % 100 from the first 100 levels.
+ * days >= 100 → index = days % 500 across all 500 levels.
  */
 export async function getPuzzleForDate(date: string, _language: SupportedLanguage): Promise<PuzzleConfig> {
   void _language;
-  if (LEVELS.length === 0) {
+  if (ALL_500_LEVELS.length === 0) {
     throw new Error('No puzzle levels loaded');
   }
   const idx = levelIndexForDate(date);
-  const level = LEVELS[idx]!;
+  const level = ALL_500_LEVELS[idx]!;
   return normalizePuzzleConfig(mapLevelToPuzzle(level, date));
 }
 

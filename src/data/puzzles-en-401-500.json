@@ -1,0 +1,4045 @@
+[
+  {
+    "id": 401,
+    "level": 401,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "RETAINS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "N",
+      "R",
+      "T",
+      "A",
+      "E",
+      "I"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 402,
+    "level": 402,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "I",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "RATIONS",
+        "length": 7
+      },
+      {
+        "word": "RATIOS",
+        "length": 6
+      },
+      {
+        "word": "STRAIN",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TRAINS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "T",
+      "I",
+      "S",
+      "N"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 403,
+    "level": 403,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "TREASON",
+        "length": 7
+      },
+      {
+        "word": "SENATOR",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "R",
+      "S",
+      "T",
+      "A",
+      "N"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 404,
+    "level": 404,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "G",
+      "I",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "RESTING",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "R",
+      "I",
+      "N",
+      "S",
+      "T"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 405,
+    "level": 405,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "G",
+      "I",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "IGNORES",
+        "length": 7
+      },
+      {
+        "word": "REGIONS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "N",
+      "R",
+      "S",
+      "I",
+      "E",
+      "O"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 406,
+    "level": 406,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "I",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "GRANITE",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "I",
+      "N",
+      "R",
+      "A",
+      "T"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 407,
+    "level": 407,
+    "difficulty": "expert",
+    "letters": [
+      "G",
+      "I",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "STORING",
+        "length": 7
+      },
+      {
+        "word": "SORTING",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "STRING",
+        "length": 6
+      },
+      {
+        "word": "STRONG",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "R",
+      "O",
+      "T",
+      "S"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 408,
+    "level": 408,
+    "difficulty": "expert",
+    "letters": [
+      "D",
+      "E",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "RODENTS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "R",
+      "S",
+      "O",
+      "T",
+      "N"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 409,
+    "level": 409,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "L",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "RENTALS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "R",
+      "T",
+      "S"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 410,
+    "level": 410,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "CERTAIN",
+        "length": 7
+      },
+      {
+        "word": "RETINA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RETAIN",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "T",
+      "R",
+      "A",
+      "N"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  },
+  {
+    "id": 411,
+    "level": 411,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "ENTAILS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ENTAIL",
+        "length": 6
+      },
+      {
+        "word": "SALINE",
+        "length": 6
+      },
+      {
+        "word": "ENLIST",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "S",
+      "T",
+      "I",
+      "A",
+      "E"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 412,
+    "level": 412,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "ARSENIC",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ARISEN",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "S",
+      "R",
+      "E",
+      "A",
+      "N",
+      "I"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 413,
+    "level": 413,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "M",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "MENTORS",
+        "length": 7
+      },
+      {
+        "word": "MONSTER",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "STONER",
+        "length": 6
+      },
+      {
+        "word": "SERMON",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "O",
+      "R",
+      "S",
+      "N",
+      "T"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 414,
+    "level": 414,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "I",
+      "L",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "LATINOS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "STALIN",
+        "length": 6
+      },
+      {
+        "word": "ALISON",
+        "length": 6
+      },
+      {
+        "word": "LATINO",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "S",
+      "T",
+      "O"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 415,
+    "level": 415,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "B",
+      "I",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "BASTION",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "OBTAIN",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "S",
+      "N",
+      "T",
+      "O"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 416,
+    "level": 416,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "P",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "PANTIES",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PAINTS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "S",
+      "T",
+      "N",
+      "A",
+      "E"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 417,
+    "level": 417,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "N",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "PERSONA",
+        "length": 7
+      },
+      {
+        "word": "PEARSON",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "R",
+      "S",
+      "E",
+      "N",
+      "O",
+      "A"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 418,
+    "level": 418,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "I",
+      "N",
+      "O",
+      "P",
+      "R",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "POINTER",
+        "length": 7
+      },
+      {
+        "word": "PROTEIN",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "R",
+      "E",
+      "T",
+      "I",
+      "N",
+      "O"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 419,
+    "level": 419,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "P",
+      "R",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "PAINTER",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RETINA",
+        "length": 6
+      },
+      {
+        "word": "RETAIN",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "R",
+      "T",
+      "N",
+      "A"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 420,
+    "level": 420,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "N",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "PRESTON",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "R",
+      "O",
+      "T",
+      "S",
+      "N"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  },
+  {
+    "id": 421,
+    "level": 421,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "I",
+      "N",
+      "O",
+      "R",
+      "T",
+      "U"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "ROUTINE",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "R",
+      "E",
+      "T",
+      "N",
+      "O",
+      "I"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 422,
+    "level": 422,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "COASTER",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "O",
+      "R",
+      "T",
+      "E",
+      "S",
+      "A"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 423,
+    "level": 423,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "M",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "SEMINAR",
+        "length": 7
+      },
+      {
+        "word": "MARINES",
+        "length": 7
+      },
+      {
+        "word": "REMAINS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ARISEN",
+        "length": 6
+      },
+      {
+        "word": "ARMIES",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "N",
+      "S",
+      "A",
+      "R"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 424,
+    "level": 424,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "G",
+      "I",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "SOARING",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "GRAINS",
+        "length": 6
+      },
+      {
+        "word": "ORGANS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "R",
+      "A",
+      "S",
+      "O"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 425,
+    "level": 425,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "STRANGE",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "N",
+      "S",
+      "A",
+      "R",
+      "T"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 426,
+    "level": 426,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "ROASTED",
+        "length": 7
+      },
+      {
+        "word": "DORSET",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SORTED",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "E",
+      "R",
+      "T",
+      "S",
+      "A"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 427,
+    "level": 427,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "K",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "K",
+    "grid_words": [
+      {
+        "word": "KOREANS",
+        "length": 7
+      },
+      {
+        "word": "KOREAN",
+        "length": 6
+      },
+      {
+        "word": "KORAN",
+        "length": 5
+      },
+      {
+        "word": "AKRON",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SNEAK",
+        "length": 5
+      },
+      {
+        "word": "KAREN",
+        "length": 5
+      },
+      {
+        "word": "RANKS",
+        "length": 5
+      },
+      {
+        "word": "SNAKE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "R",
+      "O",
+      "S"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 428,
+    "level": 428,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "M",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "MAESTRO",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "O",
+      "R",
+      "E",
+      "S",
+      "T",
+      "A"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 429,
+    "level": 429,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "I",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "ACTIONS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ANTICS",
+        "length": 6
+      },
+      {
+        "word": "SCOTIA",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "S",
+      "T",
+      "A",
+      "O"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 430,
+    "level": 430,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "RELIANT",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RETINA",
+        "length": 6
+      },
+      {
+        "word": "ENTAIL",
+        "length": 6
+      },
+      {
+        "word": "RETAIN",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "E",
+      "R",
+      "T",
+      "I"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  },
+  {
+    "id": 431,
+    "level": 431,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "ORANGES",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ORGANS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "R",
+      "N",
+      "A",
+      "S",
+      "O"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 432,
+    "level": 432,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "PIRATES",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PARTIES",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "S",
+      "T",
+      "E",
+      "R",
+      "A"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 433,
+    "level": 433,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "N",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "PATRONS",
+        "length": 7
+      },
+      {
+        "word": "PATRON",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PASTOR",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "R",
+      "A",
+      "S",
+      "O",
+      "T",
+      "N"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 434,
+    "level": 434,
+    "difficulty": "expert",
+    "letters": [
+      "D",
+      "E",
+      "I",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "STEROID",
+        "length": 7
+      },
+      {
+        "word": "EDITORS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "R",
+      "S",
+      "T",
+      "I",
+      "O"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 435,
+    "level": 435,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "TRAINED",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RETINA",
+        "length": 6
+      },
+      {
+        "word": "DETAIN",
+        "length": 6
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "E",
+      "N",
+      "R",
+      "T",
+      "A"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 436,
+    "level": 436,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "L",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "ORLEANS",
+        "length": 7
+      },
+      {
+        "word": "SLOANE",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LARSON",
+        "length": 6
+      },
+      {
+        "word": "LEARNS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "A",
+      "S",
+      "O",
+      "R"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 437,
+    "level": 437,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "G",
+      "I",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "STARING",
+        "length": 7
+      },
+      {
+        "word": "RATINGS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "S",
+      "T",
+      "R"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 438,
+    "level": 438,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "I",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "TEASING",
+        "length": 7
+      },
+      {
+        "word": "SEATING",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "N",
+      "I",
+      "T",
+      "A",
+      "S",
+      "E"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 439,
+    "level": 439,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "N",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "PARENTS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "N",
+      "S",
+      "A",
+      "E",
+      "T",
+      "R"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 440,
+    "level": 440,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "REALIST",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "I",
+      "E",
+      "R",
+      "S",
+      "T",
+      "A"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  },
+  {
+    "id": 441,
+    "level": 441,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "H",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "HORNETS",
+        "length": 7
+      },
+      {
+        "word": "SHORTEN",
+        "length": 7
+      },
+      {
+        "word": "THRONES",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "STONER",
+        "length": 6
+      },
+      {
+        "word": "THORNS",
+        "length": 6
+      },
+      {
+        "word": "THORNE",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "O",
+      "R",
+      "S",
+      "T",
+      "N"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 442,
+    "level": 442,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "STORAGE",
+        "length": 7
+      },
+      {
+        "word": "GATORS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "O",
+      "R",
+      "T",
+      "S",
+      "E",
+      "A"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 443,
+    "level": 443,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "STAINED",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "INSTEAD",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "S",
+      "T",
+      "E",
+      "N",
+      "A"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 444,
+    "level": 444,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "M",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "INMATES",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "INMATE",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "I",
+      "S",
+      "E",
+      "T",
+      "A"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 445,
+    "level": 445,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "ISOLATE",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "I",
+      "T",
+      "E",
+      "S",
+      "O",
+      "A"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 446,
+    "level": 446,
+    "difficulty": "expert",
+    "letters": [
+      "C",
+      "E",
+      "I",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "NOTICES",
+        "length": 7
+      },
+      {
+        "word": "SECTION",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "INCEST",
+        "length": 6
+      },
+      {
+        "word": "NICEST",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "S",
+      "N",
+      "T",
+      "E",
+      "O"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 447,
+    "level": 447,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "H",
+      "N",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "ANOTHER",
+        "length": 7
+      },
+      {
+        "word": "THORNE",
+        "length": 6
+      },
+      {
+        "word": "THRONE",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TENOR",
+        "length": 5
+      },
+      {
+        "word": "EATON",
+        "length": 5
+      },
+      {
+        "word": "NOTRE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "R",
+      "T",
+      "E",
+      "N",
+      "A"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 448,
+    "level": 448,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "ONSTAGE",
+        "length": 7
+      },
+      {
+        "word": "EASTON",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "AGENTS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "S",
+      "T",
+      "O"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 449,
+    "level": 449,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "I",
+      "L",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "SPOILER",
+        "length": 7
+      },
+      {
+        "word": "OILERS",
+        "length": 6
+      },
+      {
+        "word": "PELOSI",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ROSIE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "E",
+      "S",
+      "R",
+      "O",
+      "L"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 450,
+    "level": 450,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "G",
+      "I",
+      "N",
+      "O",
+      "P",
+      "S"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "PIGEONS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PONIES",
+        "length": 6
+      },
+      {
+        "word": "SPONGE",
+        "length": 6
+      },
+      {
+        "word": "PIGEON",
+        "length": 6
+      },
+      {
+        "word": "POSING",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "O",
+      "S",
+      "E",
+      "P"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  },
+  {
+    "id": 451,
+    "level": 451,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "G",
+      "I",
+      "N",
+      "P",
+      "R",
+      "T"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "PARTING",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TAPING",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "A",
+      "R",
+      "T",
+      "G"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 452,
+    "level": 452,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "I",
+      "L",
+      "N",
+      "O",
+      "S"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "NICOLAS",
+        "length": 7
+      },
+      {
+        "word": "ALISON",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CASINO",
+        "length": 6
+      },
+      {
+        "word": "NICOLA",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "S",
+      "O",
+      "A",
+      "L"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 453,
+    "level": 453,
+    "difficulty": "expert",
+    "letters": [
+      "B",
+      "E",
+      "I",
+      "L",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "B",
+    "grid_words": [
+      {
+        "word": "BOILERS",
+        "length": 7
+      },
+      {
+        "word": "BOILER",
+        "length": 6
+      },
+      {
+        "word": "BOISE",
+        "length": 5
+      },
+      {
+        "word": "ROBES",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "BORIS",
+        "length": 5
+      },
+      {
+        "word": "SOBER",
+        "length": 5
+      },
+      {
+        "word": "BOILS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "R",
+      "S",
+      "O",
+      "I",
+      "B"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 454,
+    "level": 454,
+    "difficulty": "expert",
+    "letters": [
+      "C",
+      "E",
+      "I",
+      "K",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "K",
+    "grid_words": [
+      {
+        "word": "ROCKIES",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SKIER",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "R",
+      "S",
+      "O",
+      "I",
+      "K"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 455,
+    "level": 455,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "H",
+      "I",
+      "K",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "K",
+    "grid_words": [
+      {
+        "word": "THINKER",
+        "length": 7
+      },
+      {
+        "word": "RETHINK",
+        "length": 7
+      },
+      {
+        "word": "TINKER",
+        "length": 6
+      },
+      {
+        "word": "HENRIK",
+        "length": 6
+      },
+      {
+        "word": "KEITH",
+        "length": 5
+      },
+      {
+        "word": "KENT",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "INK",
+        "length": 3
+      },
+      {
+        "word": "KEN",
+        "length": 3
+      },
+      {
+        "word": "KIT",
+        "length": 3
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "E",
+      "I",
+      "T",
+      "R",
+      "K"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 456,
+    "level": 456,
+    "difficulty": "expert",
+    "letters": [
+      "C",
+      "E",
+      "K",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "K",
+    "grid_words": [
+      {
+        "word": "ROCKETS",
+        "length": 7
+      },
+      {
+        "word": "SOCKET",
+        "length": 6
+      },
+      {
+        "word": "STROKE",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ROCKET",
+        "length": 6
+      },
+      {
+        "word": "STOKE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "O",
+      "S",
+      "R",
+      "T",
+      "K"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 457,
+    "level": 457,
+    "difficulty": "expert",
+    "letters": [
+      "B",
+      "E",
+      "I",
+      "N",
+      "R",
+      "T",
+      "U"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "TURBINE",
+        "length": 7
+      },
+      {
+        "word": "TRIBUNE",
+        "length": 7
+      },
+      {
+        "word": "BEIRUT",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TURIN",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "R",
+      "T",
+      "N",
+      "B"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 458,
+    "level": 458,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "F",
+      "G",
+      "I",
+      "N",
+      "R"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "FEARING",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "I",
+      "N",
+      "R",
+      "A",
+      "E",
+      "G"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 459,
+    "level": 459,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "G",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "DANGERS",
+        "length": 7
+      },
+      {
+        "word": "GARDENS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "A",
+      "N",
+      "R",
+      "S",
+      "G"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 460,
+    "level": 460,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "H",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "H",
+    "grid_words": [
+      {
+        "word": "ANCHORS",
+        "length": 7
+      },
+      {
+        "word": "RANCHO",
+        "length": 6
+      },
+      {
+        "word": "ANCHOR",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ROHAN",
+        "length": 5
+      },
+      {
+        "word": "HORNS",
+        "length": 5
+      },
+      {
+        "word": "ROACH",
+        "length": 5
+      },
+      {
+        "word": "RANCH",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "R",
+      "A",
+      "N",
+      "O",
+      "S",
+      "H"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  },
+  {
+    "id": 461,
+    "level": 461,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "I",
+      "M",
+      "N",
+      "R"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "GERMAIN",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "N",
+      "I",
+      "R",
+      "E",
+      "A",
+      "G"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 462,
+    "level": 462,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "G",
+      "I",
+      "M",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "MIGRANT",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "INGRAM",
+        "length": 6
+      },
+      {
+        "word": "MATING",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "A",
+      "R",
+      "T",
+      "G"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 463,
+    "level": 463,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "G",
+      "I",
+      "N",
+      "R"
+    ],
+    "center": "G",
+    "grid_words": [],
+    "bonus_words": [],
+    "intersection_letters": [
+      "N",
+      "R",
+      "A",
+      "E",
+      "I",
+      "G"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 464,
+    "level": 464,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "B",
+      "D",
+      "E",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "BOASTED",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "BOAST",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "T",
+      "E",
+      "S",
+      "A",
+      "D"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 465,
+    "level": 465,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "I",
+      "L",
+      "M",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "L",
+    "grid_words": [
+      {
+        "word": "MARLINS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LIARS",
+        "length": 5
+      },
+      {
+        "word": "SLAIN",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "S",
+      "I",
+      "N",
+      "R",
+      "L"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 466,
+    "level": 466,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "G",
+      "I",
+      "L",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "LASTING",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "S",
+      "T",
+      "G"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 467,
+    "level": 467,
+    "difficulty": "expert",
+    "letters": [
+      "C",
+      "E",
+      "I",
+      "N",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "PRINCES",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SNIPER",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "S",
+      "I",
+      "R",
+      "P"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 468,
+    "level": 468,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "I",
+      "M",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "PROMISE",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "S",
+      "R",
+      "I",
+      "O",
+      "P"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 469,
+    "level": 469,
+    "difficulty": "expert",
+    "letters": [
+      "C",
+      "E",
+      "I",
+      "N",
+      "P",
+      "S",
+      "T"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "INSPECT",
+        "length": 7
+      },
+      {
+        "word": "SEPTIC",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PINTS",
+        "length": 5
+      },
+      {
+        "word": "PINES",
+        "length": 5
+      },
+      {
+        "word": "SPINE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "S",
+      "N",
+      "T",
+      "P"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 470,
+    "level": 470,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "F",
+      "G",
+      "I",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "FINGERS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "REIGNS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "I",
+      "R",
+      "S",
+      "G"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  },
+  {
+    "id": 471,
+    "level": 471,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "D",
+      "E",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "DANCERS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "S",
+      "A",
+      "N",
+      "R",
+      "D"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 472,
+    "level": 472,
+    "difficulty": "expert",
+    "letters": [
+      "C",
+      "E",
+      "H",
+      "I",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "RICHEST",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RICHES",
+        "length": 6
+      },
+      {
+        "word": "ETHICS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "R",
+      "E",
+      "S",
+      "T",
+      "I",
+      "C"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 473,
+    "level": 473,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "N",
+      "P",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "PEANUTS",
+        "length": 7
+      },
+      {
+        "word": "AUSTEN",
+        "length": 6
+      },
+      {
+        "word": "PEANUT",
+        "length": 6
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "A",
+      "S",
+      "T",
+      "N",
+      "U"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 474,
+    "level": 474,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "I",
+      "M",
+      "N",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "TSUNAMI",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "AUSTIN",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "I",
+      "S",
+      "T",
+      "A",
+      "U"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 475,
+    "level": 475,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "G",
+      "I",
+      "M",
+      "N",
+      "O",
+      "R"
+    ],
+    "center": "M",
+    "grid_words": [
+      {
+        "word": "ROAMING",
+        "length": 7
+      },
+      {
+        "word": "MARINO",
+        "length": 6
+      },
+      {
+        "word": "MARION",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "INGRAM",
+        "length": 6
+      },
+      {
+        "word": "MARGIN",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "O",
+      "R",
+      "M"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 476,
+    "level": 476,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "H",
+      "I",
+      "N",
+      "R"
+    ],
+    "center": "N",
+    "grid_words": [],
+    "bonus_words": [
+      {
+        "word": "HEARING",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "R",
+      "A",
+      "I",
+      "E",
+      "G"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 477,
+    "level": 477,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "K",
+      "L",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "K",
+    "grid_words": [
+      {
+        "word": "STALKER",
+        "length": 7
+      },
+      {
+        "word": "TAKERS",
+        "length": 6
+      },
+      {
+        "word": "SKATER",
+        "length": 6
+      },
+      {
+        "word": "STREAK",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LAKERS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "A",
+      "T",
+      "R",
+      "S",
+      "K"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 478,
+    "level": 478,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "G",
+      "I",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "SCARING",
+        "length": 7
+      },
+      {
+        "word": "CAIRNS",
+        "length": 6
+      },
+      {
+        "word": "CASING",
+        "length": 6
+      },
+      {
+        "word": "CIGARS",
+        "length": 6
+      },
+      {
+        "word": "CARING",
+        "length": 6
+      },
+      {
+        "word": "RACING",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RICAN",
+        "length": 5
+      },
+      {
+        "word": "CIGAR",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "I",
+      "S",
+      "N",
+      "C"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 479,
+    "level": 479,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "I",
+      "L",
+      "N",
+      "S"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "SEALING",
+        "length": 7
+      },
+      {
+        "word": "LEASING",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "A",
+      "N",
+      "I",
+      "E",
+      "S",
+      "G"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 480,
+    "level": 480,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "P",
+      "R",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "PASTURE",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PUREST",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "S",
+      "T",
+      "A",
+      "E",
+      "R",
+      "U"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  },
+  {
+    "id": 481,
+    "level": 481,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "DIAPERS",
+        "length": 7
+      },
+      {
+        "word": "DESPAIR",
+        "length": 7
+      },
+      {
+        "word": "PRAISED",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "S",
+      "I",
+      "P"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 482,
+    "level": 482,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "L",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "SLANDER",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "R",
+      "S",
+      "N",
+      "A",
+      "D"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 483,
+    "level": 483,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "M",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "GERMANS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RANGES",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "S",
+      "A",
+      "R",
+      "N",
+      "G"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 484,
+    "level": 484,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "B",
+      "E",
+      "M",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "AMBROSE",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "AROSE",
+        "length": 5
+      },
+      {
+        "word": "ROBES",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "R",
+      "E",
+      "S",
+      "B",
+      "M"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 485,
+    "level": 485,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "H",
+      "M",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "H",
+    "grid_words": [
+      {
+        "word": "SHERMAN",
+        "length": 7
+      },
+      {
+        "word": "HERMAN",
+        "length": 6
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "A",
+      "R",
+      "E",
+      "N",
+      "S",
+      "H"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 486,
+    "level": 486,
+    "difficulty": "expert",
+    "letters": [
+      "C",
+      "G",
+      "I",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "COSTING",
+        "length": 7
+      },
+      {
+        "word": "TONIC",
+        "length": 5
+      },
+      {
+        "word": "ICONS",
+        "length": 5
+      },
+      {
+        "word": "SONIC",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "COINS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "O",
+      "I",
+      "T",
+      "S",
+      "C"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 487,
+    "level": 487,
+    "difficulty": "expert",
+    "letters": [
+      "E",
+      "I",
+      "M",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "PERMITS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "STRIPE",
+        "length": 6
+      },
+      {
+        "word": "PRIEST",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "S",
+      "E",
+      "R",
+      "I",
+      "T",
+      "P"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 488,
+    "level": 488,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "H",
+      "I",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "CHARIOT",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CAIRO",
+        "length": 5
+      },
+      {
+        "word": "ROACH",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "R",
+      "T",
+      "A",
+      "O",
+      "I",
+      "C"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 489,
+    "level": 489,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "M",
+      "N",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "M",
+    "grid_words": [
+      {
+        "word": "DORMANT",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RANDOM",
+        "length": 6
+      },
+      {
+        "word": "NORMA",
+        "length": 5
+      },
+      {
+        "word": "RAMON",
+        "length": 5
+      },
+      {
+        "word": "MORAN",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "T",
+      "O",
+      "R",
+      "M"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 490,
+    "level": 490,
+    "difficulty": "expert",
+    "letters": [
+      "D",
+      "E",
+      "I",
+      "N",
+      "R",
+      "S",
+      "U"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "INSURED",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "INSURE",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "R",
+      "S",
+      "I",
+      "U"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  },
+  {
+    "id": 491,
+    "level": 491,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "F",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "FRANCES",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CRANES",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "S",
+      "R",
+      "A",
+      "E",
+      "N",
+      "C"
+    ],
+    "hint": "Think about hidden forces and strange craft",
+    "theme": "magic"
+  },
+  {
+    "id": 492,
+    "level": 492,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "B",
+      "E",
+      "I",
+      "L",
+      "N",
+      "S"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "LESBIAN",
+        "length": 7
+      },
+      {
+        "word": "SALINE",
+        "length": 6
+      },
+      {
+        "word": "BLAINE",
+        "length": 6
+      },
+      {
+        "word": "ALIENS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ISABEL",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "I",
+      "S",
+      "E",
+      "L"
+    ],
+    "hint": "Think about depth and silence",
+    "theme": "abyss"
+  },
+  {
+    "id": 493,
+    "level": 493,
+    "difficulty": "expert",
+    "letters": [
+      "C",
+      "I",
+      "M",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "CRIMSON",
+        "length": 7
+      },
+      {
+        "word": "ICONS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SONIC",
+        "length": 5
+      },
+      {
+        "word": "COMIN",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "I",
+      "S",
+      "N",
+      "R",
+      "C"
+    ],
+    "hint": "Think about ancient fragments",
+    "theme": "relic"
+  },
+  {
+    "id": 494,
+    "level": 494,
+    "difficulty": "expert",
+    "letters": [
+      "D",
+      "E",
+      "I",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "PERIODS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "E",
+      "S",
+      "R",
+      "I",
+      "O",
+      "D"
+    ],
+    "hint": "Think about symbols and secrets",
+    "theme": "cipher"
+  },
+  {
+    "id": 495,
+    "level": 495,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "C",
+      "G",
+      "I",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "GASTRIC",
+        "length": 7
+      },
+      {
+        "word": "CIGARS",
+        "length": 6
+      },
+      {
+        "word": "RACIST",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TRAGIC",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "S",
+      "T",
+      "I",
+      "C"
+    ],
+    "hint": "Think about violent change",
+    "theme": "tempest"
+  },
+  {
+    "id": 496,
+    "level": 496,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "G",
+      "I",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "TRADING",
+        "length": 7
+      }
+    ],
+    "bonus_words": [],
+    "intersection_letters": [
+      "N",
+      "A",
+      "I",
+      "R",
+      "T",
+      "G"
+    ],
+    "hint": "Think about darkness underground",
+    "theme": "catacomb"
+  },
+  {
+    "id": 497,
+    "level": 497,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "M",
+      "N",
+      "O",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "AMOUNTS",
+        "length": 7
+      },
+      {
+        "word": "AMOUNT",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SANTO",
+        "length": 5
+      },
+      {
+        "word": "ASTON",
+        "length": 5
+      },
+      {
+        "word": "AUNTS",
+        "length": 5
+      },
+      {
+        "word": "TOMAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "T",
+      "N",
+      "O",
+      "S",
+      "M"
+    ],
+    "hint": "Think about rare mixtures",
+    "theme": "alchemy"
+  },
+  {
+    "id": 498,
+    "level": 498,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "M",
+      "N",
+      "S"
+    ],
+    "center": "L",
+    "grid_words": [
+      {
+        "word": "SEMINAL",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SALINE",
+        "length": 6
+      },
+      {
+        "word": "ALIENS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "E",
+      "S",
+      "N",
+      "L"
+    ],
+    "hint": "Think about winding paths",
+    "theme": "labyrinth"
+  },
+  {
+    "id": 499,
+    "level": 499,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "M",
+      "N",
+      "O",
+      "S"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "DOMAINS",
+        "length": 7
+      },
+      {
+        "word": "DOMAIN",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SONIA",
+        "length": 5
+      },
+      {
+        "word": "NAOMI",
+        "length": 5
+      },
+      {
+        "word": "AMINO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "O",
+      "I",
+      "A",
+      "S",
+      "M"
+    ],
+    "hint": "Think about shadow and wonder",
+    "theme": "eclipse"
+  },
+  {
+    "id": 500,
+    "level": 500,
+    "difficulty": "expert",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "K",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "K",
+    "grid_words": [
+      {
+        "word": "DARKEST",
+        "length": 7
+      },
+      {
+        "word": "TAKERS",
+        "length": 6
+      },
+      {
+        "word": "SKATER",
+        "length": 6
+      },
+      {
+        "word": "STREAK",
+        "length": 6
+      },
+      {
+        "word": "TASKED",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TAKER",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "A",
+      "S",
+      "T",
+      "R",
+      "K"
+    ],
+    "hint": "Think about warning signs",
+    "theme": "omen"
+  }
+]
