@@ -1,33 +1,121 @@
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import { useDailyStore } from '../../stores/dailyStore';
+import { useLeagueStore } from '../../stores/leagueStore';
+import { getEloChange } from '../../core/game/leagueSystem';
+import {
+  getLeaderboard,
+  isTopHalfOfLeaderboard,
+  submitScore,
+} from '../../services/supabase/leagueService';
+import { getCurrentUser } from '../../services/supabase/auth';
+import { isSupabaseConfigured } from '../../services/supabase/client';
+import { formatPuzzleDate } from '../../core/game/puzzleGenerator';
 import { ShareCard } from '../game/ShareCard';
 import { useTranslation } from '../../i18n';
 import { OrnamentDivider } from '../ui/OrnamentDivider';
+import {
+  requestPermissionAfterFirstCompletion,
+} from '../../services/notificationService';
 
 type PuzzleCompleteProps = {
   wordsFound: number;
+  foundWords: string[];
   sessionGold: number;
   sessionWood: number;
   sessionStone: number;
   puzzleNumber: number;
+  /** Heutiges Daily (kein Archiv): Liga-ELO & erste Benachrichtigung */
+  isDailyToday: boolean;
   /** „Morgen Puzzle #n+1“ nur beim Daily-Abschluss (nicht Archiv). */
   showTomorrowLine?: boolean;
   onBuildWorld: () => void;
   onKeepPlaying: () => void;
+  onToast?: (message: string, ms?: number) => void;
 };
 
 export function PuzzleComplete({
   wordsFound,
+  foundWords,
   sessionGold,
   sessionWood,
   sessionStone,
   puzzleNumber,
+  isDailyToday,
   showTomorrowLine = false,
   onBuildWorld,
   onKeepPlaying,
+  onToast,
 }: PuzzleCompleteProps) {
   const { t } = useTranslation();
   const streak = useDailyStore((s) => s.currentStreak);
+  const addEloForDailyPuzzle = useLeagueStore((s) => s.addEloForDailyPuzzle);
+  useEffect(() => {
+    if (!isDailyToday) return;
+    const puzzleDate = formatPuzzleDate();
+
+    const upper = foundWords.map((w) => w.toUpperCase());
+    const totalPoints = sessionGold + sessionWood + sessionStone;
+
+    void (async () => {
+      try {
+        const user = await getCurrentUser();
+        if (user && isSupabaseConfigured) {
+          try {
+            await submitScore(user.id, puzzleDate, upper, totalPoints);
+          } catch (e) {
+            console.error('submitScore', e);
+          }
+        }
+        let board: Awaited<ReturnType<typeof getLeaderboard>> = [];
+        try {
+          board = await getLeaderboard(puzzleDate, 500);
+        } catch (e) {
+          console.error('getLeaderboard', e);
+          board = [];
+        }
+        const top = isTopHalfOfLeaderboard(board, wordsFound, user?.id ?? null);
+        const delta = getEloChange(top);
+        addEloForDailyPuzzle(puzzleDate, delta);
+        if (delta > 0) {
+          onToast?.(`+${delta} ELO ⚔️`, 2200);
+        } else {
+          onToast?.(`${delta} ELO`, 2200);
+        }
+      } catch (e) {
+        console.error('league completion', e);
+        addEloForDailyPuzzle(puzzleDate, getEloChange(true));
+        onToast?.('+25 ELO ⚔️', 2200);
+      }
+    })();
+
+    void requestPermissionAfterFirstCompletion();
+  }, [
+    isDailyToday,
+    wordsFound,
+    foundWords,
+    sessionGold,
+    sessionWood,
+    sessionStone,
+    addEloForDailyPuzzle,
+    onToast,
+  ]);
+
+  useEffect(() => {
+    if (!isDailyToday) return;
+    if (![3, 7, 30].includes(streak)) return;
+    const puzzleDate = formatPuzzleDate();
+    const mKey = `wordrealms-milestone-${puzzleDate}-${streak}`;
+    try {
+      if (sessionStorage.getItem(mKey)) return;
+      sessionStorage.setItem(mKey, '1');
+    } catch {
+      return;
+    }
+    if (streak === 3) onToast?.('🔥 3 day streak!', 2500);
+    else if (streak === 7) onToast?.('⚡ One week warrior!', 2500);
+    else onToast?.('👑 Legendary streak!', 3000);
+  }, [isDailyToday, streak, onToast]);
 
   return (
     <motion.div
@@ -82,9 +170,13 @@ export function PuzzleComplete({
 
         <ShareCard
           wordsFound={wordsFound}
+          foundWords={foundWords}
           sessionGold={sessionGold}
           sessionWood={sessionWood}
           sessionStone={sessionStone}
+          puzzleNumber={puzzleNumber}
+          streakDays={streak}
+          onToast={onToast}
         />
 
         <div className="mt-6 flex flex-col gap-2">

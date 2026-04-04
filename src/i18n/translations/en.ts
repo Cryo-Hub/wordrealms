@@ -99,6 +99,7 @@ export const en: Record<string, string> = {
   'league.you': 'You',
   'league.words_short': '{n} words',
   'league.points_abbr': '{n} pts',
+  'league.reset_sunday': 'Rankings reset every Sunday',
 
   // Settings
   'settings.title': 'Settings',
@@ -192,4 +193,7 @@ export const en: Record<string, string> = {
   'share.words_line': 'Words: {n}',
   'share.points_line': 'Points: {n}',
   'share.url': 'wordrealms.app',
+  'share.result_image': 'Result copied!',
+  'share.image_error': 'Could not create image',
+  'share.image_fail': 'Share failed',
 };

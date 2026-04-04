@@ -3,12 +3,25 @@
  * Run: node scripts/generate-assets.js
  */
 import { createCanvas } from 'canvas';
-import { writeFileSync } from 'fs';
+import { mkdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const publicDir = join(__dirname, '..', 'public');
+const assetsDir = join(publicDir, 'assets');
+
+function drawPwaIcon(size) {
+  const canvas = createCanvas(size, size);
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#0f0a06';
+  ctx.fillRect(0, 0, size, size);
+  ctx.font = `${Math.floor(size * 0.45)}px "Segoe UI Emoji", "Apple Color Emoji", sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('🏰', size / 2, size / 2 + size * 0.03);
+  return canvas.toBuffer('image/png');
+}
 
 function drawIcon(size) {
   const canvas = createCanvas(size, size);
@@ -41,6 +54,10 @@ function drawSplash(w, h) {
   ctx.fillText('WordRealms', w / 2, h / 2);
   return canvas.toBuffer('image/png');
 }
+
+mkdirSync(assetsDir, { recursive: true });
+writeFileSync(join(assetsDir, 'icon-192.png'), drawPwaIcon(192));
+writeFileSync(join(assetsDir, 'icon-512.png'), drawPwaIcon(512));
 
 writeFileSync(join(publicDir, 'icon-192.png'), drawIcon(192));
 writeFileSync(join(publicDir, 'icon-512.png'), drawIcon(512));

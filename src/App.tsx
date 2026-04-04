@@ -12,12 +12,19 @@ import { LeagueScreen } from './screens/LeagueScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { ShopScreen } from './screens/ShopScreen';
 import { useDailyStore } from './stores/dailyStore';
+import { useLeagueStore } from './stores/leagueStore';
 import { useSettingsStore } from './stores/settingsStore';
 import { usePremiumStore } from './stores/premiumStore';
 import { setLanguage, ensureDictionaryLoaded } from './core/game/dictionaryManager';
 import { ensureAuth, GUEST_USER_ID_KEY, getCurrentUser } from './services/supabase/auth';
 import { isSupabaseConfigured, supabase } from './services/supabase/client';
 import { ensureProfileForUser } from './services/supabase/userProfileService';
+import {
+  scheduleDailyReminder,
+  showLeagueReset,
+  syncPermissionFromBrowser,
+} from './services/notificationService';
+import { InstallPromptBanner } from './components/ui/InstallPromptBanner';
 import type { RootScreen } from './types/navigation';
 
 const queryClient = new QueryClient();
@@ -81,6 +88,18 @@ function AppRoutes() {
   useEffect(() => {
     hydrateFromDate();
   }, [hydrateFromDate]);
+
+  useEffect(() => {
+    const decayed = useLeagueStore.getState().resetWeeklyIfNeeded();
+    if (decayed) showLeagueReset();
+  }, []);
+
+  useEffect(() => {
+    syncPermissionFromBrowser();
+    if (typeof Notification !== 'undefined' && Notification.permission === 'granted') {
+      scheduleDailyReminder();
+    }
+  }, []);
 
   useEffect(() => {
     void checkPremium();
@@ -170,6 +189,7 @@ function AppRoutes() {
   return (
     <FantasyShell>
       {screen !== 'game' ? <OfflineBanner /> : null}
+      <InstallPromptBanner />
       <div className="min-h-screen text-[var(--text-primary)] antialiased">
         {screen === 'home' ? (
           <HomeScreen navigate={navigate} />

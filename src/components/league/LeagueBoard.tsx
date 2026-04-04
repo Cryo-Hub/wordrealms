@@ -4,20 +4,32 @@ import { getCurrentUser } from '../../services/supabase/auth';
 import { formatPuzzleDate } from '../../core/game/puzzleGenerator';
 import { LeagueCard } from './LeagueCard';
 import { useTranslation } from '../../i18n';
+import { useDailyStore } from '../../stores/dailyStore';
 
 export function LeagueBoard() {
   const { t } = useTranslation();
   const [rows, setRows] = useState<LeaderboardEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [me, setMe] = useState<string | null>(null);
+  const wordsFoundToday = useDailyStore((s) => s.wordsFoundToday);
+  const wordsTodayDate = useDailyStore((s) => s.wordsTodayDate);
 
   const load = useCallback(async () => {
     setLoading(true);
-    const u = await getCurrentUser();
-    setMe(u?.id ?? null);
-    const data = await getLeaderboard(formatPuzzleDate(), 50);
-    setRows(data);
-    setLoading(false);
+    try {
+      const u = await getCurrentUser();
+      setMe(u?.id ?? null);
+      let data: LeaderboardEntry[] = [];
+      try {
+        data = await getLeaderboard(formatPuzzleDate(), 50);
+      } catch (e) {
+        console.error('getLeaderboard', e);
+        data = [];
+      }
+      setRows(data);
+    } finally {
+      setLoading(false);
+    }
   }, []);
 
   useEffect(() => {
@@ -34,7 +46,22 @@ export function LeagueBoard() {
     );
   }
 
-  if (rows.length === 0) {
+  const today = formatPuzzleDate();
+  const localFallback =
+    rows.length === 0 && wordsTodayDate === today && wordsFoundToday > 0
+      ? [
+          {
+            rank: 1,
+            username: t('league.you'),
+            words_found: wordsFoundToday,
+            total_points: 0,
+            completed_at: new Date().toISOString(),
+            user_id: me ?? undefined,
+          } satisfies LeaderboardEntry,
+        ]
+      : rows;
+
+  if (localFallback.length === 0) {
     return (
       <div className="fantasy-card text-center font-body text-sm text-[var(--text-secondary)]">
         {t('league.be_first')}
@@ -44,7 +71,7 @@ export function LeagueBoard() {
 
   return (
     <div className="space-y-2">
-      {rows.map((r) => (
+      {localFallback.map((r) => (
         <LeagueCard
           key={`${r.rank}-${r.username}`}
           rank={r.rank}

@@ -93,6 +93,7 @@ export const de: Record<keyof typeof en, string> = {
   'league.you': 'Du',
   'league.words_short': '{n} Wörter',
   'league.points_abbr': '{n} Pkt',
+  'league.reset_sunday': 'Die Rangliste wird jeden Sonntag zurückgesetzt',
 
   'settings.title': 'Einstellungen',
   'settings.language': 'Sprache',
@@ -175,4 +176,7 @@ export const de: Record<keyof typeof en, string> = {
   'share.words_line': 'Wörter: {n}',
   'share.points_line': 'Punkte: {n}',
   'share.url': 'wordrealms.app',
+  'share.result_image': 'Ergebnis kopiert!',
+  'share.image_error': 'Bild konnte nicht erstellt werden',
+  'share.image_fail': 'Teilen fehlgeschlagen',
 };

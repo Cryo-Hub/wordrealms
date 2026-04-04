@@ -106,3 +106,20 @@ export async function getPlayerRank(userId: string, puzzleDate: string): Promise
   const idx = board.findIndex((e) => e.user_id === userId);
   return idx >= 0 ? board[idx].rank : null;
 }
+
+/** Liegt der Spieler in der oberen Hälfte der Rangliste (nach Wörtern)? */
+export function isTopHalfOfLeaderboard(
+  board: LeaderboardEntry[],
+  wordsFound: number,
+  userId: string | null,
+): boolean {
+  if (board.length === 0) return true;
+  const n = board.length;
+  const half = Math.ceil(n / 2);
+  if (userId) {
+    const row = board.find((e) => e.user_id === userId);
+    if (row) return row.rank <= half;
+  }
+  const strictlyBetter = board.filter((e) => e.words_found > wordsFound).length;
+  return strictlyBetter < half;
+}

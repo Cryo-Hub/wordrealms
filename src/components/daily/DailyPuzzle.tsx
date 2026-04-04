@@ -344,11 +344,14 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
       {showComplete ? (
         <PuzzleComplete
           wordsFound={foundWords.length}
+          foundWords={foundWords}
           sessionGold={sessionGold}
           sessionWood={sessionWood}
           sessionStone={sessionStone}
           puzzleNumber={puzzleNum}
+          isDailyToday={activeDate === todayStr}
           showTomorrowLine={activeDate === todayStr}
+          onToast={(msg, ms) => showToast(msg, ms ?? 1500)}
           onBuildWorld={() => {
             setShowComplete(false);
             onNavigate('world');

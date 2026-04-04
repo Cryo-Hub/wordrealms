@@ -1,8 +1,10 @@
 import { ResourceBar } from '../components/game/ResourceBar/ResourceBar';
 import { NavigationBar } from '../components/ui/NavigationBar';
 import { LeagueBoard } from '../components/league/LeagueBoard';
+import { LeagueBadge } from '../components/ui/LeagueBadge';
 import { formatPuzzleDate, getPuzzleNumber } from '../core/game/puzzleGenerator';
 import { useDailyStore } from '../stores/dailyStore';
+import { useLeagueStore } from '../stores/leagueStore';
 import type { RootScreen } from '../types/navigation';
 import { useTranslation } from '../i18n';
 
@@ -13,6 +15,7 @@ type LeagueScreenProps = {
 export function LeagueScreen({ navigate }: LeagueScreenProps) {
   const { t } = useTranslation();
   const totalWords = useDailyStore((s) => s.totalWordsAllTime);
+  const elo = useLeagueStore((s) => s.elo);
 
   const tabNav = (t: RootScreen) => {
     if (t === 'home' || t === 'game' || t === 'world' || t === 'league') navigate(t);
@@ -26,6 +29,10 @@ export function LeagueScreen({ navigate }: LeagueScreenProps) {
         <p className="wr-body mt-1 text-center text-sm">
           {formatPuzzleDate()} · {t('game.puzzle_number', { n: getPuzzleNumber() })}
         </p>
+        <div className="mt-6 flex flex-col items-center justify-center">
+          <LeagueBadge elo={elo} size="lg" />
+        </div>
+        <p className="wr-body mt-4 text-center text-xs text-[var(--text-muted)]">{t('league.reset_sunday')}</p>
         <div className="mt-4">
           <LeagueBoard />
         </div>

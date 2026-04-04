@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import { ResourceBar } from '../components/game/ResourceBar/ResourceBar';
-import { StreakDisplay } from '../components/daily/StreakDisplay';
 import { NavigationBar } from '../components/ui/NavigationBar';
 import { OrnamentDivider } from '../components/ui/OrnamentDivider';
 import { useWorldStore } from '../stores/worldStore';
 import { useDailyStore } from '../stores/dailyStore';
+import { useLeagueStore } from '../stores/leagueStore';
+import { LeagueBadge } from '../components/ui/LeagueBadge';
 import { BUILDINGS, type BuildingType } from '../core/world/buildingConfig';
 import type { RootScreen } from '../types/navigation';
 import { useTranslation } from '../i18n';
@@ -20,6 +21,8 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
   const built = builtList.length;
   const empty = 10 - built;
   const wordsToday = useDailyStore((s) => s.wordsFoundToday);
+  const streak = useDailyStore((s) => s.currentStreak);
+  const elo = useLeagueStore((s) => s.elo);
   const progress = Math.min(1, wordsToday / 5);
 
   const emojis = builtList.map((bt) => BUILDINGS[bt].emoji).join(' ');
@@ -31,10 +34,14 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
       <div className="relative flex w-full flex-1 flex-col gap-3 px-4">
         <div className="flex items-start justify-between gap-2">
           <div className="w-10 shrink-0" />
-          <div className="flex min-w-0 flex-1 justify-center">
-            <StreakDisplay />
-          </div>
-          <div className="flex shrink-0 gap-1">
+          <div className="flex min-w-0 flex-1 justify-center" />
+          <div className="flex shrink-0 items-start gap-2">
+            <div className="flex flex-col items-center gap-0.5">
+              <LeagueBadge elo={elo} size="sm" className="scale-90" />
+              <span className="font-num text-xs text-[var(--gold-primary)]" title={t('settings.current_streak', { n: streak })}>
+                🔥 {streak}
+              </span>
+            </div>
             <button
               type="button"
               aria-label="Shop"

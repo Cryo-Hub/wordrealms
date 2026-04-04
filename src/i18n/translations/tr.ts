@@ -93,6 +93,7 @@ export const tr: Record<keyof typeof en, string> = {
   'league.you': 'Sen',
   'league.words_short': '{n} kelime',
   'league.points_abbr': '{n} puan',
+  'league.reset_sunday': 'Sıralamalar her Pazar sıfırlanır',
 
   'settings.title': 'Ayarlar',
   'settings.language': 'Dil',
@@ -175,4 +176,7 @@ export const tr: Record<keyof typeof en, string> = {
   'share.words_line': 'Kelimeler: {n}',
   'share.points_line': 'Puan: {n}',
   'share.url': 'wordrealms.app',
+  'share.result_image': 'Result copied!',
+  'share.image_error': 'Could not create image',
+  'share.image_fail': 'Share failed',
 };
