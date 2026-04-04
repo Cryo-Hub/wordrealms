@@ -1,0 +1,21 @@
+{
+  "name": "WordRealms",
+  "short_name": "WordRealms",
+  "description": "Build your kingdom one word at a time",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080608",
+  "theme_color": "#080608",
+  "icons": [
+    {
+      "src": "/assets/icon-app.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-app.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

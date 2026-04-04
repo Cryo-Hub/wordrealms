@@ -1,0 +1,202 @@
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ErrorBoundary } from './components/ui/ErrorBoundary';
+import { OfflineBanner } from './components/ui/OfflineBanner';
+import { LoadingScreen } from './screens/LoadingScreen';
+import { AuthScreen } from './screens/AuthScreen';
+import { OnboardingScreen, isOnboardingComplete } from './screens/OnboardingScreen';
+import { HomeScreen } from './screens/HomeScreen';
+import { GameScreen } from './screens/GameScreen';
+import { WorldScreen } from './screens/WorldScreen';
+import { LeagueScreen } from './screens/LeagueScreen';
+import { SettingsScreen } from './screens/SettingsScreen';
+import { ShopScreen } from './screens/ShopScreen';
+import { useDailyStore } from './stores/dailyStore';
+import { useSettingsStore } from './stores/settingsStore';
+import { usePremiumStore } from './stores/premiumStore';
+import { setLanguage, ensureDictionaryLoaded } from './core/game/dictionaryManager';
+import { ensureAuth, GUEST_USER_ID_KEY, getCurrentUser } from './services/supabase/auth';
+import { isSupabaseConfigured, supabase } from './services/supabase/client';
+import { ensureProfileForUser } from './services/supabase/userProfileService';
+import type { RootScreen } from './types/navigation';
+
+const queryClient = new QueryClient();
+
+const AUTH_STARTUP_TIMEOUT_MS = 5000;
+
+type Gate = 'load' | 'auth' | 'onboard' | 'main';
+
+function ensureLocalGuestId(): void {
+  try {
+    if (!localStorage.getItem(GUEST_USER_ID_KEY)) {
+      localStorage.setItem(GUEST_USER_ID_KEY, crypto.randomUUID());
+    }
+  } catch {
+    /* ignore */
+  }
+}
+
+function FantasyShell({ children }: { children: ReactNode }) {
+  const embers = useMemo(() => Array.from({ length: 5 }, (_, i) => i), []);
+  return (
+    <div className="wr-page-bg min-h-screen">
+      <div className="wr-embers" aria-hidden>
+        {embers.map((i) => (
+          <i key={i} />
+        ))}
+      </div>
+      <div className="wr-shell-vignette" aria-hidden />
+      <div className="wr-content">{children}</div>
+    </div>
+  );
+}
+
+async function resolveStartupGate(): Promise<Gate> {
+  if (isSupabaseConfigured) {
+    const {
+      data: { session },
+    } = await supabase.auth.getSession();
+    if (session?.user) {
+      try {
+        await ensureProfileForUser(session.user.id);
+      } catch {
+        /* weiter ohne Profil */
+      }
+      return !isOnboardingComplete() ? 'onboard' : 'main';
+    }
+    return 'auth';
+  }
+
+  const u = await getCurrentUser();
+  if (!u) return 'auth';
+  return !isOnboardingComplete() ? 'onboard' : 'main';
+}
+
+function AppRoutes() {
+  const [gate, setGate] = useState<Gate>('load');
+  const [screen, setScreen] = useState<RootScreen>('home');
+  const hydrateFromDate = useDailyStore((s) => s.hydrateFromDate);
+  const checkPremium = usePremiumStore((s) => s.checkPremium);
+
+  useEffect(() => {
+    hydrateFromDate();
+  }, [hydrateFromDate]);
+
+  useEffect(() => {
+    void checkPremium();
+  }, [checkPremium]);
+
+  useEffect(() => {
+    let alive = true;
+    (async () => {
+      const t0 = Date.now();
+      try {
+        if (isSupabaseConfigured) {
+          await ensureAuth();
+        }
+        const lang = useSettingsStore.getState().language;
+        setLanguage(lang);
+        await ensureDictionaryLoaded();
+      } catch (e) {
+        console.error(e);
+      }
+
+      const authOutcome = await Promise.race([
+        resolveStartupGate().then((g) => ({ kind: 'ok' as const, g })),
+        new Promise<{ kind: 'timeout' }>((resolve) => {
+          setTimeout(() => resolve({ kind: 'timeout' }), AUTH_STARTUP_TIMEOUT_MS);
+        }),
+      ]);
+
+      let nextGate: Gate = 'auth';
+      if (!alive) return;
+
+      if (authOutcome.kind === 'timeout') {
+        ensureLocalGuestId();
+        nextGate = !isOnboardingComplete() ? 'onboard' : 'main';
+      } else {
+        nextGate = authOutcome.g;
+      }
+
+      const dt = Date.now() - t0;
+      if (dt < 1500) await new Promise((r) => setTimeout(r, 1500 - dt));
+      if (!alive) return;
+      setGate(nextGate);
+    })();
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  const goMain = () => setGate('main');
+
+  if (gate === 'load') {
+    return <LoadingScreen />;
+  }
+  if (gate === 'auth') {
+    return (
+      <AuthScreen
+        onAuthed={() => {
+          void (async () => {
+            if (isSupabaseConfigured) {
+              const { data } = await supabase.auth.getUser();
+              if (data.user) {
+                try {
+                  await ensureProfileForUser(data.user.id);
+                } catch {
+                  /* ignore */
+                }
+              }
+            }
+            const u = await getCurrentUser();
+            if (!u) return;
+            if (!isOnboardingComplete()) setGate('onboard');
+            else setGate('main');
+          })();
+        }}
+      />
+    );
+  }
+  if (gate === 'onboard') {
+    return (
+      <FantasyShell>
+        <OnboardingScreen onFinish={goMain} />
+      </FantasyShell>
+    );
+  }
+
+  const navigate = (s: RootScreen) => setScreen(s);
+
+  return (
+    <FantasyShell>
+      {screen !== 'game' ? <OfflineBanner /> : null}
+      <div className="min-h-screen text-[var(--text-primary)] antialiased">
+        {screen === 'home' ? (
+          <HomeScreen navigate={navigate} />
+        ) : screen === 'game' ? (
+          <GameScreen navigate={navigate} />
+        ) : screen === 'world' ? (
+          <WorldScreen navigate={navigate} />
+        ) : screen === 'league' ? (
+          <LeagueScreen navigate={navigate} />
+        ) : screen === 'settings' ? (
+          <SettingsScreen navigate={navigate} />
+        ) : screen === 'shop' ? (
+          <ShopScreen navigate={navigate} />
+        ) : (
+          <HomeScreen navigate={navigate} />
+        )}
+      </div>
+    </FantasyShell>
+  );
+}
+
+export default function App() {
+  return (
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <AppRoutes />
+      </QueryClientProvider>
+    </ErrorBoundary>
+  );
+}
