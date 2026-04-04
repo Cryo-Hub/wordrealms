@@ -98,7 +98,7 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
         <button
           type="button"
           onClick={() => navigate('battlepass')}
-          className="fantasy-card w-full border border-[#3d3510] py-3 text-center font-cinzel text-sm font-semibold text-[#c9a227] transition active:scale-[0.99]"
+          className="fantasy-button mx-auto w-full max-w-sm min-h-[48px] text-sm normal-case tracking-normal text-[#c9a227]"
         >
           📜 Battle Pass
         </button>
