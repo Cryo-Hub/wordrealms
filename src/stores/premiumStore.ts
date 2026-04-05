@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { BATTLE_PASS_SEASON_ID } from '../core/game/battlePassData';
 import { checkPremiumStatus } from '../services/revenuecat/purchaseService';
 
 const XP_PER_LEVEL = 100;
@@ -8,6 +9,8 @@ const MAX_LEVEL = 30;
 export type PremiumState = {
   isPremium: boolean;
   isLoading: boolean;
+  /** Stimmt mit `BATTLE_PASS_SEASON_ID` in battlePassData überein; sonst Reset. */
+  battlePassSeasonId: string;
   battlePassLevel: number;
   battlePassXP: number;
   claimedRewards: string[];
@@ -50,6 +53,7 @@ export const usePremiumStore = create<PremiumState>()(
     (set, get) => ({
       isPremium: false,
       isLoading: true,
+      battlePassSeasonId: BATTLE_PASS_SEASON_ID,
       battlePassLevel: 1,
       battlePassXP: 0,
       claimedRewards: [],
@@ -114,6 +118,7 @@ export const usePremiumStore = create<PremiumState>()(
       name: 'wordrealms-premium',
       partialize: (s) => ({
         isPremium: s.isPremium,
+        battlePassSeasonId: s.battlePassSeasonId,
         battlePassLevel: s.battlePassLevel,
         battlePassXP: s.battlePassXP,
         claimedRewards: s.claimedRewards,
@@ -123,3 +128,19 @@ export const usePremiumStore = create<PremiumState>()(
     },
   ),
 );
+
+usePremiumStore.persist.onFinishHydration(() => {
+  const sid = usePremiumStore.getState().battlePassSeasonId;
+  if (sid === undefined) {
+    usePremiumStore.setState({ battlePassSeasonId: BATTLE_PASS_SEASON_ID });
+    return;
+  }
+  if (sid !== BATTLE_PASS_SEASON_ID) {
+    usePremiumStore.setState({
+      battlePassSeasonId: BATTLE_PASS_SEASON_ID,
+      battlePassLevel: 1,
+      battlePassXP: 0,
+      claimedRewards: [],
+    });
+  }
+});

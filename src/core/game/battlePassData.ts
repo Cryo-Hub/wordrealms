@@ -20,6 +20,12 @@ export type BattlePassReward = {
   skinKey?: string;
 };
 
+/**
+ * Lokaler Speicher: bei Änderung werden Battle-Pass-Level, XP und
+ * `claimedRewards` zurückgesetzt (neue Saison).
+ */
+export const BATTLE_PASS_SEASON_ID = '1';
+
 const freeRow = (
   level: number,
   type: RewardType,

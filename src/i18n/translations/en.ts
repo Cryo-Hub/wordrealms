@@ -45,6 +45,7 @@ export const en: Record<string, string> = {
   'game.no_words': 'No words yet.',
   'game.words_found': 'Words Found',
   'game.complete_button': "Complete Today's Puzzle",
+  'game.level_solved_title': 'Puzzle solved! 🏆',
   'game.archive': '📜 Archive',
   'game.come_back': 'Come back tomorrow for Puzzle #{n}!',
   'game.not_valid': 'Not a valid word',

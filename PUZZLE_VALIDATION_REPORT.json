@@ -183,6 +183,13 @@
       "weakCount": 0
     },
     {
+      "file": "puzzles-tr-101-200.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
       "file": "puzzles-tr-201-300.json",
       "status": "OK",
       "levels": 100,
@@ -204,7 +211,7 @@
       "weakCount": 0
     }
   ],
-  "totalLevels": 2900,
+  "totalLevels": 3000,
   "totalRemoved": 0,
   "weakLevels": [
     {

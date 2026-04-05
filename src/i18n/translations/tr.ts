@@ -43,6 +43,7 @@ export const tr: Record<keyof typeof en, string> = {
   'game.no_words': 'Henüz kelime yok.',
   'game.words_found': 'Bulunan kelimeler',
   'game.complete_button': 'Bugünkü bulmacayı tamamla',
+  'game.level_solved_title': 'Bulmaca çözüldü! 🏆',
   'game.archive': '📜 Arşiv',
   'game.come_back': 'Yarın #{n} bulmacası için geri gel!',
   'game.not_valid': 'Geçerli bir kelime değil',

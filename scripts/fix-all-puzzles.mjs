@@ -34,7 +34,7 @@ const files = [
   'puzzles-pl-1-100.json','puzzles-pl-101-200.json',
   'puzzles-pl-201-300.json','puzzles-pl-301-400.json',
   'puzzles-pl-401-500.json',
-  'puzzles-tr-1-100.json',
+  'puzzles-tr-1-100.json','puzzles-tr-101-200.json',
   'puzzles-tr-201-300.json','puzzles-tr-301-400.json',
   'puzzles-tr-401-500.json',
 ];

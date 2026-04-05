@@ -43,6 +43,7 @@ export const es: Record<keyof typeof en, string> = {
   'game.no_words': 'Aún no hay palabras.',
   'game.words_found': 'Palabras encontradas',
   'game.complete_button': 'Completar el puzzle de hoy',
+  'game.level_solved_title': '¡Puzzle resuelto! 🏆',
   'game.archive': '📜 Archivo',
   'game.come_back': '¡Vuelve mañana para el puzzle n.º {n}!',
   'game.not_valid': 'Palabra no válida',

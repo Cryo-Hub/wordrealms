@@ -43,6 +43,7 @@ export const pl: Record<keyof typeof en, string> = {
   'game.no_words': 'Jeszcze brak słów.',
   'game.words_found': 'Znalezione słowa',
   'game.complete_button': 'Ukończ dzisiejszą zagadkę',
+  'game.level_solved_title': 'Zagadka rozwiązana! 🏆',
   'game.archive': '📜 Archiwum',
   'game.come_back': 'Wróć jutro po zagadkę nr {n}!',
   'game.not_valid': 'Nieprawidłowe słowo',

@@ -1,42 +1,6 @@
 import type { SupportedLanguage } from './dictionaryManager';
 import { type PuzzleConfig, formatPuzzleDate, pickGridWords } from './puzzleGenerator';
 
-// EN
-import rawEn1   from '../../data/puzzles-en-1-100.json';
-import rawEn2   from '../../data/puzzles-en-101-200.json';
-import rawEn3   from '../../data/puzzles-en-201-300.json';
-import rawEn4   from '../../data/puzzles-en-301-400.json';
-import rawEn5   from '../../data/puzzles-en-401-500.json';
-// DE
-import rawDe1   from '../../data/puzzles-de-1-100.json';
-import rawDe2   from '../../data/puzzles-de-101-200.json';
-import rawDe3   from '../../data/puzzles-de-201-300.json';
-import rawDe4   from '../../data/puzzles-de-301-400.json';
-import rawDe5   from '../../data/puzzles-de-401-500.json';
-// FR
-import rawFr1   from '../../data/puzzles-fr-1-100.json';
-import rawFr2   from '../../data/puzzles-fr-101-200.json';
-import rawFr3   from '../../data/puzzles-fr-201-300.json';
-import rawFr4   from '../../data/puzzles-fr-301-400.json';
-import rawFr5   from '../../data/puzzles-fr-401-500.json';
-// ES
-import rawEs1   from '../../data/puzzles-es-1-100.json';
-import rawEs2   from '../../data/puzzles-es-101-200.json';
-import rawEs3   from '../../data/puzzles-es-201-300.json';
-import rawEs4   from '../../data/puzzles-es-301-400.json';
-import rawEs5   from '../../data/puzzles-es-401-500.json';
-// PL
-import rawPl1   from '../../data/puzzles-pl-1-100.json';
-import rawPl2   from '../../data/puzzles-pl-101-200.json';
-import rawPl3   from '../../data/puzzles-pl-201-300.json';
-import rawPl4   from '../../data/puzzles-pl-301-400.json';
-import rawPl5   from '../../data/puzzles-pl-401-500.json';
-// TR (no 101-200)
-import rawTr1   from '../../data/puzzles-tr-1-100.json';
-import rawTr3   from '../../data/puzzles-tr-201-300.json';
-import rawTr4   from '../../data/puzzles-tr-301-400.json';
-import rawTr5   from '../../data/puzzles-tr-401-500.json';
-
 const ANCHOR_DATE = '2025-01-01';
 
 type LevelEntry = {
@@ -52,63 +16,125 @@ type LevelEntry = {
   theme: string;
 };
 
-const EN_LEVELS: LevelEntry[] = [
-  ...(rawEn1 as LevelEntry[]),
-  ...(rawEn2 as LevelEntry[]),
-  ...(rawEn3 as LevelEntry[]),
-  ...(rawEn4 as LevelEntry[]),
-  ...(rawEn5 as LevelEntry[]),
-];
+/** Levels per language (matches previous static concat). */
+const LEVEL_COUNT: Record<SupportedLanguage, number> = {
+  en: 500,
+  de: 500,
+  fr: 500,
+  es: 500,
+  pl: 500,
+  tr: 500,
+};
 
-const DE_LEVELS: LevelEntry[] = [
-  ...(rawDe1 as LevelEntry[]),
-  ...(rawDe2 as LevelEntry[]),
-  ...(rawDe3 as LevelEntry[]),
-  ...(rawDe4 as LevelEntry[]),
-  ...(rawDe5 as LevelEntry[]),
-];
+/** Each language has 5 chunks of 100 levels = 500 levels total. */
+const PUZZLE_FILES: Record<SupportedLanguage, readonly string[]> = {
+  en: [
+    'puzzles-en-1-100.json',
+    'puzzles-en-101-200.json',
+    'puzzles-en-201-300.json',
+    'puzzles-en-301-400.json',
+    'puzzles-en-401-500.json',
+  ],
+  de: [
+    'puzzles-de-1-100.json',
+    'puzzles-de-101-200.json',
+    'puzzles-de-201-300.json',
+    'puzzles-de-301-400.json',
+    'puzzles-de-401-500.json',
+  ],
+  fr: [
+    'puzzles-fr-1-100.json',
+    'puzzles-fr-101-200.json',
+    'puzzles-fr-201-300.json',
+    'puzzles-fr-301-400.json',
+    'puzzles-fr-401-500.json',
+  ],
+  es: [
+    'puzzles-es-1-100.json',
+    'puzzles-es-101-200.json',
+    'puzzles-es-201-300.json',
+    'puzzles-es-301-400.json',
+    'puzzles-es-401-500.json',
+  ],
+  pl: [
+    'puzzles-pl-1-100.json',
+    'puzzles-pl-101-200.json',
+    'puzzles-pl-201-300.json',
+    'puzzles-pl-301-400.json',
+    'puzzles-pl-401-500.json',
+  ],
+  tr: [
+    'puzzles-tr-1-100.json',
+    'puzzles-tr-101-200.json',
+    'puzzles-tr-201-300.json',
+    'puzzles-tr-301-400.json',
+    'puzzles-tr-401-500.json',
+  ],
+};
 
-const FR_LEVELS: LevelEntry[] = [
-  ...(rawFr1 as LevelEntry[]),
-  ...(rawFr2 as LevelEntry[]),
-  ...(rawFr3 as LevelEntry[]),
-  ...(rawFr4 as LevelEntry[]),
-  ...(rawFr5 as LevelEntry[]),
-];
+const CHUNK_SIZE = 100;
 
-const ES_LEVELS: LevelEntry[] = [
-  ...(rawEs1 as LevelEntry[]),
-  ...(rawEs2 as LevelEntry[]),
-  ...(rawEs3 as LevelEntry[]),
-  ...(rawEs4 as LevelEntry[]),
-  ...(rawEs5 as LevelEntry[]),
-];
+/** Nur referenzierte Dateien — kein `puzzles-*.json`-Glob (sonst z. B. ungenutzte TR-Dateien im Bundle). */
+const puzzleChunkLoaders: Record<string, () => Promise<unknown>> = {
+  'puzzles-en-1-100.json': () => import('../../data/puzzles-en-1-100.json'),
+  'puzzles-en-101-200.json': () => import('../../data/puzzles-en-101-200.json'),
+  'puzzles-en-201-300.json': () => import('../../data/puzzles-en-201-300.json'),
+  'puzzles-en-301-400.json': () => import('../../data/puzzles-en-301-400.json'),
+  'puzzles-en-401-500.json': () => import('../../data/puzzles-en-401-500.json'),
+  'puzzles-de-1-100.json': () => import('../../data/puzzles-de-1-100.json'),
+  'puzzles-de-101-200.json': () => import('../../data/puzzles-de-101-200.json'),
+  'puzzles-de-201-300.json': () => import('../../data/puzzles-de-201-300.json'),
+  'puzzles-de-301-400.json': () => import('../../data/puzzles-de-301-400.json'),
+  'puzzles-de-401-500.json': () => import('../../data/puzzles-de-401-500.json'),
+  'puzzles-fr-1-100.json': () => import('../../data/puzzles-fr-1-100.json'),
+  'puzzles-fr-101-200.json': () => import('../../data/puzzles-fr-101-200.json'),
+  'puzzles-fr-201-300.json': () => import('../../data/puzzles-fr-201-300.json'),
+  'puzzles-fr-301-400.json': () => import('../../data/puzzles-fr-301-400.json'),
+  'puzzles-fr-401-500.json': () => import('../../data/puzzles-fr-401-500.json'),
+  'puzzles-es-1-100.json': () => import('../../data/puzzles-es-1-100.json'),
+  'puzzles-es-101-200.json': () => import('../../data/puzzles-es-101-200.json'),
+  'puzzles-es-201-300.json': () => import('../../data/puzzles-es-201-300.json'),
+  'puzzles-es-301-400.json': () => import('../../data/puzzles-es-301-400.json'),
+  'puzzles-es-401-500.json': () => import('../../data/puzzles-es-401-500.json'),
+  'puzzles-pl-1-100.json': () => import('../../data/puzzles-pl-1-100.json'),
+  'puzzles-pl-101-200.json': () => import('../../data/puzzles-pl-101-200.json'),
+  'puzzles-pl-201-300.json': () => import('../../data/puzzles-pl-201-300.json'),
+  'puzzles-pl-301-400.json': () => import('../../data/puzzles-pl-301-400.json'),
+  'puzzles-pl-401-500.json': () => import('../../data/puzzles-pl-401-500.json'),
+  'puzzles-tr-1-100.json': () => import('../../data/puzzles-tr-1-100.json'),
+  'puzzles-tr-101-200.json': () => import('../../data/puzzles-tr-101-200.json'),
+  'puzzles-tr-201-300.json': () => import('../../data/puzzles-tr-201-300.json'),
+  'puzzles-tr-301-400.json': () => import('../../data/puzzles-tr-301-400.json'),
+  'puzzles-tr-401-500.json': () => import('../../data/puzzles-tr-401-500.json'),
+};
 
-const PL_LEVELS: LevelEntry[] = [
-  ...(rawPl1 as LevelEntry[]),
-  ...(rawPl2 as LevelEntry[]),
-  ...(rawPl3 as LevelEntry[]),
-  ...(rawPl4 as LevelEntry[]),
-  ...(rawPl5 as LevelEntry[]),
-];
+const chunkCache = new Map<string, LevelEntry[]>();
 
-// TR has no 101-200 file → 400 levels
-const TR_LEVELS: LevelEntry[] = [
-  ...(rawTr1 as LevelEntry[]),
-  ...(rawTr3 as LevelEntry[]),
-  ...(rawTr4 as LevelEntry[]),
-  ...(rawTr5 as LevelEntry[]),
-];
+async function loadChunk(filename: string): Promise<LevelEntry[]> {
+  const cached = chunkCache.get(filename);
+  if (cached) return cached;
+  const loader = puzzleChunkLoaders[filename];
+  if (!loader) throw new Error(`Puzzle chunk not in bundle: ${filename}`);
+  const mod = await loader();
+  const raw =
+    mod && typeof mod === 'object' && 'default' in mod
+      ? (mod as { default: unknown }).default
+      : mod;
+  const arr = Array.isArray(raw) ? (raw as LevelEntry[]) : [];
+  chunkCache.set(filename, arr);
+  return arr;
+}
 
-function getLevelsForLanguage(lang: string): LevelEntry[] {
-  switch (lang) {
-    case 'de': return DE_LEVELS;
-    case 'fr': return FR_LEVELS;
-    case 'es': return ES_LEVELS;
-    case 'pl': return PL_LEVELS;
-    case 'tr': return TR_LEVELS;
-    default:   return EN_LEVELS;
-  }
+function resolveFileAndLocalIndex(
+  lang: SupportedLanguage,
+  normalizedIdx: number,
+): { file: string; localIdx: number } {
+  const files = PUZZLE_FILES[lang];
+  const chunkSlot = Math.floor(normalizedIdx / CHUNK_SIZE);
+  const file = files[chunkSlot];
+  if (!file) throw new Error(`Invalid puzzle chunk ${chunkSlot} for ${lang}`);
+  const localIdx = normalizedIdx % CHUNK_SIZE;
+  return { file, localIdx };
 }
 
 /** Days between two YYYY-MM-DD strings (local noon). */
@@ -182,15 +208,18 @@ function writeProgress(p: ArchiveProgress): void {
 /**
  * Returns the daily puzzle for a given date and language.
  * Index is derived from days since 2025-01-01, cycling over the available levels.
+ * Only one ~100-level JSON chunk is loaded per request (cached in memory).
  */
 export async function getPuzzleForDate(date: string, language: SupportedLanguage): Promise<PuzzleConfig> {
-  const levels = getLevelsForLanguage(language);
-  if (levels.length === 0) {
-    throw new Error(`No puzzle levels loaded for language: ${language}`);
-  }
+  const n = LEVEL_COUNT[language];
   const d = daysBetween(ANCHOR_DATE, date);
-  const idx = ((d % levels.length) + levels.length) % levels.length;
-  const level = levels[idx]!;
+  const idx = ((d % n) + n) % n;
+  const { file, localIdx } = resolveFileAndLocalIndex(language, idx);
+  const chunk = await loadChunk(file);
+  const level = chunk[localIdx];
+  if (!level) {
+    throw new Error(`Missing puzzle at ${file}[${localIdx}]`);
+  }
   return normalizePuzzleConfig(mapLevelToPuzzle(level, date));
 }
 

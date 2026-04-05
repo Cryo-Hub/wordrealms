@@ -355,7 +355,7 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
               className="max-w-sm rounded-xl border-2 border-[#c9a227] bg-gradient-to-b from-[#2a2018] to-[#0f0a06] px-8 py-10 text-center shadow-[0_0_40px_rgba(201,162,39,0.35)]"
             >
               <p className="font-cinzel text-2xl font-bold text-[#c9a227] drop-shadow-[0_0_12px_rgba(201,162,39,0.6)]">
-                Rätsel gelöst! 🏆
+                {t('game.level_solved_title')}
               </p>
               <button
                 type="button"
