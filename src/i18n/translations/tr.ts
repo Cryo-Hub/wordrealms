@@ -57,6 +57,8 @@ export const tr: Record<keyof typeof en, string> = {
   'game.loading_dict': 'Sözlük yükleniyor…',
   'game.archive_note': 'Arşiv — sıralamaya girmez',
   'game.no_hints': 'İpucu kalmadı.',
+  'game.bonus_words_title': '✨ Bonus kelimeler',
+  'game.bonus_progress': '{found}/{total} bonus kelime',
   'game.back_today': '← Bugünkü bulmacaya dön',
 
   'world.title': 'Krallığın',

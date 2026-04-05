@@ -59,6 +59,8 @@ export const en: Record<string, string> = {
   'game.loading_dict': 'Loading dictionary…',
   'game.archive_note': 'Archive — not ranked',
   'game.no_hints': 'No hints left.',
+  'game.bonus_words_title': '✨ Bonus Words',
+  'game.bonus_progress': '{found}/{total} bonus words',
   'game.back_today': "← Back to today's puzzle",
 
   // World

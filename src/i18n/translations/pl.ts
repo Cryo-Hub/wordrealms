@@ -57,6 +57,8 @@ export const pl: Record<keyof typeof en, string> = {
   'game.loading_dict': 'Ładowanie słownika…',
   'game.archive_note': 'Archiwum — bez rankingu',
   'game.no_hints': 'Brak podpowiedzi.',
+  'game.bonus_words_title': '✨ Słowa bonusowe',
+  'game.bonus_progress': '{found}/{total} słów bonusowych',
   'game.back_today': '← Wróć do dzisiejszej zagadki',
 
   'world.title': 'Twoje Królestwo',

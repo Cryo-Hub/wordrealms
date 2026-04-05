@@ -57,6 +57,8 @@ export const de: Record<keyof typeof en, string> = {
   'game.loading_dict': 'Wörterbuch wird geladen…',
   'game.archive_note': 'Archiv — ohne Rangliste',
   'game.no_hints': 'Keine Tipps mehr.',
+  'game.bonus_words_title': '✨ Bonuswörter',
+  'game.bonus_progress': '{found}/{total} Bonuswörter',
   'game.back_today': '← Zum heutigen Rätsel',
 
   'world.title': 'Dein Königreich',

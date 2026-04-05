@@ -89,6 +89,18 @@ function wordsForCrosswordGrid(puzzle: PuzzleConfig): string[] {
   return uniq.filter((w) => w.length >= 2);
 }
 
+/** Bonuswörter: explizit `bonusWords` oder `validWords` minus `grid_words`. */
+function bonusWordPool(puzzle: PuzzleConfig): string[] {
+  const u = (s: string) => s.trim().toUpperCase();
+  if (puzzle.bonusWords && puzzle.bonusWords.length > 0) {
+    return [...new Set(puzzle.bonusWords.map(u))].sort((a, b) => a.localeCompare(b));
+  }
+  const grid = new Set((puzzle.grid_words ?? []).map(u));
+  return [...new Set(puzzle.validWords.map(u).filter((w) => !grid.has(w)))].sort((a, b) =>
+    a.localeCompare(b),
+  );
+}
+
 type DailyPuzzleProps = {
   onNavigate: (screen: RootScreen) => void;
 };
@@ -130,6 +142,18 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   const wordDebounceRef = useRef<number | undefined>(undefined);
 
   const gridSourceWords = useMemo(() => (puzzle ? wordsForCrosswordGrid(puzzle) : []), [puzzle]);
+
+  const bonusPool = useMemo(() => (puzzle ? bonusWordPool(puzzle) : []), [puzzle]);
+
+  const foundBonusSet = useMemo(
+    () => new Set(foundWords.map((w) => w.toUpperCase())),
+    [foundWords],
+  );
+
+  const foundBonusCount = useMemo(
+    () => bonusPool.filter((w) => foundBonusSet.has(w)).length,
+    [bonusPool, foundBonusSet],
+  );
 
   useEffect(() => {
     let cancel = false;
@@ -377,8 +401,53 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
       </AnimatePresence>
 
       <div className="flex min-h-0 w-full max-w-[480px] flex-1 flex-col items-center justify-center px-3 sm:px-4">
-        <div className="flex w-full max-h-[45vh] min-h-0 flex-shrink-0 flex-col items-center justify-center overflow-visible py-2">
-          <CrosswordGrid crossword={crossword} />
+        <div className="flex w-full min-h-0 flex-shrink-0 flex-col gap-2 py-2 sm:flex-row sm:items-start sm:justify-center sm:gap-3">
+          {bonusPool.length > 0 ? (
+            <aside className="order-2 w-full shrink-0 sm:order-1 sm:max-w-[9.5rem]">
+              <p className="mb-1 text-center font-cinzel text-[10px] font-semibold uppercase tracking-wide text-[#a89878] sm:text-left">
+                {t('game.bonus_words_title')}
+              </p>
+              <p className="mb-1.5 text-center font-num text-[10px] text-[#7a6c58] sm:text-left">
+                {t('game.bonus_progress', { found: foundBonusCount, total: bonusPool.length })}
+              </p>
+              <ul
+                className="mx-auto flex max-h-[min(28vh,9rem)] w-full max-w-[min(100%,16rem)] flex-col gap-0.5 overflow-y-auto rounded-md border border-[#3a3028]/80 bg-[rgba(8,6,4,0.45)] px-2 py-1.5 sm:mx-0 sm:max-w-none"
+                aria-label={t('game.bonus_words_title')}
+              >
+                {bonusPool.map((word) => {
+                  const found = foundBonusSet.has(word);
+                  return (
+                    <li key={word} className="min-h-[1.125rem] list-none leading-tight">
+                      {found ? (
+                        <motion.span
+                          layout
+                          initial={{ opacity: 0, x: -6 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ type: 'spring', stiffness: 420, damping: 28 }}
+                          className="inline-flex items-center gap-1 font-cinzel text-[11px] font-semibold text-[#d4af37] line-through decoration-[#c9a227]/70 decoration-1"
+                        >
+                          <span className="inline-block shrink-0 text-[10px] leading-none text-[#c9a227] no-underline">
+                            ✓
+                          </span>
+                          <span className="no-underline">{word}</span>
+                        </motion.span>
+                      ) : (
+                        <span
+                          className="font-mono text-[10px] tracking-[0.15em] text-[#5c5248]"
+                          aria-hidden
+                        >
+                          {Array.from({ length: word.length }, () => '_').join(' ')}
+                        </span>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </aside>
+          ) : null}
+          <div className="order-1 flex min-h-0 w-full max-h-[45vh] flex-1 flex-col items-center justify-center overflow-visible sm:order-2 sm:min-w-0 sm:max-h-[50vh]">
+            <CrosswordGrid crossword={crossword} />
+          </div>
         </div>
 
         <div className="flex w-full min-h-0 flex-1 flex-col items-center justify-center gap-1 overflow-visible pt-2">
