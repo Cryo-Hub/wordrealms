@@ -58,6 +58,7 @@ export const tr: Record<keyof typeof en, string> = {
   'game.archive_note': 'Arşiv — sıralamaya girmez',
   'game.no_hints': 'İpucu kalmadı.',
   'game.bonus_words_title': '✨ Bonus kelimeler',
+  'game.bonus_short': '✨ Bonus',
   'game.bonus_progress': '{found}/{total} bonus kelime',
   'game.back_today': '← Bugünkü bulmacaya dön',
 

@@ -124,7 +124,7 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   const hintTokens = usePremiumStore((s) => s.hintTokens);
   const useHintToken = usePremiumStore((s) => s.useHint);
   const addHints = usePremiumStore((s) => s.addHints);
-  const refillPremiumHintsIfNeeded = usePremiumStore((s) => s.refillPremiumHintsIfNeeded);
+  const refillDailyHintsIfNeeded = usePremiumStore((s) => s.refillDailyHintsIfNeeded);
 
   const activeDate = formatPuzzleDate();
   const todayStr = formatPuzzleDate();
@@ -150,8 +150,8 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
     [foundWords],
   );
 
-  const foundBonusCount = useMemo(
-    () => bonusPool.filter((w) => foundBonusSet.has(w)).length,
+  const foundBonusWords = useMemo(
+    () => bonusPool.filter((w) => foundBonusSet.has(w)).sort((a, b) => a.localeCompare(b)),
     [bonusPool, foundBonusSet],
   );
 
@@ -189,8 +189,8 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   }, [foundWords, activeDate, puzzle]);
 
   useEffect(() => {
-    refillPremiumHintsIfNeeded();
-  }, [refillPremiumHintsIfNeeded]);
+    refillDailyHintsIfNeeded();
+  }, [refillDailyHintsIfNeeded]);
 
   const hintValidWords = useMemo(() => {
     if (!puzzle) return [];
@@ -401,54 +401,39 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
       </AnimatePresence>
 
       <div className="flex min-h-0 w-full max-w-[480px] flex-1 flex-col items-center justify-center px-3 sm:px-4">
-        <div className="flex w-full min-h-0 flex-shrink-0 flex-col gap-2 py-2 sm:flex-row sm:items-start sm:justify-center sm:gap-3">
-          {bonusPool.length > 0 ? (
-            <aside className="order-2 w-full shrink-0 sm:order-1 sm:max-w-[9.5rem]">
-              <p className="mb-1 text-center font-cinzel text-[10px] font-semibold uppercase tracking-wide text-[#a89878] sm:text-left">
-                {t('game.bonus_words_title')}
-              </p>
-              <p className="mb-1.5 text-center font-num text-[10px] text-[#7a6c58] sm:text-left">
-                {t('game.bonus_progress', { found: foundBonusCount, total: bonusPool.length })}
-              </p>
-              <ul
-                className="mx-auto flex max-h-[min(28vh,9rem)] w-full max-w-[min(100%,16rem)] flex-col gap-0.5 overflow-y-auto rounded-md border border-[#3a3028]/80 bg-[rgba(8,6,4,0.45)] px-2 py-1.5 sm:mx-0 sm:max-w-none"
-                aria-label={t('game.bonus_words_title')}
-              >
-                {bonusPool.map((word) => {
-                  const found = foundBonusSet.has(word);
-                  return (
-                    <li key={word} className="min-h-[1.125rem] list-none leading-tight">
-                      {found ? (
-                        <motion.span
-                          layout
-                          initial={{ opacity: 0, x: -6 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ type: 'spring', stiffness: 420, damping: 28 }}
-                          className="inline-flex items-center gap-1 font-cinzel text-[11px] font-semibold text-[#d4af37] line-through decoration-[#c9a227]/70 decoration-1"
-                        >
-                          <span className="inline-block shrink-0 text-[10px] leading-none text-[#c9a227] no-underline">
-                            ✓
-                          </span>
-                          <span className="no-underline">{word}</span>
-                        </motion.span>
-                      ) : (
-                        <span
-                          className="font-mono text-[10px] tracking-[0.15em] text-[#5c5248]"
-                          aria-hidden
-                        >
-                          {Array.from({ length: word.length }, () => '_').join(' ')}
-                        </span>
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
-            </aside>
-          ) : null}
-          <div className="order-1 flex min-h-0 w-full max-h-[45vh] flex-1 flex-col items-center justify-center overflow-visible sm:order-2 sm:min-w-0 sm:max-h-[50vh]">
-            <CrosswordGrid crossword={crossword} />
-          </div>
+        <div className="flex w-full max-h-[45vh] min-h-0 flex-shrink-0 flex-col items-center justify-center overflow-visible py-2">
+          <CrosswordGrid crossword={crossword} />
         </div>
+
+        {foundBonusWords.length > 0 ? (
+          <div className="w-full max-w-[480px] shrink-0 px-0.5 pt-1">
+            <p className="mb-1 text-center font-cinzel text-[10px] font-semibold text-[#c9a227]">
+              {t('game.bonus_short')}
+            </p>
+            <div className="w-full overflow-x-auto pb-0.5 [-webkit-overflow-scrolling:touch]">
+              <div
+                className="grid w-max max-h-[4.25rem] grid-flow-col grid-rows-2 gap-x-1.5 gap-y-1 px-0.5"
+                style={{ gridAutoColumns: 'max-content' }}
+                aria-label={t('game.bonus_short')}
+              >
+                <AnimatePresence initial={false}>
+                  {foundBonusWords.map((word) => (
+                    <motion.span
+                      key={word}
+                      layout
+                      initial={{ scale: 0.82, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ type: 'spring', stiffness: 420, damping: 28 }}
+                      className="inline-flex items-center justify-center rounded-md border border-[#c9a227]/85 bg-[rgba(8,6,4,0.92)] px-2 py-0.5 font-cinzel text-[11px] font-semibold tabular-nums tracking-wide text-[#e8c84a] shadow-[inset_0_0_10px_rgba(201,162,39,0.08)]"
+                    >
+                      {word}
+                    </motion.span>
+                  ))}
+                </AnimatePresence>
+              </div>
+            </div>
+          </div>
+        ) : null}
 
         <div className="flex w-full min-h-0 flex-1 flex-col items-center justify-center gap-1 overflow-visible pt-2">
           <GameWordDots />

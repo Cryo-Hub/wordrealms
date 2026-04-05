@@ -48,7 +48,7 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
   const emojis = builtList.map((bt) => getBuildingDisplayEmoji(bt, claimedRewards)).join(' ');
 
   return (
-    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-24 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] overflow-y-auto pb-24 pt-[72px]">
       <ResourceBar />
 
       <div className="relative flex w-full flex-col gap-3 px-4 pb-4">

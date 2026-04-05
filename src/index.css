@@ -54,6 +54,7 @@ html,
 body {
   overscroll-behavior: none;
   overflow-x: hidden;
+  overflow-y: auto;
   max-width: 100vw;
   background-color: var(--bg-deep);
   background-image: url('/assets/bg-fantasy.jpg');

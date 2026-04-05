@@ -58,6 +58,7 @@ export const pl: Record<keyof typeof en, string> = {
   'game.archive_note': 'Archiwum — bez rankingu',
   'game.no_hints': 'Brak podpowiedzi.',
   'game.bonus_words_title': '✨ Słowa bonusowe',
+  'game.bonus_short': '✨ Bonus',
   'game.bonus_progress': '{found}/{total} słów bonusowych',
   'game.back_today': '← Wróć do dzisiejszej zagadki',
 

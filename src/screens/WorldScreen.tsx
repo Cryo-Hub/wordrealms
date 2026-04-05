@@ -101,7 +101,7 @@ export function WorldScreen({ navigate }: WorldScreenProps) {
   };
 
   return (
-    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-36 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] overflow-y-auto pb-36 pt-[72px]">
       <ResourceBar />
       <motion.div
         initial={{ opacity: 0, y: 6 }}

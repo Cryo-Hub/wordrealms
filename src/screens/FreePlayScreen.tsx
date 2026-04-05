@@ -133,7 +133,7 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
   const hintTokens = usePremiumStore((s) => s.hintTokens);
   const useHintToken = usePremiumStore((s) => s.useHint);
   const addHints = usePremiumStore((s) => s.addHints);
-  const refillPremiumHintsIfNeeded = usePremiumStore((s) => s.refillPremiumHintsIfNeeded);
+  const refillDailyHintsIfNeeded = usePremiumStore((s) => s.refillDailyHintsIfNeeded);
 
   const energy = useEnergyStore((s) => s.energy);
   const refillDailyEnergy = useEnergyStore((s) => s.refillDailyEnergy);
@@ -164,8 +164,8 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
   }, [seed, resetSession, startSession]);
 
   useEffect(() => {
-    refillPremiumHintsIfNeeded();
-  }, [refillPremiumHintsIfNeeded]);
+    refillDailyHintsIfNeeded();
+  }, [refillDailyHintsIfNeeded]);
 
   useEffect(() => {
     let cancel = false;

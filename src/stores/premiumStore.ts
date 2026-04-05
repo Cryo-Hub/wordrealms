@@ -15,7 +15,7 @@ export type PremiumState = {
   battlePassXP: number;
   claimedRewards: string[];
   hintTokens: number;
-  /** YYYY-MM-DD — letzte tägliche Auffüllung für Premium +2 Hints */
+  /** YYYY-MM-DD — letzte tägliche Auffüllung der Hinweis-Tokens (3/Tag) */
   lastHintRefillDate: string;
   checkPremium: () => Promise<void>;
   setPremium: (v: boolean) => void;
@@ -25,8 +25,8 @@ export type PremiumState = {
   addHints: (n: number) => void;
   /** Verbraucht 1 Token wenn vorhanden */
   useHint: () => boolean;
-  /** Premium: +2 Hints pro Kalendertag (einmal) */
-  refillPremiumHintsIfNeeded: () => void;
+  /** Setzt `hintTokens` auf 3, wenn ein neuer Kalendertag begonnen hat. */
+  refillDailyHintsIfNeeded: () => void;
 };
 
 function todayStr(): string {
@@ -103,15 +103,11 @@ export const usePremiumStore = create<PremiumState>()(
         return true;
       },
 
-      refillPremiumHintsIfNeeded: () => {
+      refillDailyHintsIfNeeded: () => {
         const day = todayStr();
         const s = get();
-        if (!s.isPremium) return;
         if (s.lastHintRefillDate === day) return;
-        set({
-          lastHintRefillDate: day,
-          hintTokens: s.hintTokens + 2,
-        });
+        set({ lastHintRefillDate: day, hintTokens: 3 });
       },
     }),
     {
@@ -143,4 +139,5 @@ usePremiumStore.persist.onFinishHydration(() => {
       claimedRewards: [],
     });
   }
+  usePremiumStore.getState().refillDailyHintsIfNeeded();
 });

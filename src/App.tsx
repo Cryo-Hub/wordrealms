@@ -241,11 +241,24 @@ function AppRoutes() {
 
   const navigate = (s: RootScreen) => setScreen(s);
 
+  const isPlayScreen = screen === 'game' || screen === 'freeplay';
+
+  useEffect(() => {
+    if (gate !== 'main') return;
+    usePremiumStore.getState().refillDailyHintsIfNeeded();
+  }, [gate]);
+
   return (
     <FantasyShell>
       {screen !== 'game' && screen !== 'freeplay' ? <OfflineIndicator /> : null}
       <InstallPromptBanner />
-      <div className="min-h-0 min-h-screen w-full overflow-x-hidden overflow-y-visible text-[var(--text-primary)] antialiased">
+      <div
+        className={
+          isPlayScreen
+            ? 'min-h-0 h-[100dvh] w-full overflow-x-hidden overflow-y-hidden text-[var(--text-primary)] antialiased'
+            : 'min-h-screen max-h-[100dvh] w-full overflow-x-hidden overflow-y-auto text-[var(--text-primary)] antialiased'
+        }
+      >
         <Suspense fallback={<LoadingScreen />}>
           <AnimatePresence mode="wait">
             <motion.div
@@ -254,7 +267,11 @@ function AppRoutes() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="min-h-0 w-full overflow-x-hidden overflow-y-visible"
+              className={
+                isPlayScreen
+                  ? 'min-h-0 h-full w-full overflow-x-hidden overflow-y-hidden'
+                  : 'w-full overflow-x-hidden overflow-y-visible'
+              }
             >
               <ScreenErrorBoundary>
                 {screen === 'home' ? (

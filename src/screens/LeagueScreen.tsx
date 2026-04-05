@@ -22,7 +22,7 @@ export function LeagueScreen({ navigate }: LeagueScreenProps) {
   };
 
   return (
-    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-28 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] overflow-y-auto pb-28 pt-[72px]">
       <ResourceBar />
       <div className="w-full px-4 pb-4">
         <h1 className="wr-screen-title text-xl">{t('league.title')}</h1>

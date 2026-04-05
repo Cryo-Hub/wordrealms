@@ -92,7 +92,7 @@ export function BattlePassScreen({ navigate }: BattlePassScreenProps) {
   };
 
   return (
-    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-28 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] overflow-y-auto pb-28 pt-[72px]">
       <ResourceBar />
       <motion.div
         initial={{ opacity: 0, y: 8 }}

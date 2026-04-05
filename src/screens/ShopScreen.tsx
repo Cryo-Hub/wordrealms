@@ -24,7 +24,7 @@ export function ShopScreen({ navigate }: ShopScreenProps) {
   }, []);
 
   return (
-    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-8 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] overflow-y-auto pb-8 pt-[72px]">
       <ResourceBar />
       <header className="flex w-full items-center gap-3 border-b border-[#2a2018] px-4 pb-3">
         <button type="button" className="btn-icon text-lg" onClick={() => navigate('home')}>
