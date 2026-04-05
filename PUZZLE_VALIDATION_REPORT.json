@@ -1,0 +1,691 @@
+{
+  "files": [
+    {
+      "file": "puzzles-en-1-100.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-en-101-200.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-en-201-300.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 1
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 15
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 80
+    },
+    {
+      "file": "puzzles-de-1-100.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-de-101-200.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-de-201-300.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-de-301-400.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-de-401-500.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-fr-1-100.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-fr-101-200.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-fr-201-300.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-fr-301-400.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-fr-401-500.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-es-1-100.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-es-101-200.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-es-201-300.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-es-301-400.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-es-401-500.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-pl-1-100.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-pl-101-200.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-pl-201-300.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-pl-301-400.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-pl-401-500.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-tr-1-100.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-tr-201-300.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-tr-301-400.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    },
+    {
+      "file": "puzzles-tr-401-500.json",
+      "status": "OK",
+      "levels": 100,
+      "removed": 0,
+      "weakCount": 0
+    }
+  ],
+  "totalLevels": 2900,
+  "totalRemoved": 0,
+  "weakLevels": [
+    {
+      "file": "puzzles-en-201-300.json",
+      "level": 236,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 317,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 324,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 326,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 327,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 328,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 329,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 330,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 335,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 336,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 337,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 354,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 361,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 377,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 384,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-301-400.json",
+      "level": 400,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 401,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 403,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 404,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 405,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 406,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 407,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 408,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 409,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 410,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 411,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 412,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 413,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 414,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 415,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 416,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 417,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 418,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 419,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 420,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 421,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 422,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 424,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 425,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 426,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 428,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 429,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 430,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 431,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 432,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 433,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 434,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 435,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 436,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 437,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 438,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 439,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 440,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 442,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 443,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 444,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 445,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 446,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 448,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 450,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 451,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 452,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 454,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 458,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 459,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 461,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 462,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 463,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 464,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 465,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 466,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 467,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 468,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 469,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 470,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 471,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 472,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 474,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 476,
+      "gridWords": 0
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 479,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 480,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 482,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 483,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 484,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 485,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 487,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 488,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 489,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 490,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 491,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 493,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 494,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 496,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 497,
+      "gridWords": 2
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 498,
+      "gridWords": 1
+    },
+    {
+      "file": "puzzles-en-401-500.json",
+      "level": 499,
+      "gridWords": 2
+    }
+  ]
+}

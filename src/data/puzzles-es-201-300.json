@@ -1,0 +1,8602 @@
+[
+  {
+    "id": 201,
+    "level": 201,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "ACTORES",
+        "length": 7
+      },
+      {
+        "word": "SECTOR",
+        "length": 6
+      },
+      {
+        "word": "COSTERA",
+        "length": 7
+      },
+      {
+        "word": "CASTRO",
+        "length": 6
+      },
+      {
+        "word": "CORTES",
+        "length": 6
+      },
+      {
+        "word": "COSTEAR",
+        "length": 7
+      },
+      {
+        "word": "ATROCES",
+        "length": 7
+      },
+      {
+        "word": "CORTAS",
+        "length": 6
+      },
+      {
+        "word": "TOCARSE",
+        "length": 7
+      },
+      {
+        "word": "RESCATO",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CASERO",
+        "length": 6
+      },
+      {
+        "word": "COSTAR",
+        "length": 6
+      },
+      {
+        "word": "ESTAR",
+        "length": 5
+      },
+      {
+        "word": "OTRAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "R",
+      "S",
+      "T",
+      "A",
+      "E"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 202,
+    "level": 202,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "PARTES",
+        "length": 6
+      },
+      {
+        "word": "APORTES",
+        "length": 7
+      },
+      {
+        "word": "TROPAS",
+        "length": 6
+      },
+      {
+        "word": "POSTEAR",
+        "length": 7
+      },
+      {
+        "word": "PASTOR",
+        "length": 6
+      },
+      {
+        "word": "APORTE",
+        "length": 6
+      },
+      {
+        "word": "PRESTA",
+        "length": 6
+      },
+      {
+        "word": "POSTRE",
+        "length": 6
+      },
+      {
+        "word": "ESTAR",
+        "length": 5
+      },
+      {
+        "word": "ESPARTO",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "OTRAS",
+        "length": 5
+      },
+      {
+        "word": "PRESTO",
+        "length": 6
+      },
+      {
+        "word": "REPASO",
+        "length": 6
+      },
+      {
+        "word": "TRAPOS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "R",
+      "T",
+      "A",
+      "S",
+      "E",
+      "O"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 203,
+    "level": 203,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "CONTRA",
+        "length": 6
+      },
+      {
+        "word": "CONTAR",
+        "length": 6
+      },
+      {
+        "word": "CASTRO",
+        "length": 6
+      },
+      {
+        "word": "CONTRAS",
+        "length": 7
+      },
+      {
+        "word": "CONSTA",
+        "length": 6
+      },
+      {
+        "word": "CONSTAR",
+        "length": 7
+      },
+      {
+        "word": "CORTAS",
+        "length": 6
+      },
+      {
+        "word": "NOSTRA",
+        "length": 6
+      },
+      {
+        "word": "COSTAR",
+        "length": 6
+      },
+      {
+        "word": "ANTROS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CANTOS",
+        "length": 6
+      },
+      {
+        "word": "CORTAN",
+        "length": 6
+      },
+      {
+        "word": "OTRAS",
+        "length": 5
+      },
+      {
+        "word": "NARCOS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "T",
+      "R",
+      "S",
+      "N"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 204,
+    "level": 204,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "M",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "T",
+    "grid_words": [
+      {
+        "word": "MAESTRO",
+        "length": 7
+      },
+      {
+        "word": "TOMARSE",
+        "length": 7
+      },
+      {
+        "word": "METROS",
+        "length": 6
+      },
+      {
+        "word": "MARTES",
+        "length": 6
+      },
+      {
+        "word": "TRAEMOS",
+        "length": 7
+      },
+      {
+        "word": "REMOTAS",
+        "length": 7
+      },
+      {
+        "word": "MASTER",
+        "length": 6
+      },
+      {
+        "word": "REMOTA",
+        "length": 6
+      },
+      {
+        "word": "ESTAR",
+        "length": 5
+      },
+      {
+        "word": "TRAMOS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "OTRAS",
+        "length": 5
+      },
+      {
+        "word": "STREAM",
+        "length": 6
+      },
+      {
+        "word": "MATEOS",
+        "length": 6
+      },
+      {
+        "word": "RETOMA",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "R",
+      "T",
+      "A",
+      "E",
+      "S",
+      "O"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 205,
+    "level": 205,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "RENTAS",
+        "length": 6
+      },
+      {
+        "word": "ENTRAS",
+        "length": 6
+      },
+      {
+        "word": "SENTAR",
+        "length": 6
+      },
+      {
+        "word": "RESTAN",
+        "length": 6
+      },
+      {
+        "word": "CENTRA",
+        "length": 6
+      },
+      {
+        "word": "ANTES",
+        "length": 5
+      },
+      {
+        "word": "CARNES",
+        "length": 6
+      },
+      {
+        "word": "CARNET",
+        "length": 6
+      },
+      {
+        "word": "CARNETS",
+        "length": 7
+      },
+      {
+        "word": "ESTAR",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CRESTA",
+        "length": 6
+      },
+      {
+        "word": "TRANCE",
+        "length": 6
+      },
+      {
+        "word": "RECTAS",
+        "length": 6
+      },
+      {
+        "word": "CANTES",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "R",
+      "T",
+      "S"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 206,
+    "level": 206,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "RATONES",
+        "length": 7
+      },
+      {
+        "word": "RENTAS",
+        "length": 6
+      },
+      {
+        "word": "ENTRAS",
+        "length": 6
+      },
+      {
+        "word": "NOTARSE",
+        "length": 7
+      },
+      {
+        "word": "SENTAR",
+        "length": 6
+      },
+      {
+        "word": "NESTOR",
+        "length": 6
+      },
+      {
+        "word": "RENATO",
+        "length": 6
+      },
+      {
+        "word": "RESTAN",
+        "length": 6
+      },
+      {
+        "word": "NOSTRA",
+        "length": 6
+      },
+      {
+        "word": "ANTES",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ANTROS",
+        "length": 6
+      },
+      {
+        "word": "REASON",
+        "length": 6
+      },
+      {
+        "word": "NORTE",
+        "length": 5
+      },
+      {
+        "word": "SANTO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "T",
+      "A",
+      "E",
+      "R",
+      "S"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 207,
+    "level": 207,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "SENTIR",
+        "length": 6
+      },
+      {
+        "word": "INSERTA",
+        "length": 7
+      },
+      {
+        "word": "SIENTA",
+        "length": 6
+      },
+      {
+        "word": "TIERNAS",
+        "length": 7
+      },
+      {
+        "word": "TENIAS",
+        "length": 6
+      },
+      {
+        "word": "TIERNA",
+        "length": 6
+      },
+      {
+        "word": "SIRENA",
+        "length": 6
+      },
+      {
+        "word": "REINAS",
+        "length": 6
+      },
+      {
+        "word": "SERIAN",
+        "length": 6
+      },
+      {
+        "word": "ETNIAS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SENTIA",
+        "length": 6
+      },
+      {
+        "word": "RESINA",
+        "length": 6
+      },
+      {
+        "word": "RETINA",
+        "length": 6
+      },
+      {
+        "word": "ESTIRA",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "N",
+      "A",
+      "S",
+      "R"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 208,
+    "level": 208,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "N",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "PENSAR",
+        "length": 6
+      },
+      {
+        "word": "PARTES",
+        "length": 6
+      },
+      {
+        "word": "PRENSA",
+        "length": 6
+      },
+      {
+        "word": "PRESTAN",
+        "length": 7
+      },
+      {
+        "word": "PRESTA",
+        "length": 6
+      },
+      {
+        "word": "PARTEN",
+        "length": 6
+      },
+      {
+        "word": "PARTE",
+        "length": 5
+      },
+      {
+        "word": "PESAR",
+        "length": 5
+      },
+      {
+        "word": "PENAS",
+        "length": 5
+      },
+      {
+        "word": "PASEN",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PRESA",
+        "length": 5
+      },
+      {
+        "word": "SEPAN",
+        "length": 5
+      },
+      {
+        "word": "PARES",
+        "length": 5
+      },
+      {
+        "word": "PAREN",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "S",
+      "N",
+      "T"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 209,
+    "level": 209,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "O",
+      "R",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "CASTRO",
+        "length": 6
+      },
+      {
+        "word": "CUATRO",
+        "length": 6
+      },
+      {
+        "word": "CUARTOS",
+        "length": 7
+      },
+      {
+        "word": "CORTAS",
+        "length": 6
+      },
+      {
+        "word": "CUARTO",
+        "length": 6
+      },
+      {
+        "word": "COSTAR",
+        "length": 6
+      },
+      {
+        "word": "OTRAS",
+        "length": 5
+      },
+      {
+        "word": "COSTURA",
+        "length": 7
+      },
+      {
+        "word": "CASTOR",
+        "length": 6
+      },
+      {
+        "word": "OSCURA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CUOTAS",
+        "length": 6
+      },
+      {
+        "word": "TRUCOS",
+        "length": 6
+      },
+      {
+        "word": "TURCOS",
+        "length": 6
+      },
+      {
+        "word": "CUATROS",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "T",
+      "S",
+      "C"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 210,
+    "level": 210,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "PIERNAS",
+        "length": 7
+      },
+      {
+        "word": "PENSAR",
+        "length": 6
+      },
+      {
+        "word": "PRENSA",
+        "length": 6
+      },
+      {
+        "word": "PIENSA",
+        "length": 6
+      },
+      {
+        "word": "SIRENA",
+        "length": 6
+      },
+      {
+        "word": "REINAS",
+        "length": 6
+      },
+      {
+        "word": "SERIAN",
+        "length": 6
+      },
+      {
+        "word": "RESINA",
+        "length": 6
+      },
+      {
+        "word": "PIERNA",
+        "length": 6
+      },
+      {
+        "word": "ESPINAR",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PINARES",
+        "length": 7
+      },
+      {
+        "word": "ESPINA",
+        "length": 6
+      },
+      {
+        "word": "ESPIAR",
+        "length": 6
+      },
+      {
+        "word": "PERSIA",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "R",
+      "S",
+      "I"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  },
+  {
+    "id": 211,
+    "level": 211,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "CASERO",
+        "length": 6
+      },
+      {
+        "word": "PROCESA",
+        "length": 7
+      },
+      {
+        "word": "ACEROS",
+        "length": 6
+      },
+      {
+        "word": "PESCAR",
+        "length": 6
+      },
+      {
+        "word": "CRESPO",
+        "length": 6
+      },
+      {
+        "word": "ESCAPO",
+        "length": 6
+      },
+      {
+        "word": "CASPER",
+        "length": 6
+      },
+      {
+        "word": "RECOPA",
+        "length": 6
+      },
+      {
+        "word": "COREA",
+        "length": 5
+      },
+      {
+        "word": "OSCAR",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ACERO",
+        "length": 5
+      },
+      {
+        "word": "CREAS",
+        "length": 5
+      },
+      {
+        "word": "ROCAS",
+        "length": 5
+      },
+      {
+        "word": "CESAR",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "O",
+      "S",
+      "C"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 212,
+    "level": 212,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "D",
+    "grid_words": [
+      {
+        "word": "TENDRAS",
+        "length": 7
+      },
+      {
+        "word": "TARDES",
+        "length": 6
+      },
+      {
+        "word": "DETRAS",
+        "length": 6
+      },
+      {
+        "word": "ANDRES",
+        "length": 6
+      },
+      {
+        "word": "TENDRA",
+        "length": 6
+      },
+      {
+        "word": "ANDERS",
+        "length": 6
+      },
+      {
+        "word": "TRENDS",
+        "length": 6
+      },
+      {
+        "word": "TARDEN",
+        "length": 6
+      },
+      {
+        "word": "ARENDT",
+        "length": 6
+      },
+      {
+        "word": "TARDE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DARSE",
+        "length": 5
+      },
+      {
+        "word": "DARTE",
+        "length": 5
+      },
+      {
+        "word": "ANDES",
+        "length": 5
+      },
+      {
+        "word": "STAND",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "R",
+      "A",
+      "T",
+      "N",
+      "S"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 213,
+    "level": 213,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "SANGRE",
+        "length": 6
+      },
+      {
+        "word": "TENGAS",
+        "length": 6
+      },
+      {
+        "word": "NEGRAS",
+        "length": 6
+      },
+      {
+        "word": "STRANGE",
+        "length": 7
+      },
+      {
+        "word": "GASTEN",
+        "length": 6
+      },
+      {
+        "word": "ARGENT",
+        "length": 6
+      },
+      {
+        "word": "GESTAR",
+        "length": 6
+      },
+      {
+        "word": "TENGA",
+        "length": 5
+      },
+      {
+        "word": "NEGRA",
+        "length": 5
+      },
+      {
+        "word": "NEGAR",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "GRANT",
+        "length": 5
+      },
+      {
+        "word": "GREAT",
+        "length": 5
+      },
+      {
+        "word": "GATES",
+        "length": 5
+      },
+      {
+        "word": "GESTA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 214,
+    "level": 214,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "N",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "T",
+    "grid_words": [
+      {
+        "word": "CONTRA",
+        "length": 6
+      },
+      {
+        "word": "CENTRO",
+        "length": 6
+      },
+      {
+        "word": "CONTAR",
+        "length": 6
+      },
+      {
+        "word": "CONTRAE",
+        "length": 7
+      },
+      {
+        "word": "RENATO",
+        "length": 6
+      },
+      {
+        "word": "ACENTO",
+        "length": 6
+      },
+      {
+        "word": "CORNETA",
+        "length": 7
+      },
+      {
+        "word": "CANTERO",
+        "length": 7
+      },
+      {
+        "word": "CENTRA",
+        "length": 6
+      },
+      {
+        "word": "CARNET",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CORTAN",
+        "length": 6
+      },
+      {
+        "word": "TRANCE",
+        "length": 6
+      },
+      {
+        "word": "CORTEN",
+        "length": 6
+      },
+      {
+        "word": "CANTOR",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "T",
+      "A",
+      "R",
+      "E",
+      "O"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 215,
+    "level": 215,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "TACONES",
+        "length": 7
+      },
+      {
+        "word": "ACENTOS",
+        "length": 7
+      },
+      {
+        "word": "CONSTA",
+        "length": 6
+      },
+      {
+        "word": "ESTANCO",
+        "length": 7
+      },
+      {
+        "word": "ANTES",
+        "length": 5
+      },
+      {
+        "word": "CANTOS",
+        "length": 6
+      },
+      {
+        "word": "CONSTE",
+        "length": 6
+      },
+      {
+        "word": "CONTAS",
+        "length": 6
+      },
+      {
+        "word": "SECANO",
+        "length": 6
+      },
+      {
+        "word": "CANTES",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SANTO",
+        "length": 5
+      },
+      {
+        "word": "ESTAN",
+        "length": 5
+      },
+      {
+        "word": "NOTAS",
+        "length": 5
+      },
+      {
+        "word": "COSTA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "S",
+      "A",
+      "T",
+      "O",
+      "E"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 216,
+    "level": 216,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "L",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "L",
+    "grid_words": [
+      {
+        "word": "LETRAS",
+        "length": 6
+      },
+      {
+        "word": "CARTEL",
+        "length": 6
+      },
+      {
+        "word": "LASTRE",
+        "length": 6
+      },
+      {
+        "word": "SLATER",
+        "length": 6
+      },
+      {
+        "word": "SCARLET",
+        "length": 7
+      },
+      {
+        "word": "CASTLE",
+        "length": 6
+      },
+      {
+        "word": "TECLAS",
+        "length": 6
+      },
+      {
+        "word": "CARLES",
+        "length": 6
+      },
+      {
+        "word": "CELTAS",
+        "length": 6
+      },
+      {
+        "word": "CASTEL",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TALES",
+        "length": 5
+      },
+      {
+        "word": "RECTAL",
+        "length": 6
+      },
+      {
+        "word": "LETRA",
+        "length": 5
+      },
+      {
+        "word": "CLASE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "S",
+      "T",
+      "R",
+      "L"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 217,
+    "level": 217,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "L",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "ESCOLAR",
+        "length": 7
+      },
+      {
+        "word": "CARLOS",
+        "length": 6
+      },
+      {
+        "word": "ORALES",
+        "length": 6
+      },
+      {
+        "word": "CORALES",
+        "length": 7
+      },
+      {
+        "word": "CLAROS",
+        "length": 6
+      },
+      {
+        "word": "COLARSE",
+        "length": 7
+      },
+      {
+        "word": "CASERO",
+        "length": 6
+      },
+      {
+        "word": "SOLERA",
+        "length": 6
+      },
+      {
+        "word": "CALORES",
+        "length": 7
+      },
+      {
+        "word": "ESLORA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CARLES",
+        "length": 6
+      },
+      {
+        "word": "ORACLE",
+        "length": 6
+      },
+      {
+        "word": "CALERO",
+        "length": 6
+      },
+      {
+        "word": "ACEROS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "S",
+      "E",
+      "L"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 218,
+    "level": 218,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "N",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "PERSONA",
+        "length": 7
+      },
+      {
+        "word": "PENSAR",
+        "length": 6
+      },
+      {
+        "word": "PRENSA",
+        "length": 6
+      },
+      {
+        "word": "PEARSON",
+        "length": 7
+      },
+      {
+        "word": "OPERAN",
+        "length": 6
+      },
+      {
+        "word": "REPOSAN",
+        "length": 7
+      },
+      {
+        "word": "REASON",
+        "length": 6
+      },
+      {
+        "word": "REPASO",
+        "length": 6
+      },
+      {
+        "word": "PERSON",
+        "length": 6
+      },
+      {
+        "word": "PENOSA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "POSEAN",
+        "length": 6
+      },
+      {
+        "word": "REPOSA",
+        "length": 6
+      },
+      {
+        "word": "SEPARO",
+        "length": 6
+      },
+      {
+        "word": "PONER",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "A",
+      "N",
+      "R",
+      "S",
+      "O"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 219,
+    "level": 219,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "D",
+    "grid_words": [
+      {
+        "word": "RIENDAS",
+        "length": 7
+      },
+      {
+        "word": "DIERAN",
+        "length": 6
+      },
+      {
+        "word": "ANDRES",
+        "length": 6
+      },
+      {
+        "word": "RIENDA",
+        "length": 6
+      },
+      {
+        "word": "RINDAS",
+        "length": 6
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      },
+      {
+        "word": "ANDERS",
+        "length": 6
+      },
+      {
+        "word": "DIERAS",
+        "length": 6
+      },
+      {
+        "word": "RINDES",
+        "length": 6
+      },
+      {
+        "word": "ADRIEN",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NADIE",
+        "length": 5
+      },
+      {
+        "word": "IDEAS",
+        "length": 5
+      },
+      {
+        "word": "DARSE",
+        "length": 5
+      },
+      {
+        "word": "DIERA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "R",
+      "A",
+      "E",
+      "N",
+      "I",
+      "S"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 220,
+    "level": 220,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "L",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "RELATOS",
+        "length": 7
+      },
+      {
+        "word": "SOLTERA",
+        "length": 7
+      },
+      {
+        "word": "ESTARLO",
+        "length": 7
+      },
+      {
+        "word": "RELATO",
+        "length": 6
+      },
+      {
+        "word": "SOLTAR",
+        "length": 6
+      },
+      {
+        "word": "ORALES",
+        "length": 6
+      },
+      {
+        "word": "TOLERA",
+        "length": 6
+      },
+      {
+        "word": "SOLERA",
+        "length": 6
+      },
+      {
+        "word": "ESLORA",
+        "length": 6
+      },
+      {
+        "word": "OTRAS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RESTO",
+        "length": 5
+      },
+      {
+        "word": "ALTOS",
+        "length": 5
+      },
+      {
+        "word": "SOLAR",
+        "length": 5
+      },
+      {
+        "word": "SALTO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "E",
+      "S",
+      "T"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  },
+  {
+    "id": 221,
+    "level": 221,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "M",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "M",
+    "grid_words": [
+      {
+        "word": "MATONES",
+        "length": 7
+      },
+      {
+        "word": "MONTES",
+        "length": 6
+      },
+      {
+        "word": "MATEOS",
+        "length": 6
+      },
+      {
+        "word": "METANO",
+        "length": 6
+      },
+      {
+        "word": "SOMETA",
+        "length": 6
+      },
+      {
+        "word": "MONTSE",
+        "length": 6
+      },
+      {
+        "word": "MANTOS",
+        "length": 6
+      },
+      {
+        "word": "MONTAS",
+        "length": 6
+      },
+      {
+        "word": "TOMASE",
+        "length": 6
+      },
+      {
+        "word": "AMENOS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MANOS",
+        "length": 5
+      },
+      {
+        "word": "TEMAS",
+        "length": 5
+      },
+      {
+        "word": "MONTE",
+        "length": 5
+      },
+      {
+        "word": "TOMAN",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "S",
+      "T",
+      "A",
+      "E",
+      "N"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 222,
+    "level": 222,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "TIENDA",
+        "length": 6
+      },
+      {
+        "word": "TENDRIA",
+        "length": 7
+      },
+      {
+        "word": "TIERNA",
+        "length": 6
+      },
+      {
+        "word": "RETINA",
+        "length": 6
+      },
+      {
+        "word": "DIERAN",
+        "length": 6
+      },
+      {
+        "word": "TENDRA",
+        "length": 6
+      },
+      {
+        "word": "RIENDA",
+        "length": 6
+      },
+      {
+        "word": "TINDER",
+        "length": 6
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      },
+      {
+        "word": "EDITAN",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "REINA",
+        "length": 5
+      },
+      {
+        "word": "ADRIEN",
+        "length": 6
+      },
+      {
+        "word": "TENIDA",
+        "length": 6
+      },
+      {
+        "word": "TARDEN",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "A",
+      "I",
+      "R",
+      "T"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 223,
+    "level": 223,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "TIENDAS",
+        "length": 7
+      },
+      {
+        "word": "SIENTA",
+        "length": 6
+      },
+      {
+        "word": "TENIAS",
+        "length": 6
+      },
+      {
+        "word": "TIENDA",
+        "length": 6
+      },
+      {
+        "word": "ETNIAS",
+        "length": 6
+      },
+      {
+        "word": "DESTINA",
+        "length": 7
+      },
+      {
+        "word": "SENTIA",
+        "length": 6
+      },
+      {
+        "word": "SENTIDA",
+        "length": 7
+      },
+      {
+        "word": "SAINTE",
+        "length": 6
+      },
+      {
+        "word": "NIETAS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TENIDAS",
+        "length": 7
+      },
+      {
+        "word": "DIETAS",
+        "length": 6
+      },
+      {
+        "word": "EDITAN",
+        "length": 6
+      },
+      {
+        "word": "TENIDA",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "T",
+      "S"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 224,
+    "level": 224,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "R",
+      "S",
+      "V"
+    ],
+    "center": "V",
+    "grid_words": [
+      {
+        "word": "RIVALES",
+        "length": 7
+      },
+      {
+        "word": "VIRALES",
+        "length": 7
+      },
+      {
+        "word": "REVISA",
+        "length": 6
+      },
+      {
+        "word": "VERLAS",
+        "length": 6
+      },
+      {
+        "word": "SILVER",
+        "length": 6
+      },
+      {
+        "word": "ELVIRA",
+        "length": 6
+      },
+      {
+        "word": "VIERAS",
+        "length": 6
+      },
+      {
+        "word": "VIALES",
+        "length": 6
+      },
+      {
+        "word": "SERVIL",
+        "length": 6
+      },
+      {
+        "word": "VISERA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SERVIA",
+        "length": 6
+      },
+      {
+        "word": "SIRVE",
+        "length": 5
+      },
+      {
+        "word": "VERLA",
+        "length": 5
+      },
+      {
+        "word": "SELVA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "R",
+      "S",
+      "A",
+      "V"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 225,
+    "level": 225,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "N",
+      "O",
+      "P",
+      "S",
+      "T"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "TAPONES",
+        "length": 7
+      },
+      {
+        "word": "ESPANTO",
+        "length": 7
+      },
+      {
+        "word": "POETAS",
+        "length": 6
+      },
+      {
+        "word": "POSTEAN",
+        "length": 7
+      },
+      {
+        "word": "POSTEA",
+        "length": 6
+      },
+      {
+        "word": "PENOSA",
+        "length": 6
+      },
+      {
+        "word": "POSEAN",
+        "length": 6
+      },
+      {
+        "word": "ESTOPA",
+        "length": 6
+      },
+      {
+        "word": "APONTE",
+        "length": 6
+      },
+      {
+        "word": "POETA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PASEO",
+        "length": 5
+      },
+      {
+        "word": "PONES",
+        "length": 5
+      },
+      {
+        "word": "PENAS",
+        "length": 5
+      },
+      {
+        "word": "PONTE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "O",
+      "S",
+      "T",
+      "N"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 226,
+    "level": 226,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "B",
+      "E",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "B",
+    "grid_words": [
+      {
+        "word": "ROBASTE",
+        "length": 7
+      },
+      {
+        "word": "ESTORBA",
+        "length": 7
+      },
+      {
+        "word": "BROTES",
+        "length": 6
+      },
+      {
+        "word": "REBOTA",
+        "length": 6
+      },
+      {
+        "word": "BATRES",
+        "length": 6
+      },
+      {
+        "word": "SABER",
+        "length": 5
+      },
+      {
+        "word": "OBRAS",
+        "length": 5
+      },
+      {
+        "word": "SABOR",
+        "length": 5
+      },
+      {
+        "word": "SOBRA",
+        "length": 5
+      },
+      {
+        "word": "BOTAS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "BARES",
+        "length": 5
+      },
+      {
+        "word": "BESAR",
+        "length": 5
+      },
+      {
+        "word": "BOTES",
+        "length": 5
+      },
+      {
+        "word": "BROTE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "S",
+      "O",
+      "E",
+      "T"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 227,
+    "level": 227,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "I",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "TROPAS",
+        "length": 6
+      },
+      {
+        "word": "ROSITA",
+        "length": 6
+      },
+      {
+        "word": "PASTOR",
+        "length": 6
+      },
+      {
+        "word": "PATRIOS",
+        "length": 7
+      },
+      {
+        "word": "OTRAS",
+        "length": 5
+      },
+      {
+        "word": "PATIOS",
+        "length": 6
+      },
+      {
+        "word": "PASITO",
+        "length": 6
+      },
+      {
+        "word": "TRAPOS",
+        "length": 6
+      },
+      {
+        "word": "TRIPAS",
+        "length": 6
+      },
+      {
+        "word": "PATRIO",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PARTOS",
+        "length": 6
+      },
+      {
+        "word": "PORTAS",
+        "length": 6
+      },
+      {
+        "word": "ASPIRO",
+        "length": 6
+      },
+      {
+        "word": "TIRAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "T",
+      "O",
+      "S",
+      "R",
+      "I"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 228,
+    "level": 228,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "L",
+    "grid_words": [
+      {
+        "word": "LETRAS",
+        "length": 6
+      },
+      {
+        "word": "ISRAEL",
+        "length": 6
+      },
+      {
+        "word": "SALITRE",
+        "length": 7
+      },
+      {
+        "word": "LITERAS",
+        "length": 7
+      },
+      {
+        "word": "SALIRTE",
+        "length": 7
+      },
+      {
+        "word": "SERIAL",
+        "length": 6
+      },
+      {
+        "word": "LASTRE",
+        "length": 6
+      },
+      {
+        "word": "RETAIL",
+        "length": 6
+      },
+      {
+        "word": "LITERA",
+        "length": 6
+      },
+      {
+        "word": "SLATER",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SALIR",
+        "length": 5
+      },
+      {
+        "word": "LISTA",
+        "length": 5
+      },
+      {
+        "word": "TALES",
+        "length": 5
+      },
+      {
+        "word": "LETRA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "S",
+      "T",
+      "I"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 229,
+    "level": 229,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "M",
+      "N",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "M",
+    "grid_words": [
+      {
+        "word": "REMONTA",
+        "length": 7
+      },
+      {
+        "word": "MATERNO",
+        "length": 7
+      },
+      {
+        "word": "MORENA",
+        "length": 6
+      },
+      {
+        "word": "MONTAR",
+        "length": 6
+      },
+      {
+        "word": "REMOTA",
+        "length": 6
+      },
+      {
+        "word": "RETOMAN",
+        "length": 7
+      },
+      {
+        "word": "MENTOR",
+        "length": 6
+      },
+      {
+        "word": "RETOMA",
+        "length": 6
+      },
+      {
+        "word": "METANO",
+        "length": 6
+      },
+      {
+        "word": "TOMARE",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TOMAR",
+        "length": 5
+      },
+      {
+        "word": "MENOR",
+        "length": 5
+      },
+      {
+        "word": "METRO",
+        "length": 5
+      },
+      {
+        "word": "MONTE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "A",
+      "E",
+      "R",
+      "T",
+      "N"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 230,
+    "level": 230,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "R",
+      "S",
+      "V"
+    ],
+    "center": "V",
+    "grid_words": [
+      {
+        "word": "INVERSA",
+        "length": 7
+      },
+      {
+        "word": "ENVIAR",
+        "length": 6
+      },
+      {
+        "word": "SIRVEN",
+        "length": 6
+      },
+      {
+        "word": "REVISAN",
+        "length": 7
+      },
+      {
+        "word": "REVISA",
+        "length": 6
+      },
+      {
+        "word": "SIRVAN",
+        "length": 6
+      },
+      {
+        "word": "VIERAN",
+        "length": 6
+      },
+      {
+        "word": "VIERAS",
+        "length": 6
+      },
+      {
+        "word": "AVISEN",
+        "length": 6
+      },
+      {
+        "word": "VISERA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SERVIA",
+        "length": 6
+      },
+      {
+        "word": "VENIR",
+        "length": 5
+      },
+      {
+        "word": "SIRVE",
+        "length": 5
+      },
+      {
+        "word": "VERAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "A",
+      "E",
+      "R",
+      "S",
+      "N"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  },
+  {
+    "id": 231,
+    "level": 231,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "L",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "ORALES",
+        "length": 6
+      },
+      {
+        "word": "POLARES",
+        "length": 7
+      },
+      {
+        "word": "SOLERA",
+        "length": 6
+      },
+      {
+        "word": "PERLAS",
+        "length": 6
+      },
+      {
+        "word": "ESLORA",
+        "length": 6
+      },
+      {
+        "word": "REPASO",
+        "length": 6
+      },
+      {
+        "word": "REPSOL",
+        "length": 6
+      },
+      {
+        "word": "REPOSA",
+        "length": 6
+      },
+      {
+        "word": "SEPARO",
+        "length": 6
+      },
+      {
+        "word": "POLERA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SERLO",
+        "length": 5
+      },
+      {
+        "word": "PESAR",
+        "length": 5
+      },
+      {
+        "word": "ROLES",
+        "length": 5
+      },
+      {
+        "word": "SOLER",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "R",
+      "A",
+      "O",
+      "S",
+      "L"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 232,
+    "level": 232,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "M",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "T",
+    "grid_words": [
+      {
+        "word": "SIENTA",
+        "length": 6
+      },
+      {
+        "word": "TENIAS",
+        "length": 6
+      },
+      {
+        "word": "MIENTAS",
+        "length": 7
+      },
+      {
+        "word": "ETNIAS",
+        "length": 6
+      },
+      {
+        "word": "ESTIMAN",
+        "length": 7
+      },
+      {
+        "word": "SENTIA",
+        "length": 6
+      },
+      {
+        "word": "ESTIMA",
+        "length": 6
+      },
+      {
+        "word": "ANTES",
+        "length": 5
+      },
+      {
+        "word": "SAINTE",
+        "length": 6
+      },
+      {
+        "word": "NIETAS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MESITA",
+        "length": 6
+      },
+      {
+        "word": "MIENTA",
+        "length": 6
+      },
+      {
+        "word": "EMITAN",
+        "length": 6
+      },
+      {
+        "word": "ESTAN",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "S",
+      "T",
+      "I",
+      "N"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 233,
+    "level": 233,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "SINCERA",
+        "length": 7
+      },
+      {
+        "word": "NARICES",
+        "length": 7
+      },
+      {
+        "word": "CARNES",
+        "length": 6
+      },
+      {
+        "word": "RAICES",
+        "length": 6
+      },
+      {
+        "word": "CARIES",
+        "length": 6
+      },
+      {
+        "word": "CREIAN",
+        "length": 6
+      },
+      {
+        "word": "RACINE",
+        "length": 6
+      },
+      {
+        "word": "CARNE",
+        "length": 5
+      },
+      {
+        "word": "CREAN",
+        "length": 5
+      },
+      {
+        "word": "CREAS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NACER",
+        "length": 5
+      },
+      {
+        "word": "CENAR",
+        "length": 5
+      },
+      {
+        "word": "RICAS",
+        "length": 5
+      },
+      {
+        "word": "CESAR",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "N",
+      "I",
+      "S"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 234,
+    "level": 234,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "M",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "AMORES",
+        "length": 6
+      },
+      {
+        "word": "CASERO",
+        "length": 6
+      },
+      {
+        "word": "CREAMOS",
+        "length": 7
+      },
+      {
+        "word": "ERAMOS",
+        "length": 6
+      },
+      {
+        "word": "MARCOS",
+        "length": 6
+      },
+      {
+        "word": "MAREOS",
+        "length": 6
+      },
+      {
+        "word": "ERASMO",
+        "length": 6
+      },
+      {
+        "word": "ACEROS",
+        "length": 6
+      },
+      {
+        "word": "CREMAS",
+        "length": 6
+      },
+      {
+        "word": "SCREAM",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MACROS",
+        "length": 6
+      },
+      {
+        "word": "COREA",
+        "length": 5
+      },
+      {
+        "word": "OSCAR",
+        "length": 5
+      },
+      {
+        "word": "RAMOS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "S",
+      "E",
+      "O",
+      "M"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 235,
+    "level": 235,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "P",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "SIENTA",
+        "length": 6
+      },
+      {
+        "word": "PIENSA",
+        "length": 6
+      },
+      {
+        "word": "TENIAS",
+        "length": 6
+      },
+      {
+        "word": "ETNIAS",
+        "length": 6
+      },
+      {
+        "word": "SENTIA",
+        "length": 6
+      },
+      {
+        "word": "PATINES",
+        "length": 7
+      },
+      {
+        "word": "ANTES",
+        "length": 5
+      },
+      {
+        "word": "SAINTE",
+        "length": 6
+      },
+      {
+        "word": "NIETAS",
+        "length": 6
+      },
+      {
+        "word": "ESPINA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PINTAS",
+        "length": 6
+      },
+      {
+        "word": "NAIPES",
+        "length": 6
+      },
+      {
+        "word": "ESTAN",
+        "length": 5
+      },
+      {
+        "word": "PENITA",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "S",
+      "I",
+      "T"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 236,
+    "level": 236,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "PIEDRAS",
+        "length": 7
+      },
+      {
+        "word": "PADRES",
+        "length": 6
+      },
+      {
+        "word": "PIERDAS",
+        "length": 7
+      },
+      {
+        "word": "ESPIAR",
+        "length": 6
+      },
+      {
+        "word": "DEPRISA",
+        "length": 7
+      },
+      {
+        "word": "PERSIA",
+        "length": 6
+      },
+      {
+        "word": "DIERAS",
+        "length": 6
+      },
+      {
+        "word": "AIRES",
+        "length": 5
+      },
+      {
+        "word": "DISPARE",
+        "length": 7
+      },
+      {
+        "word": "REPISA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ASPIRE",
+        "length": 6
+      },
+      {
+        "word": "SERIA",
+        "length": 5
+      },
+      {
+        "word": "SPIDER",
+        "length": 6
+      },
+      {
+        "word": "PESAR",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "S",
+      "I",
+      "P"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 237,
+    "level": 237,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "M",
+      "N",
+      "O",
+      "R"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "MIRANDO",
+        "length": 7
+      },
+      {
+        "word": "MARINO",
+        "length": 6
+      },
+      {
+        "word": "DOMINAR",
+        "length": 7
+      },
+      {
+        "word": "MARIDO",
+        "length": 6
+      },
+      {
+        "word": "MARION",
+        "length": 6
+      },
+      {
+        "word": "ROMINA",
+        "length": 6
+      },
+      {
+        "word": "DORIAN",
+        "length": 6
+      },
+      {
+        "word": "ADMIRO",
+        "length": 6
+      },
+      {
+        "word": "DOMINA",
+        "length": 6
+      },
+      {
+        "word": "MIRADO",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RANDOM",
+        "length": 6
+      },
+      {
+        "word": "MINADO",
+        "length": 6
+      },
+      {
+        "word": "RADIO",
+        "length": 5
+      },
+      {
+        "word": "ORINA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "O",
+      "R",
+      "N",
+      "M"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 238,
+    "level": 238,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "B",
+      "C",
+      "E",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "B",
+    "grid_words": [
+      {
+        "word": "ESCOBAR",
+        "length": 7
+      },
+      {
+        "word": "BARCOS",
+        "length": 6
+      },
+      {
+        "word": "SABER",
+        "length": 5
+      },
+      {
+        "word": "ESCOBA",
+        "length": 6
+      },
+      {
+        "word": "COBRAS",
+        "length": 6
+      },
+      {
+        "word": "OBRAS",
+        "length": 5
+      },
+      {
+        "word": "CABREO",
+        "length": 6
+      },
+      {
+        "word": "CABROS",
+        "length": 6
+      },
+      {
+        "word": "SABOR",
+        "length": 5
+      },
+      {
+        "word": "SOBRA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "BARES",
+        "length": 5
+      },
+      {
+        "word": "BESAR",
+        "length": 5
+      },
+      {
+        "word": "BARCO",
+        "length": 5
+      },
+      {
+        "word": "ABRES",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "S",
+      "E",
+      "B"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 239,
+    "level": 239,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "M",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "TERMINA",
+        "length": 7
+      },
+      {
+        "word": "MENTIRA",
+        "length": 7
+      },
+      {
+        "word": "TIERNA",
+        "length": 6
+      },
+      {
+        "word": "MARTIN",
+        "length": 6
+      },
+      {
+        "word": "RETINA",
+        "length": 6
+      },
+      {
+        "word": "MENTIR",
+        "length": 6
+      },
+      {
+        "word": "MINERA",
+        "length": 6
+      },
+      {
+        "word": "MIENTRA",
+        "length": 7
+      },
+      {
+        "word": "ERMITA",
+        "length": 6
+      },
+      {
+        "word": "MARINE",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MIENTA",
+        "length": 6
+      },
+      {
+        "word": "MIRATE",
+        "length": 6
+      },
+      {
+        "word": "EMITAN",
+        "length": 6
+      },
+      {
+        "word": "REINA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "R",
+      "A",
+      "E",
+      "N",
+      "T"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 240,
+    "level": 240,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "L",
+      "O",
+      "P",
+      "R",
+      "T"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "PORTAL",
+        "length": 6
+      },
+      {
+        "word": "PELOTA",
+        "length": 6
+      },
+      {
+        "word": "APORTE",
+        "length": 6
+      },
+      {
+        "word": "PLATERO",
+        "length": 7
+      },
+      {
+        "word": "PARTE",
+        "length": 5
+      },
+      {
+        "word": "POLERA",
+        "length": 6
+      },
+      {
+        "word": "POETA",
+        "length": 5
+      },
+      {
+        "word": "PLATO",
+        "length": 5
+      },
+      {
+        "word": "PARTO",
+        "length": 5
+      },
+      {
+        "word": "OPERA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TROPA",
+        "length": 5
+      },
+      {
+        "word": "PERLA",
+        "length": 5
+      },
+      {
+        "word": "OPTAR",
+        "length": 5
+      },
+      {
+        "word": "PORTA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "T",
+      "E",
+      "R",
+      "P"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  },
+  {
+    "id": 241,
+    "level": 241,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "L",
+      "N",
+      "O",
+      "P",
+      "S"
+    ],
+    "center": "L",
+    "grid_words": [
+      {
+        "word": "PLANES",
+        "length": 6
+      },
+      {
+        "word": "ESPANOL",
+        "length": 7
+      },
+      {
+        "word": "PLANOS",
+        "length": 6
+      },
+      {
+        "word": "NAPOLES",
+        "length": 7
+      },
+      {
+        "word": "PENSALO",
+        "length": 7
+      },
+      {
+        "word": "PLANEO",
+        "length": 6
+      },
+      {
+        "word": "PLENOS",
+        "length": 6
+      },
+      {
+        "word": "PLENAS",
+        "length": 6
+      },
+      {
+        "word": "SOPLAN",
+        "length": 6
+      },
+      {
+        "word": "SALEN",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PENAL",
+        "length": 5
+      },
+      {
+        "word": "LEONA",
+        "length": 5
+      },
+      {
+        "word": "PLANO",
+        "length": 5
+      },
+      {
+        "word": "SALON",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "A",
+      "S",
+      "E",
+      "O",
+      "L"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 242,
+    "level": 242,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "E",
+      "N",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "NESTOR",
+        "length": 6
+      },
+      {
+        "word": "PRESTON",
+        "length": 7
+      },
+      {
+        "word": "POSTRE",
+        "length": 6
+      },
+      {
+        "word": "PRESTO",
+        "length": 6
+      },
+      {
+        "word": "POSTER",
+        "length": 6
+      },
+      {
+        "word": "TORPES",
+        "length": 6
+      },
+      {
+        "word": "NORTE",
+        "length": 5
+      },
+      {
+        "word": "RESTO",
+        "length": 5
+      },
+      {
+        "word": "PERSON",
+        "length": 6
+      },
+      {
+        "word": "REPOST",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PORTES",
+        "length": 6
+      },
+      {
+        "word": "PETROS",
+        "length": 6
+      },
+      {
+        "word": "PONER",
+        "length": 5
+      },
+      {
+        "word": "ENTRO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "O",
+      "R",
+      "S",
+      "T",
+      "N"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 243,
+    "level": 243,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "D",
+      "E",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "CREADOS",
+        "length": 7
+      },
+      {
+        "word": "CASERO",
+        "length": 6
+      },
+      {
+        "word": "CREADO",
+        "length": 6
+      },
+      {
+        "word": "ACORDES",
+        "length": 7
+      },
+      {
+        "word": "DESCARO",
+        "length": 7
+      },
+      {
+        "word": "ACORDE",
+        "length": 6
+      },
+      {
+        "word": "SECADOR",
+        "length": 7
+      },
+      {
+        "word": "ACEROS",
+        "length": 6
+      },
+      {
+        "word": "CERDOS",
+        "length": 6
+      },
+      {
+        "word": "RECADOS",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CESADO",
+        "length": 6
+      },
+      {
+        "word": "SECADO",
+        "length": 6
+      },
+      {
+        "word": "RECADO",
+        "length": 6
+      },
+      {
+        "word": "CERDAS",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "O",
+      "R",
+      "A",
+      "S",
+      "C"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 244,
+    "level": 244,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "M",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "M",
+    "grid_words": [
+      {
+        "word": "MARTES",
+        "length": 6
+      },
+      {
+        "word": "ESTIMAR",
+        "length": 7
+      },
+      {
+        "word": "ESTIMA",
+        "length": 6
+      },
+      {
+        "word": "MASTER",
+        "length": 6
+      },
+      {
+        "word": "MIRASTE",
+        "length": 7
+      },
+      {
+        "word": "ERMITA",
+        "length": 6
+      },
+      {
+        "word": "STREAM",
+        "length": 6
+      },
+      {
+        "word": "MISTER",
+        "length": 6
+      },
+      {
+        "word": "MESITA",
+        "length": 6
+      },
+      {
+        "word": "TERMAS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MIRATE",
+        "length": 6
+      },
+      {
+        "word": "TEMAS",
+        "length": 5
+      },
+      {
+        "word": "METAS",
+        "length": 5
+      },
+      {
+        "word": "TIMES",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "T",
+      "A",
+      "S",
+      "R",
+      "I"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 245,
+    "level": 245,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "C",
+      "E",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "CENTROS",
+        "length": 7
+      },
+      {
+        "word": "CENTRO",
+        "length": 6
+      },
+      {
+        "word": "SECTOR",
+        "length": 6
+      },
+      {
+        "word": "CORTES",
+        "length": 6
+      },
+      {
+        "word": "NESTOR",
+        "length": 6
+      },
+      {
+        "word": "CONSTE",
+        "length": 6
+      },
+      {
+        "word": "CORTEN",
+        "length": 6
+      },
+      {
+        "word": "NORTE",
+        "length": 5
+      },
+      {
+        "word": "RESTO",
+        "length": 5
+      },
+      {
+        "word": "RECTOS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ESCORT",
+        "length": 6
+      },
+      {
+        "word": "CENSOR",
+        "length": 6
+      },
+      {
+        "word": "TERCOS",
+        "length": 6
+      },
+      {
+        "word": "ENTRO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "O",
+      "T",
+      "R",
+      "S",
+      "N"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 246,
+    "level": 246,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "M",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "TROPAS",
+        "length": 6
+      },
+      {
+        "word": "PASTOR",
+        "length": 6
+      },
+      {
+        "word": "TRAMOS",
+        "length": 6
+      },
+      {
+        "word": "OTRAS",
+        "length": 5
+      },
+      {
+        "word": "TRAPOS",
+        "length": 6
+      },
+      {
+        "word": "PARTOS",
+        "length": 6
+      },
+      {
+        "word": "TROMPAS",
+        "length": 7
+      },
+      {
+        "word": "MARTOS",
+        "length": 6
+      },
+      {
+        "word": "PORTAS",
+        "length": 6
+      },
+      {
+        "word": "MOSTRA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TOMAR",
+        "length": 5
+      },
+      {
+        "word": "ROMPAS",
+        "length": 6
+      },
+      {
+        "word": "TROMPA",
+        "length": 6
+      },
+      {
+        "word": "RATOS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "S",
+      "T",
+      "P"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 247,
+    "level": 247,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "CESARON",
+        "length": 7
+      },
+      {
+        "word": "CASERO",
+        "length": 6
+      },
+      {
+        "word": "CARNES",
+        "length": 6
+      },
+      {
+        "word": "REASON",
+        "length": 6
+      },
+      {
+        "word": "NARCOS",
+        "length": 6
+      },
+      {
+        "word": "CARSON",
+        "length": 6
+      },
+      {
+        "word": "CENSOR",
+        "length": 6
+      },
+      {
+        "word": "ACEROS",
+        "length": 6
+      },
+      {
+        "word": "SECANO",
+        "length": 6
+      },
+      {
+        "word": "SONAR",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SERAN",
+        "length": 5
+      },
+      {
+        "word": "OSCAR",
+        "length": 5
+      },
+      {
+        "word": "SERNA",
+        "length": 5
+      },
+      {
+        "word": "SENOR",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "S",
+      "A",
+      "O",
+      "R",
+      "N",
+      "E"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 248,
+    "level": 248,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "O",
+      "P",
+      "S",
+      "T"
+    ],
+    "center": "T",
+    "grid_words": [
+      {
+        "word": "ASPECTO",
+        "length": 7
+      },
+      {
+        "word": "POETAS",
+        "length": 6
+      },
+      {
+        "word": "POSTEA",
+        "length": 6
+      },
+      {
+        "word": "ACEPTO",
+        "length": 6
+      },
+      {
+        "word": "ESTOPA",
+        "length": 6
+      },
+      {
+        "word": "PACTOS",
+        "length": 6
+      },
+      {
+        "word": "CAPOTE",
+        "length": 6
+      },
+      {
+        "word": "COSTA",
+        "length": 5
+      },
+      {
+        "word": "ACTOS",
+        "length": 5
+      },
+      {
+        "word": "POETA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ATEOS",
+        "length": 5
+      },
+      {
+        "word": "POSTA",
+        "length": 5
+      },
+      {
+        "word": "COSTE",
+        "length": 5
+      },
+      {
+        "word": "TACOS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "T",
+      "E",
+      "S",
+      "P"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 249,
+    "level": 249,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "L",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "RELATO",
+        "length": 6
+      },
+      {
+        "word": "LECTORA",
+        "length": 7
+      },
+      {
+        "word": "CARTEL",
+        "length": 6
+      },
+      {
+        "word": "LECTOR",
+        "length": 6
+      },
+      {
+        "word": "TOLERA",
+        "length": 6
+      },
+      {
+        "word": "TOCARLE",
+        "length": 7
+      },
+      {
+        "word": "ORACLE",
+        "length": 6
+      },
+      {
+        "word": "CALERO",
+        "length": 6
+      },
+      {
+        "word": "RECTAL",
+        "length": 6
+      },
+      {
+        "word": "LETRA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CLARO",
+        "length": 5
+      },
+      {
+        "word": "CORTE",
+        "length": 5
+      },
+      {
+        "word": "CALOR",
+        "length": 5
+      },
+      {
+        "word": "CORTA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "R",
+      "A",
+      "T",
+      "O",
+      "L"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 250,
+    "level": 250,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "N",
+      "O",
+      "P",
+      "R",
+      "T"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "APORTE",
+        "length": 6
+      },
+      {
+        "word": "PATERNO",
+        "length": 7
+      },
+      {
+        "word": "APORTEN",
+        "length": 7
+      },
+      {
+        "word": "OPERAN",
+        "length": 6
+      },
+      {
+        "word": "PARTEN",
+        "length": 6
+      },
+      {
+        "word": "PRONTA",
+        "length": 6
+      },
+      {
+        "word": "PORTAN",
+        "length": 6
+      },
+      {
+        "word": "PATRON",
+        "length": 6
+      },
+      {
+        "word": "PARTE",
+        "length": 5
+      },
+      {
+        "word": "APONTE",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PONER",
+        "length": 5
+      },
+      {
+        "word": "POETA",
+        "length": 5
+      },
+      {
+        "word": "PONTE",
+        "length": 5
+      },
+      {
+        "word": "PARTO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "T",
+      "N",
+      "O",
+      "E"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  },
+  {
+    "id": 251,
+    "level": 251,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "ASIENTO",
+        "length": 7
+      },
+      {
+        "word": "SIENTO",
+        "length": 6
+      },
+      {
+        "word": "ESTONIA",
+        "length": 7
+      },
+      {
+        "word": "SIENTA",
+        "length": 6
+      },
+      {
+        "word": "NIETOS",
+        "length": 6
+      },
+      {
+        "word": "TENIAS",
+        "length": 6
+      },
+      {
+        "word": "ETNIAS",
+        "length": 6
+      },
+      {
+        "word": "SENTIA",
+        "length": 6
+      },
+      {
+        "word": "ANTES",
+        "length": 5
+      },
+      {
+        "word": "SAINTE",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NIETAS",
+        "length": 6
+      },
+      {
+        "word": "SANTO",
+        "length": 5
+      },
+      {
+        "word": "ESTAN",
+        "length": 5
+      },
+      {
+        "word": "TENIA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "S",
+      "T",
+      "I",
+      "A"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 252,
+    "level": 252,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "R",
+      "V"
+    ],
+    "center": "D",
+    "grid_words": [
+      {
+        "word": "DIERAN",
+        "length": 6
+      },
+      {
+        "word": "DERIVAN",
+        "length": 7
+      },
+      {
+        "word": "RIENDA",
+        "length": 6
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      },
+      {
+        "word": "DERIVA",
+        "length": 6
+      },
+      {
+        "word": "VENDRIA",
+        "length": 7
+      },
+      {
+        "word": "ADRIEN",
+        "length": 6
+      },
+      {
+        "word": "NADIE",
+        "length": 5
+      },
+      {
+        "word": "EVADIR",
+        "length": 6
+      },
+      {
+        "word": "INVADE",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "VENIDA",
+        "length": 6
+      },
+      {
+        "word": "VENDRA",
+        "length": 6
+      },
+      {
+        "word": "DIERA",
+        "length": 5
+      },
+      {
+        "word": "RINDE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "R",
+      "D"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 253,
+    "level": 253,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "SIENTA",
+        "length": 6
+      },
+      {
+        "word": "INSTALE",
+        "length": 7
+      },
+      {
+        "word": "STALIN",
+        "length": 6
+      },
+      {
+        "word": "TENIAS",
+        "length": 6
+      },
+      {
+        "word": "LINEAS",
+        "length": 6
+      },
+      {
+        "word": "ETNIAS",
+        "length": 6
+      },
+      {
+        "word": "SENTIA",
+        "length": 6
+      },
+      {
+        "word": "ALIENS",
+        "length": 6
+      },
+      {
+        "word": "SILENT",
+        "length": 6
+      },
+      {
+        "word": "LISTEN",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SAINTE",
+        "length": 6
+      },
+      {
+        "word": "NIETAS",
+        "length": 6
+      },
+      {
+        "word": "LISTA",
+        "length": 5
+      },
+      {
+        "word": "TENIA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "S",
+      "E",
+      "A",
+      "T"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 254,
+    "level": 254,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "L",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "ESCOLTA",
+        "length": 7
+      },
+      {
+        "word": "COLETAS",
+        "length": 7
+      },
+      {
+        "word": "CELOSA",
+        "length": 6
+      },
+      {
+        "word": "CASTLE",
+        "length": 6
+      },
+      {
+        "word": "CLOSET",
+        "length": 6
+      },
+      {
+        "word": "TECLAS",
+        "length": 6
+      },
+      {
+        "word": "COSTAL",
+        "length": 6
+      },
+      {
+        "word": "CELTAS",
+        "length": 6
+      },
+      {
+        "word": "COLETA",
+        "length": 6
+      },
+      {
+        "word": "CASTEL",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ESCOLA",
+        "length": 6
+      },
+      {
+        "word": "CLASE",
+        "length": 5
+      },
+      {
+        "word": "COSTA",
+        "length": 5
+      },
+      {
+        "word": "ACTOS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "S",
+      "T",
+      "O",
+      "C"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 255,
+    "level": 255,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "N",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "D",
+    "grid_words": [
+      {
+        "word": "ADENTRO",
+        "length": 7
+      },
+      {
+        "word": "DENTRO",
+        "length": 6
+      },
+      {
+        "word": "ENTRADO",
+        "length": 7
+      },
+      {
+        "word": "RODANTE",
+        "length": 7
+      },
+      {
+        "word": "ORDENA",
+        "length": 6
+      },
+      {
+        "word": "DETONAR",
+        "length": 7
+      },
+      {
+        "word": "RODEAN",
+        "length": 6
+      },
+      {
+        "word": "DENOTAR",
+        "length": 7
+      },
+      {
+        "word": "RENTADO",
+        "length": 7
+      },
+      {
+        "word": "RETANDO",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DENOTA",
+        "length": 6
+      },
+      {
+        "word": "TENDRA",
+        "length": 6
+      },
+      {
+        "word": "TARDEN",
+        "length": 6
+      },
+      {
+        "word": "ARENDT",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "O",
+      "R",
+      "A",
+      "T"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 256,
+    "level": 256,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "I",
+      "M",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "M",
+    "grid_words": [
+      {
+        "word": "RACISMO",
+        "length": 7
+      },
+      {
+        "word": "MARCOS",
+        "length": 6
+      },
+      {
+        "word": "RACIMOS",
+        "length": 7
+      },
+      {
+        "word": "MARISCO",
+        "length": 7
+      },
+      {
+        "word": "MARICO",
+        "length": 6
+      },
+      {
+        "word": "MICROS",
+        "length": 6
+      },
+      {
+        "word": "RACIMO",
+        "length": 6
+      },
+      {
+        "word": "COIMAS",
+        "length": 6
+      },
+      {
+        "word": "MACROS",
+        "length": 6
+      },
+      {
+        "word": "MARIO",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RAMOS",
+        "length": 5
+      },
+      {
+        "word": "MIRAS",
+        "length": 5
+      },
+      {
+        "word": "MARCO",
+        "length": 5
+      },
+      {
+        "word": "MACRI",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "A",
+      "R",
+      "I",
+      "S",
+      "M"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 257,
+    "level": 257,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "SIENTA",
+        "length": 6
+      },
+      {
+        "word": "TENIAS",
+        "length": 6
+      },
+      {
+        "word": "NACISTE",
+        "length": 7
+      },
+      {
+        "word": "ETNIAS",
+        "length": 6
+      },
+      {
+        "word": "SENTIA",
+        "length": 6
+      },
+      {
+        "word": "CINTAS",
+        "length": 6
+      },
+      {
+        "word": "ANTES",
+        "length": 5
+      },
+      {
+        "word": "SAINTE",
+        "length": 6
+      },
+      {
+        "word": "NIETAS",
+        "length": 6
+      },
+      {
+        "word": "SANCTI",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CANTES",
+        "length": 6
+      },
+      {
+        "word": "ESTAN",
+        "length": 5
+      },
+      {
+        "word": "TENIA",
+        "length": 5
+      },
+      {
+        "word": "SAINT",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "S",
+      "T",
+      "I",
+      "E"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 258,
+    "level": 258,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "G",
+      "I",
+      "N",
+      "R"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "GRANDE",
+        "length": 6
+      },
+      {
+        "word": "REGINA",
+        "length": 6
+      },
+      {
+        "word": "READING",
+        "length": 7
+      },
+      {
+        "word": "GARDEN",
+        "length": 6
+      },
+      {
+        "word": "REGIDA",
+        "length": 6
+      },
+      {
+        "word": "DANGER",
+        "length": 6
+      },
+      {
+        "word": "NEGRA",
+        "length": 5
+      },
+      {
+        "word": "NIEGA",
+        "length": 5
+      },
+      {
+        "word": "NEGAR",
+        "length": 5
+      },
+      {
+        "word": "RIGEN",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ANGIE",
+        "length": 5
+      },
+      {
+        "word": "DIGAN",
+        "length": 5
+      },
+      {
+        "word": "GIRAN",
+        "length": 5
+      },
+      {
+        "word": "REGIA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "A",
+      "N",
+      "R",
+      "I",
+      "G"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 259,
+    "level": 259,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "TEORIAS",
+        "length": 7
+      },
+      {
+        "word": "ROSITA",
+        "length": 6
+      },
+      {
+        "word": "ESTIRA",
+        "length": 6
+      },
+      {
+        "word": "ESTAR",
+        "length": 5
+      },
+      {
+        "word": "OSETIA",
+        "length": 6
+      },
+      {
+        "word": "OTRAS",
+        "length": 5
+      },
+      {
+        "word": "RESTO",
+        "length": 5
+      },
+      {
+        "word": "SERIO",
+        "length": 5
+      },
+      {
+        "word": "AIRES",
+        "length": 5
+      },
+      {
+        "word": "SERIA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ARTES",
+        "length": 5
+      },
+      {
+        "word": "TIROS",
+        "length": 5
+      },
+      {
+        "word": "RETOS",
+        "length": 5
+      },
+      {
+        "word": "TIRAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "S",
+      "R",
+      "A",
+      "E",
+      "I",
+      "T"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 260,
+    "level": 260,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "L",
+    "grid_words": [
+      {
+        "word": "ISRAEL",
+        "length": 6
+      },
+      {
+        "word": "PILARES",
+        "length": 7
+      },
+      {
+        "word": "ESPIRAL",
+        "length": 7
+      },
+      {
+        "word": "SERIAL",
+        "length": 6
+      },
+      {
+        "word": "PERLAS",
+        "length": 6
+      },
+      {
+        "word": "SALIR",
+        "length": 5
+      },
+      {
+        "word": "ARIEL",
+        "length": 5
+      },
+      {
+        "word": "ELISA",
+        "length": 5
+      },
+      {
+        "word": "ELIAS",
+        "length": 5
+      },
+      {
+        "word": "LARES",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LASER",
+        "length": 5
+      },
+      {
+        "word": "PILAR",
+        "length": 5
+      },
+      {
+        "word": "PILAS",
+        "length": 5
+      },
+      {
+        "word": "LIRAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "S",
+      "I",
+      "R",
+      "L"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  },
+  {
+    "id": 261,
+    "level": 261,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "I",
+      "M",
+      "N",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "TIRANO",
+        "length": 6
+      },
+      {
+        "word": "MARTIN",
+        "length": 6
+      },
+      {
+        "word": "MARTINO",
+        "length": 7
+      },
+      {
+        "word": "MONTAR",
+        "length": 6
+      },
+      {
+        "word": "MARINO",
+        "length": 6
+      },
+      {
+        "word": "MARION",
+        "length": 6
+      },
+      {
+        "word": "ROMINA",
+        "length": 6
+      },
+      {
+        "word": "TOMAR",
+        "length": 5
+      },
+      {
+        "word": "NOTAR",
+        "length": 5
+      },
+      {
+        "word": "TIRAN",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ORINA",
+        "length": 5
+      },
+      {
+        "word": "MARIO",
+        "length": 5
+      },
+      {
+        "word": "RITMO",
+        "length": 5
+      },
+      {
+        "word": "NORMA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "N",
+      "O",
+      "I",
+      "T"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 262,
+    "level": 262,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "CIERTAS",
+        "length": 7
+      },
+      {
+        "word": "ESCRITA",
+        "length": 7
+      },
+      {
+        "word": "CIERTA",
+        "length": 6
+      },
+      {
+        "word": "ESTIRA",
+        "length": 6
+      },
+      {
+        "word": "ESTAR",
+        "length": 5
+      },
+      {
+        "word": "CITARSE",
+        "length": 7
+      },
+      {
+        "word": "CRESTA",
+        "length": 6
+      },
+      {
+        "word": "RECTAS",
+        "length": 6
+      },
+      {
+        "word": "RAICES",
+        "length": 6
+      },
+      {
+        "word": "CERATI",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CARIES",
+        "length": 6
+      },
+      {
+        "word": "AIRES",
+        "length": 5
+      },
+      {
+        "word": "CARTES",
+        "length": 6
+      },
+      {
+        "word": "RECITA",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "T",
+      "S",
+      "I"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 263,
+    "level": 263,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "ESTANDO",
+        "length": 7
+      },
+      {
+        "word": "SENTADO",
+        "length": 7
+      },
+      {
+        "word": "SENADO",
+        "length": 6
+      },
+      {
+        "word": "ANTES",
+        "length": 5
+      },
+      {
+        "word": "DENOTA",
+        "length": 6
+      },
+      {
+        "word": "SANTO",
+        "length": 5
+      },
+      {
+        "word": "ESTAN",
+        "length": 5
+      },
+      {
+        "word": "NOTAS",
+        "length": 5
+      },
+      {
+        "word": "STONE",
+        "length": 5
+      },
+      {
+        "word": "TENSA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TENSO",
+        "length": 5
+      },
+      {
+        "word": "NOTES",
+        "length": 5
+      },
+      {
+        "word": "NETOS",
+        "length": 5
+      },
+      {
+        "word": "ANDES",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "A",
+      "S",
+      "T",
+      "E",
+      "O"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 264,
+    "level": 264,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "PRECISA",
+        "length": 7
+      },
+      {
+        "word": "ESPIAR",
+        "length": 6
+      },
+      {
+        "word": "PERSIA",
+        "length": 6
+      },
+      {
+        "word": "REPISA",
+        "length": 6
+      },
+      {
+        "word": "ASPIRE",
+        "length": 6
+      },
+      {
+        "word": "PESCAR",
+        "length": 6
+      },
+      {
+        "word": "PESAR",
+        "length": 5
+      },
+      {
+        "word": "CASPER",
+        "length": 6
+      },
+      {
+        "word": "PRESA",
+        "length": 5
+      },
+      {
+        "word": "PARES",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PARIS",
+        "length": 5
+      },
+      {
+        "word": "PRISA",
+        "length": 5
+      },
+      {
+        "word": "PERSA",
+        "length": 5
+      },
+      {
+        "word": "PISAR",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "S",
+      "I",
+      "P"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 265,
+    "level": 265,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "E",
+      "I",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "SIENTO",
+        "length": 6
+      },
+      {
+        "word": "TIERNOS",
+        "length": 7
+      },
+      {
+        "word": "NIETOS",
+        "length": 6
+      },
+      {
+        "word": "REINOS",
+        "length": 6
+      },
+      {
+        "word": "TIERNO",
+        "length": 6
+      },
+      {
+        "word": "INSERTO",
+        "length": 7
+      },
+      {
+        "word": "SENIOR",
+        "length": 6
+      },
+      {
+        "word": "NESTOR",
+        "length": 6
+      },
+      {
+        "word": "TRINEO",
+        "length": 6
+      },
+      {
+        "word": "SONRIE",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NORTE",
+        "length": 5
+      },
+      {
+        "word": "RESTO",
+        "length": 5
+      },
+      {
+        "word": "SERIO",
+        "length": 5
+      },
+      {
+        "word": "REINO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "O",
+      "I",
+      "R",
+      "S"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 266,
+    "level": 266,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "N",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "D",
+    "grid_words": [
+      {
+        "word": "PADRES",
+        "length": 6
+      },
+      {
+        "word": "PRENDAS",
+        "length": 7
+      },
+      {
+        "word": "ANDRES",
+        "length": 6
+      },
+      {
+        "word": "ANDERS",
+        "length": 6
+      },
+      {
+        "word": "PRENDA",
+        "length": 6
+      },
+      {
+        "word": "PENSAD",
+        "length": 6
+      },
+      {
+        "word": "DARSE",
+        "length": 5
+      },
+      {
+        "word": "PADRE",
+        "length": 5
+      },
+      {
+        "word": "ANDES",
+        "length": 5
+      },
+      {
+        "word": "SENDA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DENSA",
+        "length": 5
+      },
+      {
+        "word": "PARED",
+        "length": 5
+      },
+      {
+        "word": "ANDRE",
+        "length": 5
+      },
+      {
+        "word": "ARDEN",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "S",
+      "N",
+      "R",
+      "D"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 267,
+    "level": 267,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "ESCORIA",
+        "length": 7
+      },
+      {
+        "word": "REACIOS",
+        "length": 7
+      },
+      {
+        "word": "CASERO",
+        "length": 6
+      },
+      {
+        "word": "RAICES",
+        "length": 6
+      },
+      {
+        "word": "CARIES",
+        "length": 6
+      },
+      {
+        "word": "REACIO",
+        "length": 6
+      },
+      {
+        "word": "ACEROS",
+        "length": 6
+      },
+      {
+        "word": "RIESCO",
+        "length": 6
+      },
+      {
+        "word": "RICOS",
+        "length": 5
+      },
+      {
+        "word": "COREA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "OSCAR",
+        "length": 5
+      },
+      {
+        "word": "ACERO",
+        "length": 5
+      },
+      {
+        "word": "CREAS",
+        "length": 5
+      },
+      {
+        "word": "ROCAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "R",
+      "E",
+      "A",
+      "O",
+      "S",
+      "I"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 268,
+    "level": 268,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "I",
+      "M",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "T",
+    "grid_words": [
+      {
+        "word": "ROSITA",
+        "length": 6
+      },
+      {
+        "word": "TIRAMOS",
+        "length": 7
+      },
+      {
+        "word": "RITMOS",
+        "length": 6
+      },
+      {
+        "word": "TRAMOS",
+        "length": 6
+      },
+      {
+        "word": "OTRAS",
+        "length": 5
+      },
+      {
+        "word": "MARTOS",
+        "length": 6
+      },
+      {
+        "word": "MORTIS",
+        "length": 6
+      },
+      {
+        "word": "MOSTRA",
+        "length": 6
+      },
+      {
+        "word": "TOMAR",
+        "length": 5
+      },
+      {
+        "word": "TIROS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TIRAS",
+        "length": 5
+      },
+      {
+        "word": "RATOS",
+        "length": 5
+      },
+      {
+        "word": "ROTAS",
+        "length": 5
+      },
+      {
+        "word": "RITOS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "R",
+      "T",
+      "S",
+      "A",
+      "I"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 269,
+    "level": 269,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "I",
+      "M",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "M",
+    "grid_words": [
+      {
+        "word": "MARINOS",
+        "length": 7
+      },
+      {
+        "word": "NORMAS",
+        "length": 6
+      },
+      {
+        "word": "MARINO",
+        "length": 6
+      },
+      {
+        "word": "MARION",
+        "length": 6
+      },
+      {
+        "word": "ROMINA",
+        "length": 6
+      },
+      {
+        "word": "ANIMOS",
+        "length": 6
+      },
+      {
+        "word": "MAISON",
+        "length": 6
+      },
+      {
+        "word": "SIMONA",
+        "length": 6
+      },
+      {
+        "word": "MANOS",
+        "length": 5
+      },
+      {
+        "word": "MINAS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MARIO",
+        "length": 5
+      },
+      {
+        "word": "NORMA",
+        "length": 5
+      },
+      {
+        "word": "RAMOS",
+        "length": 5
+      },
+      {
+        "word": "MIRAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "O",
+      "I",
+      "S",
+      "R"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 270,
+    "level": 270,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "M",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "MINERAS",
+        "length": 7
+      },
+      {
+        "word": "SIRENA",
+        "length": 6
+      },
+      {
+        "word": "REINAS",
+        "length": 6
+      },
+      {
+        "word": "MARINES",
+        "length": 7
+      },
+      {
+        "word": "SERIAN",
+        "length": 6
+      },
+      {
+        "word": "RESINA",
+        "length": 6
+      },
+      {
+        "word": "MINERA",
+        "length": 6
+      },
+      {
+        "word": "INMERSA",
+        "length": 7
+      },
+      {
+        "word": "MARINE",
+        "length": 6
+      },
+      {
+        "word": "IMANES",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ANIMES",
+        "length": 6
+      },
+      {
+        "word": "AIRES",
+        "length": 5
+      },
+      {
+        "word": "REINA",
+        "length": 5
+      },
+      {
+        "word": "SERIA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "R",
+      "S"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  },
+  {
+    "id": 271,
+    "level": 271,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "I",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "INTEGRA",
+        "length": 7
+      },
+      {
+        "word": "NEGRITA",
+        "length": 7
+      },
+      {
+        "word": "GRITAN",
+        "length": 6
+      },
+      {
+        "word": "REGINA",
+        "length": 6
+      },
+      {
+        "word": "GRIETA",
+        "length": 6
+      },
+      {
+        "word": "RATING",
+        "length": 6
+      },
+      {
+        "word": "GRITEN",
+        "length": 6
+      },
+      {
+        "word": "ARGENT",
+        "length": 6
+      },
+      {
+        "word": "TENGA",
+        "length": 5
+      },
+      {
+        "word": "NEGRA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NIEGA",
+        "length": 5
+      },
+      {
+        "word": "NEGAR",
+        "length": 5
+      },
+      {
+        "word": "TIGRE",
+        "length": 5
+      },
+      {
+        "word": "GRITA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "R",
+      "E",
+      "T",
+      "I"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 272,
+    "level": 272,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "I",
+      "N",
+      "S",
+      "T"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "TENGAS",
+        "length": 6
+      },
+      {
+        "word": "INGESTA",
+        "length": 7
+      },
+      {
+        "word": "TENGAIS",
+        "length": 7
+      },
+      {
+        "word": "NIEGAS",
+        "length": 6
+      },
+      {
+        "word": "GASTEN",
+        "length": 6
+      },
+      {
+        "word": "ASIGNE",
+        "length": 6
+      },
+      {
+        "word": "TENGA",
+        "length": 5
+      },
+      {
+        "word": "SIGAN",
+        "length": 5
+      },
+      {
+        "word": "NIEGA",
+        "length": 5
+      },
+      {
+        "word": "GATES",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ANGIE",
+        "length": 5
+      },
+      {
+        "word": "GESTA",
+        "length": 5
+      },
+      {
+        "word": "GANES",
+        "length": 5
+      },
+      {
+        "word": "GASTE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "S",
+      "I",
+      "T"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 273,
+    "level": 273,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "M",
+      "R",
+      "S"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "MIERDA",
+        "length": 6
+      },
+      {
+        "word": "MIERDAS",
+        "length": 7
+      },
+      {
+        "word": "MADRES",
+        "length": 6
+      },
+      {
+        "word": "MEDIAS",
+        "length": 6
+      },
+      {
+        "word": "DIERAS",
+        "length": 6
+      },
+      {
+        "word": "AIRES",
+        "length": 5
+      },
+      {
+        "word": "SERIA",
+        "length": 5
+      },
+      {
+        "word": "MEDIAR",
+        "length": 6
+      },
+      {
+        "word": "MERIDA",
+        "length": 6
+      },
+      {
+        "word": "IDEAS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DREAMS",
+        "length": 6
+      },
+      {
+        "word": "DARSE",
+        "length": 5
+      },
+      {
+        "word": "MADRE",
+        "length": 5
+      },
+      {
+        "word": "MIRAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "R",
+      "S",
+      "D"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 274,
+    "level": 274,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "H",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "H",
+    "grid_words": [
+      {
+        "word": "HACEROS",
+        "length": 7
+      },
+      {
+        "word": "HORAS",
+        "length": 5
+      },
+      {
+        "word": "SEARCH",
+        "length": 6
+      },
+      {
+        "word": "HACER",
+        "length": 5
+      },
+      {
+        "word": "HORACE",
+        "length": 6
+      },
+      {
+        "word": "HACES",
+        "length": 5
+      },
+      {
+        "word": "ECHAR",
+        "length": 5
+      },
+      {
+        "word": "SHARE",
+        "length": 5
+      },
+      {
+        "word": "HERAS",
+        "length": 5
+      },
+      {
+        "word": "SHORE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "HORSE",
+        "length": 5
+      },
+      {
+        "word": "ASHER",
+        "length": 5
+      },
+      {
+        "word": "ECHAS",
+        "length": 5
+      },
+      {
+        "word": "ROCHA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "S",
+      "O",
+      "H"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 275,
+    "level": 275,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "DIESTRA",
+        "length": 7
+      },
+      {
+        "word": "TARDES",
+        "length": 6
+      },
+      {
+        "word": "DISTRAE",
+        "length": 7
+      },
+      {
+        "word": "ESTIRA",
+        "length": 6
+      },
+      {
+        "word": "EDITAR",
+        "length": 6
+      },
+      {
+        "word": "ESTAR",
+        "length": 5
+      },
+      {
+        "word": "DETRAS",
+        "length": 6
+      },
+      {
+        "word": "DIETAS",
+        "length": 6
+      },
+      {
+        "word": "DIERAS",
+        "length": 6
+      },
+      {
+        "word": "AIRES",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SERIA",
+        "length": 5
+      },
+      {
+        "word": "ARTES",
+        "length": 5
+      },
+      {
+        "word": "TARDE",
+        "length": 5
+      },
+      {
+        "word": "IDEAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "S",
+      "T",
+      "I"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 276,
+    "level": 276,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "R",
+      "S",
+      "T",
+      "V"
+    ],
+    "center": "V",
+    "grid_words": [
+      {
+        "word": "REVISTA",
+        "length": 7
+      },
+      {
+        "word": "EVITAR",
+        "length": 6
+      },
+      {
+        "word": "VESTIR",
+        "length": 6
+      },
+      {
+        "word": "REVISA",
+        "length": 6
+      },
+      {
+        "word": "VERITAS",
+        "length": 7
+      },
+      {
+        "word": "TRAVES",
+        "length": 6
+      },
+      {
+        "word": "VIERAS",
+        "length": 6
+      },
+      {
+        "word": "TRAVIS",
+        "length": 6
+      },
+      {
+        "word": "VISERA",
+        "length": 6
+      },
+      {
+        "word": "EVITAS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SERVIA",
+        "length": 6
+      },
+      {
+        "word": "VISTA",
+        "length": 5
+      },
+      {
+        "word": "SIRVE",
+        "length": 5
+      },
+      {
+        "word": "VISTE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "R",
+      "S",
+      "T"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 277,
+    "level": 277,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "N",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "ORTEGA",
+        "length": 6
+      },
+      {
+        "word": "ARGENTO",
+        "length": 7
+      },
+      {
+        "word": "ORANGE",
+        "length": 6
+      },
+      {
+        "word": "GERONA",
+        "length": 6
+      },
+      {
+        "word": "GENARO",
+        "length": 6
+      },
+      {
+        "word": "TENGO",
+        "length": 5
+      },
+      {
+        "word": "ARGENT",
+        "length": 6
+      },
+      {
+        "word": "TENGA",
+        "length": 5
+      },
+      {
+        "word": "NEGRO",
+        "length": 5
+      },
+      {
+        "word": "NEGRA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RANGO",
+        "length": 5
+      },
+      {
+        "word": "NEGAR",
+        "length": 5
+      },
+      {
+        "word": "GRANO",
+        "length": 5
+      },
+      {
+        "word": "TANGO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "A",
+      "R",
+      "O",
+      "T"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 278,
+    "level": 278,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "I",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "R",
+    "grid_words": [
+      {
+        "word": "SANGRE",
+        "length": 6
+      },
+      {
+        "word": "INGRESA",
+        "length": 7
+      },
+      {
+        "word": "SIRENA",
+        "length": 6
+      },
+      {
+        "word": "REINAS",
+        "length": 6
+      },
+      {
+        "word": "SERIAN",
+        "length": 6
+      },
+      {
+        "word": "RESINA",
+        "length": 6
+      },
+      {
+        "word": "NEGRAS",
+        "length": 6
+      },
+      {
+        "word": "REGINA",
+        "length": 6
+      },
+      {
+        "word": "SINGER",
+        "length": 6
+      },
+      {
+        "word": "GERAIS",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "AIRES",
+        "length": 5
+      },
+      {
+        "word": "REINA",
+        "length": 5
+      },
+      {
+        "word": "SERIA",
+        "length": 5
+      },
+      {
+        "word": "NEGRA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "R",
+      "A",
+      "N",
+      "S",
+      "I"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 279,
+    "level": 279,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "P",
+      "R",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "PUERTAS",
+        "length": 7
+      },
+      {
+        "word": "PUERTA",
+        "length": 6
+      },
+      {
+        "word": "PUESTA",
+        "length": 6
+      },
+      {
+        "word": "SUPERA",
+        "length": 6
+      },
+      {
+        "word": "PASTEUR",
+        "length": 7
+      },
+      {
+        "word": "PUTEAR",
+        "length": 6
+      },
+      {
+        "word": "REPUTA",
+        "length": 6
+      },
+      {
+        "word": "APURES",
+        "length": 6
+      },
+      {
+        "word": "RUTAS",
+        "length": 5
+      },
+      {
+        "word": "SUPER",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PUTAS",
+        "length": 5
+      },
+      {
+        "word": "PURAS",
+        "length": 5
+      },
+      {
+        "word": "SURTE",
+        "length": 5
+      },
+      {
+        "word": "APURE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "S",
+      "T",
+      "U"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 280,
+    "level": 280,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "L",
+      "N",
+      "R",
+      "T"
+    ],
+    "center": "L",
+    "grid_words": [
+      {
+        "word": "CENTRAL",
+        "length": 7
+      },
+      {
+        "word": "CARTEL",
+        "length": 6
+      },
+      {
+        "word": "RECTAL",
+        "length": 6
+      },
+      {
+        "word": "LETRA",
+        "length": 5
+      },
+      {
+        "word": "LENTA",
+        "length": 5
+      },
+      {
+        "word": "RENAL",
+        "length": 5
+      },
+      {
+        "word": "ALTER",
+        "length": 5
+      },
+      {
+        "word": "TELAR",
+        "length": 5
+      },
+      {
+        "word": "ALERT",
+        "length": 5
+      },
+      {
+        "word": "LEARN",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LANTE",
+        "length": 5
+      },
+      {
+        "word": "LATER",
+        "length": 5
+      },
+      {
+        "word": "LANCE",
+        "length": 5
+      },
+      {
+        "word": "CELTA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "T",
+      "N",
+      "L"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  },
+  {
+    "id": 281,
+    "level": 281,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "L",
+      "O",
+      "R",
+      "S",
+      "V"
+    ],
+    "center": "V",
+    "grid_words": [
+      {
+        "word": "VALORES",
+        "length": 7
+      },
+      {
+        "word": "VERLOS",
+        "length": 6
+      },
+      {
+        "word": "VERLAS",
+        "length": 6
+      },
+      {
+        "word": "VALERO",
+        "length": 6
+      },
+      {
+        "word": "VALORE",
+        "length": 6
+      },
+      {
+        "word": "OLVERA",
+        "length": 6
+      },
+      {
+        "word": "LOVERS",
+        "length": 6
+      },
+      {
+        "word": "VALOR",
+        "length": 5
+      },
+      {
+        "word": "SALVO",
+        "length": 5
+      },
+      {
+        "word": "VERLO",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "VERLA",
+        "length": 5
+      },
+      {
+        "word": "VOLAR",
+        "length": 5
+      },
+      {
+        "word": "SELVA",
+        "length": 5
+      },
+      {
+        "word": "VERAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "R",
+      "E",
+      "A",
+      "S",
+      "L"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 282,
+    "level": 282,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "B",
+      "C",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "B",
+    "grid_words": [
+      {
+        "word": "SOBRAN",
+        "length": 6
+      },
+      {
+        "word": "BANCOS",
+        "length": 6
+      },
+      {
+        "word": "BARCOS",
+        "length": 6
+      },
+      {
+        "word": "BRONCA",
+        "length": 6
+      },
+      {
+        "word": "BRONCAS",
+        "length": 7
+      },
+      {
+        "word": "COBRAN",
+        "length": 6
+      },
+      {
+        "word": "CABRON",
+        "length": 6
+      },
+      {
+        "word": "CARBON",
+        "length": 6
+      },
+      {
+        "word": "COBRAS",
+        "length": 6
+      },
+      {
+        "word": "OBRAS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "BRANCO",
+        "length": 6
+      },
+      {
+        "word": "CABROS",
+        "length": 6
+      },
+      {
+        "word": "SABOR",
+        "length": 5
+      },
+      {
+        "word": "SOBRA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "N",
+      "S",
+      "B"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 283,
+    "level": 283,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "DISPARO",
+        "length": 7
+      },
+      {
+        "word": "RADIOS",
+        "length": 6
+      },
+      {
+        "word": "PODRIAS",
+        "length": 7
+      },
+      {
+        "word": "PODRIA",
+        "length": 6
+      },
+      {
+        "word": "RAPIDOS",
+        "length": 7
+      },
+      {
+        "word": "RAPIDO",
+        "length": 6
+      },
+      {
+        "word": "ASPIRO",
+        "length": 6
+      },
+      {
+        "word": "PODRAS",
+        "length": 6
+      },
+      {
+        "word": "PRADOS",
+        "length": 6
+      },
+      {
+        "word": "PISADO",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RADIO",
+        "length": 5
+      },
+      {
+        "word": "PARDOS",
+        "length": 6
+      },
+      {
+        "word": "PODIAS",
+        "length": 6
+      },
+      {
+        "word": "PARIDO",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "I",
+      "S",
+      "D"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 284,
+    "level": 284,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "M",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "NORMAS",
+        "length": 6
+      },
+      {
+        "word": "MORENAS",
+        "length": 7
+      },
+      {
+        "word": "AMORES",
+        "length": 6
+      },
+      {
+        "word": "RAMONES",
+        "length": 7
+      },
+      {
+        "word": "REASON",
+        "length": 6
+      },
+      {
+        "word": "ERAMOS",
+        "length": 6
+      },
+      {
+        "word": "MAREOS",
+        "length": 6
+      },
+      {
+        "word": "ERASMO",
+        "length": 6
+      },
+      {
+        "word": "AMENOS",
+        "length": 6
+      },
+      {
+        "word": "MANOS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SONAR",
+        "length": 5
+      },
+      {
+        "word": "SERAN",
+        "length": 5
+      },
+      {
+        "word": "RAMOS",
+        "length": 5
+      },
+      {
+        "word": "SERNA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "S",
+      "E",
+      "R",
+      "N"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 285,
+    "level": 285,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "M",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "C",
+    "grid_words": [
+      {
+        "word": "COMPRAS",
+        "length": 7
+      },
+      {
+        "word": "MARCOS",
+        "length": 6
+      },
+      {
+        "word": "COMPRA",
+        "length": 6
+      },
+      {
+        "word": "CAMPOS",
+        "length": 6
+      },
+      {
+        "word": "MACROS",
+        "length": 6
+      },
+      {
+        "word": "OSCAR",
+        "length": 5
+      },
+      {
+        "word": "COMPAS",
+        "length": 6
+      },
+      {
+        "word": "ROCAS",
+        "length": 5
+      },
+      {
+        "word": "CAROS",
+        "length": 5
+      },
+      {
+        "word": "MARCO",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ARCOS",
+        "length": 5
+      },
+      {
+        "word": "POCAS",
+        "length": 5
+      },
+      {
+        "word": "ROSCA",
+        "length": 5
+      },
+      {
+        "word": "SACRO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "S",
+      "C",
+      "M"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 286,
+    "level": 286,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "N",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "CUENTAS",
+        "length": 7
+      },
+      {
+        "word": "CUENTA",
+        "length": 6
+      },
+      {
+        "word": "CUESTA",
+        "length": 6
+      },
+      {
+        "word": "CUESTAN",
+        "length": 7
+      },
+      {
+        "word": "AUSTEN",
+        "length": 6
+      },
+      {
+        "word": "CUNETAS",
+        "length": 7
+      },
+      {
+        "word": "CUNETA",
+        "length": 6
+      },
+      {
+        "word": "CAUSEN",
+        "length": 6
+      },
+      {
+        "word": "CUATES",
+        "length": 6
+      },
+      {
+        "word": "SUENA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ACUSEN",
+        "length": 6
+      },
+      {
+        "word": "TUNAS",
+        "length": 5
+      },
+      {
+        "word": "CEUTA",
+        "length": 5
+      },
+      {
+        "word": "CAUSE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "S",
+      "T",
+      "U"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 287,
+    "level": 287,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "P",
+      "R",
+      "T"
+    ],
+    "center": "T",
+    "grid_words": [
+      {
+        "word": "TIERNA",
+        "length": 6
+      },
+      {
+        "word": "RETINA",
+        "length": 6
+      },
+      {
+        "word": "REPITAN",
+        "length": 7
+      },
+      {
+        "word": "PINTAR",
+        "length": 6
+      },
+      {
+        "word": "REPITA",
+        "length": 6
+      },
+      {
+        "word": "PARTEN",
+        "length": 6
+      },
+      {
+        "word": "PARTE",
+        "length": 5
+      },
+      {
+        "word": "PRIETA",
+        "length": 6
+      },
+      {
+        "word": "PIRATE",
+        "length": 6
+      },
+      {
+        "word": "ENTRA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PENITA",
+        "length": 6
+      },
+      {
+        "word": "TENIA",
+        "length": 5
+      },
+      {
+        "word": "RENTA",
+        "length": 5
+      },
+      {
+        "word": "TRAEN",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "T",
+      "E",
+      "I",
+      "N"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 288,
+    "level": 288,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "R",
+      "S",
+      "V"
+    ],
+    "center": "V",
+    "grid_words": [
+      {
+        "word": "REVISA",
+        "length": 6
+      },
+      {
+        "word": "DIVERSA",
+        "length": 7
+      },
+      {
+        "word": "DESVIAR",
+        "length": 7
+      },
+      {
+        "word": "VIERAS",
+        "length": 6
+      },
+      {
+        "word": "SERVIDA",
+        "length": 7
+      },
+      {
+        "word": "DERIVA",
+        "length": 6
+      },
+      {
+        "word": "VISERA",
+        "length": 6
+      },
+      {
+        "word": "SERVIA",
+        "length": 6
+      },
+      {
+        "word": "EVADIR",
+        "length": 6
+      },
+      {
+        "word": "DAVIES",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SIRVE",
+        "length": 5
+      },
+      {
+        "word": "VERAS",
+        "length": 5
+      },
+      {
+        "word": "SIRVA",
+        "length": 5
+      },
+      {
+        "word": "VIERA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "R",
+      "S",
+      "V"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 289,
+    "level": 289,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "POSTURA",
+        "length": 7
+      },
+      {
+        "word": "AUSTRO",
+        "length": 6
+      },
+      {
+        "word": "APUROS",
+        "length": 6
+      },
+      {
+        "word": "AUTOR",
+        "length": 5
+      },
+      {
+        "word": "PROUST",
+        "length": 6
+      },
+      {
+        "word": "AUTOS",
+        "length": 5
+      },
+      {
+        "word": "RUTAS",
+        "length": 5
+      },
+      {
+        "word": "TOURS",
+        "length": 5
+      },
+      {
+        "word": "PUTAS",
+        "length": 5
+      },
+      {
+        "word": "TAURO",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PUTOS",
+        "length": 5
+      },
+      {
+        "word": "PUROS",
+        "length": 5
+      },
+      {
+        "word": "PURAS",
+        "length": 5
+      },
+      {
+        "word": "APURO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "T",
+      "A",
+      "O",
+      "R",
+      "S",
+      "U"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 290,
+    "level": 290,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "O",
+      "P",
+      "R",
+      "T"
+    ],
+    "center": "P",
+    "grid_words": [
+      {
+        "word": "APORTE",
+        "length": 6
+      },
+      {
+        "word": "PARTE",
+        "length": 5
+      },
+      {
+        "word": "PETARDO",
+        "length": 7
+      },
+      {
+        "word": "ADOPTE",
+        "length": 6
+      },
+      {
+        "word": "PODER",
+        "length": 5
+      },
+      {
+        "word": "POETA",
+        "length": 5
+      },
+      {
+        "word": "PADRE",
+        "length": 5
+      },
+      {
+        "word": "PARTO",
+        "length": 5
+      },
+      {
+        "word": "OPERA",
+        "length": 5
+      },
+      {
+        "word": "PEDRO",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TROPA",
+        "length": 5
+      },
+      {
+        "word": "OPTAR",
+        "length": 5
+      },
+      {
+        "word": "PORTA",
+        "length": 5
+      },
+      {
+        "word": "TORPE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "A",
+      "O",
+      "R",
+      "T",
+      "P"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  },
+  {
+    "id": 291,
+    "level": 291,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "O",
+      "P",
+      "R",
+      "S"
+    ],
+    "center": "D",
+    "grid_words": [
+      {
+        "word": "PADRES",
+        "length": 6
+      },
+      {
+        "word": "PESADO",
+        "length": 6
+      },
+      {
+        "word": "PEDROSA",
+        "length": 7
+      },
+      {
+        "word": "PODRAS",
+        "length": 6
+      },
+      {
+        "word": "PRADOS",
+        "length": 6
+      },
+      {
+        "word": "PARDOS",
+        "length": 6
+      },
+      {
+        "word": "PODER",
+        "length": 5
+      },
+      {
+        "word": "DARSE",
+        "length": 5
+      },
+      {
+        "word": "PADRE",
+        "length": 5
+      },
+      {
+        "word": "RODEA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PEDRO",
+        "length": 5
+      },
+      {
+        "word": "PARED",
+        "length": 5
+      },
+      {
+        "word": "SORDA",
+        "length": 5
+      },
+      {
+        "word": "DAROS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "E",
+      "O",
+      "S",
+      "D"
+    ],
+    "hint": "Piensa en calles y trayectos",
+    "theme": "ciudad",
+    "language": "es"
+  },
+  {
+    "id": 292,
+    "level": 292,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "E",
+      "M",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "N",
+    "grid_words": [
+      {
+        "word": "MONSTER",
+        "length": 7
+      },
+      {
+        "word": "NESTOR",
+        "length": 6
+      },
+      {
+        "word": "MONTES",
+        "length": 6
+      },
+      {
+        "word": "MENTOR",
+        "length": 6
+      },
+      {
+        "word": "NORTE",
+        "length": 5
+      },
+      {
+        "word": "MONTSE",
+        "length": 6
+      },
+      {
+        "word": "ENTRO",
+        "length": 5
+      },
+      {
+        "word": "MENOR",
+        "length": 5
+      },
+      {
+        "word": "STONE",
+        "length": 5
+      },
+      {
+        "word": "TENOR",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MONTE",
+        "length": 5
+      },
+      {
+        "word": "TENSO",
+        "length": 5
+      },
+      {
+        "word": "NOTES",
+        "length": 5
+      },
+      {
+        "word": "SENOR",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "O",
+      "T",
+      "R",
+      "S"
+    ],
+    "hint": "Piensa en calma y paisaje",
+    "theme": "naturaleza",
+    "language": "es"
+  },
+  {
+    "id": 293,
+    "level": 293,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "S",
+    "grid_words": [
+      {
+        "word": "ESTADO",
+        "length": 6
+      },
+      {
+        "word": "TARDES",
+        "length": 6
+      },
+      {
+        "word": "ESTRADO",
+        "length": 7
+      },
+      {
+        "word": "ESTAR",
+        "length": 5
+      },
+      {
+        "word": "DETRAS",
+        "length": 6
+      },
+      {
+        "word": "OTRAS",
+        "length": 5
+      },
+      {
+        "word": "RESTO",
+        "length": 5
+      },
+      {
+        "word": "ARTES",
+        "length": 5
+      },
+      {
+        "word": "DATOS",
+        "length": 5
+      },
+      {
+        "word": "RETOS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RESTA",
+        "length": 5
+      },
+      {
+        "word": "STORE",
+        "length": 5
+      },
+      {
+        "word": "RATOS",
+        "length": 5
+      },
+      {
+        "word": "ROTAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "S",
+      "T",
+      "A",
+      "E",
+      "R",
+      "O"
+    ],
+    "hint": "Piensa en camino y movimiento",
+    "theme": "viaje",
+    "language": "es"
+  },
+  {
+    "id": 294,
+    "level": 294,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "N",
+      "P",
+      "S"
+    ],
+    "center": "L",
+    "grid_words": [
+      {
+        "word": "PLANES",
+        "length": 6
+      },
+      {
+        "word": "LINEAS",
+        "length": 6
+      },
+      {
+        "word": "ESPINAL",
+        "length": 7
+      },
+      {
+        "word": "ALIENS",
+        "length": 6
+      },
+      {
+        "word": "PLENAS",
+        "length": 6
+      },
+      {
+        "word": "SALEN",
+        "length": 5
+      },
+      {
+        "word": "LINEA",
+        "length": 5
+      },
+      {
+        "word": "PENAL",
+        "length": 5
+      },
+      {
+        "word": "ELISA",
+        "length": 5
+      },
+      {
+        "word": "ALIEN",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ELIAS",
+        "length": 5
+      },
+      {
+        "word": "PLENA",
+        "length": 5
+      },
+      {
+        "word": "SENIL",
+        "length": 5
+      },
+      {
+        "word": "PANEL",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "S",
+      "I",
+      "L"
+    ],
+    "hint": "Piensa en comida y gestos",
+    "theme": "cocina",
+    "language": "es"
+  },
+  {
+    "id": 295,
+    "level": 295,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "G",
+    "grid_words": [
+      {
+        "word": "GESTORA",
+        "length": 7
+      },
+      {
+        "word": "ORTEGA",
+        "length": 6
+      },
+      {
+        "word": "GOTERAS",
+        "length": 7
+      },
+      {
+        "word": "TRAGOS",
+        "length": 6
+      },
+      {
+        "word": "GESTOR",
+        "length": 6
+      },
+      {
+        "word": "GESTAR",
+        "length": 6
+      },
+      {
+        "word": "GASTO",
+        "length": 5
+      },
+      {
+        "word": "GATOS",
+        "length": 5
+      },
+      {
+        "word": "GESTO",
+        "length": 5
+      },
+      {
+        "word": "TRAGO",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "GOTAS",
+        "length": 5
+      },
+      {
+        "word": "RASGO",
+        "length": 5
+      },
+      {
+        "word": "GREAT",
+        "length": 5
+      },
+      {
+        "word": "GATES",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "T",
+      "O",
+      "A",
+      "S",
+      "R",
+      "E"
+    ],
+    "hint": "Piensa en compra y eleccion",
+    "theme": "mercado",
+    "language": "es"
+  },
+  {
+    "id": 296,
+    "level": 296,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "L",
+      "O",
+      "R",
+      "S",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "USARLO",
+        "length": 6
+      },
+      {
+        "word": "LOCURA",
+        "length": 6
+      },
+      {
+        "word": "LOCURAS",
+        "length": 7
+      },
+      {
+        "word": "OSCURA",
+        "length": 6
+      },
+      {
+        "word": "OCULAR",
+        "length": 6
+      },
+      {
+        "word": "CARUSO",
+        "length": 6
+      },
+      {
+        "word": "CURSO",
+        "length": 5
+      },
+      {
+        "word": "LUCAS",
+        "length": 5
+      },
+      {
+        "word": "LUCRO",
+        "length": 5
+      },
+      {
+        "word": "RAOUL",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LAURO",
+        "length": 5
+      },
+      {
+        "word": "RULOS",
+        "length": 5
+      },
+      {
+        "word": "CURAS",
+        "length": 5
+      },
+      {
+        "word": "CULOS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "R",
+      "A",
+      "S",
+      "U",
+      "C"
+    ],
+    "hint": "Piensa en palabras utiles",
+    "theme": "escuela",
+    "language": "es"
+  },
+  {
+    "id": 297,
+    "level": 297,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "E",
+      "L",
+      "O",
+      "P",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "PELOTAS",
+        "length": 7
+      },
+      {
+        "word": "PELOTA",
+        "length": 6
+      },
+      {
+        "word": "PLATOS",
+        "length": 6
+      },
+      {
+        "word": "POETAS",
+        "length": 6
+      },
+      {
+        "word": "PASTEL",
+        "length": 6
+      },
+      {
+        "word": "POSTAL",
+        "length": 6
+      },
+      {
+        "word": "POSTEA",
+        "length": 6
+      },
+      {
+        "word": "TALES",
+        "length": 5
+      },
+      {
+        "word": "ESTOPA",
+        "length": 6
+      },
+      {
+        "word": "ALTOS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SALTO",
+        "length": 5
+      },
+      {
+        "word": "TELAS",
+        "length": 5
+      },
+      {
+        "word": "POETA",
+        "length": 5
+      },
+      {
+        "word": "TESLA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "T",
+      "S",
+      "O",
+      "E",
+      "P"
+    ],
+    "hint": "Piensa en agua y paso",
+    "theme": "mar",
+    "language": "es"
+  },
+  {
+    "id": 298,
+    "level": 298,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "B",
+      "E",
+      "I",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "B",
+    "grid_words": [
+      {
+        "word": "BESTIA",
+        "length": 6
+      },
+      {
+        "word": "SERBIA",
+        "length": 6
+      },
+      {
+        "word": "ABRISTE",
+        "length": 7
+      },
+      {
+        "word": "ESTRIBA",
+        "length": 7
+      },
+      {
+        "word": "BATRES",
+        "length": 6
+      },
+      {
+        "word": "BAIRES",
+        "length": 6
+      },
+      {
+        "word": "SABER",
+        "length": 5
+      },
+      {
+        "word": "BARES",
+        "length": 5
+      },
+      {
+        "word": "BESAR",
+        "length": 5
+      },
+      {
+        "word": "BRISA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ABRES",
+        "length": 5
+      },
+      {
+        "word": "BETIS",
+        "length": 5
+      },
+      {
+        "word": "BATIR",
+        "length": 5
+      },
+      {
+        "word": "BERTA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "S",
+      "E",
+      "R",
+      "I",
+      "T"
+    ],
+    "hint": "Piensa en direccion y enlace",
+    "theme": "ruta",
+    "language": "es"
+  },
+  {
+    "id": 299,
+    "level": 299,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "C",
+      "D",
+      "I",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "RADIOS",
+        "length": 6
+      },
+      {
+        "word": "CRIADOS",
+        "length": 7
+      },
+      {
+        "word": "CRIADO",
+        "length": 6
+      },
+      {
+        "word": "CARDIO",
+        "length": 6
+      },
+      {
+        "word": "RADIO",
+        "length": 5
+      },
+      {
+        "word": "SORIA",
+        "length": 5
+      },
+      {
+        "word": "CAIDOS",
+        "length": 6
+      },
+      {
+        "word": "RICOS",
+        "length": 5
+      },
+      {
+        "word": "DIOSA",
+        "length": 5
+      },
+      {
+        "word": "RICAS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ARIOS",
+        "length": 5
+      },
+      {
+        "word": "ADIOS",
+        "length": 5
+      },
+      {
+        "word": "ODIAR",
+        "length": 5
+      },
+      {
+        "word": "ODIAS",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "A",
+      "O",
+      "R",
+      "S",
+      "D"
+    ],
+    "hint": "Piensa en objetos y espacios",
+    "theme": "casa",
+    "language": "es"
+  },
+  {
+    "id": 300,
+    "level": 300,
+    "difficulty": "intermediate-advanced",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "O",
+      "R"
+    ],
+    "center": "D",
+    "grid_words": [
+      {
+        "word": "DINERO",
+        "length": 6
+      },
+      {
+        "word": "REINADO",
+        "length": 7
+      },
+      {
+        "word": "DIERON",
+        "length": 6
+      },
+      {
+        "word": "ORDENA",
+        "length": 6
+      },
+      {
+        "word": "RODEAN",
+        "length": 6
+      },
+      {
+        "word": "RIENDO",
+        "length": 6
+      },
+      {
+        "word": "DIERAN",
+        "length": 6
+      },
+      {
+        "word": "RIENDA",
+        "length": 6
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      },
+      {
+        "word": "DORIAN",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ADRIEN",
+        "length": 6
+      },
+      {
+        "word": "NADIE",
+        "length": 5
+      },
+      {
+        "word": "ORDEN",
+        "length": 5
+      },
+      {
+        "word": "RADIO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "R",
+      "E",
+      "I",
+      "A",
+      "O"
+    ],
+    "hint": "Piensa en formas y plantas",
+    "theme": "jardin",
+    "language": "es"
+  }
+]

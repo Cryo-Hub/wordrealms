@@ -1,0 +1,8602 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "K",
+      "M",
+      "N",
+      "R"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "MARINE",
+        "length": 6
+      },
+      {
+        "word": "MARNIE",
+        "length": 6
+      },
+      {
+        "word": "ANIME",
+        "length": 5
+      },
+      {
+        "word": "REKINA",
+        "length": 6
+      },
+      {
+        "word": "IRANEM",
+        "length": 6
+      },
+      {
+        "word": "EKRAN",
+        "length": 5
+      },
+      {
+        "word": "MARNE",
+        "length": 5
+      },
+      {
+        "word": "MARIE",
+        "length": 5
+      },
+      {
+        "word": "RANEM",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "KARNE",
+        "length": 5
+      },
+      {
+        "word": "RAKIEM",
+        "length": 6
+      },
+      {
+        "word": "KAREN",
+        "length": 5
+      },
+      {
+        "word": "MAREK",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "R",
+      "I",
+      "M"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 2,
+    "level": 2,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "M",
+      "N",
+      "Z"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "ZDANIE",
+        "length": 6
+      },
+      {
+        "word": "ANIME",
+        "length": 5
+      },
+      {
+        "word": "ZANIM",
+        "length": 5
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "MEDIA",
+        "length": 5
+      },
+      {
+        "word": "ZMIAN",
+        "length": 5
+      },
+      {
+        "word": "NIEMA",
+        "length": 5
+      },
+      {
+        "word": "DNIEM",
+        "length": 5
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "MAINE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DAMIEN",
+        "length": 6
+      },
+      {
+        "word": "MEDINA",
+        "length": 6
+      },
+      {
+        "word": "DZIEN",
+        "length": 5
+      },
+      {
+        "word": "ZDANIEM",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "A",
+      "N",
+      "E",
+      "M",
+      "D"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 3,
+    "level": 3,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "J",
+      "K",
+      "M",
+      "S"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "JAKIE",
+        "length": 5
+      },
+      {
+        "word": "JAKIES",
+        "length": 6
+      },
+      {
+        "word": "SAMEJ",
+        "length": 5
+      },
+      {
+        "word": "KASIE",
+        "length": 5
+      },
+      {
+        "word": "EMISJA",
+        "length": 6
+      },
+      {
+        "word": "SIEMA",
+        "length": 5
+      },
+      {
+        "word": "MASIE",
+        "length": 5
+      },
+      {
+        "word": "JAMES",
+        "length": 5
+      },
+      {
+        "word": "SIEMKA",
+        "length": 6
+      },
+      {
+        "word": "JAMIE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MISJE",
+        "length": 5
+      },
+      {
+        "word": "JAIME",
+        "length": 5
+      },
+      {
+        "word": "MASEK",
+        "length": 5
+      },
+      {
+        "word": "MIEJSKA",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "S",
+      "M",
+      "J"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 4,
+    "level": 4,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "M",
+      "N",
+      "P",
+      "S"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "PANIE",
+        "length": 5
+      },
+      {
+        "word": "PISANE",
+        "length": 6
+      },
+      {
+        "word": "PENISA",
+        "length": 6
+      },
+      {
+        "word": "SPANIE",
+        "length": 6
+      },
+      {
+        "word": "ANIME",
+        "length": 5
+      },
+      {
+        "word": "NAPIS",
+        "length": 5
+      },
+      {
+        "word": "PASIE",
+        "length": 5
+      },
+      {
+        "word": "SIEMA",
+        "length": 5
+      },
+      {
+        "word": "MASIE",
+        "length": 5
+      },
+      {
+        "word": "NIEMA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MINAS",
+        "length": 5
+      },
+      {
+        "word": "MAPIE",
+        "length": 5
+      },
+      {
+        "word": "NAPISEM",
+        "length": 7
+      },
+      {
+        "word": "PISMA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "E",
+      "N",
+      "S",
+      "P"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 5,
+    "level": 5,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "M",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "SERIA",
+        "length": 5
+      },
+      {
+        "word": "AIRES",
+        "length": 5
+      },
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "MARINE",
+        "length": 6
+      },
+      {
+        "word": "MARSIE",
+        "length": 6
+      },
+      {
+        "word": "MARNIE",
+        "length": 6
+      },
+      {
+        "word": "ANIME",
+        "length": 5
+      },
+      {
+        "word": "IRANEM",
+        "length": 6
+      },
+      {
+        "word": "RASIE",
+        "length": 5
+      },
+      {
+        "word": "MARIE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SIEMA",
+        "length": 5
+      },
+      {
+        "word": "REMIS",
+        "length": 5
+      },
+      {
+        "word": "MASIE",
+        "length": 5
+      },
+      {
+        "word": "NIEMA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "R",
+      "N",
+      "S"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 6,
+    "level": 6,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "B",
+      "I",
+      "K",
+      "N",
+      "R",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "NAUKI",
+        "length": 5
+      },
+      {
+        "word": "IRANU",
+        "length": 5
+      },
+      {
+        "word": "BIURA",
+        "length": 5
+      },
+      {
+        "word": "UBRANI",
+        "length": 6
+      },
+      {
+        "word": "IRAKU",
+        "length": 5
+      },
+      {
+        "word": "URBAN",
+        "length": 5
+      },
+      {
+        "word": "BRAKU",
+        "length": 5
+      },
+      {
+        "word": "KURNA",
+        "length": 5
+      },
+      {
+        "word": "BANKU",
+        "length": 5
+      },
+      {
+        "word": "BRAUN",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "UNIKA",
+        "length": 5
+      },
+      {
+        "word": "BIURKA",
+        "length": 6
+      },
+      {
+        "word": "BURAKI",
+        "length": 6
+      },
+      {
+        "word": "KRANU",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "N",
+      "I",
+      "U",
+      "B"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 7,
+    "level": 7,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "M",
+      "N",
+      "S",
+      "Y",
+      "Z"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "ZMIANY",
+        "length": 6
+      },
+      {
+        "word": "NASZYM",
+        "length": 6
+      },
+      {
+        "word": "SYNAMI",
+        "length": 6
+      },
+      {
+        "word": "MASZYN",
+        "length": 6
+      },
+      {
+        "word": "ZNAMY",
+        "length": 5
+      },
+      {
+        "word": "NASZYMI",
+        "length": 7
+      },
+      {
+        "word": "ZIMNY",
+        "length": 5
+      },
+      {
+        "word": "SYNA",
+        "length": 4
+      },
+      {
+        "word": "MASY",
+        "length": 4
+      },
+      {
+        "word": "SZYI",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MINY",
+        "length": 4
+      },
+      {
+        "word": "MANY",
+        "length": 4
+      },
+      {
+        "word": "MSZY",
+        "length": 4
+      },
+      {
+        "word": "ZIMY",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "S",
+      "I",
+      "Y",
+      "M"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 8,
+    "level": 8,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "G",
+      "I",
+      "N",
+      "R"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "GRANIE",
+        "length": 6
+      },
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "REGINA",
+        "length": 6
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "GRANDE",
+        "length": 6
+      },
+      {
+        "word": "NAGIE",
+        "length": 5
+      },
+      {
+        "word": "GARDEN",
+        "length": 6
+      },
+      {
+        "word": "ANDRE",
+        "length": 5
+      },
+      {
+        "word": "ANGIE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "GRANE",
+        "length": 5
+      },
+      {
+        "word": "RANGE",
+        "length": 5
+      },
+      {
+        "word": "DANGER",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "I",
+      "R",
+      "G"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 9,
+    "level": 9,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "K",
+      "M",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "TAKIE",
+        "length": 5
+      },
+      {
+        "word": "MIAST",
+        "length": 5
+      },
+      {
+        "word": "TAKIM",
+        "length": 5
+      },
+      {
+        "word": "MATKI",
+        "length": 5
+      },
+      {
+        "word": "KASIE",
+        "length": 5
+      },
+      {
+        "word": "SIEMA",
+        "length": 5
+      },
+      {
+        "word": "MASIE",
+        "length": 5
+      },
+      {
+        "word": "STEAM",
+        "length": 5
+      },
+      {
+        "word": "SEKTA",
+        "length": 5
+      },
+      {
+        "word": "KATIE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SIEMKA",
+        "length": 6
+      },
+      {
+        "word": "MASKI",
+        "length": 5
+      },
+      {
+        "word": "MATEK",
+        "length": 5
+      },
+      {
+        "word": "AKTEM",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "E",
+      "T",
+      "S",
+      "K"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 10,
+    "level": 10,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "R",
+      "Z"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "RAZIE",
+        "length": 5
+      },
+      {
+        "word": "NIERAZ",
+        "length": 6
+      },
+      {
+        "word": "ZDANIE",
+        "length": 6
+      },
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      },
+      {
+        "word": "RADZIE",
+        "length": 6
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "ZIAREN",
+        "length": 6
+      },
+      {
+        "word": "ANDRE",
+        "length": 5
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DZIEN",
+        "length": 5
+      },
+      {
+        "word": "RDZENIA",
+        "length": 7
+      },
+      {
+        "word": "ZADEN",
+        "length": 5
+      },
+      {
+        "word": "ZADNE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "R",
+      "D"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  },
+  {
+    "id": 11,
+    "level": 11,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "M",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "MIASTO",
+        "length": 6
+      },
+      {
+        "word": "TANIO",
+        "length": 5
+      },
+      {
+        "word": "NAMIOT",
+        "length": 6
+      },
+      {
+        "word": "SIMONA",
+        "length": 6
+      },
+      {
+        "word": "SONIA",
+        "length": 5
+      },
+      {
+        "word": "SANTO",
+        "length": 5
+      },
+      {
+        "word": "SIMON",
+        "length": 5
+      },
+      {
+        "word": "SIANO",
+        "length": 5
+      },
+      {
+        "word": "MIANO",
+        "length": 5
+      },
+      {
+        "word": "MASON",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NAOMI",
+        "length": 5
+      },
+      {
+        "word": "SAMOTNI",
+        "length": 7
+      },
+      {
+        "word": "STOI",
+        "length": 4
+      },
+      {
+        "word": "NOSI",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "A",
+      "N",
+      "I",
+      "S",
+      "T"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 12,
+    "level": 12,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "M",
+      "N",
+      "O"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "OCENIA",
+        "length": 6
+      },
+      {
+        "word": "NIECO",
+        "length": 5
+      },
+      {
+        "word": "CIEMNO",
+        "length": 6
+      },
+      {
+        "word": "OCENA",
+        "length": 5
+      },
+      {
+        "word": "OCEAN",
+        "length": 5
+      },
+      {
+        "word": "MIANO",
+        "length": 5
+      },
+      {
+        "word": "NAOMI",
+        "length": 5
+      },
+      {
+        "word": "MONICA",
+        "length": 6
+      },
+      {
+        "word": "NOCAMI",
+        "length": 6
+      },
+      {
+        "word": "MOCNE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MOCNA",
+        "length": 5
+      },
+      {
+        "word": "OCENIAM",
+        "length": 7
+      },
+      {
+        "word": "OCENAMI",
+        "length": 7
+      },
+      {
+        "word": "OCEN",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "O",
+      "A",
+      "I",
+      "E",
+      "C"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 13,
+    "level": 13,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "J",
+      "N",
+      "W"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "JAWNIE",
+        "length": 6
+      },
+      {
+        "word": "JANIE",
+        "length": 5
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "JEDNI",
+        "length": 5
+      },
+      {
+        "word": "WINDA",
+        "length": 5
+      },
+      {
+        "word": "DAWNIEJ",
+        "length": 7
+      },
+      {
+        "word": "DAWNI",
+        "length": 5
+      },
+      {
+        "word": "EDWIN",
+        "length": 5
+      },
+      {
+        "word": "JAWIE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DNIA",
+        "length": 4
+      },
+      {
+        "word": "NIEJ",
+        "length": 4
+      },
+      {
+        "word": "WINA",
+        "length": 4
+      },
+      {
+        "word": "DWIE",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "A",
+      "E",
+      "D",
+      "W"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 14,
+    "level": 14,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "K",
+      "N",
+      "R"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "REKINA",
+        "length": 6
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "EKRAN",
+        "length": 5
+      },
+      {
+        "word": "KARNE",
+        "length": 5
+      },
+      {
+        "word": "RADNI",
+        "length": 5
+      },
+      {
+        "word": "KAREN",
+        "length": 5
+      },
+      {
+        "word": "RANDKI",
+        "length": 6
+      },
+      {
+        "word": "ANDRE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DRINKA",
+        "length": 6
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "ERIKA",
+        "length": 5
+      },
+      {
+        "word": "KENIA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "R",
+      "E",
+      "I",
+      "D"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 15,
+    "level": 15,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "M",
+      "N",
+      "O",
+      "R",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "NARODY",
+        "length": 6
+      },
+      {
+        "word": "NORMY",
+        "length": 5
+      },
+      {
+        "word": "RADNY",
+        "length": 5
+      },
+      {
+        "word": "DRONY",
+        "length": 5
+      },
+      {
+        "word": "DANYM",
+        "length": 5
+      },
+      {
+        "word": "MARNY",
+        "length": 5
+      },
+      {
+        "word": "RANDY",
+        "length": 5
+      },
+      {
+        "word": "RADNYM",
+        "length": 6
+      },
+      {
+        "word": "MORDY",
+        "length": 5
+      },
+      {
+        "word": "RAYMOND",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DRAMY",
+        "length": 5
+      },
+      {
+        "word": "RANY",
+        "length": 4
+      },
+      {
+        "word": "RADY",
+        "length": 4
+      },
+      {
+        "word": "RYAN",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "R",
+      "A",
+      "O",
+      "Y",
+      "D"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 16,
+    "level": 16,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "G",
+      "N",
+      "O",
+      "R"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "ORANGE",
+        "length": 6
+      },
+      {
+        "word": "DANEGO",
+        "length": 6
+      },
+      {
+        "word": "ORGAN",
+        "length": 5
+      },
+      {
+        "word": "GRONA",
+        "length": 5
+      },
+      {
+        "word": "DROGA",
+        "length": 5
+      },
+      {
+        "word": "DRAGON",
+        "length": 6
+      },
+      {
+        "word": "RONDA",
+        "length": 5
+      },
+      {
+        "word": "DRONA",
+        "length": 5
+      },
+      {
+        "word": "GODNE",
+        "length": 5
+      },
+      {
+        "word": "GODNA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RADNEGO",
+        "length": 7
+      },
+      {
+        "word": "ERDOGAN",
+        "length": 7
+      },
+      {
+        "word": "DROGE",
+        "length": 5
+      },
+      {
+        "word": "RANO",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "A",
+      "N",
+      "R",
+      "E",
+      "G"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 17,
+    "level": 17,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "M",
+      "N",
+      "O",
+      "S"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "SIMONA",
+        "length": 6
+      },
+      {
+        "word": "SONIA",
+        "length": 5
+      },
+      {
+        "word": "SIMON",
+        "length": 5
+      },
+      {
+        "word": "SIANO",
+        "length": 5
+      },
+      {
+        "word": "MIANO",
+        "length": 5
+      },
+      {
+        "word": "SONDA",
+        "length": 5
+      },
+      {
+        "word": "ODMIAN",
+        "length": 6
+      },
+      {
+        "word": "MASON",
+        "length": 5
+      },
+      {
+        "word": "NAOMI",
+        "length": 5
+      },
+      {
+        "word": "MADISON",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DAMON",
+        "length": 5
+      },
+      {
+        "word": "NOSI",
+        "length": 4
+      },
+      {
+        "word": "SAMO",
+        "length": 4
+      },
+      {
+        "word": "NOSA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "O",
+      "A",
+      "I",
+      "S",
+      "M"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 18,
+    "level": 18,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "K",
+      "N",
+      "O",
+      "R",
+      "T",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "AUTOR",
+        "length": 5
+      },
+      {
+        "word": "NARUTO",
+        "length": 6
+      },
+      {
+        "word": "TAURON",
+        "length": 6
+      },
+      {
+        "word": "TRONU",
+        "length": 5
+      },
+      {
+        "word": "KORANU",
+        "length": 6
+      },
+      {
+        "word": "NOKAUT",
+        "length": 6
+      },
+      {
+        "word": "KURNA",
+        "length": 5
+      },
+      {
+        "word": "OKRUTNA",
+        "length": 7
+      },
+      {
+        "word": "KARTONU",
+        "length": 7
+      },
+      {
+        "word": "KRANU",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ROKU",
+        "length": 4
+      },
+      {
+        "word": "AUTO",
+        "length": 4
+      },
+      {
+        "word": "TOUR",
+        "length": 4
+      },
+      {
+        "word": "NURT",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "R",
+      "O",
+      "T",
+      "U"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 19,
+    "level": 19,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "J",
+      "K",
+      "R"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "JAKIE",
+        "length": 5
+      },
+      {
+        "word": "KARCIE",
+        "length": 6
+      },
+      {
+        "word": "KRAJE",
+        "length": 5
+      },
+      {
+        "word": "ERICA",
+        "length": 5
+      },
+      {
+        "word": "ERIKA",
+        "length": 5
+      },
+      {
+        "word": "RACJE",
+        "length": 5
+      },
+      {
+        "word": "AKCIE",
+        "length": 5
+      },
+      {
+        "word": "JACKIE",
+        "length": 6
+      },
+      {
+        "word": "AKCJE",
+        "length": 5
+      },
+      {
+        "word": "JAREK",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "REAKCJI",
+        "length": 7
+      },
+      {
+        "word": "JACEK",
+        "length": 5
+      },
+      {
+        "word": "KREACJI",
+        "length": 7
+      },
+      {
+        "word": "ERIC",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "R",
+      "K",
+      "C"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 20,
+    "level": 20,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "B",
+      "E",
+      "I",
+      "K",
+      "N",
+      "R"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "BRANIE",
+        "length": 6
+      },
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "NIEBA",
+        "length": 5
+      },
+      {
+        "word": "REKINA",
+        "length": 6
+      },
+      {
+        "word": "BRIAN",
+        "length": 5
+      },
+      {
+        "word": "NERKI",
+        "length": 5
+      },
+      {
+        "word": "RABIN",
+        "length": 5
+      },
+      {
+        "word": "BANIEK",
+        "length": 6
+      },
+      {
+        "word": "BRAIN",
+        "length": 5
+      },
+      {
+        "word": "ERIKA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "BANKI",
+        "length": 5
+      },
+      {
+        "word": "KENIA",
+        "length": 5
+      },
+      {
+        "word": "BANIE",
+        "length": 5
+      },
+      {
+        "word": "BRNIE",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "A",
+      "N",
+      "R",
+      "E",
+      "B"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  },
+  {
+    "id": 21,
+    "level": 21,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "K",
+      "M",
+      "N",
+      "Z"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "ANIME",
+        "length": 5
+      },
+      {
+        "word": "ZANIM",
+        "length": 5
+      },
+      {
+        "word": "ZMIAN",
+        "length": 5
+      },
+      {
+        "word": "NIEMA",
+        "length": 5
+      },
+      {
+        "word": "ZNAKI",
+        "length": 5
+      },
+      {
+        "word": "MAINE",
+        "length": 5
+      },
+      {
+        "word": "KENIA",
+        "length": 5
+      },
+      {
+        "word": "ZNIKA",
+        "length": 5
+      },
+      {
+        "word": "ZIMNA",
+        "length": 5
+      },
+      {
+        "word": "ZIMNE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ZANIK",
+        "length": 5
+      },
+      {
+        "word": "ZNAKIEM",
+        "length": 7
+      },
+      {
+        "word": "KINEM",
+        "length": 5
+      },
+      {
+        "word": "ZAMKI",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "A",
+      "E",
+      "M",
+      "Z"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 22,
+    "level": 22,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "M",
+      "N",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "TANIE",
+        "length": 5
+      },
+      {
+        "word": "ANIME",
+        "length": 5
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "MEDIA",
+        "length": 5
+      },
+      {
+        "word": "DIETA",
+        "length": 5
+      },
+      {
+        "word": "NIEMA",
+        "length": 5
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "MAINE",
+        "length": 5
+      },
+      {
+        "word": "DAMIEN",
+        "length": 6
+      },
+      {
+        "word": "MEDINA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DIAMENT",
+        "length": 7
+      },
+      {
+        "word": "ADMIN",
+        "length": 5
+      },
+      {
+        "word": "DNIA",
+        "length": 4
+      },
+      {
+        "word": "DANE",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "D",
+      "M"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 23,
+    "level": 23,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "L",
+      "N",
+      "Z"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "DANIEL",
+        "length": 6
+      },
+      {
+        "word": "ZDANIE",
+        "length": 6
+      },
+      {
+        "word": "LADNIE",
+        "length": 6
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "DZIALE",
+        "length": 6
+      },
+      {
+        "word": "ELIZA",
+        "length": 5
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "LIDZE",
+        "length": 5
+      },
+      {
+        "word": "ZDALNE",
+        "length": 6
+      },
+      {
+        "word": "DZIEN",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ZDALNIE",
+        "length": 7
+      },
+      {
+        "word": "ZADEN",
+        "length": 5
+      },
+      {
+        "word": "DZIELNA",
+        "length": 7
+      },
+      {
+        "word": "DZIEL",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "A",
+      "N",
+      "D",
+      "L"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 24,
+    "level": 24,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "M",
+      "N",
+      "O",
+      "R"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "ROMAN",
+        "length": 5
+      },
+      {
+        "word": "NORMA",
+        "length": 5
+      },
+      {
+        "word": "DOMENA",
+        "length": 6
+      },
+      {
+        "word": "DARMO",
+        "length": 5
+      },
+      {
+        "word": "RONDA",
+        "length": 5
+      },
+      {
+        "word": "MODERN",
+        "length": 6
+      },
+      {
+        "word": "DEMONA",
+        "length": 6
+      },
+      {
+        "word": "DRONA",
+        "length": 5
+      },
+      {
+        "word": "RAMON",
+        "length": 5
+      },
+      {
+        "word": "RADOM",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NARODEM",
+        "length": 7
+      },
+      {
+        "word": "RODEM",
+        "length": 5
+      },
+      {
+        "word": "MODNE",
+        "length": 5
+      },
+      {
+        "word": "DAMON",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "A",
+      "N",
+      "R",
+      "E",
+      "M"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 25,
+    "level": 25,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "P",
+      "S"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "PANIE",
+        "length": 5
+      },
+      {
+        "word": "PISANE",
+        "length": 6
+      },
+      {
+        "word": "PENISA",
+        "length": 6
+      },
+      {
+        "word": "SPANIE",
+        "length": 6
+      },
+      {
+        "word": "NAPIS",
+        "length": 5
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "PASIE",
+        "length": 5
+      },
+      {
+        "word": "PADNIE",
+        "length": 6
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "SEDNA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SPADNIE",
+        "length": 7
+      },
+      {
+        "word": "NSDAP",
+        "length": 5
+      },
+      {
+        "word": "NASI",
+        "length": 4
+      },
+      {
+        "word": "DNIA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "S",
+      "P"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 26,
+    "level": 26,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "J",
+      "K",
+      "M",
+      "N",
+      "Z"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "ZANIM",
+        "length": 5
+      },
+      {
+        "word": "ZMIAN",
+        "length": 5
+      },
+      {
+        "word": "ZNAKI",
+        "length": 5
+      },
+      {
+        "word": "JAKIM",
+        "length": 5
+      },
+      {
+        "word": "ZNIKA",
+        "length": 5
+      },
+      {
+        "word": "ZIMNA",
+        "length": 5
+      },
+      {
+        "word": "NIJAK",
+        "length": 5
+      },
+      {
+        "word": "ZANIK",
+        "length": 5
+      },
+      {
+        "word": "ZAMKI",
+        "length": 5
+      },
+      {
+        "word": "ZAMKNIJ",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NAMI",
+        "length": 4
+      },
+      {
+        "word": "JAKI",
+        "length": 4
+      },
+      {
+        "word": "KINA",
+        "length": 4
+      },
+      {
+        "word": "MINA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "Z",
+      "K",
+      "M"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 27,
+    "level": 27,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "J",
+      "K",
+      "M",
+      "O",
+      "S"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "JAKOS",
+        "length": 5
+      },
+      {
+        "word": "SMOKA",
+        "length": 5
+      },
+      {
+        "word": "KOMISJA",
+        "length": 7
+      },
+      {
+        "word": "SMOKI",
+        "length": 5
+      },
+      {
+        "word": "OMIJA",
+        "length": 5
+      },
+      {
+        "word": "SAMO",
+        "length": 4
+      },
+      {
+        "word": "JAKO",
+        "length": 4
+      },
+      {
+        "word": "MOJA",
+        "length": 4
+      },
+      {
+        "word": "SOKI",
+        "length": 4
+      },
+      {
+        "word": "SMOK",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "OSI",
+        "length": 3
+      },
+      {
+        "word": "MOI",
+        "length": 3
+      },
+      {
+        "word": "IOS",
+        "length": 3
+      },
+      {
+        "word": "ISO",
+        "length": 3
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "A",
+      "S",
+      "I",
+      "K",
+      "M"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 28,
+    "level": 28,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "J",
+      "N",
+      "W",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "JEDYNA",
+        "length": 6
+      },
+      {
+        "word": "WYDAJE",
+        "length": 6
+      },
+      {
+        "word": "WYDANE",
+        "length": 6
+      },
+      {
+        "word": "WAYNE",
+        "length": 5
+      },
+      {
+        "word": "DYWAN",
+        "length": 5
+      },
+      {
+        "word": "DAWNY",
+        "length": 5
+      },
+      {
+        "word": "WENDY",
+        "length": 5
+      },
+      {
+        "word": "WYDANEJ",
+        "length": 7
+      },
+      {
+        "word": "DANY",
+        "length": 4
+      },
+      {
+        "word": "ANDY",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "WADY",
+        "length": 4
+      },
+      {
+        "word": "WYDA",
+        "length": 4
+      },
+      {
+        "word": "ANY",
+        "length": 3
+      },
+      {
+        "word": "DAY",
+        "length": 3
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "E",
+      "Y",
+      "D",
+      "W"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 29,
+    "level": 29,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "B",
+      "D",
+      "E",
+      "N",
+      "R",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "BAYERN",
+        "length": 6
+      },
+      {
+        "word": "BANERY",
+        "length": 6
+      },
+      {
+        "word": "ARENY",
+        "length": 5
+      },
+      {
+        "word": "RADNY",
+        "length": 5
+      },
+      {
+        "word": "BRYAN",
+        "length": 5
+      },
+      {
+        "word": "READY",
+        "length": 5
+      },
+      {
+        "word": "RANDY",
+        "length": 5
+      },
+      {
+        "word": "BRANY",
+        "length": 5
+      },
+      {
+        "word": "BAYER",
+        "length": 5
+      },
+      {
+        "word": "BANDY",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DERBY",
+        "length": 5
+      },
+      {
+        "word": "BANDERY",
+        "length": 7
+      },
+      {
+        "word": "RANY",
+        "length": 4
+      },
+      {
+        "word": "RADY",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "N",
+      "E",
+      "Y",
+      "B"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 30,
+    "level": 30,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "P",
+      "W"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "PANIE",
+        "length": 5
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "PEWNA",
+        "length": 5
+      },
+      {
+        "word": "PADNIE",
+        "length": 6
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "PEWNI",
+        "length": 5
+      },
+      {
+        "word": "DAWNE",
+        "length": 5
+      },
+      {
+        "word": "EDWIN",
+        "length": 5
+      },
+      {
+        "word": "PADWIE",
+        "length": 6
+      },
+      {
+        "word": "WPADNIE",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DANE",
+        "length": 4
+      },
+      {
+        "word": "DWIE",
+        "length": 4
+      },
+      {
+        "word": "IDEA",
+        "length": 4
+      },
+      {
+        "word": "DNIE",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "N",
+      "A",
+      "I",
+      "D",
+      "P"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  },
+  {
+    "id": 31,
+    "level": 31,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "I",
+      "M",
+      "N",
+      "Z"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "ANIME",
+        "length": 5
+      },
+      {
+        "word": "ZANIM",
+        "length": 5
+      },
+      {
+        "word": "ZMIAN",
+        "length": 5
+      },
+      {
+        "word": "NAGIE",
+        "length": 5
+      },
+      {
+        "word": "NIEMA",
+        "length": 5
+      },
+      {
+        "word": "ANGIE",
+        "length": 5
+      },
+      {
+        "word": "GMINA",
+        "length": 5
+      },
+      {
+        "word": "MAINE",
+        "length": 5
+      },
+      {
+        "word": "ZIMNA",
+        "length": 5
+      },
+      {
+        "word": "MANGI",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "IMAGE",
+        "length": 5
+      },
+      {
+        "word": "GAZIE",
+        "length": 5
+      },
+      {
+        "word": "MEGAN",
+        "length": 5
+      },
+      {
+        "word": "EGZAMIN",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "E",
+      "M",
+      "G"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 32,
+    "level": 32,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "K",
+      "L",
+      "N",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "LETNIA",
+        "length": 6
+      },
+      {
+        "word": "TAKIE",
+        "length": 5
+      },
+      {
+        "word": "LETNI",
+        "length": 5
+      },
+      {
+        "word": "KLIENT",
+        "length": 6
+      },
+      {
+        "word": "TANIE",
+        "length": 5
+      },
+      {
+        "word": "INTEL",
+        "length": 5
+      },
+      {
+        "word": "ELITA",
+        "length": 5
+      },
+      {
+        "word": "KLIENTA",
+        "length": 7
+      },
+      {
+        "word": "LATIN",
+        "length": 5
+      },
+      {
+        "word": "LINKA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LATKI",
+        "length": 5
+      },
+      {
+        "word": "KLEIN",
+        "length": 5
+      },
+      {
+        "word": "KATIE",
+        "length": 5
+      },
+      {
+        "word": "KENIA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "T",
+      "E",
+      "N",
+      "A",
+      "L"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 33,
+    "level": 33,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "L",
+      "N",
+      "O",
+      "S"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "ALISON",
+        "length": 6
+      },
+      {
+        "word": "SALON",
+        "length": 5
+      },
+      {
+        "word": "DOLINA",
+        "length": 6
+      },
+      {
+        "word": "SONIA",
+        "length": 5
+      },
+      {
+        "word": "ILONA",
+        "length": 5
+      },
+      {
+        "word": "SIANO",
+        "length": 5
+      },
+      {
+        "word": "SONDA",
+        "length": 5
+      },
+      {
+        "word": "DOLNA",
+        "length": 5
+      },
+      {
+        "word": "SOLIDNA",
+        "length": 7
+      },
+      {
+        "word": "IDOLA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NOSI",
+        "length": 4
+      },
+      {
+        "word": "NOSA",
+        "length": 4
+      },
+      {
+        "word": "SOLI",
+        "length": 4
+      },
+      {
+        "word": "ALSO",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "N",
+      "I",
+      "S",
+      "L"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 34,
+    "level": 34,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "K",
+      "M",
+      "P",
+      "S"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "KASIE",
+        "length": 5
+      },
+      {
+        "word": "PASIE",
+        "length": 5
+      },
+      {
+        "word": "PIASEK",
+        "length": 6
+      },
+      {
+        "word": "SIEMA",
+        "length": 5
+      },
+      {
+        "word": "MASIE",
+        "length": 5
+      },
+      {
+        "word": "PIESKA",
+        "length": 6
+      },
+      {
+        "word": "EKIPA",
+        "length": 5
+      },
+      {
+        "word": "MAPIE",
+        "length": 5
+      },
+      {
+        "word": "SIEMKA",
+        "length": 6
+      },
+      {
+        "word": "PASEK",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PASEM",
+        "length": 5
+      },
+      {
+        "word": "MASEK",
+        "length": 5
+      },
+      {
+        "word": "SPEAK",
+        "length": 5
+      },
+      {
+        "word": "MAKES",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "S",
+      "K",
+      "P"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 35,
+    "level": 35,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "M",
+      "N",
+      "R",
+      "Y",
+      "Z"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "ZMIANY",
+        "length": 6
+      },
+      {
+        "word": "MARYI",
+        "length": 5
+      },
+      {
+        "word": "ZNAMY",
+        "length": 5
+      },
+      {
+        "word": "MIARY",
+        "length": 5
+      },
+      {
+        "word": "MARNY",
+        "length": 5
+      },
+      {
+        "word": "MARZY",
+        "length": 5
+      },
+      {
+        "word": "ZIMNY",
+        "length": 5
+      },
+      {
+        "word": "RZYMIAN",
+        "length": 7
+      },
+      {
+        "word": "RAZY",
+        "length": 4
+      },
+      {
+        "word": "RANY",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RYAN",
+        "length": 4
+      },
+      {
+        "word": "MARY",
+        "length": 4
+      },
+      {
+        "word": "ARMY",
+        "length": 4
+      },
+      {
+        "word": "MINY",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "N",
+      "I",
+      "Y",
+      "M"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 36,
+    "level": 36,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "G",
+      "N",
+      "O",
+      "R",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "ORGANY",
+        "length": 6
+      },
+      {
+        "word": "NARODY",
+        "length": 6
+      },
+      {
+        "word": "NAGRODY",
+        "length": 7
+      },
+      {
+        "word": "RADNY",
+        "length": 5
+      },
+      {
+        "word": "DRONY",
+        "length": 5
+      },
+      {
+        "word": "RANDY",
+        "length": 5
+      },
+      {
+        "word": "ANGRY",
+        "length": 5
+      },
+      {
+        "word": "GODNY",
+        "length": 5
+      },
+      {
+        "word": "RANY",
+        "length": 4
+      },
+      {
+        "word": "RADY",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RYAN",
+        "length": 4
+      },
+      {
+        "word": "DANY",
+        "length": 4
+      },
+      {
+        "word": "ANDY",
+        "length": 4
+      },
+      {
+        "word": "GARY",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "R",
+      "A",
+      "O",
+      "Y",
+      "D"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 37,
+    "level": 37,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "R",
+      "S",
+      "T",
+      "Y",
+      "Z"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "STARY",
+        "length": 5
+      },
+      {
+        "word": "TRASY",
+        "length": 5
+      },
+      {
+        "word": "STARZY",
+        "length": 6
+      },
+      {
+        "word": "CZYSTA",
+        "length": 6
+      },
+      {
+        "word": "SZARY",
+        "length": 5
+      },
+      {
+        "word": "TARCZY",
+        "length": 6
+      },
+      {
+        "word": "CZASY",
+        "length": 5
+      },
+      {
+        "word": "ZARYS",
+        "length": 5
+      },
+      {
+        "word": "CZYTA",
+        "length": 5
+      },
+      {
+        "word": "SZATY",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "TRACY",
+        "length": 5
+      },
+      {
+        "word": "STARCZY",
+        "length": 7
+      },
+      {
+        "word": "CZARY",
+        "length": 5
+      },
+      {
+        "word": "CRAZY",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "S",
+      "T",
+      "R",
+      "Y",
+      "Z"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 38,
+    "level": 38,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "H",
+      "I",
+      "M",
+      "N"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "ANIME",
+        "length": 5
+      },
+      {
+        "word": "MACIE",
+        "length": 5
+      },
+      {
+        "word": "CIEMNA",
+        "length": 6
+      },
+      {
+        "word": "NIEMCA",
+        "length": 6
+      },
+      {
+        "word": "NIEMA",
+        "length": 5
+      },
+      {
+        "word": "CENAMI",
+        "length": 6
+      },
+      {
+        "word": "MAINE",
+        "length": 5
+      },
+      {
+        "word": "CHEMIA",
+        "length": 6
+      },
+      {
+        "word": "CHINA",
+        "length": 5
+      },
+      {
+        "word": "MNICHA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MNICH",
+        "length": 5
+      },
+      {
+        "word": "MACHINE",
+        "length": 7
+      },
+      {
+        "word": "MNIE",
+        "length": 4
+      },
+      {
+        "word": "NAMI",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "E",
+      "N",
+      "M",
+      "C"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 39,
+    "level": 39,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "J",
+      "N",
+      "R"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "JEDNA",
+        "length": 5
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "RADNI",
+        "length": 5
+      },
+      {
+        "word": "ANDRE",
+        "length": 5
+      },
+      {
+        "word": "JANIE",
+        "length": 5
+      },
+      {
+        "word": "DANEJ",
+        "length": 5
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "JARED",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ANDRIEJ",
+        "length": 7
+      },
+      {
+        "word": "DNIA",
+        "length": 4
+      },
+      {
+        "word": "DANE",
+        "length": 4
+      },
+      {
+        "word": "IRAN",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "I",
+      "R",
+      "D"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 40,
+    "level": 40,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "L",
+      "N",
+      "S"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "DANIEL",
+        "length": 6
+      },
+      {
+        "word": "SILNE",
+        "length": 5
+      },
+      {
+        "word": "DIESLA",
+        "length": 6
+      },
+      {
+        "word": "LADNIE",
+        "length": 6
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "DENIS",
+        "length": 5
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "SEDNA",
+        "length": 5
+      },
+      {
+        "word": "DANIELS",
+        "length": 7
+      },
+      {
+        "word": "LINE",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SILE",
+        "length": 4
+      },
+      {
+        "word": "DANE",
+        "length": 4
+      },
+      {
+        "word": "SALE",
+        "length": 4
+      },
+      {
+        "word": "SEAN",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "N",
+      "A",
+      "S",
+      "D"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  },
+  {
+    "id": 41,
+    "level": 41,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "R",
+      "S"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "SERIA",
+        "length": 5
+      },
+      {
+        "word": "AIRES",
+        "length": 5
+      },
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "ADRES",
+        "length": 5
+      },
+      {
+        "word": "ANDERS",
+        "length": 6
+      },
+      {
+        "word": "ANDREI",
+        "length": 6
+      },
+      {
+        "word": "RASIE",
+        "length": 5
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "RADNI",
+        "length": 5
+      },
+      {
+        "word": "ANDRE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "SEDNA",
+        "length": 5
+      },
+      {
+        "word": "SREDNIA",
+        "length": 7
+      },
+      {
+        "word": "NASI",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "I",
+      "N",
+      "S"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 42,
+    "level": 42,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "K",
+      "M",
+      "N",
+      "O",
+      "R",
+      "S"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "ROMANS",
+        "length": 6
+      },
+      {
+        "word": "ROMAN",
+        "length": 5
+      },
+      {
+        "word": "NORMA",
+        "length": 5
+      },
+      {
+        "word": "MORSKA",
+        "length": 6
+      },
+      {
+        "word": "OSKAR",
+        "length": 5
+      },
+      {
+        "word": "MASON",
+        "length": 5
+      },
+      {
+        "word": "KORAN",
+        "length": 5
+      },
+      {
+        "word": "SANOK",
+        "length": 5
+      },
+      {
+        "word": "RAMOS",
+        "length": 5
+      },
+      {
+        "word": "RAMON",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SMOKA",
+        "length": 5
+      },
+      {
+        "word": "MOKRA",
+        "length": 5
+      },
+      {
+        "word": "SKROMNA",
+        "length": 7
+      },
+      {
+        "word": "MARKO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "N",
+      "S",
+      "M"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 43,
+    "level": 43,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "L",
+      "N",
+      "S",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "SILNY",
+        "length": 5
+      },
+      {
+        "word": "DYLAN",
+        "length": 5
+      },
+      {
+        "word": "DAILY",
+        "length": 5
+      },
+      {
+        "word": "DAISY",
+        "length": 5
+      },
+      {
+        "word": "LYDIA",
+        "length": 5
+      },
+      {
+        "word": "SANDY",
+        "length": 5
+      },
+      {
+        "word": "LINDSAY",
+        "length": 7
+      },
+      {
+        "word": "LINDY",
+        "length": 5
+      },
+      {
+        "word": "DIANY",
+        "length": 5
+      },
+      {
+        "word": "SYNA",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LASY",
+        "length": 4
+      },
+      {
+        "word": "LINY",
+        "length": 4
+      },
+      {
+        "word": "LISY",
+        "length": 4
+      },
+      {
+        "word": "LADY",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "S",
+      "Y",
+      "D"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 44,
+    "level": 44,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "M",
+      "N",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "STANU",
+        "length": 5
+      },
+      {
+        "word": "AUSTIN",
+        "length": 6
+      },
+      {
+        "word": "MINUT",
+        "length": 5
+      },
+      {
+        "word": "SMUTNA",
+        "length": 6
+      },
+      {
+        "word": "MINUTA",
+        "length": 6
+      },
+      {
+        "word": "USTAMI",
+        "length": 6
+      },
+      {
+        "word": "MIASTU",
+        "length": 6
+      },
+      {
+        "word": "SMUTNI",
+        "length": 6
+      },
+      {
+        "word": "MINUS",
+        "length": 5
+      },
+      {
+        "word": "TSUNAMI",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MUSI",
+        "length": 4
+      },
+      {
+        "word": "USTA",
+        "length": 4
+      },
+      {
+        "word": "UNIA",
+        "length": 4
+      },
+      {
+        "word": "UNIT",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "T",
+      "I",
+      "N",
+      "S",
+      "A",
+      "U"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 45,
+    "level": 45,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "B",
+      "D",
+      "E",
+      "I",
+      "N",
+      "Z"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "ZDANIE",
+        "length": 6
+      },
+      {
+        "word": "NIEBA",
+        "length": 5
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "BIEDNA",
+        "length": 6
+      },
+      {
+        "word": "DBANIE",
+        "length": 6
+      },
+      {
+        "word": "BAZIE",
+        "length": 5
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "BANIE",
+        "length": 5
+      },
+      {
+        "word": "DZIEN",
+        "length": 5
+      },
+      {
+        "word": "BIEDA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ZADEN",
+        "length": 5
+      },
+      {
+        "word": "ZADNE",
+        "length": 5
+      },
+      {
+        "word": "BANDZIE",
+        "length": 7
+      },
+      {
+        "word": "DANE",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "I",
+      "A",
+      "N",
+      "D",
+      "B"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 46,
+    "level": 46,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "N",
+      "W",
+      "Y"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "WYDANIE",
+        "length": 7
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "DIANY",
+        "length": 5
+      },
+      {
+        "word": "WINDY",
+        "length": 5
+      },
+      {
+        "word": "WINDA",
+        "length": 5
+      },
+      {
+        "word": "DAWNI",
+        "length": 5
+      },
+      {
+        "word": "DYWANIE",
+        "length": 7
+      },
+      {
+        "word": "EDWIN",
+        "length": 5
+      },
+      {
+        "word": "DNIA",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "WINA",
+        "length": 4
+      },
+      {
+        "word": "WINY",
+        "length": 4
+      },
+      {
+        "word": "DWIE",
+        "length": 4
+      },
+      {
+        "word": "IDEA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "A",
+      "E",
+      "D",
+      "W"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 47,
+    "level": 47,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Z"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "MIANO",
+        "length": 5
+      },
+      {
+        "word": "MOZNA",
+        "length": 5
+      },
+      {
+        "word": "NAOMI",
+        "length": 5
+      },
+      {
+        "word": "ZIMNO",
+        "length": 5
+      },
+      {
+        "word": "PANIOM",
+        "length": 6
+      },
+      {
+        "word": "POZNA",
+        "length": 5
+      },
+      {
+        "word": "POZNAM",
+        "length": 6
+      },
+      {
+        "word": "PANOM",
+        "length": 5
+      },
+      {
+        "word": "ZAPOMNI",
+        "length": 7
+      },
+      {
+        "word": "POZA",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MONA",
+        "length": 4
+      },
+      {
+        "word": "ZONA",
+        "length": 4
+      },
+      {
+        "word": "OMAN",
+        "length": 4
+      },
+      {
+        "word": "ZIOM",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "A",
+      "N",
+      "I",
+      "M",
+      "P"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 48,
+    "level": 48,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "K",
+      "M",
+      "N",
+      "O",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "NAUKI",
+        "length": 5
+      },
+      {
+        "word": "NIKOMU",
+        "length": 6
+      },
+      {
+        "word": "KONIU",
+        "length": 5
+      },
+      {
+        "word": "UNIKA",
+        "length": 5
+      },
+      {
+        "word": "KOMUNA",
+        "length": 6
+      },
+      {
+        "word": "UNIKAM",
+        "length": 6
+      },
+      {
+        "word": "KOMUNIA",
+        "length": 7
+      },
+      {
+        "word": "UNIA",
+        "length": 4
+      },
+      {
+        "word": "NAUK",
+        "length": 4
+      },
+      {
+        "word": "KOMU",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MANU",
+        "length": 4
+      },
+      {
+        "word": "MAKU",
+        "length": 4
+      },
+      {
+        "word": "UNA",
+        "length": 3
+      },
+      {
+        "word": "OUN",
+        "length": 3
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "A",
+      "I",
+      "O",
+      "U",
+      "K"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 49,
+    "level": 49,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "B",
+      "D",
+      "I",
+      "N",
+      "R",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "RADNY",
+        "length": 5
+      },
+      {
+        "word": "BRYAN",
+        "length": 5
+      },
+      {
+        "word": "RANDY",
+        "length": 5
+      },
+      {
+        "word": "BRANY",
+        "length": 5
+      },
+      {
+        "word": "DIANY",
+        "length": 5
+      },
+      {
+        "word": "BANDY",
+        "length": 5
+      },
+      {
+        "word": "DRABINY",
+        "length": 7
+      },
+      {
+        "word": "RANY",
+        "length": 4
+      },
+      {
+        "word": "RADY",
+        "length": 4
+      },
+      {
+        "word": "RYAN",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NIBY",
+        "length": 4
+      },
+      {
+        "word": "DANY",
+        "length": 4
+      },
+      {
+        "word": "ANDY",
+        "length": 4
+      },
+      {
+        "word": "RYBA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "R",
+      "Y",
+      "D",
+      "B"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 50,
+    "level": 50,
+    "difficulty": "beginner",
+    "letters": [
+      "M",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T",
+      "Y"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "PROSTY",
+        "length": 6
+      },
+      {
+        "word": "STORY",
+        "length": 5
+      },
+      {
+        "word": "OSTRY",
+        "length": 5
+      },
+      {
+        "word": "OSTRYM",
+        "length": 6
+      },
+      {
+        "word": "SPORT",
+        "length": 5
+      },
+      {
+        "word": "SPORTY",
+        "length": 6
+      },
+      {
+        "word": "POSTY",
+        "length": 5
+      },
+      {
+        "word": "STOPY",
+        "length": 5
+      },
+      {
+        "word": "SPORY",
+        "length": 5
+      },
+      {
+        "word": "MOSTY",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PORTY",
+        "length": 5
+      },
+      {
+        "word": "STORM",
+        "length": 5
+      },
+      {
+        "word": "SPORYM",
+        "length": 6
+      },
+      {
+        "word": "SYROP",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "S",
+      "T",
+      "R",
+      "Y",
+      "P"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  },
+  {
+    "id": 51,
+    "level": 51,
+    "difficulty": "beginner",
+    "letters": [
+      "E",
+      "I",
+      "N",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "STRONIE",
+        "length": 7
+      },
+      {
+        "word": "SERIO",
+        "length": 5
+      },
+      {
+        "word": "STRONE",
+        "length": 6
+      },
+      {
+        "word": "SENIOR",
+        "length": 6
+      },
+      {
+        "word": "TRONIE",
+        "length": 6
+      },
+      {
+        "word": "SIEROT",
+        "length": 6
+      },
+      {
+        "word": "OSTRE",
+        "length": 5
+      },
+      {
+        "word": "NOSIE",
+        "length": 5
+      },
+      {
+        "word": "TONIE",
+        "length": 5
+      },
+      {
+        "word": "STONE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NOTES",
+        "length": 5
+      },
+      {
+        "word": "STORE",
+        "length": 5
+      },
+      {
+        "word": "TENIS",
+        "length": 5
+      },
+      {
+        "word": "INTER",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "O",
+      "S",
+      "I",
+      "N",
+      "R"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 52,
+    "level": 52,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "M",
+      "N",
+      "O",
+      "P",
+      "S",
+      "Z"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "MOZNA",
+        "length": 5
+      },
+      {
+        "word": "MASON",
+        "length": 5
+      },
+      {
+        "word": "SPOZA",
+        "length": 5
+      },
+      {
+        "word": "POZNA",
+        "length": 5
+      },
+      {
+        "word": "POZNAM",
+        "length": 6
+      },
+      {
+        "word": "PASMO",
+        "length": 5
+      },
+      {
+        "word": "PANOM",
+        "length": 5
+      },
+      {
+        "word": "SZAMPON",
+        "length": 7
+      },
+      {
+        "word": "SAMO",
+        "length": 4
+      },
+      {
+        "word": "NASZ",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NOSA",
+        "length": 4
+      },
+      {
+        "word": "MASZ",
+        "length": 4
+      },
+      {
+        "word": "POZA",
+        "length": 4
+      },
+      {
+        "word": "ZNAM",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "N",
+      "S",
+      "M",
+      "P"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 53,
+    "level": 53,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "J",
+      "K",
+      "M"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "JAKIE",
+        "length": 5
+      },
+      {
+        "word": "MACIE",
+        "length": 5
+      },
+      {
+        "word": "MACIEJ",
+        "length": 6
+      },
+      {
+        "word": "JAKIM",
+        "length": 5
+      },
+      {
+        "word": "AKCJI",
+        "length": 5
+      },
+      {
+        "word": "JAMIE",
+        "length": 5
+      },
+      {
+        "word": "AKCIE",
+        "length": 5
+      },
+      {
+        "word": "JACKIE",
+        "length": 6
+      },
+      {
+        "word": "JAIME",
+        "length": 5
+      },
+      {
+        "word": "MACIEK",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "KIJEM",
+        "length": 5
+      },
+      {
+        "word": "JACKIEM",
+        "length": 7
+      },
+      {
+        "word": "JAKI",
+        "length": 4
+      },
+      {
+        "word": "IKEA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "E",
+      "J",
+      "C",
+      "K"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 54,
+    "level": 54,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "B",
+      "E",
+      "I",
+      "K",
+      "M",
+      "R"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "MARIE",
+        "length": 5
+      },
+      {
+        "word": "RAKIEM",
+        "length": 6
+      },
+      {
+        "word": "MAREK",
+        "length": 5
+      },
+      {
+        "word": "ARMIE",
+        "length": 5
+      },
+      {
+        "word": "RAMIE",
+        "length": 5
+      },
+      {
+        "word": "MIARE",
+        "length": 5
+      },
+      {
+        "word": "BRAMIE",
+        "length": 6
+      },
+      {
+        "word": "MARKI",
+        "length": 5
+      },
+      {
+        "word": "ERIKA",
+        "length": 5
+      },
+      {
+        "word": "BRAMKI",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "AMBER",
+        "length": 5
+      },
+      {
+        "word": "BRAKI",
+        "length": 5
+      },
+      {
+        "word": "KAMER",
+        "length": 5
+      },
+      {
+        "word": "BRAMEK",
+        "length": 6
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "I",
+      "E",
+      "M",
+      "K"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 55,
+    "level": 55,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "L",
+      "N",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "IDEALNY",
+        "length": 7
+      },
+      {
+        "word": "DYLAN",
+        "length": 5
+      },
+      {
+        "word": "DAILY",
+        "length": 5
+      },
+      {
+        "word": "LYDIA",
+        "length": 5
+      },
+      {
+        "word": "LINDY",
+        "length": 5
+      },
+      {
+        "word": "DIANY",
+        "length": 5
+      },
+      {
+        "word": "LINY",
+        "length": 4
+      },
+      {
+        "word": "YALE",
+        "length": 4
+      },
+      {
+        "word": "LADY",
+        "length": 4
+      },
+      {
+        "word": "DANY",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ANDY",
+        "length": 4
+      },
+      {
+        "word": "INDY",
+        "length": 4
+      },
+      {
+        "word": "ANY",
+        "length": 3
+      },
+      {
+        "word": "DAY",
+        "length": 3
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "Y",
+      "D",
+      "L"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 56,
+    "level": 56,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "K",
+      "M",
+      "N",
+      "O",
+      "P"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "KONIA",
+        "length": 5
+      },
+      {
+        "word": "MONIKA",
+        "length": 6
+      },
+      {
+        "word": "MIANO",
+        "length": 5
+      },
+      {
+        "word": "IKONA",
+        "length": 5
+      },
+      {
+        "word": "NOKIA",
+        "length": 5
+      },
+      {
+        "word": "OKNAMI",
+        "length": 6
+      },
+      {
+        "word": "NAOMI",
+        "length": 5
+      },
+      {
+        "word": "POMNIK",
+        "length": 6
+      },
+      {
+        "word": "PANIOM",
+        "length": 6
+      },
+      {
+        "word": "KOMINA",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "KOPIA",
+        "length": 5
+      },
+      {
+        "word": "KOMIN",
+        "length": 5
+      },
+      {
+        "word": "PANOM",
+        "length": 5
+      },
+      {
+        "word": "POMNIKA",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "O",
+      "A",
+      "K",
+      "M"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 57,
+    "level": 57,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "P",
+      "S",
+      "Z"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "PANIE",
+        "length": 5
+      },
+      {
+        "word": "PISANE",
+        "length": 6
+      },
+      {
+        "word": "PENISA",
+        "length": 6
+      },
+      {
+        "word": "SPANIE",
+        "length": 6
+      },
+      {
+        "word": "NAPIS",
+        "length": 5
+      },
+      {
+        "word": "NAPISZ",
+        "length": 6
+      },
+      {
+        "word": "PISZE",
+        "length": 5
+      },
+      {
+        "word": "PASIE",
+        "length": 5
+      },
+      {
+        "word": "PENIS",
+        "length": 5
+      },
+      {
+        "word": "ZAPIS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NAPISZE",
+        "length": 7
+      },
+      {
+        "word": "PISZA",
+        "length": 5
+      },
+      {
+        "word": "NASI",
+        "length": 4
+      },
+      {
+        "word": "PANI",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "S",
+      "A",
+      "E",
+      "N",
+      "P"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 58,
+    "level": 58,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "J",
+      "N",
+      "R",
+      "Z"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "JEDNA",
+        "length": 5
+      },
+      {
+        "word": "ANDRE",
+        "length": 5
+      },
+      {
+        "word": "DANEJ",
+        "length": 5
+      },
+      {
+        "word": "ZDAJE",
+        "length": 5
+      },
+      {
+        "word": "ANDRZEJ",
+        "length": 7
+      },
+      {
+        "word": "ZADNEJ",
+        "length": 6
+      },
+      {
+        "word": "JARED",
+        "length": 5
+      },
+      {
+        "word": "ZADEN",
+        "length": 5
+      },
+      {
+        "word": "ZADNE",
+        "length": 5
+      },
+      {
+        "word": "DANE",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "JEAN",
+        "length": 4
+      },
+      {
+        "word": "DAJE",
+        "length": 4
+      },
+      {
+        "word": "ZERA",
+        "length": 4
+      },
+      {
+        "word": "JANE",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "R",
+      "D",
+      "J"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 59,
+    "level": 59,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "I",
+      "K",
+      "N",
+      "Z"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "ZDANIE",
+        "length": 6
+      },
+      {
+        "word": "DANIE",
+        "length": 5
+      },
+      {
+        "word": "DIANE",
+        "length": 5
+      },
+      {
+        "word": "ZNAKI",
+        "length": 5
+      },
+      {
+        "word": "KENIA",
+        "length": 5
+      },
+      {
+        "word": "ZNIKA",
+        "length": 5
+      },
+      {
+        "word": "ZADEN",
+        "length": 5
+      },
+      {
+        "word": "ZANIK",
+        "length": 5
+      },
+      {
+        "word": "ZADNE",
+        "length": 5
+      },
+      {
+        "word": "DZIKA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "DZIEKAN",
+        "length": 7
+      },
+      {
+        "word": "KAZDE",
+        "length": 5
+      },
+      {
+        "word": "DNIA",
+        "length": 4
+      },
+      {
+        "word": "DANE",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "I",
+      "E",
+      "Z",
+      "D"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 60,
+    "level": 60,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "R",
+      "T",
+      "W",
+      "Y",
+      "Z"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "TWARZY",
+        "length": 6
+      },
+      {
+        "word": "WARTY",
+        "length": 5
+      },
+      {
+        "word": "TARCZY",
+        "length": 6
+      },
+      {
+        "word": "TRAWY",
+        "length": 5
+      },
+      {
+        "word": "CZYTA",
+        "length": 5
+      },
+      {
+        "word": "TRACY",
+        "length": 5
+      },
+      {
+        "word": "WYRAZ",
+        "length": 5
+      },
+      {
+        "word": "CZARY",
+        "length": 5
+      },
+      {
+        "word": "CRAZY",
+        "length": 5
+      },
+      {
+        "word": "ZRYWA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CZWARTY",
+        "length": 7
+      },
+      {
+        "word": "RACZY",
+        "length": 5
+      },
+      {
+        "word": "TRZY",
+        "length": 4
+      },
+      {
+        "word": "RAZY",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "T",
+      "Y",
+      "Z",
+      "C"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  },
+  {
+    "id": 61,
+    "level": 61,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "L",
+      "M",
+      "N",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "UDALI",
+        "length": 5
+      },
+      {
+        "word": "MAILU",
+        "length": 5
+      },
+      {
+        "word": "DUMNA",
+        "length": 5
+      },
+      {
+        "word": "DUMNI",
+        "length": 5
+      },
+      {
+        "word": "MUNDIAL",
+        "length": 7
+      },
+      {
+        "word": "UNIA",
+        "length": 4
+      },
+      {
+        "word": "DNIU",
+        "length": 4
+      },
+      {
+        "word": "LUNA",
+        "length": 4
+      },
+      {
+        "word": "NILU",
+        "length": 4
+      },
+      {
+        "word": "AUDI",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NUDA",
+        "length": 4
+      },
+      {
+        "word": "MANU",
+        "length": 4
+      },
+      {
+        "word": "DUMA",
+        "length": 4
+      },
+      {
+        "word": "ILU",
+        "length": 3
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "A",
+      "N",
+      "U",
+      "D",
+      "L"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 62,
+    "level": 62,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "J",
+      "K",
+      "N",
+      "S"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "JAKIE",
+        "length": 5
+      },
+      {
+        "word": "JAKIES",
+        "length": 6
+      },
+      {
+        "word": "NISKA",
+        "length": 5
+      },
+      {
+        "word": "KASIE",
+        "length": 5
+      },
+      {
+        "word": "JANIE",
+        "length": 5
+      },
+      {
+        "word": "JAKIS",
+        "length": 5
+      },
+      {
+        "word": "KENIA",
+        "length": 5
+      },
+      {
+        "word": "NIJAK",
+        "length": 5
+      },
+      {
+        "word": "ANEKSJI",
+        "length": 7
+      },
+      {
+        "word": "NASI",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NIEJ",
+        "length": 4
+      },
+      {
+        "word": "JAKI",
+        "length": 4
+      },
+      {
+        "word": "KINA",
+        "length": 4
+      },
+      {
+        "word": "SIAK",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "E",
+      "N",
+      "S",
+      "K"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 63,
+    "level": 63,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "O",
+      "P",
+      "R",
+      "T",
+      "W",
+      "Y"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "OPARTY",
+        "length": 6
+      },
+      {
+        "word": "WARTO",
+        "length": 5
+      },
+      {
+        "word": "TOWARY",
+        "length": 6
+      },
+      {
+        "word": "PRAWO",
+        "length": 5
+      },
+      {
+        "word": "TOWAR",
+        "length": 5
+      },
+      {
+        "word": "POTRWA",
+        "length": 6
+      },
+      {
+        "word": "TYPOWA",
+        "length": 6
+      },
+      {
+        "word": "POTRAW",
+        "length": 6
+      },
+      {
+        "word": "PORTY",
+        "length": 5
+      },
+      {
+        "word": "WROTA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PORYWA",
+        "length": 6
+      },
+      {
+        "word": "POTRAWY",
+        "length": 7
+      },
+      {
+        "word": "PORY",
+        "length": 4
+      },
+      {
+        "word": "TORY",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "A",
+      "R",
+      "T",
+      "W",
+      "P"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 64,
+    "level": 64,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "M",
+      "R",
+      "S",
+      "U",
+      "Y",
+      "Z"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "MARSZU",
+        "length": 6
+      },
+      {
+        "word": "RUSZA",
+        "length": 5
+      },
+      {
+        "word": "RUSZY",
+        "length": 5
+      },
+      {
+        "word": "URAZY",
+        "length": 5
+      },
+      {
+        "word": "MAZURY",
+        "length": 6
+      },
+      {
+        "word": "RUSZAM",
+        "length": 6
+      },
+      {
+        "word": "RZYMU",
+        "length": 5
+      },
+      {
+        "word": "MUSZA",
+        "length": 5
+      },
+      {
+        "word": "MAZUR",
+        "length": 5
+      },
+      {
+        "word": "RUSZAMY",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RAZU",
+        "length": 4
+      },
+      {
+        "word": "USZY",
+        "length": 4
+      },
+      {
+        "word": "SUMA",
+        "length": 4
+      },
+      {
+        "word": "SUMY",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "R",
+      "A",
+      "S",
+      "U",
+      "Z",
+      "M"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 65,
+    "level": 65,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "K",
+      "L",
+      "N",
+      "O",
+      "P"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "NIKOLA",
+        "length": 6
+      },
+      {
+        "word": "NAPOLI",
+        "length": 6
+      },
+      {
+        "word": "KONIA",
+        "length": 5
+      },
+      {
+        "word": "ILONA",
+        "length": 5
+      },
+      {
+        "word": "LINKA",
+        "length": 5
+      },
+      {
+        "word": "KOLAN",
+        "length": 5
+      },
+      {
+        "word": "IKONA",
+        "length": 5
+      },
+      {
+        "word": "NOKIA",
+        "length": 5
+      },
+      {
+        "word": "POLAK",
+        "length": 5
+      },
+      {
+        "word": "POLAN",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "KOPALNI",
+        "length": 7
+      },
+      {
+        "word": "PILNA",
+        "length": 5
+      },
+      {
+        "word": "KOPIA",
+        "length": 5
+      },
+      {
+        "word": "POLKA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "O",
+      "I",
+      "K",
+      "L"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 66,
+    "level": 66,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "L",
+      "R",
+      "S",
+      "T",
+      "Z"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "TERAZ",
+        "length": 5
+      },
+      {
+        "word": "RESZTA",
+        "length": 6
+      },
+      {
+        "word": "STARE",
+        "length": 5
+      },
+      {
+        "word": "STALE",
+        "length": 5
+      },
+      {
+        "word": "TALERZ",
+        "length": 6
+      },
+      {
+        "word": "ARESZT",
+        "length": 6
+      },
+      {
+        "word": "LASER",
+        "length": 5
+      },
+      {
+        "word": "ALERT",
+        "length": 5
+      },
+      {
+        "word": "TESLA",
+        "length": 5
+      },
+      {
+        "word": "LEAST",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "STRZELA",
+        "length": 7
+      },
+      {
+        "word": "SZARE",
+        "length": 5
+      },
+      {
+        "word": "ZALET",
+        "length": 5
+      },
+      {
+        "word": "REAL",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "T",
+      "R",
+      "S",
+      "L"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 67,
+    "level": 67,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "K",
+      "P",
+      "R",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "TAKIE",
+        "length": 5
+      },
+      {
+        "word": "PARTIE",
+        "length": 6
+      },
+      {
+        "word": "RAKIET",
+        "length": 6
+      },
+      {
+        "word": "PAKIET",
+        "length": 6
+      },
+      {
+        "word": "APTEKI",
+        "length": 6
+      },
+      {
+        "word": "ERIKA",
+        "length": 5
+      },
+      {
+        "word": "KATIE",
+        "length": 5
+      },
+      {
+        "word": "EKIPA",
+        "length": 5
+      },
+      {
+        "word": "PARTI",
+        "length": 5
+      },
+      {
+        "word": "PTAKI",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PARKI",
+        "length": 5
+      },
+      {
+        "word": "PARKIET",
+        "length": 7
+      },
+      {
+        "word": "TAKI",
+        "length": 4
+      },
+      {
+        "word": "RITA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "E",
+      "T",
+      "R",
+      "K"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 68,
+    "level": 68,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "K",
+      "M",
+      "O",
+      "R",
+      "T"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "KTORE",
+        "length": 5
+      },
+      {
+        "word": "METRA",
+        "length": 5
+      },
+      {
+        "word": "METRO",
+        "length": 5
+      },
+      {
+        "word": "KOREA",
+        "length": 5
+      },
+      {
+        "word": "MARKET",
+        "length": 6
+      },
+      {
+        "word": "MAREK",
+        "length": 5
+      },
+      {
+        "word": "MATER",
+        "length": 5
+      },
+      {
+        "word": "KRETA",
+        "length": 5
+      },
+      {
+        "word": "KAMER",
+        "length": 5
+      },
+      {
+        "word": "AKTOREM",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MATEK",
+        "length": 5
+      },
+      {
+        "word": "MOKRE",
+        "length": 5
+      },
+      {
+        "word": "TOMEK",
+        "length": 5
+      },
+      {
+        "word": "KOTEM",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "R",
+      "A",
+      "T",
+      "O",
+      "K"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 69,
+    "level": 69,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "L",
+      "M",
+      "P"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "MACIE",
+        "length": 5
+      },
+      {
+        "word": "LIPCA",
+        "length": 5
+      },
+      {
+        "word": "LECIA",
+        "length": 5
+      },
+      {
+        "word": "ALICE",
+        "length": 5
+      },
+      {
+        "word": "MAILE",
+        "length": 5
+      },
+      {
+        "word": "EMAIL",
+        "length": 5
+      },
+      {
+        "word": "CELAMI",
+        "length": 6
+      },
+      {
+        "word": "MAPIE",
+        "length": 5
+      },
+      {
+        "word": "PALCE",
+        "length": 5
+      },
+      {
+        "word": "EMILA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PALEC",
+        "length": 5
+      },
+      {
+        "word": "PALCEM",
+        "length": 6
+      },
+      {
+        "word": "PLACE",
+        "length": 5
+      },
+      {
+        "word": "PIECA",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "C",
+      "M"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 70,
+    "level": 70,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "N",
+      "O",
+      "P",
+      "R"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "RADIO",
+        "length": 5
+      },
+      {
+        "word": "PONAD",
+        "length": 5
+      },
+      {
+        "word": "RONDA",
+        "length": 5
+      },
+      {
+        "word": "DRONA",
+        "length": 5
+      },
+      {
+        "word": "PORAD",
+        "length": 5
+      },
+      {
+        "word": "PORADNI",
+        "length": 7
+      },
+      {
+        "word": "PRADO",
+        "length": 5
+      },
+      {
+        "word": "RANO",
+        "length": 4
+      },
+      {
+        "word": "IRON",
+        "length": 4
+      },
+      {
+        "word": "PORA",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NORA",
+        "length": 4
+      },
+      {
+        "word": "NOIR",
+        "length": 4
+      },
+      {
+        "word": "ROAD",
+        "length": 4
+      },
+      {
+        "word": "ROPA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "A",
+      "R",
+      "N",
+      "I",
+      "D"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  },
+  {
+    "id": 71,
+    "level": 71,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "N",
+      "O",
+      "P",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "STOPNI",
+        "length": 6
+      },
+      {
+        "word": "TANIO",
+        "length": 5
+      },
+      {
+        "word": "SAINT",
+        "length": 5
+      },
+      {
+        "word": "STOPNIA",
+        "length": 7
+      },
+      {
+        "word": "SONIA",
+        "length": 5
+      },
+      {
+        "word": "NAPIS",
+        "length": 5
+      },
+      {
+        "word": "PISANO",
+        "length": 6
+      },
+      {
+        "word": "INSTA",
+        "length": 5
+      },
+      {
+        "word": "SANTI",
+        "length": 5
+      },
+      {
+        "word": "SIANO",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "POINT",
+        "length": 5
+      },
+      {
+        "word": "PIAST",
+        "length": 5
+      },
+      {
+        "word": "STOI",
+        "length": 4
+      },
+      {
+        "word": "NASI",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "N",
+      "A",
+      "S",
+      "O",
+      "T"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 72,
+    "level": 72,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "M",
+      "N",
+      "S",
+      "Z"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "NASZE",
+        "length": 5
+      },
+      {
+        "word": "SCENA",
+        "length": 5
+      },
+      {
+        "word": "CZASEM",
+        "length": 6
+      },
+      {
+        "word": "MASCE",
+        "length": 5
+      },
+      {
+        "word": "SAMCE",
+        "length": 5
+      },
+      {
+        "word": "SMACZNE",
+        "length": 7
+      },
+      {
+        "word": "SAME",
+        "length": 4
+      },
+      {
+        "word": "SEAN",
+        "length": 4
+      },
+      {
+        "word": "CENA",
+        "length": 4
+      },
+      {
+        "word": "SCEN",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "AMEN",
+        "length": 4
+      },
+      {
+        "word": "CASE",
+        "length": 4
+      },
+      {
+        "word": "SNEM",
+        "length": 4
+      },
+      {
+        "word": "NAME",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "A",
+      "S",
+      "N",
+      "C",
+      "M"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 73,
+    "level": 73,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "G",
+      "M",
+      "N",
+      "O",
+      "R"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "ORANGE",
+        "length": 6
+      },
+      {
+        "word": "ORGAN",
+        "length": 5
+      },
+      {
+        "word": "ROMAN",
+        "length": 5
+      },
+      {
+        "word": "GRONA",
+        "length": 5
+      },
+      {
+        "word": "NORMA",
+        "length": 5
+      },
+      {
+        "word": "MORGAN",
+        "length": 6
+      },
+      {
+        "word": "RAMON",
+        "length": 5
+      },
+      {
+        "word": "OMEGA",
+        "length": 5
+      },
+      {
+        "word": "ORGANEM",
+        "length": 7
+      },
+      {
+        "word": "MANGO",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RANO",
+        "length": 4
+      },
+      {
+        "word": "NORA",
+        "length": 4
+      },
+      {
+        "word": "MORE",
+        "length": 4
+      },
+      {
+        "word": "NERO",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "N",
+      "R",
+      "E",
+      "G"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 74,
+    "level": 74,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "P",
+      "R",
+      "S",
+      "W"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "SERIA",
+        "length": 5
+      },
+      {
+        "word": "PRAWIE",
+        "length": 6
+      },
+      {
+        "word": "PRASIE",
+        "length": 6
+      },
+      {
+        "word": "AIRES",
+        "length": 5
+      },
+      {
+        "word": "SPRAWIE",
+        "length": 7
+      },
+      {
+        "word": "SPRAWI",
+        "length": 6
+      },
+      {
+        "word": "RASIE",
+        "length": 5
+      },
+      {
+        "word": "SPRAW",
+        "length": 5
+      },
+      {
+        "word": "PARIS",
+        "length": 5
+      },
+      {
+        "word": "PASIE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SPRAWE",
+        "length": 6
+      },
+      {
+        "word": "WSPIERA",
+        "length": 7
+      },
+      {
+        "word": "PRAWE",
+        "length": 5
+      },
+      {
+        "word": "PRAWI",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "R",
+      "S",
+      "E",
+      "P"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 75,
+    "level": 75,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "L",
+      "U",
+      "W"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "WIELU",
+        "length": 5
+      },
+      {
+        "word": "ULICE",
+        "length": 5
+      },
+      {
+        "word": "ULICA",
+        "length": 5
+      },
+      {
+        "word": "AUCIE",
+        "length": 5
+      },
+      {
+        "word": "LUCIA",
+        "length": 5
+      },
+      {
+        "word": "WALUCIE",
+        "length": 7
+      },
+      {
+        "word": "WIECU",
+        "length": 5
+      },
+      {
+        "word": "CELU",
+        "length": 4
+      },
+      {
+        "word": "ULIC",
+        "length": 4
+      },
+      {
+        "word": "ULEC",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LUCA",
+        "length": 4
+      },
+      {
+        "word": "ILU",
+        "length": 3
+      },
+      {
+        "word": "LIU",
+        "length": 3
+      },
+      {
+        "word": "ULA",
+        "length": 3
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "E",
+      "A",
+      "U",
+      "C",
+      "L"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 76,
+    "level": 76,
+    "difficulty": "beginner",
+    "letters": [
+      "E",
+      "K",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "PROSTE",
+        "length": 6
+      },
+      {
+        "word": "OSTRE",
+        "length": 5
+      },
+      {
+        "word": "SEKTOR",
+        "length": 6
+      },
+      {
+        "word": "OKRES",
+        "length": 5
+      },
+      {
+        "word": "STORE",
+        "length": 5
+      },
+      {
+        "word": "SPORT",
+        "length": 5
+      },
+      {
+        "word": "KTORE",
+        "length": 5
+      },
+      {
+        "word": "SPORE",
+        "length": 5
+      },
+      {
+        "word": "STROP",
+        "length": 5
+      },
+      {
+        "word": "EKSPORT",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "POKER",
+        "length": 5
+      },
+      {
+        "word": "ROSE",
+        "length": 4
+      },
+      {
+        "word": "POST",
+        "length": 4
+      },
+      {
+        "word": "KTOS",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "R",
+      "S",
+      "E",
+      "T",
+      "P"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 77,
+    "level": 77,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "N",
+      "S",
+      "T",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "STANU",
+        "length": 5
+      },
+      {
+        "word": "STUDIA",
+        "length": 6
+      },
+      {
+        "word": "AUSTIN",
+        "length": 6
+      },
+      {
+        "word": "STUDNI",
+        "length": 6
+      },
+      {
+        "word": "SUDAN",
+        "length": 5
+      },
+      {
+        "word": "STUDNIA",
+        "length": 7
+      },
+      {
+        "word": "USTA",
+        "length": 4
+      },
+      {
+        "word": "UNIA",
+        "length": 4
+      },
+      {
+        "word": "DNIU",
+        "length": 4
+      },
+      {
+        "word": "UNIT",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "AUDI",
+        "length": 4
+      },
+      {
+        "word": "NUDA",
+        "length": 4
+      },
+      {
+        "word": "DUSI",
+        "length": 4
+      },
+      {
+        "word": "SADU",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "A",
+      "I",
+      "S",
+      "T",
+      "U"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 78,
+    "level": 78,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "J",
+      "M",
+      "S"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "MACIE",
+        "length": 5
+      },
+      {
+        "word": "SAMEJ",
+        "length": 5
+      },
+      {
+        "word": "MIEJSC",
+        "length": 6
+      },
+      {
+        "word": "EMISJA",
+        "length": 6
+      },
+      {
+        "word": "SIEMA",
+        "length": 5
+      },
+      {
+        "word": "MASIE",
+        "length": 5
+      },
+      {
+        "word": "JAMES",
+        "length": 5
+      },
+      {
+        "word": "SAMIEC",
+        "length": 6
+      },
+      {
+        "word": "MIEJSCA",
+        "length": 7
+      },
+      {
+        "word": "MACIEJ",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "JAMIE",
+        "length": 5
+      },
+      {
+        "word": "MISJE",
+        "length": 5
+      },
+      {
+        "word": "MASCE",
+        "length": 5
+      },
+      {
+        "word": "JAIME",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "A",
+      "I",
+      "S",
+      "M",
+      "J"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 79,
+    "level": 79,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "G",
+      "I",
+      "N",
+      "R"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "GRANIE",
+        "length": 6
+      },
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "GRANIC",
+        "length": 6
+      },
+      {
+        "word": "REGINA",
+        "length": 6
+      },
+      {
+        "word": "RANGI",
+        "length": 5
+      },
+      {
+        "word": "AGENCI",
+        "length": 6
+      },
+      {
+        "word": "NAGIE",
+        "length": 5
+      },
+      {
+        "word": "ERICA",
+        "length": 5
+      },
+      {
+        "word": "GRANICE",
+        "length": 7
+      },
+      {
+        "word": "ANGIE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "RACING",
+        "length": 6
+      },
+      {
+        "word": "GRACIE",
+        "length": 6
+      },
+      {
+        "word": "GACIE",
+        "length": 5
+      },
+      {
+        "word": "CRAIG",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "E",
+      "R",
+      "G"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 80,
+    "level": 80,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "M",
+      "N",
+      "O",
+      "R",
+      "Z"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "CZARNO",
+        "length": 6
+      },
+      {
+        "word": "CORAZ",
+        "length": 5
+      },
+      {
+        "word": "ROMAN",
+        "length": 5
+      },
+      {
+        "word": "NORMA",
+        "length": 5
+      },
+      {
+        "word": "MOZNA",
+        "length": 5
+      },
+      {
+        "word": "MORZA",
+        "length": 5
+      },
+      {
+        "word": "ROCZNA",
+        "length": 6
+      },
+      {
+        "word": "RANCZO",
+        "length": 6
+      },
+      {
+        "word": "RAMON",
+        "length": 5
+      },
+      {
+        "word": "MARCO",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MOCNA",
+        "length": 5
+      },
+      {
+        "word": "MROCZNA",
+        "length": 7
+      },
+      {
+        "word": "RANO",
+        "length": 4
+      },
+      {
+        "word": "NORA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "N",
+      "M",
+      "Z"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  },
+  {
+    "id": 81,
+    "level": 81,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "K",
+      "L",
+      "M"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "MACIE",
+        "length": 5
+      },
+      {
+        "word": "LECIA",
+        "length": 5
+      },
+      {
+        "word": "ALICE",
+        "length": 5
+      },
+      {
+        "word": "MAILE",
+        "length": 5
+      },
+      {
+        "word": "EMAIL",
+        "length": 5
+      },
+      {
+        "word": "LEKAMI",
+        "length": 6
+      },
+      {
+        "word": "CELAMI",
+        "length": 6
+      },
+      {
+        "word": "EMILA",
+        "length": 5
+      },
+      {
+        "word": "KAMIL",
+        "length": 5
+      },
+      {
+        "word": "AKCIE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MALIK",
+        "length": 5
+      },
+      {
+        "word": "MACIEK",
+        "length": 6
+      },
+      {
+        "word": "KIELC",
+        "length": 5
+      },
+      {
+        "word": "CALKIEM",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "E",
+      "L",
+      "M",
+      "C"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 82,
+    "level": 82,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "M",
+      "R",
+      "T",
+      "W"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "TRAWIE",
+        "length": 6
+      },
+      {
+        "word": "WARTE",
+        "length": 5
+      },
+      {
+        "word": "METRA",
+        "length": 5
+      },
+      {
+        "word": "MARTWE",
+        "length": 6
+      },
+      {
+        "word": "MARIE",
+        "length": 5
+      },
+      {
+        "word": "WATER",
+        "length": 5
+      },
+      {
+        "word": "ARMIE",
+        "length": 5
+      },
+      {
+        "word": "RAMIE",
+        "length": 5
+      },
+      {
+        "word": "MIARE",
+        "length": 5
+      },
+      {
+        "word": "MATER",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "WIATREM",
+        "length": 7
+      },
+      {
+        "word": "WIEM",
+        "length": 4
+      },
+      {
+        "word": "ARTE",
+        "length": 4
+      },
+      {
+        "word": "TIME",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "T",
+      "I",
+      "M"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 83,
+    "level": 83,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "K",
+      "N",
+      "O",
+      "P"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "KONIA",
+        "length": 5
+      },
+      {
+        "word": "KONIE",
+        "length": 5
+      },
+      {
+        "word": "OPIEKA",
+        "length": 6
+      },
+      {
+        "word": "OKIEN",
+        "length": 5
+      },
+      {
+        "word": "OKNIE",
+        "length": 5
+      },
+      {
+        "word": "IKONA",
+        "length": 5
+      },
+      {
+        "word": "NOKIA",
+        "length": 5
+      },
+      {
+        "word": "EPOKI",
+        "length": 5
+      },
+      {
+        "word": "KOPIE",
+        "length": 5
+      },
+      {
+        "word": "KOPIA",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "EPOKA",
+        "length": 5
+      },
+      {
+        "word": "KOPANIE",
+        "length": 7
+      },
+      {
+        "word": "PEKAO",
+        "length": 5
+      },
+      {
+        "word": "OKNA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "O",
+      "E",
+      "N",
+      "A",
+      "K"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 84,
+    "level": 84,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "M",
+      "N",
+      "O",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "DANYMI",
+        "length": 6
+      },
+      {
+        "word": "DANYM",
+        "length": 5
+      },
+      {
+        "word": "DIANY",
+        "length": 5
+      },
+      {
+        "word": "ODMIANY",
+        "length": 7
+      },
+      {
+        "word": "DANY",
+        "length": 4
+      },
+      {
+        "word": "ANDY",
+        "length": 4
+      },
+      {
+        "word": "MINY",
+        "length": 4
+      },
+      {
+        "word": "DOMY",
+        "length": 4
+      },
+      {
+        "word": "DAMY",
+        "length": 4
+      },
+      {
+        "word": "MANY",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "INDY",
+        "length": 4
+      },
+      {
+        "word": "MAYO",
+        "length": 4
+      },
+      {
+        "word": "MODY",
+        "length": 4
+      },
+      {
+        "word": "ANY",
+        "length": 3
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "N",
+      "I",
+      "Y",
+      "D",
+      "M"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 85,
+    "level": 85,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "P",
+      "R",
+      "W"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "PRAWIE",
+        "length": 6
+      },
+      {
+        "word": "PRANIE",
+        "length": 6
+      },
+      {
+        "word": "PANIE",
+        "length": 5
+      },
+      {
+        "word": "IRENA",
+        "length": 5
+      },
+      {
+        "word": "WIERNA",
+        "length": 6
+      },
+      {
+        "word": "PRAWNE",
+        "length": 6
+      },
+      {
+        "word": "PEWNA",
+        "length": 5
+      },
+      {
+        "word": "PRAWNIE",
+        "length": 7
+      },
+      {
+        "word": "PRAWE",
+        "length": 5
+      },
+      {
+        "word": "PRAWI",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PANI",
+        "length": 4
+      },
+      {
+        "word": "WINA",
+        "length": 4
+      },
+      {
+        "word": "IRAN",
+        "length": 4
+      },
+      {
+        "word": "RAIN",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "R",
+      "I",
+      "N",
+      "P"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 86,
+    "level": 86,
+    "difficulty": "beginner",
+    "letters": [
+      "E",
+      "M",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "PROSTE",
+        "length": 6
+      },
+      {
+        "word": "OSTRE",
+        "length": 5
+      },
+      {
+        "word": "STORE",
+        "length": 5
+      },
+      {
+        "word": "POTEM",
+        "length": 5
+      },
+      {
+        "word": "SPORT",
+        "length": 5
+      },
+      {
+        "word": "SPORE",
+        "length": 5
+      },
+      {
+        "word": "METRO",
+        "length": 5
+      },
+      {
+        "word": "POSTEM",
+        "length": 6
+      },
+      {
+        "word": "STORM",
+        "length": 5
+      },
+      {
+        "word": "TROPEM",
+        "length": 6
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PORTEM",
+        "length": 6
+      },
+      {
+        "word": "STROP",
+        "length": 5
+      },
+      {
+        "word": "TEMPO",
+        "length": 5
+      },
+      {
+        "word": "SPORTEM",
+        "length": 7
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "T",
+      "E",
+      "R",
+      "S",
+      "P"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 87,
+    "level": 87,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "H",
+      "I",
+      "L",
+      "M"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "MACIE",
+        "length": 5
+      },
+      {
+        "word": "LECIA",
+        "length": 5
+      },
+      {
+        "word": "ALICE",
+        "length": 5
+      },
+      {
+        "word": "MAILE",
+        "length": 5
+      },
+      {
+        "word": "EMAIL",
+        "length": 5
+      },
+      {
+        "word": "LECHIA",
+        "length": 6
+      },
+      {
+        "word": "CELAMI",
+        "length": 6
+      },
+      {
+        "word": "LECHA",
+        "length": 5
+      },
+      {
+        "word": "EMILA",
+        "length": 5
+      },
+      {
+        "word": "CHILE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "CHEMIA",
+        "length": 6
+      },
+      {
+        "word": "MICHAEL",
+        "length": 7
+      },
+      {
+        "word": "MICHEL",
+        "length": 6
+      },
+      {
+        "word": "MALEC",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "E",
+      "A",
+      "I",
+      "L",
+      "C",
+      "M"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 88,
+    "level": 88,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "I",
+      "N",
+      "O",
+      "S",
+      "T"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "TANIO",
+        "length": 5
+      },
+      {
+        "word": "SAINT",
+        "length": 5
+      },
+      {
+        "word": "SONIA",
+        "length": 5
+      },
+      {
+        "word": "INSTA",
+        "length": 5
+      },
+      {
+        "word": "SANTI",
+        "length": 5
+      },
+      {
+        "word": "SIANO",
+        "length": 5
+      },
+      {
+        "word": "STADION",
+        "length": 7
+      },
+      {
+        "word": "STOI",
+        "length": 4
+      },
+      {
+        "word": "NASI",
+        "length": 4
+      },
+      {
+        "word": "DNIA",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NOSI",
+        "length": 4
+      },
+      {
+        "word": "TANI",
+        "length": 4
+      },
+      {
+        "word": "ANTI",
+        "length": 4
+      },
+      {
+        "word": "INTO",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "A",
+      "N",
+      "S",
+      "T",
+      "O"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 89,
+    "level": 89,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "K",
+      "L",
+      "N",
+      "S",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "NAUKI",
+        "length": 5
+      },
+      {
+        "word": "LUISA",
+        "length": 5
+      },
+      {
+        "word": "SUKNIA",
+        "length": 6
+      },
+      {
+        "word": "KLANU",
+        "length": 5
+      },
+      {
+        "word": "LINKU",
+        "length": 5
+      },
+      {
+        "word": "UNIKA",
+        "length": 5
+      },
+      {
+        "word": "KLAUS",
+        "length": 5
+      },
+      {
+        "word": "SUKNI",
+        "length": 5
+      },
+      {
+        "word": "LINUKSA",
+        "length": 7
+      },
+      {
+        "word": "LUKAS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "LASU",
+        "length": 4
+      },
+      {
+        "word": "UNIA",
+        "length": 4
+      },
+      {
+        "word": "LUIS",
+        "length": 4
+      },
+      {
+        "word": "LUNA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "I",
+      "N",
+      "S",
+      "U",
+      "K"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 90,
+    "level": 90,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "I",
+      "L",
+      "N",
+      "O",
+      "S",
+      "W"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "ALISON",
+        "length": 6
+      },
+      {
+        "word": "WIOSNA",
+        "length": 6
+      },
+      {
+        "word": "WILSON",
+        "length": 6
+      },
+      {
+        "word": "SALON",
+        "length": 5
+      },
+      {
+        "word": "SONIA",
+        "length": 5
+      },
+      {
+        "word": "WOLNA",
+        "length": 5
+      },
+      {
+        "word": "ILONA",
+        "length": 5
+      },
+      {
+        "word": "SIANO",
+        "length": 5
+      },
+      {
+        "word": "SLOWA",
+        "length": 5
+      },
+      {
+        "word": "WOLNI",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "WNOSI",
+        "length": 5
+      },
+      {
+        "word": "IWONA",
+        "length": 5
+      },
+      {
+        "word": "WILSONA",
+        "length": 7
+      },
+      {
+        "word": "WILNO",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "N",
+      "A",
+      "I",
+      "S",
+      "L"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  },
+  {
+    "id": 91,
+    "level": 91,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "C",
+      "E",
+      "G",
+      "I",
+      "L",
+      "N"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "NAGLE",
+        "length": 5
+      },
+      {
+        "word": "ANGELI",
+        "length": 6
+      },
+      {
+        "word": "LECIA",
+        "length": 5
+      },
+      {
+        "word": "ALICE",
+        "length": 5
+      },
+      {
+        "word": "ANGEL",
+        "length": 5
+      },
+      {
+        "word": "AGENCI",
+        "length": 6
+      },
+      {
+        "word": "LEGIA",
+        "length": 5
+      },
+      {
+        "word": "CIAGLE",
+        "length": 6
+      },
+      {
+        "word": "NAGIE",
+        "length": 5
+      },
+      {
+        "word": "LANCE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "ANGIE",
+        "length": 5
+      },
+      {
+        "word": "CLEAN",
+        "length": 5
+      },
+      {
+        "word": "CELNA",
+        "length": 5
+      },
+      {
+        "word": "NIGEL",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "I",
+      "N",
+      "L",
+      "G"
+    ],
+    "hint": "Pomysl o codziennych rzeczach",
+    "theme": "dom",
+    "language": "pl"
+  },
+  {
+    "id": 92,
+    "level": 92,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "I",
+      "L",
+      "N",
+      "P",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "LETNIA",
+        "length": 6
+      },
+      {
+        "word": "PLANIE",
+        "length": 6
+      },
+      {
+        "word": "TANIE",
+        "length": 5
+      },
+      {
+        "word": "PANIE",
+        "length": 5
+      },
+      {
+        "word": "PLANET",
+        "length": 6
+      },
+      {
+        "word": "ELITA",
+        "length": 5
+      },
+      {
+        "word": "PANELI",
+        "length": 6
+      },
+      {
+        "word": "LATIN",
+        "length": 5
+      },
+      {
+        "word": "PANEL",
+        "length": 5
+      },
+      {
+        "word": "PATELNI",
+        "length": 7
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NEPAL",
+        "length": 5
+      },
+      {
+        "word": "PILNA",
+        "length": 5
+      },
+      {
+        "word": "PANI",
+        "length": 4
+      },
+      {
+        "word": "PLAN",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "I",
+      "T",
+      "L"
+    ],
+    "hint": "Pomysl o ulicach i ruchu",
+    "theme": "miasto",
+    "language": "pl"
+  },
+  {
+    "id": 93,
+    "level": 93,
+    "difficulty": "beginner",
+    "letters": [
+      "E",
+      "N",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "O",
+    "grid_words": [
+      {
+        "word": "STRON",
+        "length": 5
+      },
+      {
+        "word": "PROSTE",
+        "length": 6
+      },
+      {
+        "word": "STRONE",
+        "length": 6
+      },
+      {
+        "word": "OSTRE",
+        "length": 5
+      },
+      {
+        "word": "STONE",
+        "length": 5
+      },
+      {
+        "word": "NOTES",
+        "length": 5
+      },
+      {
+        "word": "STORE",
+        "length": 5
+      },
+      {
+        "word": "SPORT",
+        "length": 5
+      },
+      {
+        "word": "PERSON",
+        "length": 6
+      },
+      {
+        "word": "NOTRE",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SPORE",
+        "length": 5
+      },
+      {
+        "word": "PRESTON",
+        "length": 7
+      },
+      {
+        "word": "PERON",
+        "length": 5
+      },
+      {
+        "word": "STROP",
+        "length": 5
+      }
+    ],
+    "intersection_letters": [
+      "O",
+      "S",
+      "T",
+      "E",
+      "R",
+      "N"
+    ],
+    "hint": "Pomysl o roslinach i formach",
+    "theme": "ogrod",
+    "language": "pl"
+  },
+  {
+    "id": 94,
+    "level": 94,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "G",
+      "N",
+      "O",
+      "W",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "WYDANO",
+        "length": 6
+      },
+      {
+        "word": "WAGONY",
+        "length": 6
+      },
+      {
+        "word": "DYWAN",
+        "length": 5
+      },
+      {
+        "word": "GODNY",
+        "length": 5
+      },
+      {
+        "word": "WODNY",
+        "length": 5
+      },
+      {
+        "word": "DAWNY",
+        "length": 5
+      },
+      {
+        "word": "OWADY",
+        "length": 5
+      },
+      {
+        "word": "WYGODA",
+        "length": 6
+      },
+      {
+        "word": "WYGODNA",
+        "length": 7
+      },
+      {
+        "word": "NOWY",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "WODY",
+        "length": 4
+      },
+      {
+        "word": "DANY",
+        "length": 4
+      },
+      {
+        "word": "ANDY",
+        "length": 4
+      },
+      {
+        "word": "YANG",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "N",
+      "O",
+      "A",
+      "Y",
+      "W",
+      "D"
+    ],
+    "hint": "Pomysl o drodze i kierunku",
+    "theme": "podroz",
+    "language": "pl"
+  },
+  {
+    "id": 95,
+    "level": 95,
+    "difficulty": "beginner",
+    "letters": [
+      "C",
+      "E",
+      "I",
+      "M",
+      "N",
+      "O",
+      "W"
+    ],
+    "center": "I",
+    "grid_words": [
+      {
+        "word": "NIECO",
+        "length": 5
+      },
+      {
+        "word": "CIEMNO",
+        "length": 6
+      },
+      {
+        "word": "MOWIE",
+        "length": 5
+      },
+      {
+        "word": "OWIEC",
+        "length": 5
+      },
+      {
+        "word": "WINEM",
+        "length": 5
+      },
+      {
+        "word": "MOWIC",
+        "length": 5
+      },
+      {
+        "word": "MNIE",
+        "length": 4
+      },
+      {
+        "word": "NIEMCOW",
+        "length": 7
+      },
+      {
+        "word": "WIEM",
+        "length": 4
+      },
+      {
+        "word": "WINO",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "WIEC",
+        "length": 4
+      },
+      {
+        "word": "NOWI",
+        "length": 4
+      },
+      {
+        "word": "NICE",
+        "length": 4
+      },
+      {
+        "word": "NIEM",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "E",
+      "O",
+      "N",
+      "M",
+      "W"
+    ],
+    "hint": "Pomysl o jedzeniu i rutynie",
+    "theme": "kuchnia",
+    "language": "pl"
+  },
+  {
+    "id": 96,
+    "level": 96,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "E",
+      "K",
+      "O",
+      "R",
+      "S",
+      "T"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "STARE",
+        "length": 5
+      },
+      {
+        "word": "EKSTRA",
+        "length": 6
+      },
+      {
+        "word": "OSTRA",
+        "length": 5
+      },
+      {
+        "word": "TROSKA",
+        "length": 6
+      },
+      {
+        "word": "KTORA",
+        "length": 5
+      },
+      {
+        "word": "STARO",
+        "length": 5
+      },
+      {
+        "word": "AKTOR",
+        "length": 5
+      },
+      {
+        "word": "SEKTORA",
+        "length": 7
+      },
+      {
+        "word": "KOREA",
+        "length": 5
+      },
+      {
+        "word": "OSKAR",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "SEKTA",
+        "length": 5
+      },
+      {
+        "word": "KRETA",
+        "length": 5
+      },
+      {
+        "word": "STARK",
+        "length": 5
+      },
+      {
+        "word": "STAR",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "O",
+      "T",
+      "S",
+      "E"
+    ],
+    "hint": "Pomysl o prostych slowach",
+    "theme": "szkola",
+    "language": "pl"
+  },
+  {
+    "id": 97,
+    "level": 97,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "K",
+      "M",
+      "O",
+      "R",
+      "S",
+      "Z"
+    ],
+    "center": "A",
+    "grid_words": [
+      {
+        "word": "MORSKA",
+        "length": 6
+      },
+      {
+        "word": "OSKAR",
+        "length": 5
+      },
+      {
+        "word": "MORZA",
+        "length": 5
+      },
+      {
+        "word": "MARSZ",
+        "length": 5
+      },
+      {
+        "word": "RAMOS",
+        "length": 5
+      },
+      {
+        "word": "SZARO",
+        "length": 5
+      },
+      {
+        "word": "KOSZA",
+        "length": 5
+      },
+      {
+        "word": "SMOKA",
+        "length": 5
+      },
+      {
+        "word": "MOKRA",
+        "length": 5
+      },
+      {
+        "word": "MARKS",
+        "length": 5
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "MARKO",
+        "length": 5
+      },
+      {
+        "word": "KOMAR",
+        "length": 5
+      },
+      {
+        "word": "KOSZMAR",
+        "length": 7
+      },
+      {
+        "word": "SAMO",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "O",
+      "R",
+      "S",
+      "M",
+      "K"
+    ],
+    "hint": "Pomysl o spokoju i krajobrazie",
+    "theme": "natura",
+    "language": "pl"
+  },
+  {
+    "id": 98,
+    "level": 98,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "O",
+      "P",
+      "R",
+      "W",
+      "Y"
+    ],
+    "center": "Y",
+    "grid_words": [
+      {
+        "word": "PORADY",
+        "length": 6
+      },
+      {
+        "word": "PRAWDY",
+        "length": 6
+      },
+      {
+        "word": "PORYWA",
+        "length": 6
+      },
+      {
+        "word": "PRAWY",
+        "length": 5
+      },
+      {
+        "word": "OPADY",
+        "length": 5
+      },
+      {
+        "word": "OWADY",
+        "length": 5
+      },
+      {
+        "word": "WYPAD",
+        "length": 5
+      },
+      {
+        "word": "ODPRAWY",
+        "length": 7
+      },
+      {
+        "word": "RADY",
+        "length": 4
+      },
+      {
+        "word": "PORY",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "PARY",
+        "length": 4
+      },
+      {
+        "word": "WODY",
+        "length": 4
+      },
+      {
+        "word": "ROPY",
+        "length": 4
+      },
+      {
+        "word": "DARY",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "R",
+      "O",
+      "Y",
+      "P",
+      "D"
+    ],
+    "hint": "Pomysl o wyborze i zakupach",
+    "theme": "rynek",
+    "language": "pl"
+  },
+  {
+    "id": 99,
+    "level": 99,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "G",
+      "I",
+      "N",
+      "R",
+      "U"
+    ],
+    "center": "U",
+    "grid_words": [
+      {
+        "word": "IRANU",
+        "length": 5
+      },
+      {
+        "word": "DRUGI",
+        "length": 5
+      },
+      {
+        "word": "RADIU",
+        "length": 5
+      },
+      {
+        "word": "GRUDNIA",
+        "length": 7
+      },
+      {
+        "word": "DRUGA",
+        "length": 5
+      },
+      {
+        "word": "RUNDA",
+        "length": 5
+      },
+      {
+        "word": "RINGU",
+        "length": 5
+      },
+      {
+        "word": "UNIA",
+        "length": 4
+      },
+      {
+        "word": "DNIU",
+        "length": 4
+      },
+      {
+        "word": "RUIN",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "URAN",
+        "length": 4
+      },
+      {
+        "word": "RUDA",
+        "length": 4
+      },
+      {
+        "word": "AUDI",
+        "length": 4
+      },
+      {
+        "word": "NUDA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "I",
+      "R",
+      "N",
+      "A",
+      "U",
+      "D"
+    ],
+    "hint": "Pomysl o swietle i powietrzu",
+    "theme": "lato",
+    "language": "pl"
+  },
+  {
+    "id": 100,
+    "level": 100,
+    "difficulty": "beginner",
+    "letters": [
+      "A",
+      "D",
+      "E",
+      "J",
+      "K",
+      "N",
+      "Y"
+    ],
+    "center": "E",
+    "grid_words": [
+      {
+        "word": "JEDNAK",
+        "length": 6
+      },
+      {
+        "word": "JEDYNA",
+        "length": 6
+      },
+      {
+        "word": "JEDNA",
+        "length": 5
+      },
+      {
+        "word": "DANEJ",
+        "length": 5
+      },
+      {
+        "word": "JANEK",
+        "length": 5
+      },
+      {
+        "word": "JEDYNKA",
+        "length": 7
+      },
+      {
+        "word": "DANE",
+        "length": 4
+      },
+      {
+        "word": "JEAN",
+        "length": 4
+      },
+      {
+        "word": "DAJE",
+        "length": 4
+      },
+      {
+        "word": "JANE",
+        "length": 4
+      }
+    ],
+    "bonus_words": [
+      {
+        "word": "NADE",
+        "length": 4
+      },
+      {
+        "word": "DEAN",
+        "length": 4
+      },
+      {
+        "word": "KANE",
+        "length": 4
+      },
+      {
+        "word": "KENA",
+        "length": 4
+      }
+    ],
+    "intersection_letters": [
+      "A",
+      "E",
+      "N",
+      "J",
+      "D",
+      "K"
+    ],
+    "hint": "Pomysl o chlodzie i schronieniu",
+    "theme": "zima",
+    "language": "pl"
+  }
+]
