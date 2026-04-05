@@ -16,7 +16,12 @@
       "Bash(node scripts/fix-puzzles.js)",
       "Bash(mv C:/Users/Marku/Desktop/wordrealms/scripts/fix-puzzles.js C:/Users/Marku/Desktop/wordrealms/scripts/fix-puzzles.cjs)",
       "Bash(node scripts/fix-puzzles.cjs)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(node:*)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Total levels:', d['totalLevels']\\); print\\('Total removed:', d['totalRemoved']\\); print\\('Weak levels count:', len\\(d['weakLevels']\\)\\); [print\\(x['file'],x.get\\('levels'\\),x.get\\('removed'\\),x.get\\('weakCount'\\)\\) for x in d['files']]\")",
+      "Bash(git push:*)",
+      "Bash(ls /c/Users/Marku/Desktop/wordrealms/src/data/puzzles-tr-*.json)",
+      "Bash(grep -v \"^$\")"
     ]
   }
 }

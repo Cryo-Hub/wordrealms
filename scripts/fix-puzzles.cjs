@@ -12,19 +12,16 @@ function isValidWord(word, letters) {
   return true;
 }
 
+/** In-place fix auf den kanonischen puzzles-en-*.json Dateien. */
 const files = [
-  { src: 'src/data/levels_101_200_intermediate.json',
-    dest: 'src/data/puzzles-en-101-200.json' },
-  { src: 'src/data/levels_201_300_intermediate_advanced.json',
-    dest: 'src/data/puzzles-en-201-300.json' },
-  { src: 'src/data/levels_301_400_advanced.json',
-    dest: 'src/data/puzzles-en-301-400.json' },
-  { src: 'src/data/levels_401_500_expert.json',
-    dest: 'src/data/puzzles-en-401-500.json' },
+  'src/data/puzzles-en-101-200.json',
+  'src/data/puzzles-en-201-300.json',
+  'src/data/puzzles-en-301-400.json',
+  'src/data/puzzles-en-401-500.json',
 ];
 
-for (const { src, dest } of files) {
-  const data = JSON.parse(fs.readFileSync(src, 'utf8'));
+for (const dest of files) {
+  const data = JSON.parse(fs.readFileSync(dest, 'utf8'));
   let totalRemoved = 0;
 
   for (const lvl of data) {
