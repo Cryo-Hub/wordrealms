@@ -1,6 +1,5 @@
 import type { SupportedLanguage } from './dictionaryManager';
 import { getCurrentLanguage } from './dictionaryManager';
-import { getWheelNeighborIndices } from './wheelEngine';
 
 export type PuzzleConfig = {
   letters: string[];
@@ -124,28 +123,23 @@ function canSpellWithBag(word: string, bag: Record<string, number>): boolean {
 }
 
 /**
- * Prüft, ob `word` als Pfad auf dem Rad gezeichnet werden kann.
- * Wiederholung derselben Position ist erlaubt (Swipe-Modell).
+ * Prüft, ob `word` mit den sieben Rad-Buchstaben gebildet werden kann
+ * (freie Reihenfolge; jeder Slot höchstens einmal — Multiset-Abgleich).
  */
 export function canFormWord(word: string, letters: readonly string[]): boolean {
   const W = word.toUpperCase();
-  const L = letters.map((c) => c.toUpperCase());
-  const n = W.length;
-  if (n < 3) return false;
-
-  function dfs(pos: number, idx: number): boolean {
-    if (L[pos] !== W[idx]) return false;
-    if (idx === n - 1) return true;
-    for (const nb of getWheelNeighborIndices(pos)) {
-      if (dfs(nb, idx + 1)) return true;
-    }
-    return false;
+  if (W.length < 3) return false;
+  const bag: Record<string, number> = {};
+  for (const c of letters.map((x) => String(x).toUpperCase())) {
+    bag[c] = (bag[c] ?? 0) + 1;
   }
-
-  for (let start = 0; start < 7; start++) {
-    if (dfs(start, 0)) return true;
+  const need: Record<string, number> = {};
+  for (let i = 0; i < W.length; i++) {
+    const ch = W[i]!;
+    need[ch] = (need[ch] ?? 0) + 1;
+    if (need[ch]! > (bag[ch] ?? 0)) return false;
   }
-  return false;
+  return true;
 }
 
 function presetKey(letters: readonly string[]): string {

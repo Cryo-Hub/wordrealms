@@ -1,4 +1,6 @@
-/** WordRealms — reine Wheel-Logik (ohne Wörterbuch). */
+/** WordRealms — reine Wheel-Logik (ohne Wörterbuch).
+ * Freie Buchstabenwahl (wie Wordscapes / Word Connect): kein Nachbarschaftszwang;
+ * jeder Slot (Index) höchstens einmal pro Wort. */
 
 export const MIN_WORD_LENGTH = 3 as const;
 
@@ -18,48 +20,23 @@ export type CompletedPathResult = {
 };
 
 /**
- * Nachbarschaft: Mitte (0) ist mit allen äußeren (1–6) verbunden;
- * auf dem Ring ist jeder Buchstabe mit den beiden Nachbarn und der Mitte verbunden.
+ * Gültiger Pfad: keine doppelten Buchstaben-Slots (kein Index zweimal).
+ * Keine Nachbarschaftsprüfung — beliebige Reihenfolge der sieben Positionen.
  */
-function buildAdjacency(): ReadonlyMap<number, ReadonlySet<number>> {
-  const m = new Map<number, Set<number>>();
-  m.set(0, new Set([1, 2, 3, 4, 5, 6]));
-  for (let i = 1; i <= 6; i++) {
-    const prev = i === 1 ? 6 : i - 1;
-    const next = i === 6 ? 1 : i + 1;
-    m.set(i, new Set([0, prev, next]));
-  }
-  return m;
-}
-
-const ADJ = buildAdjacency();
-
-export function areIndicesAdjacent(a: number, b: number): boolean {
-  return ADJ.get(a)?.has(b) ?? false;
-}
-
-/** Nachbar-Indizes für Slot `i` (0 = Mitte, 1–6 = Ring). */
-export function getWheelNeighborIndices(i: number): readonly number[] {
-  const s = ADJ.get(i);
-  return s ? [...s] : [];
-}
-
-/** Jeder Schritt im Pfad muss zu Nachbarbuchstaben führen. */
 export function isValidSwipePath(path: number[]): boolean {
   if (path.length <= 1) return true;
-  for (let i = 0; i < path.length - 1; i++) {
-    if (!areIndicesAdjacent(path[i], path[i + 1])) return false;
+  const seen = new Set<number>();
+  for (const i of path) {
+    if (seen.has(i)) return false;
+    seen.add(i);
   }
   return true;
 }
 
-/** Erweitert den Swipe-Pfad um einen Buchstaben (oder unverändert bei null / ungültigem Schritt). */
+/** Erweitert den Swipe-Pfad; derselbe Index kann nicht erneut gewählt werden. */
 export function appendToSwipePath(prev: number[], nextIndex: number | null): number[] {
   if (nextIndex === null) return prev;
-  if (prev.length === 0) return [nextIndex];
-  const last = prev[prev.length - 1];
-  if (nextIndex === last) return prev;
-  if (!areIndicesAdjacent(last, nextIndex)) return prev;
+  if (prev.includes(nextIndex)) return prev;
   return [...prev, nextIndex];
 }
 
@@ -72,7 +49,7 @@ export function normalizeLetters(letters: string[]): string[] {
 }
 
 /**
- * Strukturprüfung nach Loslassen: Mindestlänge, gültiger Pfad, optional Duplikat in `foundWords`.
+ * Strukturprüfung nach Loslassen: Mindestlänge, gültiger Pfad (keine Duplikat-Indizes), optional Duplikat in `foundWords`.
  * Wörterbuch-Prüfung erfolgt später (wordValidator / Server).
  */
 export function evaluateCompletedPath(
