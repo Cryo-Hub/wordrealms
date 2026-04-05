@@ -258,21 +258,21 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
     (word: string) => {
       window.clearTimeout(wordDebounceRef.current);
       wordDebounceRef.current = window.setTimeout(() => {
-        initAudioOnGesture();
-        const v = validateWord(word, foundWords);
-        if (!v.valid) {
-          setShake((k) => k + 1);
-          soundService.wordInvalid();
-          showToast(invalidToastForReason(v.reason, t));
-          return;
-        }
-        const u = word.toUpperCase();
-        if (!puzzle?.validWords.some((w) => w.toUpperCase() === u)) {
-          setShake((k) => k + 1);
-          soundService.wordInvalid();
-          showToast(t('game.not_valid'));
-          return;
-        }
+        void (async () => {
+          initAudioOnGesture();
+          const v = await validateWord(word, foundWords, {
+            validWords: puzzle?.validWords,
+            gridWords: puzzle?.grid_words,
+            lang: language,
+            restrictToPuzzleVocabulary: true,
+          });
+          if (!v.valid) {
+            setShake((k) => k + 1);
+            soundService.wordInvalid();
+            showToast(invalidToastForReason(v.reason, t));
+            return;
+          }
+          const u = word.toUpperCase();
         let reward: WordReward = calculateWordReward(word.length);
         reward = halfReward(reward);
         if (isPremium) {
@@ -306,6 +306,7 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
           addFoundBonusWord(u);
           setBonusWord(u);
         }
+        })();
       }, 50);
     },
     [

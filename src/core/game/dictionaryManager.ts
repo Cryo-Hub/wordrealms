@@ -56,12 +56,25 @@ export function getCurrentLanguage(): SupportedLanguage {
   return currentLanguage;
 }
 
+/** Session-Cache für Online-Wörterbuch-Abfragen (nicht-EN). */
+const validatedCache = new Map<string, boolean>();
+
+const API_LANG_CODE: Record<SupportedLanguage, string> = {
+  en: 'en',
+  de: 'de',
+  fr: 'fr',
+  es: 'es',
+  pl: 'pl',
+  tr: 'tr',
+};
+
 export function setLanguage(lang: string): void {
   if (!isSupported(lang)) return;
   if (currentLanguage !== lang) {
     currentLanguage = lang as SupportedLanguage;
     activeWordSet = null;
     loadedForLanguage = null;
+    validatedCache.clear();
     if (typeof window !== 'undefined') {
       window.dispatchEvent(new CustomEvent(LANGUAGE_CHANGE_EVENT));
     }
@@ -84,6 +97,49 @@ export function isValidWord(word: string): boolean {
     return false;
   }
   return activeWordSet.has(w);
+}
+
+function abortSignalAfterMs(ms: number): AbortSignal {
+  if (typeof AbortSignal !== 'undefined' && 'timeout' in AbortSignal) {
+    return AbortSignal.timeout(ms);
+  }
+  const c = new AbortController();
+  setTimeout(() => c.abort(), ms);
+  return c.signal;
+}
+
+/**
+ * Online-Validierung über Free Dictionary API (nicht-EN).
+ * Englisch: lokales Set (nach ensureDictionaryLoaded).
+ * Ergebnisse werden pro Session gecacht.
+ */
+export async function validateWordOnline(word: string, lang: string): Promise<boolean> {
+  const w = word.trim().toLowerCase();
+  if (w.length < 3) return false;
+
+  if (lang === 'en') {
+    await ensureDictionaryLoaded();
+    return activeWordSet?.has(w) ?? false;
+  }
+  if (!isSupported(lang)) return false;
+
+  const langCode = API_LANG_CODE[lang as SupportedLanguage];
+  const cacheKey = `${langCode}:${w}`;
+  const hit = validatedCache.get(cacheKey);
+  if (hit !== undefined) return hit;
+
+  try {
+    const res = await fetch(
+      `https://api.dictionaryapi.dev/api/v2/entries/${langCode}/${encodeURIComponent(w)}`,
+      { signal: abortSignalAfterMs(3000) },
+    );
+    const ok = res.ok;
+    validatedCache.set(cacheKey, ok);
+    return ok;
+  } catch {
+    validatedCache.set(cacheKey, false);
+    return false;
+  }
 }
 
 /** Nur nach `ensureDictionaryLoaded()` sinnvoll. */

@@ -225,15 +225,20 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
     (word: string) => {
       window.clearTimeout(wordDebounceRef.current);
       wordDebounceRef.current = window.setTimeout(() => {
-        initAudioOnGesture();
-        const v = validateWord(word, foundWords);
-        if (!v.valid) {
-          setShake((k) => k + 1);
-          soundService.wordInvalid();
-          showToast(invalidToastForReason(v.reason, t));
-          return;
-        }
-        const u = word.toUpperCase();
+        void (async () => {
+          initAudioOnGesture();
+          const v = await validateWord(word, foundWords, {
+            validWords: puzzle?.validWords,
+            gridWords: puzzle?.grid_words,
+            lang: language,
+          });
+          if (!v.valid) {
+            setShake((k) => k + 1);
+            soundService.wordInvalid();
+            showToast(invalidToastForReason(v.reason, t));
+            return;
+          }
+          const u = word.toUpperCase();
         let reward: WordReward = calculateWordReward(word.length);
         if (isPremium) {
           reward = {
@@ -270,6 +275,7 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
           addFoundBonusWord(u);
           setBonusWord(u);
         }
+        })();
       }, 50);
     },
     [
@@ -285,6 +291,8 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
       t,
       addBattlePassXP,
       showXpFlash,
+      puzzle,
+      language,
     ],
   );
 
