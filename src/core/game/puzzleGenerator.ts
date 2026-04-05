@@ -15,6 +15,18 @@ export type PuzzleConfig = {
   date: string;
 };
 
+/** Bonuswörter: explizit `bonusWords` oder `validWords` minus `grid_words`. */
+export function bonusWordPool(puzzle: PuzzleConfig): string[] {
+  const u = (s: string) => s.trim().toUpperCase();
+  if (puzzle.bonusWords && puzzle.bonusWords.length > 0) {
+    return [...new Set(puzzle.bonusWords.map(u))].sort((a, b) => a.localeCompare(b));
+  }
+  const grid = new Set((puzzle.grid_words ?? []).map(u));
+  return [...new Set(puzzle.validWords.map(u).filter((w) => !grid.has(w)))].sort((a, b) =>
+    a.localeCompare(b),
+  );
+}
+
 /** Längere Wörter zuerst; begrenzt für Platzierungs-Performance im Gitter. */
 const MAX_GRID_WORDS = 20;
 

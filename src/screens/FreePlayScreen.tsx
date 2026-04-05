@@ -13,7 +13,7 @@ import { ENERGY_UNLIMITED_THRESHOLD, useEnergyStore } from '../stores/energyStor
 import { useSettingsStore } from '../stores/settingsStore';
 import { ensureDictionaryLoaded, type SupportedLanguage } from '../core/game/dictionaryManager';
 import { useLanguageVersion } from '../hooks/useLanguageVersion';
-import { getNextTraceableHint, type PuzzleConfig } from '../core/game/puzzleGenerator';
+import { bonusWordPool, getNextTraceableHint, type PuzzleConfig } from '../core/game/puzzleGenerator';
 import { preloadProceduralWordList, generateLevel } from '../core/game/proceduralGenerator';
 import { hapticService } from '../services/hapticService';
 import { initAudioOnGesture, soundService } from '../services/soundService';
@@ -122,6 +122,8 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
   const langVersion = useLanguageVersion();
   const foundWords = useGameStore((s) => s.foundWords);
   const addFoundWord = useGameStore((s) => s.addFoundWord);
+  const addFoundBonusWord = useGameStore((s) => s.addFoundBonusWord);
+  const syncBonusWordsFromPool = useGameStore((s) => s.syncBonusWordsFromPool);
   const sessionGold = useGameStore((s) => s.sessionGoldEarned);
   const sessionWood = useGameStore((s) => s.sessionWoodEarned);
   const sessionStone = useGameStore((s) => s.sessionStoneEarned);
@@ -218,6 +220,13 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
     return [...new Set(puzzle.validWords.map((w) => w.toUpperCase()))];
   }, [puzzle]);
 
+  const bonusPool = useMemo(() => (puzzle ? bonusWordPool(puzzle) : []), [puzzle]);
+
+  useEffect(() => {
+    if (bonusPool.length === 0) return;
+    syncBonusWordsFromPool(bonusPool);
+  }, [bonusPool, syncBonusWordsFromPool, foundWords]);
+
   const showToast = useCallback((msg: string, ms = 1500) => {
     setToast(msg);
     window.setTimeout(() => setToast(null), ms);
@@ -294,11 +303,24 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
             };
           });
         } else {
+          addFoundBonusWord(u);
           setBonusWord(u);
         }
       }, 50);
     },
-    [addFoundWord, addResources, foundWords, crossword, isPremium, showToast, t, addBattlePassXP, showXpFlash, puzzle],
+    [
+      addFoundBonusWord,
+      addFoundWord,
+      addResources,
+      foundWords,
+      crossword,
+      isPremium,
+      showToast,
+      t,
+      addBattlePassXP,
+      showXpFlash,
+      puzzle,
+    ],
   );
 
   const showHint = () => {
@@ -370,7 +392,7 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
 
   return (
     <div
-      className="relative mx-auto flex min-h-[100dvh] w-full max-w-full flex-col md:max-w-[480px]"
+      className="relative mx-auto flex h-[100dvh] min-h-0 w-full max-w-full flex-col overflow-x-hidden overflow-y-hidden md:max-w-[480px]"
       style={{ paddingBottom: NAV_SAFE_BOTTOM }}
     >
       <header className="sticky top-0 z-40 flex items-center justify-between border-b border-[#2a2018]/80 bg-[rgba(8,6,4,0.92)] px-3 py-2 pt-[max(0.5rem,env(safe-area-inset-top))] backdrop-blur-sm">
@@ -449,19 +471,21 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
         ) : null}
       </AnimatePresence>
 
-      <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col items-center overflow-x-hidden overflow-y-auto">
-        <div className="flex w-full max-h-[45vh] min-h-0 flex-shrink-0 flex-col items-center justify-center overflow-visible py-2">
-          <CrosswordGrid crossword={crossword} />
+      <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
+        <div className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-y-contain [-webkit-overflow-scrolling:touch] [touch-action:pan-y]">
+          <div className="flex w-full flex-shrink-0 flex-col items-center justify-center py-2">
+            <CrosswordGrid crossword={crossword} />
+          </div>
         </div>
-        <div className="flex w-full min-h-0 flex-1 flex-col items-center justify-center gap-1 overflow-visible pt-2">
+        <div className="relative z-20 flex w-full shrink-0 flex-col items-center border-t border-[#3a3028]/50 bg-[linear-gradient(to_top,rgba(8,6,4,0.98),rgba(14,11,8,0.94))] px-2 pb-1 pt-2 shadow-[0_-10px_28px_rgba(0,0,0,0.45)]">
           <GameWordDots />
           <motion.div
             key={shake}
             animate={{ x: [0, -10, 10, -10, 10, 0] }}
             transition={{ duration: 0.3 }}
-            className="flex w-full min-h-[320px] flex-1 touch-none flex-col items-center justify-center px-1 pb-2"
+            className="flex w-full touch-none flex-col items-center justify-center px-1 pb-1"
           >
-            <div className="mx-auto aspect-square w-full max-w-[min(480px,100%)] min-h-[320px] min-w-0 max-h-[min(68vh,calc(100dvh-13rem))]">
+            <div className="mx-auto aspect-square w-full max-w-[min(480px,100%)] min-h-[min(280px,42svh)] min-w-0 max-h-[min(52vh,360px)]">
               <LetterWheel letters={[...puzzle.letters]} foundWords={foundWords} onWordFormed={handleWord} />
             </div>
           </motion.div>

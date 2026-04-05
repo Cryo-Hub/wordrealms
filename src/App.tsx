@@ -255,7 +255,7 @@ function AppRoutes() {
       <div
         className={
           isPlayScreen
-            ? 'min-h-0 h-[100dvh] w-full overflow-x-hidden overflow-y-hidden text-[var(--text-primary)] antialiased'
+            ? 'min-h-0 h-[100dvh] w-full overflow-x-hidden overflow-y-auto overscroll-y-contain text-[var(--text-primary)] antialiased [touch-action:pan-y]'
             : 'min-h-screen max-h-[100dvh] w-full overflow-x-hidden overflow-y-auto text-[var(--text-primary)] antialiased'
         }
       >
@@ -269,7 +269,7 @@ function AppRoutes() {
               transition={{ duration: 0.2 }}
               className={
                 isPlayScreen
-                  ? 'min-h-0 h-full w-full overflow-x-hidden overflow-y-hidden'
+                  ? 'min-h-0 h-full w-full overflow-x-hidden overflow-y-auto overscroll-y-contain [touch-action:pan-y]'
                   : 'w-full overflow-x-hidden overflow-y-visible'
               }
             >

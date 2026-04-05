@@ -18,7 +18,13 @@ import {
   type SupportedLanguage,
 } from '../../core/game/dictionaryManager';
 import { useLanguageVersion } from '../../hooks/useLanguageVersion';
-import { formatPuzzleDate, getNextTraceableHint, getPuzzleNumber, type PuzzleConfig } from '../../core/game/puzzleGenerator';
+import {
+  bonusWordPool,
+  formatPuzzleDate,
+  getNextTraceableHint,
+  getPuzzleNumber,
+  type PuzzleConfig,
+} from '../../core/game/puzzleGenerator';
 import { getPuzzleForDate, recordWordsForArchiveDate } from '../../core/game/puzzleArchive';
 import { PuzzleComplete } from './PuzzleComplete';
 import type { RootScreen } from '../../types/navigation';
@@ -89,18 +95,6 @@ function wordsForCrosswordGrid(puzzle: PuzzleConfig): string[] {
   return uniq.filter((w) => w.length >= 2);
 }
 
-/** Bonuswörter: explizit `bonusWords` oder `validWords` minus `grid_words`. */
-function bonusWordPool(puzzle: PuzzleConfig): string[] {
-  const u = (s: string) => s.trim().toUpperCase();
-  if (puzzle.bonusWords && puzzle.bonusWords.length > 0) {
-    return [...new Set(puzzle.bonusWords.map(u))].sort((a, b) => a.localeCompare(b));
-  }
-  const grid = new Set((puzzle.grid_words ?? []).map(u));
-  return [...new Set(puzzle.validWords.map(u).filter((w) => !grid.has(w)))].sort((a, b) =>
-    a.localeCompare(b),
-  );
-}
-
 type DailyPuzzleProps = {
   onNavigate: (screen: RootScreen) => void;
 };
@@ -110,7 +104,10 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   const language = useSettingsStore((s) => s.language) as SupportedLanguage;
   const langVersion = useLanguageVersion();
   const foundWords = useGameStore((s) => s.foundWords);
+  const foundBonusWordsStore = useGameStore((s) => s.foundBonusWords);
   const addFoundWord = useGameStore((s) => s.addFoundWord);
+  const addFoundBonusWord = useGameStore((s) => s.addFoundBonusWord);
+  const syncBonusWordsFromPool = useGameStore((s) => s.syncBonusWordsFromPool);
   const sessionGold = useGameStore((s) => s.sessionGoldEarned);
   const sessionWood = useGameStore((s) => s.sessionWoodEarned);
   const sessionStone = useGameStore((s) => s.sessionStoneEarned);
@@ -145,15 +142,10 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
 
   const bonusPool = useMemo(() => (puzzle ? bonusWordPool(puzzle) : []), [puzzle]);
 
-  const foundBonusSet = useMemo(
-    () => new Set(foundWords.map((w) => w.toUpperCase())),
-    [foundWords],
-  );
-
-  const foundBonusWords = useMemo(
-    () => bonusPool.filter((w) => foundBonusSet.has(w)).sort((a, b) => a.localeCompare(b)),
-    [bonusPool, foundBonusSet],
-  );
+  const bonusBadges = useMemo(() => {
+    const pool = new Set(bonusPool);
+    return foundBonusWordsStore.filter((w) => pool.has(w.toUpperCase()));
+  }, [bonusPool, foundBonusWordsStore]);
 
   useEffect(() => {
     let cancel = false;
@@ -191,6 +183,11 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   useEffect(() => {
     refillDailyHintsIfNeeded();
   }, [refillDailyHintsIfNeeded]);
+
+  useEffect(() => {
+    if (bonusPool.length === 0) return;
+    syncBonusWordsFromPool(bonusPool);
+  }, [bonusPool, syncBonusWordsFromPool, foundWords]);
 
   const hintValidWords = useMemo(() => {
     if (!puzzle) return [];
@@ -270,12 +267,14 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
             };
           });
         } else {
+          addFoundBonusWord(u);
           setBonusWord(u);
         }
       }, 50);
     },
     [
       addFoundWord,
+      addFoundBonusWord,
       addResources,
       addWordsCount,
       bumpWordsToday,
@@ -326,7 +325,7 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   }
 
   return (
-    <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col items-center overflow-x-hidden overflow-y-auto">
+    <div className="flex h-full min-h-0 w-full min-w-0 flex-1 flex-col overflow-hidden">
       <div className="pointer-events-none fixed inset-x-0 top-0 z-[45] flex justify-center">
         <div className="pointer-events-auto flex w-full max-w-[480px] justify-end px-3 pt-[70px] sm:px-4">
           <button
@@ -400,54 +399,56 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
         ) : null}
       </AnimatePresence>
 
-      <div className="flex min-h-0 w-full max-w-[480px] flex-1 flex-col items-center justify-center px-3 sm:px-4">
-        <div className="flex w-full max-h-[45vh] min-h-0 flex-shrink-0 flex-col items-center justify-center overflow-visible py-2">
-          <CrosswordGrid crossword={crossword} />
-        </div>
+      <div className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-y-contain [-webkit-overflow-scrolling:touch] [touch-action:pan-y]">
+        <div className="mx-auto flex w-full max-w-[480px] flex-col items-center px-3 pb-2 pt-1 sm:px-4">
+          <div className="flex w-full flex-shrink-0 flex-col items-center py-2">
+            <CrosswordGrid crossword={crossword} />
+          </div>
 
-        {foundBonusWords.length > 0 ? (
-          <div className="w-full max-w-[480px] shrink-0 px-0.5 pt-1">
-            <p className="mb-1 text-center font-cinzel text-[10px] font-semibold text-[#c9a227]">
-              {t('game.bonus_short')}
-            </p>
-            <div className="w-full overflow-x-auto pb-0.5 [-webkit-overflow-scrolling:touch]">
-              <div
-                className="grid w-max max-h-[4.25rem] grid-flow-col grid-rows-2 gap-x-1.5 gap-y-1 px-0.5"
-                style={{ gridAutoColumns: 'max-content' }}
-                aria-label={t('game.bonus_short')}
-              >
-                <AnimatePresence initial={false}>
-                  {foundBonusWords.map((word) => (
-                    <motion.span
-                      key={word}
-                      layout
-                      initial={{ scale: 0.82, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{ type: 'spring', stiffness: 420, damping: 28 }}
-                      className="inline-flex items-center justify-center rounded-md border border-[#c9a227]/85 bg-[rgba(8,6,4,0.92)] px-2 py-0.5 font-cinzel text-[11px] font-semibold tabular-nums tracking-wide text-[#e8c84a] shadow-[inset_0_0_10px_rgba(201,162,39,0.08)]"
-                    >
-                      {word}
-                    </motion.span>
-                  ))}
-                </AnimatePresence>
+          {bonusBadges.length > 0 ? (
+            <div className="w-full shrink-0 px-0.5 pt-1">
+              <p className="mb-1 text-center font-cinzel text-[10px] font-semibold text-[#c9a227]">
+                {t('game.bonus_short')}
+              </p>
+              <div className="w-full overflow-x-auto pb-0.5 [-webkit-overflow-scrolling:touch]">
+                <div
+                  className="grid w-max max-h-[4.25rem] grid-flow-col grid-rows-2 gap-x-1.5 gap-y-1 px-0.5"
+                  style={{ gridAutoColumns: 'max-content' }}
+                  aria-label={t('game.bonus_short')}
+                >
+                  <AnimatePresence initial={false}>
+                    {bonusBadges.map((word) => (
+                      <motion.span
+                        key={word}
+                        layout
+                        initial={{ scale: 0.82, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ type: 'spring', stiffness: 420, damping: 28 }}
+                        className="inline-flex items-center justify-center rounded-md border border-[#c9a227]/85 bg-[rgba(8,6,4,0.92)] px-2 py-0.5 font-cinzel text-[11px] font-semibold tabular-nums tracking-wide text-[#e8c84a] shadow-[inset_0_0_10px_rgba(201,162,39,0.08)]"
+                      >
+                        {word}
+                      </motion.span>
+                    ))}
+                  </AnimatePresence>
+                </div>
               </div>
             </div>
-          </div>
-        ) : null}
-
-        <div className="flex w-full min-h-0 flex-1 flex-col items-center justify-center gap-1 overflow-visible pt-2">
-          <GameWordDots />
-          <motion.div
-            key={shake}
-            animate={{ x: [0, -10, 10, -10, 10, 0] }}
-            transition={{ duration: 0.3 }}
-            className="flex w-full min-h-[320px] flex-1 touch-none flex-col items-center justify-center px-1 pb-2"
-          >
-            <div className="mx-auto aspect-square w-full max-w-[min(480px,100%)] min-h-[320px] min-w-0 max-h-[min(68vh,calc(100dvh-13rem))]">
-              <LetterWheel letters={[...puzzle.letters]} foundWords={foundWords} onWordFormed={handleWord} />
-            </div>
-          </motion.div>
+          ) : null}
         </div>
+      </div>
+
+      <div className="relative z-20 flex w-full max-w-[480px] shrink-0 flex-col items-center self-center border-t border-[#3a3028]/50 bg-[linear-gradient(to_top,rgba(8,6,4,0.98),rgba(14,11,8,0.94))] px-2 pb-1 pt-2 shadow-[0_-10px_28px_rgba(0,0,0,0.45)]">
+        <GameWordDots />
+        <motion.div
+          key={shake}
+          animate={{ x: [0, -10, 10, -10, 10, 0] }}
+          transition={{ duration: 0.3 }}
+          className="flex w-full touch-none flex-col items-center justify-center px-1 pb-1"
+        >
+          <div className="mx-auto aspect-square w-full max-w-[min(480px,100%)] min-h-[min(280px,42svh)] min-w-0 max-h-[min(52vh,360px)]">
+            <LetterWheel letters={[...puzzle.letters]} foundWords={foundWords} onWordFormed={handleWord} />
+          </div>
+        </motion.div>
       </div>
 
       {showComplete ? (
