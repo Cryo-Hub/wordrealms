@@ -18,7 +18,8 @@ export type EnergyState = {
   totalEnergyUsed: number;
   adsWatchedForEnergy: number;
   refillDailyEnergy: () => void;
-  useEnergy: () => boolean;
+  /** Verbraucht 1 Energie (kein „useEnergy“ — Hook-Konvention). */
+  spendEnergyUnit: () => boolean;
   addEnergy: (amount: number) => void;
   watchAdForEnergy: () => Promise<boolean>;
   premiumUnlimited: () => void;
@@ -46,7 +47,7 @@ export const useEnergyStore = create<EnergyState>()(
         });
       },
 
-      useEnergy: () => {
+      spendEnergyUnit: () => {
         const s = get();
         if (s.energy >= ENERGY_UNLIMITED_THRESHOLD) return true;
         if (s.energy <= 0) return false;

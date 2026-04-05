@@ -202,6 +202,11 @@ function AppRoutes() {
     };
   }, []);
 
+  useEffect(() => {
+    if (gate !== 'main') return;
+    usePremiumStore.getState().refillDailyHintsIfNeeded();
+  }, [gate]);
+
   const goMain = () => setGate('main');
 
   if (gate === 'load') {
@@ -242,11 +247,6 @@ function AppRoutes() {
   const navigate = (s: RootScreen) => setScreen(s);
 
   const isPlayScreen = screen === 'game' || screen === 'freeplay';
-
-  useEffect(() => {
-    if (gate !== 'main') return;
-    usePremiumStore.getState().refillDailyHintsIfNeeded();
-  }, [gate]);
 
   return (
     <FantasyShell>

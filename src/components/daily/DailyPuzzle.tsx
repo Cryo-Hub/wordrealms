@@ -119,8 +119,7 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   const energy = useEnergyStore((s) => s.energy);
   const addBattlePassXP = usePremiumStore((s) => s.addBattlePassXP);
   const hintTokens = usePremiumStore((s) => s.hintTokens);
-  /** premiumStore.useHint — avoid `use*` name so handlers are not mistaken for hooks (React #310). */
-  const consumeHint = usePremiumStore((s) => s.useHint);
+  const consumeHint = usePremiumStore((s) => s.consumeHintToken);
   const addHints = usePremiumStore((s) => s.addHints);
   const refillDailyHintsIfNeeded = usePremiumStore((s) => s.refillDailyHintsIfNeeded);
 

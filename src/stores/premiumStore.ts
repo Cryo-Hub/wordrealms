@@ -23,8 +23,8 @@ export type PremiumState = {
   addBattlePassXP: (amount: number) => void;
   claimReward: (rewardId: string) => void;
   addHints: (n: number) => void;
-  /** Verbraucht 1 Token wenn vorhanden */
-  useHint: () => boolean;
+  /** Verbraucht 1 Token wenn vorhanden (nicht „useHint“ — kollidiert mit React-Hook-Konvention). */
+  consumeHintToken: () => boolean;
   /** Setzt `hintTokens` auf 3, wenn ein neuer Kalendertag begonnen hat. */
   refillDailyHintsIfNeeded: () => void;
 };
@@ -35,7 +35,8 @@ function todayStr(): string {
 }
 
 function applyXp(state: PremiumState, amount: number): Partial<PremiumState> {
-  let { battlePassLevel, battlePassXP } = state;
+  let { battlePassLevel } = state;
+  const { battlePassXP } = state;
   let xp = battlePassXP + amount;
   while (xp >= XP_PER_LEVEL && battlePassLevel < MAX_LEVEL) {
     xp -= XP_PER_LEVEL;
@@ -96,7 +97,7 @@ export const usePremiumStore = create<PremiumState>()(
         set((s) => ({ hintTokens: s.hintTokens + n }));
       },
 
-      useHint: () => {
+      consumeHintToken: () => {
         const s = get();
         if (s.hintTokens <= 0) return false;
         set({ hintTokens: s.hintTokens - 1 });

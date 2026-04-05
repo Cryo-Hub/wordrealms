@@ -133,7 +133,7 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
   const isPremium = usePremiumStore((s) => s.isPremium);
   const addBattlePassXP = usePremiumStore((s) => s.addBattlePassXP);
   const hintTokens = usePremiumStore((s) => s.hintTokens);
-  const consumeHint = usePremiumStore((s) => s.useHint);
+  const consumeHint = usePremiumStore((s) => s.consumeHintToken);
   const addHints = usePremiumStore((s) => s.addHints);
   const refillDailyHintsIfNeeded = usePremiumStore((s) => s.refillDailyHintsIfNeeded);
 
@@ -246,7 +246,7 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
     setShowLevelSolved(true);
     hapticService.heavy();
     soundService.puzzleComplete();
-    useEnergyStore.getState().useEnergy();
+    useEnergyStore.getState().spendEnergyUnit();
   }, [crossword]);
 
   const showXpFlash = useCallback((msg: string) => {
