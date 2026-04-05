@@ -133,7 +133,7 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
   const isPremium = usePremiumStore((s) => s.isPremium);
   const addBattlePassXP = usePremiumStore((s) => s.addBattlePassXP);
   const hintTokens = usePremiumStore((s) => s.hintTokens);
-  const useHintToken = usePremiumStore((s) => s.useHint);
+  const consumeHint = usePremiumStore((s) => s.useHint);
   const addHints = usePremiumStore((s) => s.addHints);
   const refillDailyHintsIfNeeded = usePremiumStore((s) => s.refillDailyHintsIfNeeded);
 
@@ -327,7 +327,7 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
     if (!puzzle) return;
     initAudioOnGesture();
     if (hintTokens > 0) {
-      if (!useHintToken()) {
+      if (!consumeHint()) {
         showToast('No hints left', 2000);
         return;
       }
