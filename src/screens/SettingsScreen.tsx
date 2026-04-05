@@ -40,7 +40,7 @@ export function SettingsScreen({ navigate }: SettingsScreenProps) {
   );
 
   return (
-    <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col pb-8 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-8 pt-[72px]">
       <ResourceBar />
       {langToast ? (
         <div className="fixed left-1/2 top-20 z-[90] -translate-x-1/2 rounded-[8px] border border-[var(--gold-dim)] bg-[var(--bg-elevated)] px-4 py-2 font-cinzel text-sm text-[var(--gold-light)] shadow-lg">

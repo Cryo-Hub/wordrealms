@@ -157,12 +157,12 @@ export function ProfileScreen({ navigate }: ProfileScreenProps) {
   };
 
   return (
-    <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col pb-28 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-28 pt-[72px]">
       <ResourceBar />
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex flex-1 flex-col gap-4 px-4"
+        className="flex flex-col gap-4 px-4 pb-4"
       >
         <h1 className="wr-screen-title text-xl">Profile</h1>
         <OrnamentDivider size="sm" />

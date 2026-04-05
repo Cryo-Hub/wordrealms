@@ -101,12 +101,12 @@ export function WorldScreen({ navigate }: WorldScreenProps) {
   };
 
   return (
-    <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col pb-36 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-36 pt-[72px]">
       <ResourceBar />
       <motion.div
         initial={{ opacity: 0, y: 6 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex w-full flex-1 flex-col gap-4 px-4"
+        className="flex w-full flex-col gap-4 px-4 pb-4"
       >
         <h1 className="wr-screen-title text-2xl">{t('world.title')}</h1>
         <p className="text-center font-num text-sm text-[var(--text-secondary)]">

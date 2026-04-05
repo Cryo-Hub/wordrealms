@@ -48,10 +48,10 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
   const emojis = builtList.map((bt) => getBuildingDisplayEmoji(bt, claimedRewards)).join(' ');
 
   return (
-    <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col overflow-hidden pb-24 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-24 pt-[72px]">
       <ResourceBar />
 
-      <div className="relative flex w-full flex-1 flex-col gap-3 px-4">
+      <div className="relative flex w-full flex-col gap-3 px-4 pb-4">
         <div className="flex items-start justify-between gap-2">
           <div className="w-10 shrink-0" />
           <div className="flex min-w-0 flex-1 justify-center" />

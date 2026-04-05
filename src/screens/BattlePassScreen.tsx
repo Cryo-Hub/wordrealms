@@ -92,12 +92,12 @@ export function BattlePassScreen({ navigate }: BattlePassScreenProps) {
   };
 
   return (
-    <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col pb-28 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-28 pt-[72px]">
       <ResourceBar />
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex flex-1 flex-col gap-4 px-4"
+        className="flex flex-col gap-4 px-4 pb-4"
       >
         <h1 className="text-center font-cinzel text-lg font-bold text-[#c9a227]">
           ⚔️ BATTLE PASS · Season 1
@@ -163,7 +163,7 @@ export function BattlePassScreen({ navigate }: BattlePassScreenProps) {
           <p className="text-center text-sm text-[#6b8f6b]">✅ Premium Active</p>
         )}
 
-        <div className="max-h-[min(60vh,520px)] space-y-3 overflow-y-auto pr-1">
+        <div className="space-y-3">
           {Array.from({ length: 30 }, (_, i) => i + 1).map((lvl) => {
             const { free, premium } = levelRewards(lvl);
             return (

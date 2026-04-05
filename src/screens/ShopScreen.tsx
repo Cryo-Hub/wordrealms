@@ -24,7 +24,7 @@ export function ShopScreen({ navigate }: ShopScreenProps) {
   }, []);
 
   return (
-    <div className="relative mx-auto flex min-h-screen w-full max-w-[430px] flex-col pb-8 pt-[72px]">
+    <div className="relative mx-auto min-h-screen w-full max-w-[430px] pb-8 pt-[72px]">
       <ResourceBar />
       <header className="flex w-full items-center gap-3 border-b border-[#2a2018] px-4 pb-3">
         <button type="button" className="btn-icon text-lg" onClick={() => navigate('home')}>
@@ -36,7 +36,7 @@ export function ShopScreen({ navigate }: ShopScreenProps) {
         <OrnamentDivider size="sm" />
       </div>
 
-      <div className="mt-2 w-full flex-1 px-4">
+      <div className="mt-2 w-full px-4 pb-4">
         {isPremium ? (
           <div className="fantasy-card text-center">
             <p className="wr-section-title text-xl">{t('shop.already_premium')}</p>

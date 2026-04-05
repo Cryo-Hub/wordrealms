@@ -22,10 +22,12 @@ export function GameScreen({ navigate }: GameScreenProps) {
 
   return (
     <div
-      className="relative mx-auto flex min-h-[100dvh] w-full max-w-full flex-col md:max-w-[480px]"
+      className="relative mx-auto flex h-[100dvh] min-h-0 w-full max-w-full flex-col overflow-hidden md:max-w-[480px]"
       style={{ paddingBottom: NAV_SAFE_BOTTOM }}
     >
-      <DailyPuzzle onNavigate={navigate} />
+      <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
+        <DailyPuzzle onNavigate={navigate} />
+      </div>
       <NavigationBar active="game" onNavigate={navigate} />
     </div>
   );

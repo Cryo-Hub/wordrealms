@@ -245,7 +245,7 @@ function AppRoutes() {
     <FantasyShell>
       {screen !== 'game' && screen !== 'freeplay' ? <OfflineIndicator /> : null}
       <InstallPromptBanner />
-      <div className="min-h-screen text-[var(--text-primary)] antialiased">
+      <div className="min-h-0 min-h-screen w-full overflow-x-hidden overflow-y-visible text-[var(--text-primary)] antialiased">
         <Suspense fallback={<LoadingScreen />}>
           <AnimatePresence mode="wait">
             <motion.div
@@ -254,6 +254,7 @@ function AppRoutes() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
+              className="min-h-0 w-full overflow-x-hidden overflow-y-visible"
             >
               <ScreenErrorBoundary>
                 {screen === 'home' ? (
