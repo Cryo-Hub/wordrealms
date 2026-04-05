@@ -4,6 +4,7 @@ export type RootScreen =
   | 'onboarding'
   | 'home'
   | 'game'
+  | 'freeplay'
   | 'world'
   | 'league'
   | 'settings'

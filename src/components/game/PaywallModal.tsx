@@ -48,6 +48,7 @@ export function PaywallModal({ open, onClose }: PaywallModalProps) {
           <li>• Premium rewards on every level</li>
           <li>• Exclusive skins &amp; frames</li>
           <li>• Bonus hints every day</li>
+          <li>• ⚡ Unlimited Free Play energy</li>
         </ul>
         <p className="mt-4 font-num text-lg text-[#f0e6cc]">9,99€/month</p>
         <button

@@ -35,6 +35,12 @@ type PuzzleCompleteProps = {
   showTomorrowLine?: boolean;
   onBuildWorld: () => void;
   onKeepPlaying: () => void;
+  /** Optional: nach Daily zum Free Play (kostet ⚡ beim nächsten Modus). */
+  onContinueFreePlay?: () => void;
+  /** Genug Energie oder Premium für Free Play */
+  canContinueFreePlay?: boolean;
+  /** Premium: ∞ anzeigen */
+  freePlayEnergyLabel?: string;
   onToast?: (message: string, ms?: number) => void;
 };
 
@@ -49,6 +55,9 @@ export function PuzzleComplete({
   showTomorrowLine = false,
   onBuildWorld,
   onKeepPlaying,
+  onContinueFreePlay,
+  canContinueFreePlay = true,
+  freePlayEnergyLabel,
   onToast,
 }: PuzzleCompleteProps) {
   const { t } = useTranslation();
@@ -259,6 +268,21 @@ export function PuzzleComplete({
           <button type="button" onClick={() => onBuildWorld()} className="fantasy-button w-full">
             {t('complete.build_world')}
           </button>
+          {isDailyToday && onContinueFreePlay ? (
+            canContinueFreePlay ? (
+              <button
+                type="button"
+                onClick={onContinueFreePlay}
+                className="fantasy-button w-full border border-[#c9a227]/50 bg-[rgba(40,32,20,0.9)] py-3 text-sm text-[#f0e6cc]"
+              >
+                {t('complete.continue_freeplay', { energy: freePlayEnergyLabel ?? '' })}
+              </button>
+            ) : (
+              <p className="rounded-lg border border-[#2a2018] bg-black/30 px-3 py-2 text-center font-body text-xs text-[var(--text-secondary)]">
+                {t('complete.freeplay_no_energy')}
+              </p>
+            )
+          ) : null}
           <button type="button" onClick={onKeepPlaying} className="btn-secondary w-full py-3 text-sm">
             {t('complete.keep_playing')}
           </button>

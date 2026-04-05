@@ -8,6 +8,7 @@ import { useWorldStore } from '../stores/worldStore';
 import { useDailyStore } from '../stores/dailyStore';
 import { useLeagueStore } from '../stores/leagueStore';
 import { usePremiumStore } from '../stores/premiumStore';
+import { useEnergyStore } from '../stores/energyStore';
 import { LeagueBadge } from '../components/ui/LeagueBadge';
 import type { BuildingType } from '../core/world/buildingConfig';
 import { getBuildingDisplayEmoji } from '../core/game/buildingDisplay';
@@ -28,6 +29,9 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
   const claimedRewards = usePremiumStore((s) => s.claimedRewards);
   const puzzlesCompleted = useDailyStore((s) => s.puzzlesCompleted);
   const bpLevel = usePremiumStore((s) => s.battlePassLevel);
+  const isPremium = usePremiumStore((s) => s.isPremium);
+  const energy = useEnergyStore((s) => s.energy);
+  const canFreePlay = isPremium || energy > 0;
   const [paywallOpen, setPaywallOpen] = useState(false);
 
   useEffect(() => {
@@ -93,6 +97,21 @@ export function HomeScreen({ navigate }: HomeScreenProps) {
 
         <button type="button" onClick={() => navigate('game')} className="fantasy-button mx-auto w-full max-w-sm min-h-[52px]">
           {t('home.play_button')}
+        </button>
+
+        <button
+          type="button"
+          onClick={() => navigate('freeplay')}
+          disabled={!canFreePlay}
+          className={`mx-auto w-full max-w-sm min-h-[48px] rounded-lg border px-4 py-3 font-cinzel text-sm font-semibold transition active:scale-[0.99] ${
+            canFreePlay
+              ? isPremium
+                ? 'border-[#c9a227] bg-[rgba(30,24,16,0.95)] text-[#c9a227] shadow-[0_0_20px_rgba(201,162,39,0.2)]'
+                : 'border-[#4a3a28] bg-[rgba(20,16,12,0.9)] text-[#f0e6cc]'
+              : 'cursor-not-allowed border-[#2a2018] bg-[rgba(12,10,8,0.85)] text-[var(--text-muted)] opacity-60'
+          }`}
+        >
+          {isPremium ? t('home.free_play_infinity') : canFreePlay ? t('home.free_play', { n: energy }) : t('home.free_play_disabled')}
         </button>
 
         <button

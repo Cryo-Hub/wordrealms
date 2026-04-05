@@ -40,7 +40,8 @@ export function canWatchMoreAds(): boolean {
 export type AdReward =
   | { kind: 'hints'; amount: number }
   | { kind: 'gold'; amount: number }
-  | { kind: 'double_gold_session' };
+  | { kind: 'double_gold_session' }
+  | { kind: 'energy' };
 
 /**
  * Simuliert Rewarded Ad: Modal-Countdown 3s, max 3/Tag.

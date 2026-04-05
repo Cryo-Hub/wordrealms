@@ -22,10 +22,15 @@ const ProfileScreen = lazy(async () => {
   const m = await import('./screens/ProfileScreen');
   return { default: m.ProfileScreen };
 });
+const FreePlayScreen = lazy(async () => {
+  const m = await import('./screens/FreePlayScreen');
+  return { default: m.FreePlayScreen };
+});
 import { useDailyStore } from './stores/dailyStore';
 import { useLeagueStore } from './stores/leagueStore';
 import { useSettingsStore } from './stores/settingsStore';
 import { usePremiumStore } from './stores/premiumStore';
+import { useEnergyStore } from './stores/energyStore';
 import { setLanguage, ensureDictionaryLoaded } from './core/game/dictionaryManager';
 import { ensureAuth, GUEST_USER_ID_KEY, getCurrentUser } from './services/supabase/auth';
 import { isSupabaseConfigured, supabase } from './services/supabase/client';
@@ -97,10 +102,23 @@ function AppRoutes() {
   const [screen, setScreen] = useState<RootScreen>('home');
   const hydrateFromDate = useDailyStore((s) => s.hydrateFromDate);
   const checkPremium = usePremiumStore((s) => s.checkPremium);
+  const isPremium = usePremiumStore((s) => s.isPremium);
+  const refillDailyEnergy = useEnergyStore((s) => s.refillDailyEnergy);
+  const premiumUnlimitedEnergy = useEnergyStore((s) => s.premiumUnlimited);
+  const clampEnergyIfNotPremium = useEnergyStore((s) => s.clampIfNotPremium);
 
   useEffect(() => {
     hydrateFromDate();
   }, [hydrateFromDate]);
+
+  useEffect(() => {
+    refillDailyEnergy();
+  }, [refillDailyEnergy]);
+
+  useEffect(() => {
+    if (isPremium) premiumUnlimitedEnergy();
+    else clampEnergyIfNotPremium();
+  }, [isPremium, premiumUnlimitedEnergy, clampEnergyIfNotPremium]);
 
   useEffect(() => {
     const decayed = useLeagueStore.getState().resetWeeklyIfNeeded();
@@ -225,7 +243,7 @@ function AppRoutes() {
 
   return (
     <FantasyShell>
-      {screen !== 'game' ? <OfflineIndicator /> : null}
+      {screen !== 'game' && screen !== 'freeplay' ? <OfflineIndicator /> : null}
       <InstallPromptBanner />
       <div className="min-h-screen text-[var(--text-primary)] antialiased">
         <Suspense fallback={<LoadingScreen />}>
@@ -242,6 +260,8 @@ function AppRoutes() {
                   <HomeScreen navigate={navigate} />
                 ) : screen === 'game' ? (
                   <GameScreen navigate={navigate} />
+                ) : screen === 'freeplay' ? (
+                  <FreePlayScreen navigate={navigate} />
                 ) : screen === 'world' ? (
                   <WorldScreen navigate={navigate} />
                 ) : screen === 'league' ? (

@@ -21,7 +21,9 @@
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Total levels:', d['totalLevels']\\); print\\('Total removed:', d['totalRemoved']\\); print\\('Weak levels count:', len\\(d['weakLevels']\\)\\); [print\\(x['file'],x.get\\('levels'\\),x.get\\('removed'\\),x.get\\('weakCount'\\)\\) for x in d['files']]\")",
       "Bash(git push:*)",
       "Bash(ls /c/Users/Marku/Desktop/wordrealms/src/data/puzzles-tr-*.json)",
-      "Bash(grep -v \"^$\")"
+      "Bash(grep -v \"^$\")",
+      "Bash(npm list:*)",
+      "Bash(npm install:*)"
     ]
   }
 }

@@ -1,32 +1,51 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LetterWheel } from '../game/LetterWheel/LetterWheel';
-import { CrosswordGrid } from '../game/CrosswordGrid/CrosswordGrid';
-import { BonusWordToast } from '../game/CrosswordGrid/BonusWordToast';
-import { calculateWordReward, type WordReward } from '../../core/game/resourceCalculator';
-import { validateWord, type WordInvalidReason } from '../../core/game/wordValidator';
-import { useGameStore } from '../../stores/gameStore';
-import { useGameUiStore } from '../../stores/gameUiStore';
-import { useResourceStore } from '../../stores/resourceStore';
-import { useDailyStore } from '../../stores/dailyStore';
-import { usePremiumStore } from '../../stores/premiumStore';
-import { ENERGY_UNLIMITED_THRESHOLD, useEnergyStore } from '../../stores/energyStore';
-import { showRewardedAd } from '../../services/adService';
-import {
-  ensureDictionaryLoaded,
-  getCurrentLanguage,
-  type SupportedLanguage,
-} from '../../core/game/dictionaryManager';
-import { useLanguageVersion } from '../../hooks/useLanguageVersion';
-import { formatPuzzleDate, getNextTraceableHint, getPuzzleNumber, type PuzzleConfig } from '../../core/game/puzzleGenerator';
-import { getPuzzleForDate, recordWordsForArchiveDate } from '../../core/game/puzzleArchive';
-import { PuzzleComplete } from './PuzzleComplete';
-import type { RootScreen } from '../../types/navigation';
-import { hapticService } from '../../services/hapticService';
-import { initAudioOnGesture, soundService } from '../../services/soundService';
-import { useTranslation } from '../../i18n';
-import { useSettingsStore } from '../../stores/settingsStore';
-import { buildCrosswordGrid, type CrosswordGrid as CrosswordGridModel } from '../../core/game/crosswordEngine';
+import { LetterWheel } from '../components/game/LetterWheel/LetterWheel';
+import { CrosswordGrid } from '../components/game/CrosswordGrid/CrosswordGrid';
+import { BonusWordToast } from '../components/game/CrosswordGrid/BonusWordToast';
+import { calculateWordReward, type WordReward } from '../core/game/resourceCalculator';
+import { validateWord, type WordInvalidReason } from '../core/game/wordValidator';
+import { useGameStore } from '../stores/gameStore';
+import { useGameUiStore } from '../stores/gameUiStore';
+import { useResourceStore } from '../stores/resourceStore';
+import { usePremiumStore } from '../stores/premiumStore';
+import { ENERGY_UNLIMITED_THRESHOLD, useEnergyStore } from '../stores/energyStore';
+import { useSettingsStore } from '../stores/settingsStore';
+import { ensureDictionaryLoaded, type SupportedLanguage } from '../core/game/dictionaryManager';
+import { useLanguageVersion } from '../hooks/useLanguageVersion';
+import { getNextTraceableHint, type PuzzleConfig } from '../core/game/puzzleGenerator';
+import { preloadProceduralWordList, generateLevel } from '../core/game/proceduralGenerator';
+import { hapticService } from '../services/hapticService';
+import { initAudioOnGesture, soundService } from '../services/soundService';
+import { useTranslation } from '../i18n';
+import { buildCrosswordGrid, type CrosswordGrid as CrosswordGridModel } from '../core/game/crosswordEngine';
+import { NavigationBar } from '../components/ui/NavigationBar';
+import { EnergyBar } from '../components/ui/EnergyBar';
+import { showRewardedAd } from '../services/adService';
+import type { RootScreen } from '../types/navigation';
+
+const FREE_SEED_KEY = 'wordrealms-free-seed';
+const NAV_SAFE_BOTTOM = 'calc(4.75rem + env(safe-area-inset-bottom, 0px))';
+function readFreeSeed(): number {
+  try {
+    const v = localStorage.getItem(FREE_SEED_KEY);
+    if (v) {
+      const n = parseInt(v, 10);
+      if (!Number.isNaN(n)) return n;
+    }
+  } catch {
+    /* ignore */
+  }
+  return 1000;
+}
+
+function writeFreeSeed(n: number): void {
+  try {
+    localStorage.setItem(FREE_SEED_KEY, String(n));
+  } catch {
+    /* ignore */
+  }
+}
 
 function invalidToastForReason(
   reason: WordInvalidReason | undefined,
@@ -43,6 +62,20 @@ function invalidToastForReason(
     default:
       return t('game.not_valid');
   }
+}
+
+function wordsForCrosswordGrid(puzzle: PuzzleConfig): string[] {
+  const raw = puzzle.grid_words?.length ? puzzle.grid_words : puzzle.validWords;
+  const uniq = [...new Set(raw.map((w) => w.trim().toUpperCase()))];
+  return uniq.filter((w) => w.length >= 2);
+}
+
+function halfReward(r: WordReward): WordReward {
+  return {
+    gold: Math.max(0, Math.round(r.gold * 0.5)),
+    wood: Math.max(0, Math.round(r.wood * 0.5)),
+    stone: Math.max(0, Math.round(r.stone * 0.5)),
+  };
 }
 
 function GameWordDots() {
@@ -79,21 +112,11 @@ function GameWordDots() {
   );
 }
 
-/**
- * Kreuzwort-Eingabe: `puzzle.grid_words` (vom Archiv / `normalizePuzzleConfig` in `getPuzzleForDate`).
- * Ohne `grid_words` → Fallback `puzzle.validWords`.
- */
-function wordsForCrosswordGrid(puzzle: PuzzleConfig): string[] {
-  const raw = puzzle.grid_words?.length ? puzzle.grid_words : puzzle.validWords;
-  const uniq = [...new Set(raw.map((w) => w.trim().toUpperCase()))];
-  return uniq.filter((w) => w.length >= 2);
-}
-
-type DailyPuzzleProps = {
-  onNavigate: (screen: RootScreen) => void;
+type FreePlayScreenProps = {
+  navigate: (s: RootScreen) => void;
 };
 
-export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
+export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
   const { t } = useTranslation();
   const language = useSettingsStore((s) => s.language) as SupportedLanguage;
   const langVersion = useLanguageVersion();
@@ -103,22 +126,22 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   const sessionWood = useGameStore((s) => s.sessionWoodEarned);
   const sessionStone = useGameStore((s) => s.sessionStoneEarned);
   const addResources = useResourceStore((s) => s.addResources);
-  const addWordsCount = useDailyStore((s) => s.addWordsCount);
-  const bumpWordsToday = useDailyStore((s) => s.bumpWordsToday);
-  const completeToday = useDailyStore((s) => s.completeToday);
+  const resetSession = useGameStore((s) => s.resetSession);
+  const startSession = useGameStore((s) => s.startSession);
   const isPremium = usePremiumStore((s) => s.isPremium);
-  const energy = useEnergyStore((s) => s.energy);
   const addBattlePassXP = usePremiumStore((s) => s.addBattlePassXP);
   const hintTokens = usePremiumStore((s) => s.hintTokens);
   const useHintToken = usePremiumStore((s) => s.useHint);
   const addHints = usePremiumStore((s) => s.addHints);
   const refillPremiumHintsIfNeeded = usePremiumStore((s) => s.refillPremiumHintsIfNeeded);
 
-  const activeDate = formatPuzzleDate();
-  const todayStr = formatPuzzleDate();
+  const energy = useEnergyStore((s) => s.energy);
+  const refillDailyEnergy = useEnergyStore((s) => s.refillDailyEnergy);
+  const watchAdForEnergy = useEnergyStore((s) => s.watchAdForEnergy);
 
+  const [seed, setSeed] = useState(readFreeSeed);
   const [puzzle, setPuzzle] = useState<PuzzleConfig | null>(null);
-  const [dictLoading, setDictLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [showComplete, setShowComplete] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [shake, setShake] = useState(0);
@@ -128,45 +151,67 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   const levelCompleteAppliedRef = useRef(false);
   const [xpFlash, setXpFlash] = useState<string | null>(null);
   const wordDebounceRef = useRef<number | undefined>(undefined);
+  const [gateModal, setGateModal] = useState<'none' | 'blocked'>('none');
+  const [reloadTick, setReloadTick] = useState(0);
 
-  const gridSourceWords = useMemo(() => (puzzle ? wordsForCrosswordGrid(puzzle) : []), [puzzle]);
+  useEffect(() => {
+    refillDailyEnergy();
+  }, [refillDailyEnergy]);
+
+  useEffect(() => {
+    resetSession();
+    startSession();
+  }, [seed, resetSession, startSession]);
+
+  useEffect(() => {
+    refillPremiumHintsIfNeeded();
+  }, [refillPremiumHintsIfNeeded]);
 
   useEffect(() => {
     let cancel = false;
     (async () => {
-      setDictLoading(true);
+      setLoading(true);
+      const playable =
+        (usePremiumStore.getState().isPremium &&
+          useEnergyStore.getState().energy >= ENERGY_UNLIMITED_THRESHOLD) ||
+        useEnergyStore.getState().energy > 0;
+      if (!playable) {
+        setGateModal('blocked');
+        setLoading(false);
+        setPuzzle(null);
+        return;
+      }
+      setGateModal('none');
       await ensureDictionaryLoaded();
+      await preloadProceduralWordList(language);
       if (cancel) return;
-      const lang = getCurrentLanguage();
       try {
-        const p = await getPuzzleForDate(activeDate, lang);
+        const p = generateLevel(seed, language);
         if (!cancel) {
           setPuzzle(p);
+          levelCompleteAppliedRef.current = false;
         }
       } catch (e) {
         console.error(e);
         if (!cancel) setPuzzle(null);
       }
-      if (!cancel) setDictLoading(false);
+      if (!cancel) setLoading(false);
     })();
     return () => {
       cancel = true;
     };
-  }, [language, langVersion, activeDate]);
+  }, [seed, language, langVersion, reloadTick]);
+
+  const gridSourceWords = useMemo(() => (puzzle ? wordsForCrosswordGrid(puzzle) : []), [puzzle]);
+
+  useEffect(() => {
+    levelCompleteAppliedRef.current = false;
+  }, [puzzle]);
 
   useEffect(() => {
     if (!puzzle) return;
-    levelCompleteAppliedRef.current = false;
     setCrossword(buildCrosswordGrid(gridSourceWords));
   }, [puzzle, gridSourceWords]);
-
-  useEffect(() => {
-    recordWordsForArchiveDate(activeDate, foundWords);
-  }, [foundWords, activeDate, puzzle]);
-
-  useEffect(() => {
-    refillPremiumHintsIfNeeded();
-  }, [refillPremiumHintsIfNeeded]);
 
   const hintValidWords = useMemo(() => {
     if (!puzzle) return [];
@@ -192,8 +237,8 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
     setShowLevelSolved(true);
     hapticService.heavy();
     soundService.puzzleComplete();
-    completeToday();
-  }, [crossword, completeToday]);
+    useEnergyStore.getState().useEnergy();
+  }, [crossword]);
 
   const showXpFlash = useCallback((msg: string) => {
     setXpFlash(msg);
@@ -213,7 +258,14 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
           return;
         }
         const u = word.toUpperCase();
+        if (!puzzle?.validWords.some((w) => w.toUpperCase() === u)) {
+          setShake((k) => k + 1);
+          soundService.wordInvalid();
+          showToast(t('game.not_valid'));
+          return;
+        }
         let reward: WordReward = calculateWordReward(word.length);
+        reward = halfReward(reward);
         if (isPremium) {
           reward = {
             gold: reward.gold * 2,
@@ -222,12 +274,8 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
           };
         }
         soundService.wordValid();
-        if (word.length >= 6) {
-          soundService.wordExcellent();
-        }
+        if (word.length >= 6) soundService.wordExcellent();
         addResources(reward.gold, reward.wood, reward.stone);
-        addWordsCount(1);
-        bumpWordsToday(1);
         addFoundWord(word);
         hapticService.medium();
         addBattlePassXP(5);
@@ -250,19 +298,7 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
         }
       }, 50);
     },
-    [
-      addFoundWord,
-      addResources,
-      addWordsCount,
-      bumpWordsToday,
-      crossword,
-      foundWords,
-      isPremium,
-      showToast,
-      t,
-      addBattlePassXP,
-      showXpFlash,
-    ],
+    [addFoundWord, addResources, foundWords, crossword, isPremium, showToast, t, addBattlePassXP, showXpFlash, puzzle],
   );
 
   const showHint = () => {
@@ -274,11 +310,8 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
         return;
       }
       const hint = getNextTraceableHint(puzzle.letters, hintValidWords, foundWords);
-      if (hint) {
-        showToast(t('game.hint', { word: hint }), 3000);
-      } else {
-        showToast(t('game.no_hints'), 3000);
-      }
+      if (hint) showToast(t('game.hint', { word: hint }), 3000);
+      else showToast(t('game.no_hints'), 3000);
       return;
     }
     void showRewardedAd({ kind: 'hints', amount: 2 }).then((ok) => {
@@ -289,22 +322,69 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
     });
   };
 
-  const puzzleNum = getPuzzleNumber(new Date(`${activeDate}T12:00:00`));
-  const freePlayEnergyLabel =
-    isPremium && energy >= ENERGY_UNLIMITED_THRESHOLD ? '∞' : `⚡${energy}`;
-
-  if (dictLoading || !puzzle || !crossword) {
+  if (gateModal === 'blocked' && !loading) {
     return (
-      <div className="flex min-h-0 w-full max-w-[480px] flex-1 flex-col items-center justify-center gap-2 px-4 text-[var(--text-secondary)]">
-        <p className="font-body text-sm">{t('game.loading_dict')}</p>
+      <div
+        className="relative mx-auto flex min-h-[100dvh] w-full max-w-full flex-col md:max-w-[480px]"
+        style={{ paddingBottom: NAV_SAFE_BOTTOM }}
+      >
+        <div className="flex flex-1 flex-col items-center justify-center gap-4 px-4 pt-16 text-center">
+          <h1 className="font-cinzel text-xl text-[#c9a227]">{t('freeplay.out_title')}</h1>
+          <p className="text-sm text-[var(--text-secondary)]">{t('freeplay.out_tomorrow')}</p>
+          <button
+            type="button"
+            className="fantasy-button w-full max-w-sm"
+            onClick={() =>
+              void watchAdForEnergy().then((ok) => {
+                if (ok) setReloadTick((x) => x + 1);
+              })
+            }
+          >
+            {t('freeplay.watch_ad')}
+          </button>
+          <button type="button" className="btn-secondary w-full max-w-sm py-2" onClick={() => navigate('shop')}>
+            {t('freeplay.get_premium')}
+          </button>
+          <button type="button" className="text-sm text-[var(--text-muted)] underline" onClick={() => navigate('home')}>
+            {t('freeplay.dismiss')}
+          </button>
+        </div>
+        <NavigationBar active="home" onNavigate={navigate} />
       </div>
     );
   }
 
+  if (loading || !puzzle || !crossword) {
+    return (
+      <div
+        className="relative mx-auto flex min-h-[100dvh] w-full max-w-full flex-col items-center justify-center md:max-w-[480px]"
+        style={{ paddingBottom: NAV_SAFE_BOTTOM }}
+      >
+        <p className="text-sm text-[var(--text-secondary)]">{t('game.loading_dict')}</p>
+        <NavigationBar active="home" onNavigate={navigate} />
+      </div>
+    );
+  }
+
+  const nextEnergyOk = (isPremium && energy >= ENERGY_UNLIMITED_THRESHOLD) || energy > 0;
+
   return (
-    <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col items-center overflow-x-hidden overflow-y-auto">
+    <div
+      className="relative mx-auto flex min-h-[100dvh] w-full max-w-full flex-col md:max-w-[480px]"
+      style={{ paddingBottom: NAV_SAFE_BOTTOM }}
+    >
+      <header className="sticky top-0 z-40 flex items-center justify-between border-b border-[#2a2018]/80 bg-[rgba(8,6,4,0.92)] px-3 py-2 pt-[max(0.5rem,env(safe-area-inset-top))] backdrop-blur-sm">
+        <div>
+          <h1 className="font-cinzel text-sm font-bold text-[#c9a227]">{t('freeplay.title')}</h1>
+          <p className="font-num text-xs text-[var(--text-secondary)]">
+            {t('freeplay.level', { n: seed })}
+          </p>
+        </div>
+        <EnergyBar compact />
+      </header>
+
       <div className="pointer-events-none fixed inset-x-0 top-0 z-[45] flex justify-center">
-        <div className="pointer-events-auto flex w-full max-w-[480px] justify-end px-3 pt-[70px] sm:px-4">
+        <div className="pointer-events-auto flex w-full max-w-[480px] justify-end px-3 pt-[120px] sm:px-4">
           <button
             type="button"
             onClick={showHint}
@@ -312,14 +392,7 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
             aria-label={t('game.hint_button_aria')}
           >
             <span className="font-num text-xs text-[#c9a227]">💡{hintTokens}</span>
-            <img
-              src="/assets/hint.jpg"
-              width={22}
-              height={22}
-              alt=""
-              loading="lazy"
-              className="pointer-events-none rounded-sm"
-            />
+            <img src="/assets/hint.jpg" width={22} height={22} alt="" loading="lazy" className="pointer-events-none rounded-sm" />
           </button>
         </div>
       </div>
@@ -340,7 +413,7 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
       </AnimatePresence>
 
       {xpFlash ? (
-        <div className="pointer-events-none fixed right-4 top-24 z-[55] rounded-[6px] border border-[#c9a227]/40 bg-black/70 px-2 py-1 font-num text-xs text-[#c9a227]">
+        <div className="pointer-events-none fixed right-4 top-28 z-[55] rounded-[6px] border border-[#c9a227]/40 bg-black/70 px-2 py-1 font-num text-xs text-[#c9a227]">
           {xpFlash}
         </div>
       ) : null}
@@ -376,11 +449,10 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
         ) : null}
       </AnimatePresence>
 
-      <div className="flex min-h-0 w-full max-w-[480px] flex-1 flex-col items-center justify-center px-3 sm:px-4">
+      <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col items-center overflow-x-hidden overflow-y-auto">
         <div className="flex w-full max-h-[45vh] min-h-0 flex-shrink-0 flex-col items-center justify-center overflow-visible py-2">
           <CrosswordGrid crossword={crossword} />
         </div>
-
         <div className="flex w-full min-h-0 flex-1 flex-col items-center justify-center gap-1 overflow-visible pt-2">
           <GameWordDots />
           <motion.div
@@ -397,29 +469,44 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
       </div>
 
       {showComplete ? (
-        <PuzzleComplete
-          wordsFound={foundWords.length}
-          foundWords={foundWords}
-          sessionGold={sessionGold}
-          sessionWood={sessionWood}
-          sessionStone={sessionStone}
-          puzzleNumber={puzzleNum}
-          isDailyToday={activeDate === todayStr}
-          showTomorrowLine={activeDate === todayStr}
-          onToast={(msg, ms) => showToast(msg, ms ?? 1500)}
-          onBuildWorld={() => {
-            setShowComplete(false);
-            onNavigate('world');
-          }}
-          onKeepPlaying={() => setShowComplete(false)}
-          onContinueFreePlay={() => {
-            setShowComplete(false);
-            onNavigate('freeplay');
-          }}
-          canContinueFreePlay={isPremium || energy > 0}
-          freePlayEnergyLabel={freePlayEnergyLabel}
-        />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-black/85 p-6 backdrop-blur-md"
+        >
+          <div className="fantasy-card relative z-10 w-full max-w-sm text-center">
+            <h2 className="font-title text-lg text-[var(--gold-primary)]">{t('freeplay.complete_title')}</h2>
+            <p className="mt-2 font-body text-sm text-[var(--text-secondary)]">
+              🪙 {sessionGold} · 🪵 {sessionWood} · 🪨 {sessionStone}
+            </p>
+            <div className="mt-4 flex flex-col gap-2">
+              {nextEnergyOk ? (
+                <button
+                  type="button"
+                  className="fantasy-button w-full"
+                  onClick={() => {
+                    const next = seed + 1;
+                    setSeed(next);
+                    writeFreeSeed(next);
+                    setShowComplete(false);
+                    resetSession();
+                    startSession();
+                  }}
+                >
+                  {t('freeplay.next_level')}
+                </button>
+              ) : (
+                <p className="text-sm text-[var(--text-secondary)]">{t('freeplay.out_tomorrow')}</p>
+              )}
+              <button type="button" className="btn-secondary w-full py-2" onClick={() => navigate('home')}>
+                {t('freeplay.home')}
+              </button>
+            </div>
+          </div>
+        </motion.div>
       ) : null}
+
+      <NavigationBar active="home" onNavigate={navigate} />
     </div>
   );
 }

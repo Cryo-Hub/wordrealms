@@ -29,6 +29,9 @@ export const en: Record<string, string> = {
   'home.words_today': 'Words Found Today: {n}',
   'home.daily_progress': 'Daily progress ({n}/5 words)',
   'home.play_button': "Play Today's Puzzle",
+  'home.free_play': '⚔️ Free Play ⚡{n}',
+  'home.free_play_infinity': '⚔️ Free Play ∞',
+  'home.free_play_disabled': '⚡ Refills tomorrow',
   'home.your_world': 'Your World',
   'home.empty_slots': '+ {n} empty slots',
   'home.buildings': '{n} / 10 buildings',
@@ -154,7 +157,29 @@ export const en: Record<string, string> = {
   'complete.streak_days': '🔥 {n} days',
   'complete.build_world': 'Build Your World',
   'complete.keep_playing': 'Keep Playing',
+  'complete.continue_freeplay': '⚔️ Keep Playing → Free Play {energy}',
+  'complete.freeplay_no_energy': 'Come back tomorrow for more energy — or watch an ad from Free Play.',
   'complete.share': 'Share Result',
+
+  // Energy
+  'energy.bar_title': 'Energy',
+  'energy.slot_filled': 'Energy',
+  'energy.slot_empty': 'Watch ad for energy',
+  'energy.ad_title': 'Watch ad for +1 energy?',
+  'energy.ad_confirm': 'Watch ad',
+  'energy.ad_cancel': 'Cancel',
+
+  // Free Play
+  'freeplay.title': '⚔️ FREE PLAY',
+  'freeplay.level': 'Level {n}',
+  'freeplay.complete_title': 'Free Play complete!',
+  'freeplay.next_level': 'Next Level',
+  'freeplay.home': 'Back to Home',
+  'freeplay.out_title': '⚡ Out of Energy!',
+  'freeplay.out_tomorrow': 'Come back tomorrow for 5 free energy.',
+  'freeplay.watch_ad': '📺 Watch ad for +1 energy',
+  'freeplay.get_premium': '👑 Get Premium for unlimited energy',
+  'freeplay.dismiss': 'Dismiss',
 
   // Archive
   'archive.title': '📜 Puzzle Archive',
