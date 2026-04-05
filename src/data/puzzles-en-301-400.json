@@ -793,33 +793,6 @@
     "theme": "forest"
   },
   {
-    "id": 317,
-    "level": 317,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "D",
-      "E",
-      "P",
-      "R",
-      "S",
-      "T"
-    ],
-    "center": "E",
-    "grid_words": [],
-    "bonus_words": [],
-    "intersection_letters": [
-      "E",
-      "A",
-      "D",
-      "R",
-      "S",
-      "T"
-    ],
-    "hint": "Think about pressure and change",
-    "theme": "storm"
-  },
-  {
     "id": 318,
     "level": 318,
     "difficulty": "advanced",
@@ -1140,38 +1113,6 @@
     "theme": "desert"
   },
   {
-    "id": 324,
-    "level": 324,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "E",
-      "P",
-      "R",
-      "S",
-      "T",
-      "U"
-    ],
-    "center": "S",
-    "grid_words": [
-      {
-        "word": "PASTURE",
-        "length": 7
-      }
-    ],
-    "bonus_words": [],
-    "intersection_letters": [
-      "S",
-      "A",
-      "E",
-      "R",
-      "T",
-      "U"
-    ],
-    "hint": "Think about ascent and stone",
-    "theme": "mountain"
-  },
-  {
     "id": 325,
     "level": 325,
     "difficulty": "advanced",
@@ -1214,141 +1155,6 @@
     ],
     "hint": "Think about force and conflict",
     "theme": "battle"
-  },
-  {
-    "id": 326,
-    "level": 326,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "E",
-      "N",
-      "P",
-      "R",
-      "S",
-      "T"
-    ],
-    "center": "C",
-    "grid_words": [],
-    "bonus_words": [],
-    "intersection_letters": [
-      "A",
-      "E",
-      "P",
-      "R",
-      "S",
-      "T"
-    ],
-    "hint": "Think about old stones and echoes",
-    "theme": "ruins"
-  },
-  {
-    "id": 327,
-    "level": 327,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "C",
-      "E",
-      "H",
-      "I",
-      "R",
-      "T"
-    ],
-    "center": "D",
-    "grid_words": [],
-    "bonus_words": [],
-    "intersection_letters": [
-      "A",
-      "C",
-      "E",
-      "H",
-      "R",
-      "T"
-    ],
-    "hint": "Think about signs and secrets",
-    "theme": "mystic"
-  },
-  {
-    "id": 328,
-    "level": 328,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "D",
-      "E",
-      "I",
-      "R",
-      "S",
-      "T"
-    ],
-    "center": "U",
-    "grid_words": [],
-    "bonus_words": [],
-    "intersection_letters": [
-      "A",
-      "D",
-      "E",
-      "I",
-      "R",
-      "S"
-    ],
-    "hint": "Think about wild growth and shade",
-    "theme": "forest"
-  },
-  {
-    "id": 329,
-    "level": 329,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "C",
-      "E",
-      "P",
-      "R",
-      "S",
-      "T"
-    ],
-    "center": "M",
-    "grid_words": [],
-    "bonus_words": [],
-    "intersection_letters": [
-      "A",
-      "C",
-      "E",
-      "R",
-      "S",
-      "T"
-    ],
-    "hint": "Think about pressure and change",
-    "theme": "storm"
-  },
-  {
-    "id": 330,
-    "level": 330,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "E",
-      "L",
-      "R",
-      "S",
-      "T",
-      "U"
-    ],
-    "center": "P",
-    "grid_words": [],
-    "bonus_words": [],
-    "intersection_letters": [
-      "A",
-      "E",
-      "L",
-      "R",
-      "S",
-      "T"
-    ],
-    "hint": "Think about heat and shaping",
-    "theme": "forge"
   },
   {
     "id": 331,
@@ -1597,137 +1403,6 @@
     ],
     "hint": "Think about routes and arrival",
     "theme": "harbor"
-  },
-  {
-    "id": 335,
-    "level": 335,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "E",
-      "L",
-      "N",
-      "R",
-      "S",
-      "T"
-    ],
-    "center": "N",
-    "grid_words": [
-      {
-        "word": "RENTALS",
-        "length": 7
-      }
-    ],
-    "bonus_words": [
-      {
-        "word": "LEARNT",
-        "length": 6
-      },
-      {
-        "word": "RENTAL",
-        "length": 6
-      },
-      {
-        "word": "LATENS",
-        "length": 6
-      }
-    ],
-    "intersection_letters": [
-      "A",
-      "E",
-      "L",
-      "N",
-      "R",
-      "S"
-    ],
-    "hint": "Think about dryness and endurance",
-    "theme": "desert"
-  },
-  {
-    "id": 336,
-    "level": 336,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "E",
-      "N",
-      "O",
-      "P",
-      "R",
-      "S"
-    ],
-    "center": "O",
-    "grid_words": [
-      {
-        "word": "PERSONA",
-        "length": 7
-      }
-    ],
-    "bonus_words": [
-      {
-        "word": "PROSE",
-        "length": 5
-      }
-    ],
-    "intersection_letters": [
-      "E",
-      "N",
-      "O",
-      "P",
-      "R",
-      "S"
-    ],
-    "hint": "Think about ascent and stone",
-    "theme": "mountain"
-  },
-  {
-    "id": 337,
-    "level": 337,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "E",
-      "I",
-      "N",
-      "R",
-      "S",
-      "T"
-    ],
-    "center": "I",
-    "grid_words": [
-      {
-        "word": "RETINA",
-        "length": 6
-      },
-      {
-        "word": "SATIRE",
-        "length": 6
-      }
-    ],
-    "bonus_words": [
-      {
-        "word": "INSERT",
-        "length": 6
-      },
-      {
-        "word": "STRAIN",
-        "length": 6
-      },
-      {
-        "word": "RETAIN",
-        "length": 6
-      }
-    ],
-    "intersection_letters": [
-      "A",
-      "E",
-      "I",
-      "N",
-      "R",
-      "T"
-    ],
-    "hint": "Think about force and conflict",
-    "theme": "battle"
   },
   {
     "id": 338,
@@ -2515,33 +2190,6 @@
     "theme": "storm"
   },
   {
-    "id": 354,
-    "level": 354,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "D",
-      "E",
-      "P",
-      "R",
-      "S",
-      "T"
-    ],
-    "center": "E",
-    "grid_words": [],
-    "bonus_words": [],
-    "intersection_letters": [
-      "E",
-      "A",
-      "D",
-      "R",
-      "S",
-      "T"
-    ],
-    "hint": "Think about heat and shaping",
-    "theme": "forge"
-  },
-  {
     "id": 355,
     "level": 355,
     "difficulty": "advanced",
@@ -2860,38 +2508,6 @@
     ],
     "hint": "Think about ascent and stone",
     "theme": "mountain"
-  },
-  {
-    "id": 361,
-    "level": 361,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "E",
-      "P",
-      "R",
-      "S",
-      "T",
-      "U"
-    ],
-    "center": "S",
-    "grid_words": [
-      {
-        "word": "PASTURE",
-        "length": 7
-      }
-    ],
-    "bonus_words": [],
-    "intersection_letters": [
-      "S",
-      "A",
-      "E",
-      "R",
-      "T",
-      "U"
-    ],
-    "hint": "Think about force and conflict",
-    "theme": "battle"
   },
   {
     "id": 362,
@@ -3643,33 +3259,6 @@
     "theme": "forest"
   },
   {
-    "id": 377,
-    "level": 377,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "D",
-      "E",
-      "P",
-      "R",
-      "S",
-      "T"
-    ],
-    "center": "E",
-    "grid_words": [],
-    "bonus_words": [],
-    "intersection_letters": [
-      "E",
-      "A",
-      "D",
-      "R",
-      "S",
-      "T"
-    ],
-    "hint": "Think about pressure and change",
-    "theme": "storm"
-  },
-  {
     "id": 378,
     "level": 378,
     "difficulty": "advanced",
@@ -3988,38 +3577,6 @@
     ],
     "hint": "Think about dryness and endurance",
     "theme": "desert"
-  },
-  {
-    "id": 384,
-    "level": 384,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "E",
-      "P",
-      "R",
-      "S",
-      "T",
-      "U"
-    ],
-    "center": "S",
-    "grid_words": [
-      {
-        "word": "PASTURE",
-        "length": 7
-      }
-    ],
-    "bonus_words": [],
-    "intersection_letters": [
-      "S",
-      "A",
-      "E",
-      "R",
-      "T",
-      "U"
-    ],
-    "hint": "Think about ascent and stone",
-    "theme": "mountain"
   },
   {
     "id": 385,
@@ -4769,32 +4326,5 @@
     ],
     "hint": "Think about signs and secrets",
     "theme": "mystic"
-  },
-  {
-    "id": 400,
-    "level": 400,
-    "difficulty": "advanced",
-    "letters": [
-      "A",
-      "D",
-      "E",
-      "P",
-      "R",
-      "S",
-      "T"
-    ],
-    "center": "E",
-    "grid_words": [],
-    "bonus_words": [],
-    "intersection_letters": [
-      "E",
-      "A",
-      "D",
-      "R",
-      "S",
-      "T"
-    ],
-    "hint": "Think about wild growth and shade",
-    "theme": "forest"
   }
 ]

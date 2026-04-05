@@ -16,17 +16,6 @@ type LevelEntry = {
   theme: string;
 };
 
-/** Levels per language (matches previous static concat). */
-const LEVEL_COUNT: Record<SupportedLanguage, number> = {
-  en: 500,
-  de: 500,
-  fr: 500,
-  es: 500,
-  pl: 500,
-  tr: 500,
-};
-
-/** Each language has 5 chunks of 100 levels = 500 levels total. */
 const PUZZLE_FILES: Record<SupportedLanguage, readonly string[]> = {
   en: [
     'puzzles-en-1-100.json',
@@ -72,9 +61,7 @@ const PUZZLE_FILES: Record<SupportedLanguage, readonly string[]> = {
   ],
 };
 
-const CHUNK_SIZE = 100;
-
-/** Nur referenzierte Dateien — kein `puzzles-*.json`-Glob (sonst z. B. ungenutzte TR-Dateien im Bundle). */
+/** Only reference files explicitly — no glob (keeps unused chunks out of the bundle). */
 const puzzleChunkLoaders: Record<string, () => Promise<unknown>> = {
   'puzzles-en-1-100.json': () => import('../../data/puzzles-en-1-100.json'),
   'puzzles-en-101-200.json': () => import('../../data/puzzles-en-101-200.json'),
@@ -125,16 +112,17 @@ async function loadChunk(filename: string): Promise<LevelEntry[]> {
   return arr;
 }
 
-function resolveFileAndLocalIndex(
-  lang: SupportedLanguage,
-  normalizedIdx: number,
-): { file: string; localIdx: number } {
+/** All chunks for a language concatenated, cached per session. */
+const languageCache = new Map<string, LevelEntry[]>();
+
+async function getAllLevelsForLanguage(lang: SupportedLanguage): Promise<LevelEntry[]> {
+  const cached = languageCache.get(lang);
+  if (cached) return cached;
   const files = PUZZLE_FILES[lang];
-  const chunkSlot = Math.floor(normalizedIdx / CHUNK_SIZE);
-  const file = files[chunkSlot];
-  if (!file) throw new Error(`Invalid puzzle chunk ${chunkSlot} for ${lang}`);
-  const localIdx = normalizedIdx % CHUNK_SIZE;
-  return { file, localIdx };
+  const chunks = await Promise.all(files.map((f) => loadChunk(f)));
+  const levels = chunks.flat();
+  languageCache.set(lang, levels);
+  return levels;
 }
 
 /** Days between two YYYY-MM-DD strings (local noon). */
@@ -207,19 +195,18 @@ function writeProgress(p: ArchiveProgress): void {
 
 /**
  * Returns the daily puzzle for a given date and language.
- * Index is derived from days since 2025-01-01, cycling over the available levels.
- * Only one ~100-level JSON chunk is loaded per request (cached in memory).
+ * All chunks for the language are loaded in parallel and cached on first call.
+ * The cycling index is days-since-anchor mod actual level count, so any
+ * array length works — EN currently has 405 strong levels after cleanup.
  */
 export async function getPuzzleForDate(date: string, language: SupportedLanguage): Promise<PuzzleConfig> {
-  const n = LEVEL_COUNT[language];
-  const d = daysBetween(ANCHOR_DATE, date);
-  const idx = ((d % n) + n) % n;
-  const { file, localIdx } = resolveFileAndLocalIndex(language, idx);
-  const chunk = await loadChunk(file);
-  const level = chunk[localIdx];
-  if (!level) {
-    throw new Error(`Missing puzzle at ${file}[${localIdx}]`);
+  const levels = await getAllLevelsForLanguage(language);
+  if (levels.length === 0) {
+    throw new Error(`No puzzle levels loaded for language: ${language}`);
   }
+  const d = daysBetween(ANCHOR_DATE, date);
+  const idx = ((d % levels.length) + levels.length) % levels.length;
+  const level = levels[idx]!;
   return normalizePuzzleConfig(mapLevelToPuzzle(level, date));
 }
 
