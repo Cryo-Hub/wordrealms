@@ -32,7 +32,7 @@ import { hapticService } from '../../services/hapticService';
 import { initAudioOnGesture, soundService } from '../../services/soundService';
 import { useTranslation } from '../../i18n';
 import { useSettingsStore } from '../../stores/settingsStore';
-import { buildCrosswordGrid, type CrosswordGrid as CrosswordGridModel } from '../../core/game/crosswordEngine';
+import { buildCrosswordGrid, buildCrosswordGridFromPrebuilt, type CrosswordGrid as CrosswordGridModel } from '../../core/game/crosswordEngine';
 
 function invalidToastForReason(
   reason: WordInvalidReason | undefined,
@@ -173,7 +173,11 @@ export function DailyPuzzle({ onNavigate }: DailyPuzzleProps) {
   useEffect(() => {
     if (!puzzle) return;
     levelCompleteAppliedRef.current = false;
-    setCrossword(buildCrosswordGrid(gridSourceWords));
+    if (puzzle.crossword_grid && puzzle.crossword_grid.placedWords.length >= 4) {
+      setCrossword(buildCrosswordGridFromPrebuilt(puzzle.crossword_grid));
+    } else {
+      setCrossword(buildCrosswordGrid(gridSourceWords));
+    }
   }, [puzzle, gridSourceWords]);
 
   useEffect(() => {

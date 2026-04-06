@@ -13,6 +13,8 @@ export type PuzzleConfig = {
   hint?: string;
   theme?: string;
   date: string;
+  /** Vorberechnetes Kreuzwortgitter (aus vorgenerierten Level-Daten). */
+  crossword_grid?: { placedWords: { word: string; row: number; col: number; direction: 'across' | 'down'; revealed: boolean[] }[]; gridSize: number };
 };
 
 /** Bonuswörter: explizit `bonusWords` oder `validWords` minus `grid_words`. */

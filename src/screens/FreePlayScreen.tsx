@@ -18,7 +18,7 @@ import { preloadProceduralWordList, generateLevel } from '../core/game/procedura
 import { hapticService } from '../services/hapticService';
 import { initAudioOnGesture, soundService } from '../services/soundService';
 import { useTranslation } from '../i18n';
-import { buildCrosswordGrid, type CrosswordGrid as CrosswordGridModel } from '../core/game/crosswordEngine';
+import { buildCrosswordGrid, buildCrosswordGridFromPrebuilt, type CrosswordGrid as CrosswordGridModel } from '../core/game/crosswordEngine';
 import { NavigationBar } from '../components/ui/NavigationBar';
 import { EnergyBar } from '../components/ui/EnergyBar';
 import { showRewardedAd } from '../services/adService';
@@ -212,7 +212,11 @@ export function FreePlayScreen({ navigate }: FreePlayScreenProps) {
 
   useEffect(() => {
     if (!puzzle) return;
-    setCrossword(buildCrosswordGrid(gridSourceWords));
+    if (puzzle.crossword_grid && puzzle.crossword_grid.placedWords.length >= 4) {
+      setCrossword(buildCrosswordGridFromPrebuilt(puzzle.crossword_grid));
+    } else {
+      setCrossword(buildCrosswordGrid(gridSourceWords));
+    }
   }, [puzzle, gridSourceWords]);
 
   const hintValidWords = useMemo(() => {

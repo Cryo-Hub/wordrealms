@@ -23,24 +23,39 @@ async function loadDictionaryImpl(lang: SupportedLanguage): Promise<Set<string>>
       );
     }
     case 'de': {
-      const m = await import('./dictionaries/de');
-      return new Set(m.WORDS.map((w) => w.toLowerCase()));
+      const m = await import(
+        /* webpackChunkName: "dict-de" */ '../../data/wordlists/de.json'
+      );
+      const arr = (m.default ?? m) as string[];
+      return new Set(arr.map((w) => w.toLowerCase()));
     }
     case 'fr': {
-      const m = await import('./dictionaries/fr');
-      return new Set(m.WORDS.map((w) => w.toLowerCase()));
+      const m = await import(
+        /* webpackChunkName: "dict-fr" */ '../../data/wordlists/fr.json'
+      );
+      const arr = (m.default ?? m) as string[];
+      return new Set(arr.map((w) => w.toLowerCase()));
     }
     case 'es': {
-      const m = await import('./dictionaries/es');
-      return new Set(m.WORDS.map((w) => w.toLowerCase()));
+      const m = await import(
+        /* webpackChunkName: "dict-es" */ '../../data/wordlists/es.json'
+      );
+      const arr = (m.default ?? m) as string[];
+      return new Set(arr.map((w) => w.toLowerCase()));
     }
     case 'pl': {
-      const m = await import('./dictionaries/pl');
-      return new Set(m.WORDS.map((w) => w.toLowerCase()));
+      const m = await import(
+        /* webpackChunkName: "dict-pl" */ '../../data/wordlists/pl.json'
+      );
+      const arr = (m.default ?? m) as string[];
+      return new Set(arr.map((w) => w.toLowerCase()));
     }
     case 'tr': {
-      const m = await import('./dictionaries/tr');
-      return new Set(m.WORDS.map((w) => w.toLowerCase()));
+      const m = await import(
+        /* webpackChunkName: "dict-tr" */ '../../data/wordlists/tr.json'
+      );
+      const arr = (m.default ?? m) as string[];
+      return new Set(arr.map((w) => w.toLowerCase()));
     }
     default:
       return loadDictionaryImpl('en');

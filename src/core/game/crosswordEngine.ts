@@ -126,10 +126,32 @@ function findBestPlacement(
 }
 
 /**
+ * Reconstructs a CrosswordGrid from pre-built level data (no placement algorithm needed).
+ */
+export function buildCrosswordGridFromPrebuilt(
+  prebuilt: { placedWords: PlacedWord[]; gridSize: number },
+): CrosswordGrid {
+  const size = prebuilt.gridSize ?? 15;
+  const cells: string[][] = Array.from({ length: size }, () => Array.from({ length: size }, () => ''));
+  for (const pw of prebuilt.placedWords) {
+    for (let k = 0; k < pw.word.length; k++) {
+      const r = pw.direction === 'across' ? pw.row : pw.row + k;
+      const c = pw.direction === 'across' ? pw.col + k : pw.col;
+      if (r >= 0 && r < size && c >= 0 && c < size) cells[r]![c] = pw.word[k]!;
+    }
+  }
+  return { cells, placedWords: prebuilt.placedWords, width: size, height: size, skippedWords: [] };
+}
+
+/**
  * Erzeugt ein Kreuzwortgitter. Längere Wörter zuerst; mehrere Durchläufe, bis keine neue Platzierung mehr möglich ist.
  * Verarbeitet typischerweise 3–10+ Wörter; bei weniger als 3 platzierten Wörtern: Konsole-Warnung (kein Crash).
  */
 export function buildCrosswordGrid(words: string[]): CrosswordGrid {
+  // Use pre-built grid if available (much faster)
+  if (words.length > 0 && (words as unknown as { crossword_grid?: { placedWords: PlacedWord[]; gridSize: number } }[])[0]?.crossword_grid?.placedWords && (words as unknown as { crossword_grid?: { placedWords: PlacedWord[]; gridSize: number } }[])[0]!.crossword_grid!.placedWords.length >= 4) {
+    return buildCrosswordGridFromPrebuilt((words as unknown as { crossword_grid: { placedWords: PlacedWord[]; gridSize: number } }[])[0]!.crossword_grid);
+  }
   const seen = new Set<string>();
   const sorted: string[] = [];
   for (const raw of words) {
