@@ -1,8 +1,14 @@
 import type { SupportedLanguage } from './dictionaryManager';
 import { type PuzzleConfig, formatPuzzleDate, pickGridWords } from './puzzleGenerator';
 
-const ANCHOR_DATE = '2025-01-01';
+import enLevels from '../../data/puzzles-en-all-final.json';
+import deLevels from '../../data/puzzles-de-all-final.json';
+import frLevels from '../../data/puzzles-fr-all-final.json';
+import esLevels from '../../data/puzzles-es-all-final.json';
+import trLevels from '../../data/puzzles-tr-all-final.json';
+import plLevels from '../../data/puzzles-pl-all-final.json';
 
+/** Shape of entries in *-all-final.json (validated export; some fields optional per row). */
 type LevelEntry = {
   id: number;
   level: number;
@@ -11,99 +17,40 @@ type LevelEntry = {
   center: string;
   grid_words: { word: string; length: number }[];
   bonus_words: { word: string; length: number }[];
-  intersection_letters: string[];
+  intersection_letters?: string[];
   hint: string;
   theme: string;
+  language?: string;
+  grid_word_count?: number;
+  intersection_count?: number;
   crossword_grid?: {
-    placedWords: { word: string; row: number; col: number; direction: 'across' | 'down'; revealed: boolean[] }[];
+    placedWords: { word: string; row: number; col: number; direction: string; revealed: boolean[] }[];
     gridSize: number;
   };
 };
 
-const PUZZLE_FILES: Record<SupportedLanguage, readonly string[]> = {
-  /** EN: levels 1–500 (~485 puzzles). */
-  en: [
-    'puzzles-en-1-100.json',
-    'puzzles-en-101-200.json',
-    'puzzles-en-201-300.json',
-    'puzzles-en-301-400.json',
-    'puzzles-en-401-500.json',
-  ],
-  /** DE: levels 1–200. */
-  de: ['puzzles-de-1-100.json', 'puzzles-de-101-200.json'],
-  /** FR: levels 301–700. */
-  fr: [
-    'puzzles-fr-301-400.json',
-    'puzzles-fr-401-500.json',
-    'puzzles-fr-501-600.json',
-    'puzzles-fr-601-700.json',
-  ],
-  /** ES: levels 301–400 + 701–900. */
-  es: ['puzzles-es-301-400.json', 'puzzles-es-701-800.json', 'puzzles-es-801-900.json'],
-  /** PL: no dedicated chunks yet — `getAllLevelsForLanguage` falls back to EN. */
-  pl: [],
-  /** TR: levels 1–100 + 301–400 + 601–800. */
-  tr: [
-    'puzzles-tr-1-100.json',
-    'puzzles-tr-301-400.json',
-    'puzzles-tr-601-700.json',
-    'puzzles-tr-701-800.json',
-  ],
-};
+const EN_LEVELS: LevelEntry[] = enLevels as LevelEntry[];
+const DE_LEVELS: LevelEntry[] = deLevels as LevelEntry[];
+const FR_LEVELS: LevelEntry[] = frLevels as LevelEntry[];
+const ES_LEVELS: LevelEntry[] = esLevels as LevelEntry[];
+const TR_LEVELS: LevelEntry[] = trLevels as LevelEntry[];
+const PL_LEVELS: LevelEntry[] = plLevels as LevelEntry[];
 
-/** Only reference files explicitly — no glob (keeps unused chunks out of the bundle). */
-const puzzleChunkLoaders: Record<string, () => Promise<unknown>> = {
-  'puzzles-en-1-100.json': () => import('../../data/puzzles-en-1-100.json'),
-  'puzzles-en-101-200.json': () => import('../../data/puzzles-en-101-200.json'),
-  'puzzles-en-201-300.json': () => import('../../data/puzzles-en-201-300.json'),
-  'puzzles-en-301-400.json': () => import('../../data/puzzles-en-301-400.json'),
-  'puzzles-en-401-500.json': () => import('../../data/puzzles-en-401-500.json'),
-  'puzzles-de-1-100.json': () => import('../../data/puzzles-de-1-100.json'),
-  'puzzles-de-101-200.json': () => import('../../data/puzzles-de-101-200.json'),
-  'puzzles-fr-301-400.json': () => import('../../data/puzzles-fr-301-400.json'),
-  'puzzles-fr-401-500.json': () => import('../../data/puzzles-fr-401-500.json'),
-  'puzzles-fr-501-600.json': () => import('../../data/puzzles-fr-501-600.json'),
-  'puzzles-fr-601-700.json': () => import('../../data/puzzles-fr-601-700.json'),
-  'puzzles-es-301-400.json': () => import('../../data/puzzles-es-301-400.json'),
-  'puzzles-es-701-800.json': () => import('../../data/puzzles-es-701-800.json'),
-  'puzzles-es-801-900.json': () => import('../../data/puzzles-es-801-900.json'),
-  'puzzles-tr-1-100.json': () => import('../../data/puzzles-tr-1-100.json'),
-  'puzzles-tr-301-400.json': () => import('../../data/puzzles-tr-301-400.json'),
-  'puzzles-tr-601-700.json': () => import('../../data/puzzles-tr-601-700.json'),
-  'puzzles-tr-701-800.json': () => import('../../data/puzzles-tr-701-800.json'),
-};
-
-const chunkCache = new Map<string, LevelEntry[]>();
-
-async function loadChunk(filename: string): Promise<LevelEntry[]> {
-  const cached = chunkCache.get(filename);
-  if (cached) return cached;
-  const loader = puzzleChunkLoaders[filename];
-  if (!loader) throw new Error(`Puzzle chunk not in bundle: ${filename}`);
-  const mod = await loader();
-  const raw =
-    mod && typeof mod === 'object' && 'default' in mod
-      ? (mod as { default: unknown }).default
-      : mod;
-  const arr = Array.isArray(raw) ? (raw as LevelEntry[]) : [];
-  chunkCache.set(filename, arr);
-  return arr;
-}
-
-/** All chunks for a language concatenated, cached per session. */
-const languageCache = new Map<string, LevelEntry[]>();
-
-async function getAllLevelsForLanguage(lang: SupportedLanguage): Promise<LevelEntry[]> {
-  if (lang === 'pl') {
-    return getAllLevelsForLanguage('en');
+function getLevelsForLanguage(language: SupportedLanguage): LevelEntry[] {
+  switch (language) {
+    case 'de':
+      return DE_LEVELS;
+    case 'fr':
+      return FR_LEVELS;
+    case 'es':
+      return ES_LEVELS;
+    case 'pl':
+      return PL_LEVELS;
+    case 'tr':
+      return TR_LEVELS;
+    default:
+      return EN_LEVELS;
   }
-  const cached = languageCache.get(lang);
-  if (cached) return cached;
-  const files = PUZZLE_FILES[lang];
-  const chunks = await Promise.all(files.map((f) => loadChunk(f)));
-  const levels = chunks.flat();
-  languageCache.set(lang, levels);
-  return levels;
 }
 
 /** Days between two YYYY-MM-DD strings (local noon). */
@@ -111,6 +58,21 @@ function daysBetween(anchorYmd: string, dateYmd: string): number {
   const a = new Date(`${anchorYmd}T12:00:00`);
   const b = new Date(`${dateYmd}T12:00:00`);
   return Math.round((b.getTime() - a.getTime()) / (24 * 60 * 60 * 1000));
+}
+
+function mapCrosswordToConfig(
+  g: NonNullable<LevelEntry['crossword_grid']>,
+): NonNullable<PuzzleConfig['crossword_grid']> {
+  return {
+    gridSize: g.gridSize,
+    placedWords: g.placedWords.map((p) => ({
+      word: p.word,
+      row: p.row,
+      col: p.col,
+      direction: p.direction === 'down' ? 'down' : 'across',
+      revealed: p.revealed,
+    })),
+  };
 }
 
 function mapLevelToPuzzle(level: LevelEntry, date: string): PuzzleConfig {
@@ -126,7 +88,7 @@ function mapLevelToPuzzle(level: LevelEntry, date: string): PuzzleConfig {
     hint: level.hint,
     theme: level.theme,
     date,
-    crossword_grid: level.crossword_grid,
+    crossword_grid: level.crossword_grid ? mapCrosswordToConfig(level.crossword_grid) : undefined,
   };
 }
 
@@ -177,17 +139,14 @@ function writeProgress(p: ArchiveProgress): void {
 
 /**
  * Returns the daily puzzle for a given date and language.
- * All chunks for the language are loaded in parallel and cached on first call.
- * The cycling index is days-since-anchor mod actual level count.
- * Verified sets: EN ~485 (1–500), DE 200, FR 400 (301–700), ES 300 (301–400 + 701–900),
- * PL uses EN until new PL files exist, TR 400 (1–100 + 301–400 + 601–800).
+ * Index: days since 2025-01-01 modulo level count per language.
  */
 export async function getPuzzleForDate(date: string, language: SupportedLanguage): Promise<PuzzleConfig> {
-  const levels = await getAllLevelsForLanguage(language);
+  const levels = getLevelsForLanguage(language);
   if (levels.length === 0) {
     throw new Error(`No puzzle levels loaded for language: ${language}`);
   }
-  const d = daysBetween(ANCHOR_DATE, date);
+  const d = daysBetween('2025-01-01', date);
   const idx = ((d % levels.length) + levels.length) % levels.length;
   const level = levels[idx]!;
   return normalizePuzzleConfig(mapLevelToPuzzle(level, date));
@@ -229,3 +188,13 @@ export async function getRecentPuzzles(
 export function getTotalPuzzlesPlayed(): number {
   return Object.keys(readProgress()).length;
 }
+
+/** Level counts for the bundled *-all-final.json archives (same order as imports). */
+export const PUZZLE_LEVEL_COUNTS: Record<SupportedLanguage, number> = {
+  en: EN_LEVELS.length,
+  de: DE_LEVELS.length,
+  fr: FR_LEVELS.length,
+  es: ES_LEVELS.length,
+  pl: PL_LEVELS.length,
+  tr: TR_LEVELS.length,
+};
