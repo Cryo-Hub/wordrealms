@@ -7,7 +7,7 @@ import Anthropic from '@anthropic-ai/sdk';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const client = new Anthropic();
 const DATA_DIR = path.join(__dirname, '../src/data');
-const WORDLIST_DIR = path.join(__dirname, 'wordlists');
+const WORDLIST_DIR = path.join(__dirname, '../src/data/wordlists');
 const PROGRESS_FILE = path.join(__dirname, 'overnight-progress.json');
 const LOG_FILE = path.join(__dirname, '../OVERNIGHT_LOG.txt');
 

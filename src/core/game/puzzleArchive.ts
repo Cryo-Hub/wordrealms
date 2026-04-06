@@ -21,77 +21,33 @@ type LevelEntry = {
 };
 
 const PUZZLE_FILES: Record<SupportedLanguage, readonly string[]> = {
+  /** EN: levels 1–500 (~485 puzzles). */
   en: [
     'puzzles-en-1-100.json',
     'puzzles-en-101-200.json',
     'puzzles-en-201-300.json',
     'puzzles-en-301-400.json',
     'puzzles-en-401-500.json',
-    'puzzles-en-501-600.json',
-    'puzzles-en-601-700.json',
-    'puzzles-en-701-800.json',
-    'puzzles-en-801-900.json',
-    'puzzles-en-901-1000.json',
   ],
-  de: [
-    'puzzles-de-1-100.json',
-    'puzzles-de-101-200.json',
-    'puzzles-de-201-300.json',
-    'puzzles-de-301-400.json',
-    'puzzles-de-401-500.json',
-    'puzzles-de-501-600.json',
-    'puzzles-de-601-700.json',
-    'puzzles-de-701-800.json',
-    'puzzles-de-801-900.json',
-    'puzzles-de-901-1000.json',
-  ],
+  /** DE: levels 1–200. */
+  de: ['puzzles-de-1-100.json', 'puzzles-de-101-200.json'],
+  /** FR: levels 301–700. */
   fr: [
-    'puzzles-fr-1-100.json',
-    'puzzles-fr-101-200.json',
-    'puzzles-fr-201-300.json',
     'puzzles-fr-301-400.json',
     'puzzles-fr-401-500.json',
     'puzzles-fr-501-600.json',
     'puzzles-fr-601-700.json',
-    'puzzles-fr-701-800.json',
-    'puzzles-fr-801-900.json',
-    'puzzles-fr-901-1000.json',
   ],
-  es: [
-    'puzzles-es-1-100.json',
-    'puzzles-es-101-200.json',
-    'puzzles-es-201-300.json',
-    'puzzles-es-301-400.json',
-    'puzzles-es-401-500.json',
-    'puzzles-es-501-600.json',
-    'puzzles-es-601-700.json',
-    'puzzles-es-701-800.json',
-    'puzzles-es-801-900.json',
-    'puzzles-es-901-1000.json',
-  ],
-  pl: [
-    'puzzles-pl-1-100.json',
-    'puzzles-pl-101-200.json',
-    'puzzles-pl-201-300.json',
-    'puzzles-pl-301-400.json',
-    'puzzles-pl-401-500.json',
-    'puzzles-pl-501-600.json',
-    'puzzles-pl-601-700.json',
-    'puzzles-pl-701-800.json',
-    'puzzles-pl-801-900.json',
-    'puzzles-pl-901-1000.json',
-  ],
+  /** ES: levels 301–400 + 701–900. */
+  es: ['puzzles-es-301-400.json', 'puzzles-es-701-800.json', 'puzzles-es-801-900.json'],
+  /** PL: no dedicated chunks yet — `getAllLevelsForLanguage` falls back to EN. */
+  pl: [],
+  /** TR: levels 1–100 + 301–400 + 601–800. */
   tr: [
     'puzzles-tr-1-100.json',
-    'puzzles-tr-101-200.json',
-    'puzzles-tr-201-300.json',
     'puzzles-tr-301-400.json',
-    'puzzles-tr-401-500.json',
-    'puzzles-tr-501-600.json',
     'puzzles-tr-601-700.json',
     'puzzles-tr-701-800.json',
-    'puzzles-tr-801-900.json',
-    'puzzles-tr-901-1000.json',
   ],
 };
 
@@ -102,61 +58,19 @@ const puzzleChunkLoaders: Record<string, () => Promise<unknown>> = {
   'puzzles-en-201-300.json': () => import('../../data/puzzles-en-201-300.json'),
   'puzzles-en-301-400.json': () => import('../../data/puzzles-en-301-400.json'),
   'puzzles-en-401-500.json': () => import('../../data/puzzles-en-401-500.json'),
-  'puzzles-en-501-600.json': () => import('../../data/puzzles-en-501-600.json'),
-  'puzzles-en-601-700.json': () => import('../../data/puzzles-en-601-700.json'),
-  'puzzles-en-701-800.json': () => import('../../data/puzzles-en-701-800.json'),
-  'puzzles-en-801-900.json': () => import('../../data/puzzles-en-801-900.json'),
-  'puzzles-en-901-1000.json': () => import('../../data/puzzles-en-901-1000.json'),
   'puzzles-de-1-100.json': () => import('../../data/puzzles-de-1-100.json'),
   'puzzles-de-101-200.json': () => import('../../data/puzzles-de-101-200.json'),
-  'puzzles-de-201-300.json': () => import('../../data/puzzles-de-201-300.json'),
-  'puzzles-de-301-400.json': () => import('../../data/puzzles-de-301-400.json'),
-  'puzzles-de-401-500.json': () => import('../../data/puzzles-de-401-500.json'),
-  'puzzles-de-501-600.json': () => import('../../data/puzzles-de-501-600.json'),
-  'puzzles-de-601-700.json': () => import('../../data/puzzles-de-601-700.json'),
-  'puzzles-de-701-800.json': () => import('../../data/puzzles-de-701-800.json'),
-  'puzzles-de-801-900.json': () => import('../../data/puzzles-de-801-900.json'),
-  'puzzles-de-901-1000.json': () => import('../../data/puzzles-de-901-1000.json'),
-  'puzzles-fr-1-100.json': () => import('../../data/puzzles-fr-1-100.json'),
-  'puzzles-fr-101-200.json': () => import('../../data/puzzles-fr-101-200.json'),
-  'puzzles-fr-201-300.json': () => import('../../data/puzzles-fr-201-300.json'),
   'puzzles-fr-301-400.json': () => import('../../data/puzzles-fr-301-400.json'),
   'puzzles-fr-401-500.json': () => import('../../data/puzzles-fr-401-500.json'),
   'puzzles-fr-501-600.json': () => import('../../data/puzzles-fr-501-600.json'),
   'puzzles-fr-601-700.json': () => import('../../data/puzzles-fr-601-700.json'),
-  'puzzles-fr-701-800.json': () => import('../../data/puzzles-fr-701-800.json'),
-  'puzzles-fr-801-900.json': () => import('../../data/puzzles-fr-801-900.json'),
-  'puzzles-fr-901-1000.json': () => import('../../data/puzzles-fr-901-1000.json'),
-  'puzzles-es-1-100.json': () => import('../../data/puzzles-es-1-100.json'),
-  'puzzles-es-101-200.json': () => import('../../data/puzzles-es-101-200.json'),
-  'puzzles-es-201-300.json': () => import('../../data/puzzles-es-201-300.json'),
   'puzzles-es-301-400.json': () => import('../../data/puzzles-es-301-400.json'),
-  'puzzles-es-401-500.json': () => import('../../data/puzzles-es-401-500.json'),
-  'puzzles-es-501-600.json': () => import('../../data/puzzles-es-501-600.json'),
-  'puzzles-es-601-700.json': () => import('../../data/puzzles-es-601-700.json'),
   'puzzles-es-701-800.json': () => import('../../data/puzzles-es-701-800.json'),
   'puzzles-es-801-900.json': () => import('../../data/puzzles-es-801-900.json'),
-  'puzzles-es-901-1000.json': () => import('../../data/puzzles-es-901-1000.json'),
-  'puzzles-pl-1-100.json': () => import('../../data/puzzles-pl-1-100.json'),
-  'puzzles-pl-101-200.json': () => import('../../data/puzzles-pl-101-200.json'),
-  'puzzles-pl-201-300.json': () => import('../../data/puzzles-pl-201-300.json'),
-  'puzzles-pl-301-400.json': () => import('../../data/puzzles-pl-301-400.json'),
-  'puzzles-pl-401-500.json': () => import('../../data/puzzles-pl-401-500.json'),
-  'puzzles-pl-501-600.json': () => import('../../data/puzzles-pl-501-600.json'),
-  'puzzles-pl-601-700.json': () => import('../../data/puzzles-pl-601-700.json'),
-  'puzzles-pl-701-800.json': () => import('../../data/puzzles-pl-701-800.json'),
-  'puzzles-pl-801-900.json': () => import('../../data/puzzles-pl-801-900.json'),
-  'puzzles-pl-901-1000.json': () => import('../../data/puzzles-pl-901-1000.json'),
   'puzzles-tr-1-100.json': () => import('../../data/puzzles-tr-1-100.json'),
-  'puzzles-tr-101-200.json': () => import('../../data/puzzles-tr-101-200.json'),
-  'puzzles-tr-201-300.json': () => import('../../data/puzzles-tr-201-300.json'),
   'puzzles-tr-301-400.json': () => import('../../data/puzzles-tr-301-400.json'),
-  'puzzles-tr-401-500.json': () => import('../../data/puzzles-tr-401-500.json'),
-  'puzzles-tr-501-600.json': () => import('../../data/puzzles-tr-501-600.json'),
   'puzzles-tr-601-700.json': () => import('../../data/puzzles-tr-601-700.json'),
   'puzzles-tr-701-800.json': () => import('../../data/puzzles-tr-701-800.json'),
-  'puzzles-tr-801-900.json': () => import('../../data/puzzles-tr-801-900.json'),
-  'puzzles-tr-901-1000.json': () => import('../../data/puzzles-tr-901-1000.json'),
 };
 
 const chunkCache = new Map<string, LevelEntry[]>();
@@ -180,6 +94,9 @@ async function loadChunk(filename: string): Promise<LevelEntry[]> {
 const languageCache = new Map<string, LevelEntry[]>();
 
 async function getAllLevelsForLanguage(lang: SupportedLanguage): Promise<LevelEntry[]> {
+  if (lang === 'pl') {
+    return getAllLevelsForLanguage('en');
+  }
   const cached = languageCache.get(lang);
   if (cached) return cached;
   const files = PUZZLE_FILES[lang];
@@ -261,8 +178,9 @@ function writeProgress(p: ArchiveProgress): void {
 /**
  * Returns the daily puzzle for a given date and language.
  * All chunks for the language are loaded in parallel and cached on first call.
- * The cycling index is days-since-anchor mod actual level count, so any
- * array length works — EN currently has 405 strong levels after cleanup.
+ * The cycling index is days-since-anchor mod actual level count.
+ * Verified sets: EN ~485 (1–500), DE 200, FR 400 (301–700), ES 300 (301–400 + 701–900),
+ * PL uses EN until new PL files exist, TR 400 (1–100 + 301–400 + 601–800).
  */
 export async function getPuzzleForDate(date: string, language: SupportedLanguage): Promise<PuzzleConfig> {
   const levels = await getAllLevelsForLanguage(language);

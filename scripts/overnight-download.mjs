@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const dir = path.join(__dirname, 'wordlists');
+const dir = path.join(__dirname, '../src/data/wordlists');
 if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
 function download(url, dest) {
