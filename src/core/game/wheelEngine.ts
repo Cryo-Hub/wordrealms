@@ -4,8 +4,8 @@
 
 export const MIN_WORD_LENGTH = 3 as const;
 
-/** 7 Buchstaben: Index 0 = Mitte, 1–6 = Ring (im Uhrzeigersinn ab 12 Uhr). */
-export const WHEEL_LETTER_COUNT = 7 as const;
+/** 9 Buchstaben: Index 0 = Mitte, 1–8 = Ring (im Uhrzeigersinn ab 12 Uhr, 360°/8 je Außen-Slot). */
+export const WHEEL_LETTER_COUNT = 9 as const;
 
 export type PathValidationReason =
   | 'too_short'
@@ -21,7 +21,7 @@ export type CompletedPathResult = {
 
 /**
  * Gültiger Pfad: keine doppelten Buchstaben-Slots (kein Index zweimal).
- * Keine Nachbarschaftsprüfung — beliebige Reihenfolge der sieben Positionen.
+ * Keine Nachbarschaftsprüfung — beliebige Reihenfolge der Rad-Positionen.
  */
 export function isValidSwipePath(path: number[]): boolean {
   if (path.length <= 1) return true;

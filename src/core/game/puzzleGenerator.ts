@@ -1,7 +1,9 @@
 import type { SupportedLanguage } from './dictionaryManager';
 import { getCurrentLanguage } from './dictionaryManager';
+import { WHEEL_LETTER_COUNT } from './wheelEngine';
 
 export type PuzzleConfig = {
+  /** Rad: typischerweise `WHEEL_LETTER_COUNT` Einträge, Index 0 = Mitte in der UI. */
   letters: string[];
   validWords: string[];
   /** Wörter fürs Kreuzwortgitter; fehlend/leer → zur Laufzeit aus `validWords` ableiten. */
@@ -49,18 +51,24 @@ export function pickGridWords(traceable: readonly string[]): string[] {
 
 /** JS getDay(): 0=Sunday … 6=Saturday */
 const FALLBACK_BY_JS_DAY: readonly (readonly string[])[] = [
-  ['S', 'T', 'O', 'N', 'E', 'R', 'S'], // 0 Sunday
-  ['S', 'T', 'A', 'R', 'E', 'D', 'N'], // 1 Monday
-  ['P', 'L', 'A', 'N', 'E', 'T', 'S'], // 2 Tuesday
-  ['G', 'R', 'O', 'W', 'T', 'H', 'S'], // 3 Wednesday
-  ['B', 'R', 'I', 'G', 'H', 'T', 'S'], // 4 Thursday
-  ['C', 'L', 'O', 'U', 'D', 'S', 'Y'], // 5 Friday
-  ['F', 'L', 'O', 'W', 'E', 'R', 'S'], // 6 Saturday
+  ['S', 'T', 'O', 'N', 'E', 'R', 'S', 'A', 'L'], // 0 Sunday
+  ['S', 'T', 'A', 'R', 'E', 'D', 'N', 'L', 'Y'], // 1 Monday
+  ['P', 'L', 'A', 'N', 'E', 'T', 'S', 'O', 'R'], // 2 Tuesday
+  ['G', 'R', 'O', 'W', 'T', 'H', 'S', 'E', 'N'], // 3 Wednesday
+  ['B', 'R', 'I', 'G', 'H', 'T', 'S', 'A', 'L'], // 4 Thursday
+  ['C', 'L', 'O', 'U', 'D', 'S', 'Y', 'T', 'R'], // 5 Friday
+  ['F', 'L', 'O', 'W', 'E', 'R', 'S', 'A', 'N'], // 6 Saturday
 ];
 
 const MIN_WORDS_PER_LETTER_TYPE = 3;
 /** Mindestanzahl nachziehbarer Wörter pro Puzzle (laut Spezifikation). */
 const MIN_TRACEABLE_WORDS = 15;
+
+/** Obergrenze für Wörterbuch-Scan (längere Wörter bei 9 Rad-Buchstaben + Duplikaten möglich). */
+const MAX_CANDIDATE_WORD_LEN = 15;
+
+/** Ring-Permutationen: vollständig 8! zu teuer → deterministisch gesampelt. */
+const RING_SHUFFLE_ATTEMPTS = 1200;
 
 const multisetPoolCache = new Map<string, string[][]>();
 
@@ -73,11 +81,11 @@ function hashDateAndLang(dateStr: string, lang: string): number {
   return h || 1;
 }
 
-function extractSevenLetterMultisetsFromWordSet(wordSet: Set<string>, max: number): string[][] {
+function extractWheelMultisetsFromWordSet(wordSet: Set<string>, max: number): string[][] {
   const seen = new Set<string>();
   const out: string[][] = [];
   for (const w of wordSet) {
-    if (w.length !== 7) continue;
+    if (w.length !== WHEEL_LETTER_COUNT) continue;
     if (!/^[a-z]+$/.test(w)) continue;
     const u = w.toUpperCase();
     const key = [...u].sort().join('');
@@ -94,7 +102,7 @@ function basePoolFromWordSet(wordSet: Set<string>, lang: SupportedLanguage): str
   const hit = multisetPoolCache.get(key);
   if (hit) return hit;
 
-  const fromDict = extractSevenLetterMultisetsFromWordSet(wordSet, 12000);
+  const fromDict = extractWheelMultisetsFromWordSet(wordSet, 12000);
   const presets = FALLBACK_BY_JS_DAY.map((arr) => [...arr]);
   const seen = new Set(fromDict.map((a) => [...a].sort().join('')));
   for (const p of presets) {
@@ -137,8 +145,8 @@ function canSpellWithBag(word: string, bag: Record<string, number>): boolean {
 }
 
 /**
- * Prüft, ob `word` mit den sieben Rad-Buchstaben gebildet werden kann
- * (freie Reihenfolge; jeder Slot höchstens einmal — Multiset-Abgleich).
+ * Prüft, ob `word` mit den Rad-Buchstaben gebildet werden kann
+ * (freie Reihenfolge; Multiset-Abgleich wie auf dem Rad).
  */
 export function canFormWord(word: string, letters: readonly string[]): boolean {
   const W = word.toUpperCase();
@@ -310,7 +318,7 @@ function collectCandidateWords(
   const extra = language === 'en' ? (PRESET_VALID[key] ?? []) : [];
 
   for (const w of wordSet) {
-    if (w.length < 3 || w.length > 7) continue;
+    if (w.length < 3 || w.length > MAX_CANDIDATE_WORD_LEN) continue;
     if (!/^[a-z]+$/.test(w)) continue;
     const u = w.toUpperCase();
     if (canSpellWithBag(u, bag)) merged.add(u);
@@ -351,17 +359,17 @@ function removeOneCopy(chars: string[], letter: string): string[] {
   return [...chars.slice(0, i), ...chars.slice(i + 1)];
 }
 
-/** Alle Permutationen von `arr` (n! ; bei n=6 → 720). */
-function permutations<T>(arr: T[]): T[][] {
-  if (arr.length <= 1) return [arr as T[]];
-  const out: T[][] = [];
-  for (let i = 0; i < arr.length; i++) {
-    const rest = [...arr.slice(0, i), ...arr.slice(i + 1)];
-    for (const p of permutations(rest)) {
-      out.push([arr[i], ...p]);
-    }
+function shuffleRingDeterministic(pool: readonly string[], seed: number): string[] {
+  const a = [...pool];
+  let s = seed >>> 0;
+  for (let i = a.length - 1; i > 0; i--) {
+    s = (Math.imul(s, 1664525) + 1013904223) >>> 0;
+    const j = s % (i + 1);
+    const t = a[i]!;
+    a[i] = a[j]!;
+    a[j] = t;
   }
-  return out;
+  return a;
 }
 
 function filterTraceable(letters: readonly string[], words: Iterable<string>): string[] {
@@ -394,23 +402,23 @@ function coveragePerLetterType(
 }
 
 /**
- * Bewertet Ring-Nachbarschaften: Mitte↔Ring + Kanten entlang des Rings (1–2–…–6–1).
+ * Bewertet Ring-Nachbarschaften: Mitte↔Ring + Kanten entlang des Rings (1–2–…–8–1).
  * Höher = häufiger treten diese Paare in Kandidatenwörtern nebeneinander auf.
  */
 function ringBigramScore(letters: readonly string[], bigrams: Map<string, number>): number {
-  if (letters.length !== 7) return 0;
-  const c = letters[0];
-  let s = 0;
-  for (let i = 1; i <= 6; i++) {
-    const a = `${c}${letters[i]}`;
-    s += bigrams.get(a) ?? 0;
+  if (letters.length !== WHEEL_LETTER_COUNT) return 0;
+  const c = letters[0]!;
+  let score = 0;
+  const lastRing = WHEEL_LETTER_COUNT - 1;
+  for (let i = 1; i <= lastRing; i++) {
+    score += bigrams.get(`${c}${letters[i]}`) ?? 0;
   }
-  for (let i = 1; i <= 6; i++) {
-    const a = letters[i];
-    const b = i === 6 ? letters[1] : letters[i + 1];
-    s += bigrams.get(`${a}${b}`) ?? 0;
+  for (let i = 1; i <= lastRing; i++) {
+    const a = letters[i]!;
+    const b = i === lastRing ? letters[1]! : letters[i + 1]!;
+    score += bigrams.get(`${a}${b}`) ?? 0;
   }
-  return s;
+  return score;
 }
 
 type Scored = {
@@ -449,6 +457,7 @@ function buildArrangement(
   bigrams: Map<string, number>,
   letterTypes: Set<string>,
   logBestArrangement: boolean,
+  arrangementSeed: number,
 ): Scored {
   const baseArr = [...base].map((c) => c.toUpperCase());
   const center = pickCenterLetter(letterTypes, freq);
@@ -456,9 +465,14 @@ function buildArrangement(
 
   let best: Scored | null = null;
 
-  if (ringPool.length === 6) {
-    const perms = permutations(ringPool);
-    for (const ring of perms) {
+  const ringSlots = WHEEL_LETTER_COUNT - 1;
+  if (ringPool.length === ringSlots) {
+    const seenRing = new Set<string>();
+    for (let k = 0; k < RING_SHUFFLE_ATTEMPTS; k++) {
+      const ring = shuffleRingDeterministic(ringPool, arrangementSeed ^ Math.imul(k, 0x9e3779b1));
+      const rk = ring.join('');
+      if (seenRing.has(rk)) continue;
+      seenRing.add(rk);
       const letters = [center, ...ring] as string[];
       const traceable = filterTraceable(letters, candidates);
       const cov = coveragePerLetterType(traceable, letterTypes);
@@ -530,7 +544,15 @@ export async function generatePuzzle(
     const bigrams = bigramCountsInCandidates(candidates);
     const letterTypes = new Set(base.map((c) => c.toUpperCase()));
 
-    const best = buildArrangement(base, candidates, freq, bigrams, letterTypes, false);
+    const best = buildArrangement(
+      base,
+      candidates,
+      freq,
+      bigrams,
+      letterTypes,
+      false,
+      seed + Math.imul(attempt, 0x85ebca6b),
+    );
 
     if (!bestFallback || best.traceable.length > bestFallback.traceable.length) {
       bestFallback = best;

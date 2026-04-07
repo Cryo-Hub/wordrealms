@@ -1,6 +1,7 @@
 /**
  * Baut ein Wordscapes-ähnliches Kreuzwortgitter aus einer Wortliste.
  * Unterstützt typischerweise 3–10 (oder mehr) Gitter-Wörter; platziert iterativ so viele wie möglich.
+ * Buchstabenrad-Größe (9) liegt in `wheelEngine` (`WHEEL_LETTER_COUNT`), nicht hier.
  */
 
 export type WordDirection = 'across' | 'down';
@@ -23,7 +24,8 @@ export type CrosswordGrid = {
   skippedWords: string[];
 };
 
-const GRID = 12;
+/** Etwas größer als zuvor (12), damit dichtere Kreuzungen mit mehr Rad-Buchstaben Platz haben. */
+const GRID = 14;
 /** Mindestlänge pro Wort (übliches Wordscapes-Minimum). */
 const MIN_WORD_LEN = 3;
 /** Obere Grenze Eingabelänge (Performance); längere Listen werden gekürzt. */
@@ -31,6 +33,27 @@ const MAX_INPUT_WORDS = 24;
 
 function emptyGrid(): string[][] {
   return Array.from({ length: GRID }, () => Array.from({ length: GRID }, () => ''));
+}
+
+/** First 4 uppercase letters; shorter words use the full string as the stem key. */
+function wordStem4(w: string): string {
+  return w.length >= 4 ? w.slice(0, 4) : w;
+}
+
+/**
+ * After longest-first sort: keep at most one word per 4-char stem — the longest in each group
+ * (first occurrence in sorted order = longest).
+ */
+function filterWordsByStemDiversity(sortedLongestFirst: readonly string[]): string[] {
+  const seenStems = new Set<string>();
+  const out: string[] = [];
+  for (const word of sortedLongestFirst) {
+    const stem = wordStem4(word);
+    if (seenStems.has(stem)) continue;
+    seenStems.add(stem);
+    out.push(word);
+  }
+  return out;
 }
 
 function tryPlace(
@@ -163,7 +186,18 @@ export function buildCrosswordGrid(words: string[]): CrosswordGrid {
   }
   sorted.sort((a, b) => b.length - a.length || a.localeCompare(b));
 
-  const limited = sorted.slice(0, MAX_INPUT_WORDS);
+  const stemDiverse = filterWordsByStemDiversity(sorted);
+  const limited = stemDiverse.slice(0, MAX_INPUT_WORDS);
+
+  if (limited.length > 0) {
+    const lengthSet = new Set(limited.map((w) => w.length));
+    if (lengthSet.size < 3) {
+      console.warn(
+        '[WordRealms/crosswordEngine] buildCrosswordGrid: fewer than 3 distinct word lengths in selection (ideally ≥3). ' +
+          `Lengths: [${[...lengthSet].sort((a, b) => a - b).join(', ')}], ${limited.length} word(s).`,
+      );
+    }
+  }
 
   const grid = emptyGrid();
   const placedWords: PlacedWord[] = [];

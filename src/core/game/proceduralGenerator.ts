@@ -1,6 +1,7 @@
 import type { PuzzleConfig } from './puzzleGenerator';
 import type { SupportedLanguage } from './dictionaryManager';
 import { SUPPORTED_LANGUAGES } from './dictionaryManager';
+import { WHEEL_LETTER_COUNT } from './wheelEngine';
 
 /** Mulberry32 — schnell, deterministisch */
 export function seededRandom(seed: number) {
@@ -84,7 +85,7 @@ async function loadWordListForLang(lang: SupportedLanguage): Promise<string[]> {
     const mod = await import('an-array-of-english-words');
     const arr = mod.default as readonly string[];
     wordLists.en = arr
-      .filter((w) => w.length >= 3 && w.length <= 7 && /^[a-z]+$/.test(w))
+      .filter((w) => w.length >= 3 && w.length <= 15 && /^[a-z]+$/.test(w))
       .map((w) => w.toUpperCase());
     return wordLists.en!;
   }
@@ -93,7 +94,7 @@ async function loadWordListForLang(lang: SupportedLanguage): Promise<string[]> {
   const out: string[] = [];
   for (const raw of words) {
     const u = normalizeWord(String(raw));
-    if (u.length < 3 || u.length > 7) continue;
+    if (u.length < 3 || u.length > 15) continue;
     if (!isAsciiLetters(u)) continue;
     out.push(u);
   }
@@ -154,9 +155,9 @@ function getThemeForSeed(seed: number): string {
   return THEMES[((seed % THEMES.length) + THEMES.length) % THEMES.length]!;
 }
 
-function lettersWithCenterFirst(center: string, seven: string[]): string[] {
-  const rest = seven.filter((c) => c !== center);
-  const rng = seededRandom(seven.join('').split('').reduce((a, c) => a + c.charCodeAt(0), 0));
+function lettersWithCenterFirst(center: string, pool: string[]): string[] {
+  const rest = pool.filter((c) => c !== center);
+  const rng = seededRandom(pool.join('').split('').reduce((a, c) => a + c.charCodeAt(0), 0));
   for (let i = rest.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
     [rest[i], rest[j]] = [rest[j]!, rest[i]!];
@@ -165,7 +166,7 @@ function lettersWithCenterFirst(center: string, seven: string[]): string[] {
 }
 
 function fallbackLevel(seed: number): PuzzleConfig {
-  const letters = lettersWithCenterFirst('A', ['S', 'T', 'A', 'R', 'E', 'N', 'D']);
+  const letters = lettersWithCenterFirst('A', ['S', 'T', 'A', 'R', 'E', 'N', 'D', 'L', 'G']);
   const validWords = ['STAR', 'RATE', 'TEAR', 'NEAR', 'EAST', 'DARE', 'SAND', 'READ', 'DEAN', 'EARN'];
   const grid_words = validWords.slice(0, 8);
   const bonusWords = validWords.slice(8);
@@ -206,7 +207,7 @@ export function generateLevel(seed: number, lang: string = 'en'): PuzzleConfig {
         letterList.push(v);
       }
     }
-    while (letterList.length < 7) {
+    while (letterList.length < WHEEL_LETTER_COUNT) {
       const c = consonants[Math.floor(rng() * consonants.length)]!;
       if (!usedConsonants.has(c)) {
         usedConsonants.add(c);

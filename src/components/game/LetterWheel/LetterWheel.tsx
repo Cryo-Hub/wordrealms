@@ -14,7 +14,7 @@ import { initAudioOnGesture, soundService } from '../../../services/soundService
 
 const VIEW_SIZE = 320;
 const CENTER = { x: VIEW_SIZE / 2, y: VIEW_SIZE / 2 };
-const OUTER_RADIUS = 95;
+const OUTER_RADIUS = 92;
 /** proportional zu früherem 400px-Rad */
 const CENTER_LETTER_R = 22;
 const OUTER_LETTER_R = 22;
@@ -51,8 +51,9 @@ export function LetterWheel({ letters, onWordFormed, foundWords = [] }: LetterWh
     const slots: LetterSlot[] = [
       { index: 0, cx: CENTER.x, cy: CENTER.y, r: CENTER_LETTER_R },
     ];
-    for (let i = 0; i < 6; i++) {
-      const angle = -Math.PI / 2 + (i * Math.PI) / 3;
+    const outer = WHEEL_LETTER_COUNT - 1;
+    for (let i = 0; i < outer; i++) {
+      const angle = -Math.PI / 2 + (i * 2 * Math.PI) / outer;
       slots.push({
         index: i + 1,
         cx: CENTER.x + Math.cos(angle) * OUTER_RADIUS,

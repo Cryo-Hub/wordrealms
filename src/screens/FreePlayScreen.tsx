@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { LetterWheel } from '../components/game/LetterWheel/LetterWheel';
+import { WHEEL_LETTER_COUNT } from '../core/game/wheelEngine';
 import { CrosswordGrid } from '../components/game/CrosswordGrid/CrosswordGrid';
 import { BonusWordToast } from '../components/game/CrosswordGrid/BonusWordToast';
 import { calculateWordReward, type WordReward } from '../core/game/resourceCalculator';
@@ -82,7 +83,7 @@ function GameWordDots() {
   const len = useGameUiStore((s) => s.previewWord.length);
   return (
     <div className="flex justify-center gap-[6px]" aria-hidden>
-      {Array.from({ length: 7 }).map((_, i) => {
+      {Array.from({ length: WHEEL_LETTER_COUNT }).map((_, i) => {
         const filled = i < len;
         return (
           <span
